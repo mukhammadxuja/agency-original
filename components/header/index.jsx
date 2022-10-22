@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Header = () => {
   return (
-    <div className="mt-10 md:mt-20">
+    <div className="relative mt-10 md:mt-20">
       <div className="mt-10  md:mt-20">
         <p className="text-lg font-semibold md:text-xl">©2022</p>
         <div className="mt-5 mb-10 ">
@@ -22,22 +22,22 @@ const Header = () => {
             <div className="text-5xl flex font-bold md:text-6xl lg:text-7xl xl:text-8xl">
               A
               <div className="text-[#006B98] flex flex-col h-24 overflow-hidden">
-                <span className='px-2 animate-spinWord'>Creative</span>
-                <span className='px-2 animate-spinWord'>Awesome</span>
-                <span className='px-2 animate-spinWord'>Fantastic</span>
-                <span className='px-2 animate-spinWord'>Incredible</span>
-                <span className='px-2 animate-spinWord'>Creative</span>
-                <span className='px-2 animate-spinWord'>Awesome</span>
-                <span className='px-2 animate-spinWord'>Fantastic</span>
-                <span className='px-2 animate-spinWord'>Incredible</span>
-                <span className='px-2 animate-spinWord'>Creative</span>
-                <span className='px-2 animate-spinWord'>Awesome</span>
-                <span className='px-2 animate-spinWord'>Fantastic</span>
-                <span className='px-2 animate-spinWord'>Incredible</span>
-                <span className='px-2 animate-spinWord'>Creative</span>
-                <span className='px-2 animate-spinWord'>Awesome</span>
-                <span className='px-2 animate-spinWord'>Fantastic</span>
-                <span className='px-2 animate-spinWord'>Incredible</span>
+                <span className="px-2 animate-spinWord">Creative</span>
+                <span className="px-2 animate-spinWord">Awesome</span>
+                <span className="px-2 animate-spinWord">Fantastic</span>
+                <span className="px-2 animate-spinWord">Incredible</span>
+                <span className="px-2 animate-spinWord">Creative</span>
+                <span className="px-2 animate-spinWord">Awesome</span>
+                <span className="px-2 animate-spinWord">Fantastic</span>
+                <span className="px-2 animate-spinWord">Incredible</span>
+                <span className="px-2 animate-spinWord">Creative</span>
+                <span className="px-2 animate-spinWord">Awesome</span>
+                <span className="px-2 animate-spinWord">Fantastic</span>
+                <span className="px-2 animate-spinWord">Incredible</span>
+                <span className="px-2 animate-spinWord">Creative</span>
+                <span className="px-2 animate-spinWord">Awesome</span>
+                <span className="px-2 animate-spinWord">Fantastic</span>
+                <span className="px-2 animate-spinWord">Incredible</span>
               </div>{' '}
               Agency
             </div>
@@ -60,7 +60,7 @@ const Header = () => {
             </p>
           </div>
         </div>
-        <div className="relative mt-16 h-[50vh] w-full">
+        <div className="relative mt-16 h-96 w-full">
           <Image
             className="w-full rounded-t-3xl"
             src={BannerImg}
@@ -86,6 +86,19 @@ const Header = () => {
               </svg>
             </div>
           </div>
+        </div>
+        <div className="flex items-center justify-around h-24 bg-black">
+          <img className="mt-1 w-6" src="/svg/star-white.svg" alt="" />
+          <h3 className="text-3xl text-white">Graphic Design</h3>
+          <img className="mt-1 w-6" src="/svg/star-white.svg" alt="" />
+          <h3 className="text-3xl text-white">Web Development</h3>
+          <img className="mt-1 w-6" src="/svg/star-white.svg" alt="" />
+          <h3 className="text-3xl text-white">Mobile Development</h3>
+          <img className="mt-1 w-6" src="/svg/star-white.svg" alt="" />
+          <h3 className="text-3xl text-white">UI/UX Design</h3>
+          <img className="mt-1 w-6" src="/svg/star-white.svg" alt="" />
+          <h3 className="text-3xl text-white">Branding</h3>
+          <img className="mt-1 w-6" src="/svg/star-white.svg" alt="" />
         </div>
       </div>
 

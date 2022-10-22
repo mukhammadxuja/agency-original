@@ -10,4 +10,7 @@ Sections
 dark mode
 animatsiya
 font
+
+
 mobilniyga ko'proq etibor qaratish kere
+mobaylda navbar pastga
