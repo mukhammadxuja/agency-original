@@ -1,6 +1,6 @@
-import React from "react";
-import BannerImg from "./hero.jpg";
-import Image from "next/image";
+import React from 'react';
+import BannerImg from './hero.jpg';
+import Image from 'next/image';
 
 const Header = () => {
   return (
@@ -25,13 +25,13 @@ const Header = () => {
         <div className="my-5 flex items-center space-x-2 md:space-x-4">
           <div className="flex items-center -space-x-7">
             <div className="h-[40px] w-[40px] rounded-full bg-[#006B98]"></div>
-            <div className="h-[40px] w-[40px] rounded-full bg-black"></div>
+            <div className="h-[40px] w-[40px] rounded-full bg-black dark:bg-white"></div>
           </div>
-          <div className="-space-y-1 font-bold text-gray-700">
+          <div className="-space-y-1 font-bold text-gray-700 dark:text-white">
             <p>37+</p>
             <p>Satisfied Client</p>
           </div>
-          <div className="max-w-2xl -space-y-1 text-lg font-semibold text-gray-700">
+          <div className="max-w-2xl -space-y-1 text-lg font-semibold text-gray-700 dark:text-white">
             <p className="ml-16">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
               eligendi temporibus illum deleniti repellendus! Nemo nostrum

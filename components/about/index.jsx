@@ -9,7 +9,7 @@ const About = memo(() => {
           <div className='w-[50%]'>
           <h3 className='font-bold text-xl'>ABOUT US</h3>
           <h2 className='text-[4rem] font-bold leading-none'>Creating <span className='text-[#016C9AFF]'>User - Friendly</span>  Design</h2>
-          <p className='text-lg text-gray-600 pt-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam illo delectus voluptates vero assumenda porro maxime at laborum, Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <p className='text-lg text-gray-600 dark:text-white pt-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam illo delectus voluptates vero assumenda porro maxime at laborum, Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className='w-[50%] px-20 pt-10 '>
             <div className="mini-cards">
@@ -25,11 +25,11 @@ const About = memo(() => {
               </div>
               <div className='pl-2'>
                 <h3 className='font-bold text-lg'>Muhammad Sulton</h3>
-                <p className='text-[#3F3F3FFF]'>Ceo Tutordek</p>
+                <p className='text-[#3F3F3FFF] dark:text-gray-400'>Ceo Tutordek</p>
               </div>
             </div>
 
-              <p className='text-gray-600 pt-3 border-b-2 pb-5 border-gray-400'>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos nemo modi fugiat qui. Architecto labore hic, facilis laborum adipisci, dolor ut eius porro asperiores"</p>
+              <p className='text-gray-600 dark:text-white pt-3 border-b-2 pb-5 border-gray-400'>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos nemo modi fugiat qui. Architecto labore hic, facilis laborum adipisci, dolor ut eius porro asperiores"</p>
             </div>
             <div className="mini-cards mt-10">
 
@@ -44,11 +44,11 @@ const About = memo(() => {
               </div>
               <div className='pl-2'>
                 <h3 className='font-bold text-lg'>Safarov Muzaffar</h3>
-                <p className='text-[#3F3F3FFF]'>FrontEnd Developer</p>
+                <p className='text-[#3F3F3FFF] dark:text-gray-400'>FrontEnd Developer</p>
               </div>
             </div>
 
-              <p className='text-gray-600 pt-3 border-b-2 pb-5 border-gray-400'>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos nemo modi fugiat qui. Architecto labore hic, facilis laborum adipisci, dolor ut eius porro asperiores"</p>
+              <p className='text-gray-600 dark:text-white pt-3 border-b-2 pb-5 border-gray-400'>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos nemo modi fugiat qui. Architecto labore hic, facilis laborum adipisci, dolor ut eius porro asperiores"</p>
             </div>
           </div>
         </div>
