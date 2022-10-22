@@ -1,16 +1,12 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { description } from "../package.json";
 
 export default function Document() {
   return (
     <Html>
       <Head>
-        <link
-          rel="preload"
-          href="/fonts/Dystopian Bold.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
+        <title>{description}</title>
+        <link rel="shortcut icon" href="/svg/favicon.svg" />
       </Head>
       <body>
         <Main />

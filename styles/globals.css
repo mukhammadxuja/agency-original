@@ -10,6 +10,20 @@
   }
 }
 
+@layer base {
+  @font-face {
+    font-family: "My font Regular";
+    font-weight: 700;
+    src: url("/fonts/Dystopian-regular.woff2") format("woff2");
+  }
+}
+
 body {
   font-family: "My font", sans-serif;
+  font-weight: 900 !important;
+}
+
+p {
+  font-family: "My font Regular", sans-serif;
+  font-weight: 700 !important; 
 }
