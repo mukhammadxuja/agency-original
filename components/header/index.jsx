@@ -47,7 +47,7 @@ const Header = () => {
             objectFit="cover"
             alt="Banner image"
           />
-          <div className="absolute -top-10 right-5 h-32 w-32 rounded-full bg-black duration-300 hover:scale-95 md:-top-16 md:right-20 md:h-36 md:w-36">
+          <div className="absolute -top-10 right-5 h-32 w-32 rounded-full bg-black duration-300 hover:scale-95 md:-top-16 md:right-20 md:h-32 md:w-32">
             <div className="mt-10 flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ const Header = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="h-16 w-16 text-white"
+                className="h-12 w-12 text-white"
               >
                 <path
                   strokeLinecap="round"
