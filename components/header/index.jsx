@@ -19,9 +19,28 @@ const Header = () => {
             />
           </div>
           <div className="">
-            <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl">
-              A <span className="text-[#006B98]">Creative</span> Agency
-            </h1>
+            <div className="text-5xl flex font-bold md:text-6xl lg:text-7xl xl:text-8xl">
+              A
+              <div className="text-[#006B98] flex flex-col h-24 overflow-hidden">
+                <span className='px-2 animate-spinWord'>Creative</span>
+                <span className='px-2 animate-spinWord'>Awesome</span>
+                <span className='px-2 animate-spinWord'>Fantastic</span>
+                <span className='px-2 animate-spinWord'>Incredible</span>
+                <span className='px-2 animate-spinWord'>Creative</span>
+                <span className='px-2 animate-spinWord'>Awesome</span>
+                <span className='px-2 animate-spinWord'>Fantastic</span>
+                <span className='px-2 animate-spinWord'>Incredible</span>
+                <span className='px-2 animate-spinWord'>Creative</span>
+                <span className='px-2 animate-spinWord'>Awesome</span>
+                <span className='px-2 animate-spinWord'>Fantastic</span>
+                <span className='px-2 animate-spinWord'>Incredible</span>
+                <span className='px-2 animate-spinWord'>Creative</span>
+                <span className='px-2 animate-spinWord'>Awesome</span>
+                <span className='px-2 animate-spinWord'>Fantastic</span>
+                <span className='px-2 animate-spinWord'>Incredible</span>
+              </div>{' '}
+              Agency
+            </div>
           </div>
         </div>
         <div className="my-5 flex items-center space-x-2 md:space-x-4">
