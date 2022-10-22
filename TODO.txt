@@ -1,0 +1,12 @@
+Sections
+    biz haqimizda
+    nimalar qila olishimiz
+    ishlarimiz
+    contact
+    (tools)
+    footer
+
+3ta til 
+dark mode
+animatsiya
+font
