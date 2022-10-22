@@ -17,8 +17,7 @@ export async function getStaticProps({ locale }) {
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
-  const router = useRouter();
-  const { locale } = router;
+
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
@@ -28,7 +27,6 @@ export default function Home() {
     <div className="container mx-auto font-primary">
       <Header />
       <About />
-      <h1 className="text-3xl font-bold underline">{locale}</h1>
     </div>
   );
 }

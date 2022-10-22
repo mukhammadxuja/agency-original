@@ -9,7 +9,7 @@ const Header = () => {
         <p className="text-lg font-semibold md:text-xl">©2022</p>
         <div className="mt-5 mb-10 ">
           <div className="flex items-center">
-            <h1 className="text-5xl font-bold md:text-[140px]">
+            <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl">
               More than Just
             </h1>
             <img
@@ -19,7 +19,7 @@ const Header = () => {
             />
           </div>
           <div className="">
-            <h1 className="text-5xl font-bold md:text-[140px]">
+            <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl">
               A <span className="text-[#006B98]">Creative</span> Agency
             </h1>
           </div>
@@ -28,8 +28,6 @@ const Header = () => {
           <div className="flex items-center -space-x-7">
             <div className="h-[40px] w-[40px] rounded-full bg-[#006B98]"></div>
             <div className="h-[40px] w-[40px] rounded-full bg-black dark:bg-white"></div>
-            <div className="h-[60px] w-[60px] rounded-full bg-[#006B98]"></div>
-            <div className="h-[60px] w-[60px] rounded-full bg-black"></div>
           </div>
           <div className="-space-y-1 font-bold text-gray-700 dark:text-white">
             <p>37+</p>

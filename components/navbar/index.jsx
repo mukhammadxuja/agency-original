@@ -8,18 +8,34 @@ import { useTranslation } from 'next-i18next';
 import Language from './Language';
 
 const Navbar = () => {
-  const [language, setLanguage] = React.useState(false);
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const [scroll, setScroll] = React.useState(false);
+
+  useEffect(() => {
+    let lastScroll = window.scrollY;
+    window.addEventListener('scroll', () => {
+      if (lastScroll < window.scrollY) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+
+      lastScroll = window.scrollY;
+    });
+  }, []);
+
+  // Language support
+  const { t } = useTranslation();
   const router = useRouter();
   const { locale } = router;
-
-  const { t } = useTranslation();
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;
+
+  // Dark mode support
+  const { theme, setTheme } = useTheme();
 
   const renderChangeTheme = () => {
     const currentTheme = theme === 'system' ? systemTheme : theme;
@@ -28,7 +44,7 @@ const Navbar = () => {
       return (
         <button
           onClick={() => setTheme('light')}
-          className="mx-auto mt-4 w-fit cursor-pointer rounded-lg border bg-white py-3 px-8
+          className="mx-auto mt-4 w-fit cursor-pointer rounded-lg bg-white py-3 px-8
         text-sm font-medium text-black shadow-md
         duration-300 ease-in-out active:scale-95 active:bg-opacity-80"
         >
@@ -39,7 +55,7 @@ const Navbar = () => {
       return (
         <button
           onClick={() => setTheme('dark')}
-          className="mx-auto mt-4 w-fit cursor-pointer rounded-lg border bg-black py-3 px-8
+          className="mx-auto mt-4 w-fit cursor-pointer rounded-lg bg-black py-3 px-8
         text-sm font-medium text-white shadow-md
         duration-300 ease-in-out active:scale-95 active:bg-opacity-80"
         >
@@ -49,11 +65,14 @@ const Navbar = () => {
     }
   };
 
-  const toggleLanguage = () => {
-    setLanguage(!language);
-  };
   return (
-    <div className="container mx-auto flex items-center justify-between">
+    <div
+      className={
+        scroll
+          ? 'fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between  transform -translate-y-36 duration-300'
+          : 'fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between transform translate-y-0 duration-300'
+      }
+    >
       <div>
         <img
           className="-ml-3 w-24 md:w-28 cursor-pointer block dark:hidden"
@@ -80,7 +99,7 @@ const Navbar = () => {
           {t('home:contact_navbar')}
         </li>
       </ul>
-      <div className="flex items-center">
+      <div className="relative z-50 flex items-center">
         <Language />
         <h1 className="text-xs -ml-0.5 text-black dark:text-white">{locale}</h1>
         <div className="ml-4 md:ml-6">{renderChangeTheme()}</div>
