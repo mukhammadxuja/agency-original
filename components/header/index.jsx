@@ -4,14 +4,12 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div>
+    <div className="mt-10 md:mt-20">
       <div className="mt-10  md:mt-20">
         <p className="text-lg font-semibold md:text-xl">©2022</p>
         <div className="mt-5 mb-10">
           <div className="flex items-center">
-            <h1 className="font-woodland text-5xl font-semibold uppercase md:text-8xl">
-              More than Just
-            </h1>
+            <h1 className="text-5xl font-bold md:text-7xl">More than Just</h1>
             <img
               className="ml-0 w-20 duration-300 hover:rotate-180 md:ml-10"
               src="/svg/star.svg"
@@ -19,7 +17,7 @@ const Header = () => {
             />
           </div>
           <div className="">
-            <h1 className="font-woodland text-5xl font-semibold uppercase md:text-8xl">
+            <h1 className="text-5xl font-bold md:text-7xl">
               A <span className="text-[#006B98]">Creative</span> Agency
             </h1>
           </div>
@@ -29,7 +27,7 @@ const Header = () => {
             <div className="h-[40px] w-[40px] rounded-full bg-[#006B98]"></div>
             <div className="h-[40px] w-[40px] rounded-full bg-black"></div>
           </div>
-          <div className="-space-y-1 font-semibold text-gray-700">
+          <div className="-space-y-1 font-bold text-gray-700">
             <p>37+</p>
             <p>Satisfied Client</p>
           </div>
@@ -41,7 +39,7 @@ const Header = () => {
             </p>
           </div>
         </div>
-        <div className="relative mt-16 h-[44vh] w-full">
+        <div className="relative mt-16 h-[45vh] w-full">
           <Image
             className="w-full rounded-t-3xl"
             src={BannerImg}
@@ -49,8 +47,8 @@ const Header = () => {
             objectFit="cover"
             alt="Banner image"
           />
-          <div className="absolute -top-10 right-5 h-32 w-32 rounded-full bg-black duration-300 hover:scale-95 md:-top-20 md:right-20 md:h-44 md:w-44">
-            <div className="mt-14 flex justify-center">
+          <div className="absolute -top-10 right-5 h-32 w-32 rounded-full bg-black duration-300 hover:scale-95 md:-top-16 md:right-20 md:h-36 md:w-36">
+            <div className="mt-10 flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
