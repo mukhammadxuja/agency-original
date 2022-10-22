@@ -1,3 +1,5 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
   darkMode: "class",
@@ -12,7 +14,11 @@ module.exports = {
         "2xl": "6rem",
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        primary: ["My font", ...fontFamily.sans],
+      },
+    },
   },
   plugins: [],
 };

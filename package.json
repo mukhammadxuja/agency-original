@@ -1,6 +1,7 @@
 {
-  "name": "dotsoft.uz",
+  "name": "soft-development-team",
   "version": "0.1.0",
+  "description": ".Soft development team",
   "private": true,
   "scripts": {
     "dev": "next dev",
