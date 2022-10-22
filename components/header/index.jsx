@@ -20,13 +20,13 @@ const Header = () => {
           </div>
           <div className="">
             <h1 className="font-woodland text-5xl font-semibold uppercase md:text-8xl">
-              A <span className="text-[#135ab9]">Creative</span> Agency
+              A <span className="text-[#006B98]">Creative</span> Agency
             </h1>
           </div>
         </div>
         <div className="my-5 flex items-center space-x-2 md:space-x-4">
           <div className="flex items-center -space-x-7">
-            <div className="h-[40px] w-[40px] rounded-full bg-[#135ab9]"></div>
+            <div className="h-[40px] w-[40px] rounded-full bg-[#006B98]"></div>
             <div className="h-[40px] w-[40px] rounded-full bg-black"></div>
           </div>
           <div className="-space-y-1 font-semibold text-gray-700">
