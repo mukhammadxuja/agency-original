@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div>
-      <div className="mt-10 md:mt-20">
+    <div className="mt-10 md:mt-20">
+      <div className="mt-10  md:mt-20">
         <p className="text-lg font-semibold md:text-xl">©2022</p>
         <div className="mt-5 mb-10">
           <div className="flex items-center">
