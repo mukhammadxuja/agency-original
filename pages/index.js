@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import Header from "../components/header";
+import About from "../components/about";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -24,6 +25,7 @@ export default function Home() {
       </Head>
 
       <Header />
+      <About />
       <h1 className="text-3xl font-bold underline">{locale}</h1>
       <h1>The current theme is: {theme}</h1>
       <div className="flex items-center space-x-4">
