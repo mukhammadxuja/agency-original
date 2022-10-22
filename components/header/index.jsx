@@ -41,7 +41,7 @@ const Header = () => {
             </p>
           </div>
         </div>
-        <div className="relative mt-16 h-[45vh] w-full">
+        <div className="relative mt-16 h-[50vh] w-full">
           <Image
             className="w-full rounded-t-3xl"
             src={BannerImg}

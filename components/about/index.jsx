@@ -121,7 +121,9 @@ const About = () => {
                   <img className="ml-0 w-7" src="/svg/star.svg" alt="" />
                 </span>
               </h2>
-              <span className="md:text-sm text-[12px] dark:text-gray-200">our own projects</span>
+              <span className="md:text-sm text-[12px] dark:text-gray-200">
+                our own projects
+              </span>
             </div>
             <div>
               <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">

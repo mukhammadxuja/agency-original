@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 
 import Language from './Language';
+import Totop from './Totop';
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
@@ -66,44 +67,49 @@ const Navbar = () => {
   };
 
   return (
-    <div
-      className={
-        scroll
-          ? 'fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between  transform -translate-y-36 duration-300'
-          : 'fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between transform translate-y-0 duration-300'
-      }
-    >
-      <div>
-        <img
-          className="-ml-3 w-24 md:w-28 cursor-pointer block dark:hidden"
-          src="/images/dotsoft-light.png"
-          alt=""
-        />
-        <img
-          className="-ml-3 w-24 md:w-28 cursor-pointer hidden dark:block"
-          src="/images/dotsoft-dark.png"
-          alt=""
-        />
+    <div>
+      <div
+        className={
+          scroll
+            ? 'fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between  transform -translate-y-36 duration-300'
+            : 'fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between transform translate-y-0 duration-300'
+        }
+      >
+        <div>
+          <img
+            className="-ml-3 w-24 md:w-28 cursor-pointer block dark:hidden"
+            src="/images/dotsoft-light.png"
+            alt=""
+          />
+          <img
+            className="-ml-3 w-24 md:w-28 cursor-pointer hidden dark:block"
+            src="/images/dotsoft-dark.png"
+            alt=""
+          />
+        </div>
+        <ul className="mt-4 hidden items-center space-x-2 md:inline-flex md:space-x-5">
+          <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
+            {t('home:about_navbar')}
+          </li>
+          <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
+            {t('home:services_navbar')}
+          </li>
+          <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
+            {t('home:works_navbar')}
+          </li>
+          <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
+            {t('home:contact_navbar')}
+          </li>
+        </ul>
+        <div className="relative z-50 flex items-center">
+          <Language />
+          <h1 className="text-xs -ml-0.5 text-black dark:text-white">
+            {locale}
+          </h1>
+          <div className="ml-4 md:ml-6">{renderChangeTheme()}</div>
+        </div>
       </div>
-      <ul className="mt-4 hidden items-center space-x-2 md:inline-flex md:space-x-5">
-        <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
-          {t('home:about_navbar')}
-        </li>
-        <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
-          {t('home:services_navbar')}
-        </li>
-        <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
-          {t('home:works_navbar')}
-        </li>
-        <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
-          {t('home:contact_navbar')}
-        </li>
-      </ul>
-      <div className="relative z-50 flex items-center">
-        <Language />
-        <h1 className="text-xs -ml-0.5 text-black dark:text-white">{locale}</h1>
-        <div className="ml-4 md:ml-6">{renderChangeTheme()}</div>
-      </div>
+      <Totop />
     </div>
   );
 };
