@@ -77,7 +77,7 @@ const Navbar = () => {
       >
         <div>
           <img
-            className="-ml-3 w-24 md:w-28 cursor-pointer block dark:hidden"
+            className="-ml-3 mt-4 w-24 md:w-28 cursor-pointer block dark:hidden"
             src="/images/dotsoft-light.png"
             alt=""
           />

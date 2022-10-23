@@ -26,34 +26,32 @@ const Language = () => {
           />
         </svg>
       </div>
-      <div
+      <ul
         className={
           languages
-            ? 'absolute left-1/2 transform -translate-x-1/2 top-4 md:top-6 xl:top-10 px-4 py-2 md:px-6 bg-black dark:bg-white rounded-md'
+            ? 'absolute left-1/2 transform -translate-x-1/2 top-10 px-4 py-2 md:px-6 bg-black dark:bg-white rounded-md'
             : 'hidden'
         }
       >
-        <ul className="">
-          <li
-            onClick={() => router.push('/en', '/en', { locale: 'en' })}
-            className="text-lg text-white dark:text-black hover:text-gray-300 hover:dark:text-gray-600 duration-200 font-normal cursor-pointer active"
-          >
-            En
-          </li>
-          <li
-            onClick={() => router.push('/ru', '/ru', { locale: 'ru' })}
-            className="text-lg text-white dark:text-black hover:text-gray-300 hover:dark:text-gray-600 duration-200 font-normal cursor-pointer"
-          >
-            Ru
-          </li>
-          <li
-            onClick={() => router.push('/uz', '/uz', { locale: 'uz' })}
-            className="text-lg text-white dark:text-black hover:text-gray-300 hover:dark:text-gray-600 duration-200 font-normal cursor-pointer"
-          >
-            Uz
-          </li>
-        </ul>
-      </div>
+        <li
+          onClick={() => router.push('/en', '/en', { locale: 'en' })}
+          className="text-lg text-white dark:text-black hover:text-gray-300 hover:dark:text-gray-600 duration-200 font-normal cursor-pointer active"
+        >
+          En
+        </li>
+        <li
+          onClick={() => router.push('/ru', '/ru', { locale: 'ru' })}
+          className="text-lg text-white dark:text-black hover:text-gray-300 hover:dark:text-gray-600 duration-200 font-normal cursor-pointer"
+        >
+          Ru
+        </li>
+        <li
+          onClick={() => router.push('/uz', '/uz', { locale: 'uz' })}
+          className="text-lg text-white dark:text-black hover:text-gray-300 hover:dark:text-gray-600 duration-200 font-normal cursor-pointer"
+        >
+          Uz
+        </li>
+      </ul>
     </div>
   );
 };
