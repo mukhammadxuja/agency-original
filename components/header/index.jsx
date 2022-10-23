@@ -21,7 +21,7 @@ const Header = () => {
             </div>
             <div className="text-4xl sm:text-5xl flex font-bold md:text-6xl lg:text-7xl xl:text-8xl">
               A
-              <div className="text-[#006B98] flex flex-col h-11 sm:h-13 md:h-14 lg:h-[4.5rem] xl:h-24 overflow-hidden">
+              <div className="text-[#006B98] text-3xl mt-1 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl md:mt-0 flex flex-col h-11 sm:h-13 md:h-14 lg:h-[4.5rem] xl:h-24 overflow-hidden">
                 <span className="px-2 animate-spinWord">Creative</span>
                 <span className="px-2 animate-spinWord">Awesome</span>
                 <span className="px-2 animate-spinWord">Fantastic</span>
@@ -42,7 +42,7 @@ const Header = () => {
               Agency
             </div>
           </div>
-          <div className="my-5 flex items-center space-x-2 md:space-x-4">
+          <div className="mb-5 md:mt-5 flex items-center space-x-2 md:space-x-4">
             <div className="flex items-center -space-x-5 md:-space-x-7">
               <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] rounded-full bg-[#006B98]"></div>
               <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] rounded-full bg-black dark:bg-white"></div>
@@ -51,7 +51,7 @@ const Header = () => {
               <p>37+</p>
               <p className="whitespace-nowrap">Satisfied Client</p>
             </div>
-            <div className="max-w-2xl -space-y-1 text-lg font-semibold text-gray-700 dark:text-white">
+            <div className="hidden md:block max-w-2xl -space-y-1 text-lg font-semibold text-gray-700 dark:text-white">
               <p className="ml-5 sm:ml-10 md:ml-16 text-xs">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
                 eligendi temporibus illum deleniti repellendus! Nemo nostrum

@@ -71,7 +71,7 @@ const Navbar = () => {
       <div
         className={`${
           scroll ? 'transform -translate-y-36' : 'transform translate-y-0'
-        } fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between duration-300`}
+        } fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between duration-500`}
       >
         <Link href="/">
           <img
