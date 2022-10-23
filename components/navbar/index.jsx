@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 import { useTranslation } from 'next-i18next';
 
@@ -74,18 +75,20 @@ const Navbar = () => {
           scroll ? 'transform -translate-y-36' : 'transform translate-y-0'
         } fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between duration-300`}
       >
-        <div>
+        <Link href="/">
           <img
             className="ml-0 md:-ml-3 mt-4 w-20 md:w-28 cursor-pointer block dark:hidden"
             src="/images/dotsoft-light.png"
             alt=""
           />
+        </Link>
+        <Link href='/'>
           <img
-            className="-ml-3 w-24 md:w-28 cursor-pointer hidden dark:block"
+            className="ml-0 md:-ml-3 mt-4 w-20 md:w-28 cursor-pointer hidden dark:block"
             src="/images/dotsoft-dark.png"
             alt=""
           />
-        </div>
+        </Link>
         <ul className="mt-4 hidden items-center space-x-2 md:inline-flex md:space-x-5">
           <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
             {t('home:about_navbar')}
