@@ -16,4 +16,4 @@ mobilniyga ko'proq etibor qaratish kere
 
  - mobaylda navbar pastga +
  - refactor header and navbar
- - add gsap
+ - add gsap to header
