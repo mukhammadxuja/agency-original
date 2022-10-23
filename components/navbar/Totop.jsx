@@ -37,7 +37,7 @@ const Totop = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-14 h-14 stoke-2 p-3 rounded-full bg-black group-hover:bg-opacity-70 group-hover:text-gray-200 duration-200"
+            className="w-14 h-14 stoke-2 p-3 rounded-full bg-black  group-hover:bg-opacity-70 group-hover:text-gray-200 duration-200"
           >
             <path
               strokeLinecap="round"
