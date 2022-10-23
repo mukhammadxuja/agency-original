@@ -1,18 +1,17 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
-import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import { useTranslation } from 'next-i18next';
 
-import Language from './Language';
-import Totop from './Totop';
-import MobileNavbar from './MobileNavbar';
+import { Language, MobileNavbar, DarkMode, ToTop } from '../';
 
 const Navbar = () => {
-  // Scroll navbar animation
-  const [scroll, setScroll] = React.useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  const router = useRouter();
+  const { locale } = router;
+  const { t } = useTranslation();
 
   useEffect(() => {
     let lastScroll = window.scrollY;
@@ -26,45 +25,6 @@ const Navbar = () => {
       lastScroll = window.scrollY;
     });
   }, []);
-
-  // Language support
-  const [mounted, setMounted] = useState(false);
-  const { t } = useTranslation();
-  const router = useRouter();
-  const { locale } = router;
-  const { systemTheme, theme, setTheme } = useTheme();
-
-  useEffect(() => setMounted(true), []);
-
-  if (!mounted) return null;
-
-  const renderChangeTheme = () => {
-    const currentTheme = theme === 'system' ? systemTheme : theme;
-
-    if (currentTheme === 'dark') {
-      return (
-        <button
-          onClick={() => setTheme('light')}
-          className="mx-auto mt-4 cursor-pointer rounded-lg bg-white py-3 px-8
-        text-xs md:text-sm font-medium text-black shadow-md
-        duration-300 ease-in-out active:scale-95 active:bg-opacity-80"
-        >
-          {t('home:ligth_navbar')}
-        </button>
-      );
-    } else {
-      return (
-        <button
-          onClick={() => setTheme('dark')}
-          className="mx-auto mt-4 cursor-pointer rounded-lg bg-black py-3 px-8
-        text-xs md:text-sm font-medium text-white shadow-md
-        duration-300 ease-in-out active:scale-95 active:bg-opacity-80"
-        >
-          {t('home:dark_navbar')}
-        </button>
-      );
-    }
-  };
 
   return (
     <div>
@@ -108,10 +68,10 @@ const Navbar = () => {
               {locale}
             </h1>
           </div>
-          <div className="ml-4 md:ml-6">{renderChangeTheme()}</div>
+          <DarkMode />
         </div>
       </div>
-      <Totop />
+      <ToTop />
       <MobileNavbar />
     </div>
   );

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { BsChevronUp } from 'react-icons/bs';
 
-const Totop = () => {
+const ToTop = () => {
   const [show, setShow] = useState(true);
   // scroll animation
   const controlNavbar = () => {
@@ -51,4 +51,4 @@ const Totop = () => {
   );
 };
 
-export default Totop;
+export default ToTop;

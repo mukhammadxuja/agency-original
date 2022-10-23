@@ -11,7 +11,7 @@ const Header = () => {
           <div className="mt-5 mb-10">
             <div className="flex items-center">
               <h1 className="text-4xl sm:text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl">
-                More than Just
+                More Than Just
               </h1>
               <img
                 className="ml-2 w-10 xl:w-20 duration-300 hover:rotate-180 md:ml-10"
@@ -22,22 +22,22 @@ const Header = () => {
             <div className="text-4xl sm:text-5xl flex font-bold md:text-6xl lg:text-7xl xl:text-8xl">
               A
               <div className="text-[#006B98] text-3xl mt-1 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl md:mt-0 flex flex-col h-11 sm:h-13 md:h-14 lg:h-[4.5rem] xl:h-24 overflow-hidden">
-                <span className="px-2 animate-spinWord">Creative</span>
-                <span className="px-2 animate-spinWord">Awesome</span>
-                <span className="px-2 animate-spinWord">Fantastic</span>
-                <span className="px-2 animate-spinWord">Incredible</span>
-                <span className="px-2 animate-spinWord">Creative</span>
-                <span className="px-2 animate-spinWord">Awesome</span>
-                <span className="px-2 animate-spinWord">Fantastic</span>
-                <span className="px-2 animate-spinWord">Incredible</span>
-                <span className="px-2 animate-spinWord">Creative</span>
-                <span className="px-2 animate-spinWord">Awesome</span>
-                <span className="px-2 animate-spinWord">Fantastic</span>
-                <span className="px-2 animate-spinWord">Incredible</span>
-                <span className="px-2 animate-spinWord">Creative</span>
-                <span className="px-2 animate-spinWord">Awesome</span>
-                <span className="px-2 animate-spinWord">Fantastic</span>
-                <span className="px-2 animate-spinWord">Incredible</span>
+                <span className="px-2 animate-spinWord">creative</span>
+                <span className="px-2 animate-spinWord">awesome</span>
+                <span className="px-2 animate-spinWord">fantastic</span>
+                <span className="px-2 animate-spinWord">incredible</span>
+                <span className="px-2 animate-spinWord">creative</span>
+                <span className="px-2 animate-spinWord">awesome</span>
+                <span className="px-2 animate-spinWord">fantastic</span>
+                <span className="px-2 animate-spinWord">incredible</span>
+                <span className="px-2 animate-spinWord">creative</span>
+                <span className="px-2 animate-spinWord">awesome</span>
+                <span className="px-2 animate-spinWord">fantastic</span>
+                <span className="px-2 animate-spinWord">incredible</span>
+                <span className="px-2 animate-spinWord">creative</span>
+                <span className="px-2 animate-spinWord">awesome</span>
+                <span className="px-2 animate-spinWord">fantastic</span>
+                <span className="px-2 animate-spinWord">incredible</span>
               </div>{' '}
               Agency
             </div>
