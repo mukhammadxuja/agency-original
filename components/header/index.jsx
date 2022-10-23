@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerImg from './hero.jpg';
+import BannerImg from './hero1.jpg';
 import Image from 'next/image';
 
 const Header = () => {
@@ -60,7 +60,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="relative mt-16 h-[48vh] sm:h-[30rem] md:h-[32rem] lg:h-[34rem]">
+        <div className="relative mt-16 h-[40vh] sm:h-[30rem] md:h-[22rem] lg:h-[20rem] xl:h-[26rem] ">
           <Image
             className="w-full rounded-t-3xl"
             src={BannerImg}

@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import React, { memo } from 'react';
-import img1 from './hero.jpg';
-import img2 from './material.jpg';
+import img1 from './hero1.jpg';
+import img2 from './material1.jpg';
 
 const About = () => {
   return (
-    <section className="mt-20">
-      <div className="container mx-auto">
-        <div className="flex">
-          <div className="w-[50%] flex flex-col items-center">
+    <section className="sm:mt-24 xl:mt-60 2xl:mt-28   ">
+     
+        <div className="md:flex">
+          <div className="md:w-[50%] flex flex-col items-center">
             <div>
               <h3 className="font-bold text-xl">ABOUT US</h3>
               <h2 className="text-[4rem] font-bold leading-none">
@@ -47,7 +47,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="w-[50%] px-20 pt-10 space-y-4">
+          <div className="md:w-[50%] md:px-20 pt-10 space-y-4">
             <div className="mini-cards">
               <div className="flex ">
                 <div>
@@ -101,7 +101,15 @@ const About = () => {
           </div>
         </div>
         <div className="mt-10 md:mt-20">
-          <Image src={img2} className="rounded-3xl w-full" height={1300} />
+          <div className='relative h-[29rem]'>
+
+            <Image src={img2}
+              layout="fill"
+              objectFit="cover"
+              alt="Banner image"
+              className="rounded-3xl w-full"
+            />
+          </div>
           <div className="flex justify-evenly md:px-10 py-5 text-center text-[#222426FF]">
             <div>
               <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
@@ -138,7 +146,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+    
     </section>
   );
 };
