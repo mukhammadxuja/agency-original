@@ -26,8 +26,8 @@ const Totop = () => {
       <div
         className={
           show
-            ? 'fixed bottom-8 right-8 sm:right-12 text-white hidden'
-            : 'fixed bottom-8 right-8 sm:right-12 text-white group'
+            ? 'fixed bottom-9 right-8 sm:right-12 text-white hidden'
+            : 'fixed bottom-9 right-8 sm:right-12 text-white group'
         }
       >
         <a href="#">

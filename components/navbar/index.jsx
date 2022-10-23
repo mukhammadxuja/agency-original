@@ -7,6 +7,7 @@ import { useTranslation } from 'next-i18next';
 
 import Language from './Language';
 import Totop from './Totop';
+import MobileNavbar from './MobileNavbar';
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
@@ -45,8 +46,8 @@ const Navbar = () => {
       return (
         <button
           onClick={() => setTheme('light')}
-          className="mx-auto mt-4 w-fit cursor-pointer rounded-lg bg-white py-3 px-8
-        text-sm font-medium text-black shadow-md
+          className="mx-auto mt-4 cursor-pointer rounded-lg bg-white py-3 px-8
+        text-xs md:text-sm font-medium text-black shadow-md
         duration-300 ease-in-out active:scale-95 active:bg-opacity-80"
         >
           {t('home:ligth_navbar')}
@@ -56,8 +57,8 @@ const Navbar = () => {
       return (
         <button
           onClick={() => setTheme('dark')}
-          className="mx-auto mt-4 w-fit cursor-pointer rounded-lg bg-black py-3 px-8
-        text-sm font-medium text-white shadow-md
+          className="mx-auto mt-4 cursor-pointer rounded-lg bg-black py-3 px-8
+        text-xs md:text-sm font-medium text-white shadow-md
         duration-300 ease-in-out active:scale-95 active:bg-opacity-80"
         >
           {t('home:dark_navbar')}
@@ -69,15 +70,13 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className={
-          scroll
-            ? 'fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between  transform -translate-y-36 duration-300'
-            : 'fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between transform translate-y-0 duration-300'
-        }
+        className={`${
+          scroll ? 'transform -translate-y-36' : 'transform translate-y-0'
+        } fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between duration-300`}
       >
         <div>
           <img
-            className="-ml-3 mt-4 w-24 md:w-28 cursor-pointer block dark:hidden"
+            className="ml-0 md:-ml-3 mt-4 w-20 md:w-28 cursor-pointer block dark:hidden"
             src="/images/dotsoft-light.png"
             alt=""
           />
@@ -102,14 +101,17 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="relative z-50 flex items-center">
-          <Language />
-          <h1 className="text-xs -ml-0.5 text-black dark:text-white">
-            {locale}
-          </h1>
+          <div className="hidden md:inline-flex">
+            <Language />
+            <h1 className="text-xs -ml-0.5 mt-2 text-black dark:text-white">
+              {locale}
+            </h1>
+          </div>
           <div className="ml-4 md:ml-6">{renderChangeTheme()}</div>
         </div>
       </div>
       <Totop />
+      <MobileNavbar />
     </div>
   );
 };

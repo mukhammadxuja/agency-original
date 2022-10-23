@@ -13,4 +13,7 @@ font
 
 
 mobilniyga ko'proq etibor qaratish kere
-mobaylda navbar pastga
+
+ - mobaylda navbar pastga +
+ - refactor header and navbar
+ - add gsap
