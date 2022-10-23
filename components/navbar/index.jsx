@@ -11,7 +11,7 @@ import Totop from './Totop';
 import MobileNavbar from './MobileNavbar';
 
 const Navbar = () => {
-  const [mounted, setMounted] = useState(false);
+  // Scroll navbar animation
   const [scroll, setScroll] = React.useState(false);
 
   useEffect(() => {
@@ -28,17 +28,15 @@ const Navbar = () => {
   }, []);
 
   // Language support
+  const [mounted, setMounted] = useState(false);
   const { t } = useTranslation();
   const router = useRouter();
   const { locale } = router;
+  const { systemTheme, theme, setTheme } = useTheme();
 
-  // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;
-
-  // Dark mode support
-  const { theme, setTheme } = useTheme();
 
   const renderChangeTheme = () => {
     const currentTheme = theme === 'system' ? systemTheme : theme;
@@ -82,7 +80,7 @@ const Navbar = () => {
             alt=""
           />
         </Link>
-        <Link href='/'>
+        <Link href="/">
           <img
             className="ml-0 md:-ml-3 mt-4 w-20 md:w-28 cursor-pointer hidden dark:block"
             src="/images/dotsoft-dark.png"

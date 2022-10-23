@@ -1,11 +1,11 @@
 import React from 'react';
-import BannerImg from './hero1.jpg';
+import BannerImg from './hero.jpg';
 import Image from 'next/image';
 
 const Header = () => {
   return (
     <div className="relative mt-10 md:mt-20">
-      <div className="mt-20 h-screen">
+      <div className="mt-20 h-screen md:h-auto">
         <div className="h-auto">
           <p className="text-lg font-semibold md:text-xl">©2022</p>
           <div className="mt-5 mb-10">
@@ -60,7 +60,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="relative mt-16 h-[40vh] sm:h-[30rem] md:h-[22rem] lg:h-[20rem] xl:h-[26rem] ">
+        <div className="relative mt-16 h-[50vh] sm:h-[50vh] md:h-[25rem] lg:h-[25rem] xl:h-[30rem] ">
           <Image
             className="w-full rounded-t-3xl"
             src={BannerImg}
@@ -70,7 +70,6 @@ const Header = () => {
           />
           <div className="absolute -top-10 right-5 h-20 w-20 rounded-full bg-black duration-300 hover:scale-95 md:-top-16 md:right-20 md:h-32 md:w-32">
             <div className="mt-6 md:mt-10 flex justify-center">
-
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
