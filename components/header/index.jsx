@@ -47,8 +47,8 @@ const Header = () => {
             objectFit="cover"
             alt="Banner image"
           />
-          <div className="absolute -top-10 right-5 h-32 w-32 rounded-full bg-black duration-300 hover:scale-95 md:-top-16 md:right-20 md:h-32 md:w-32">
-            <div className="mt-10 flex justify-center">
+          <div className="absolute -top-10 right-5 h-28 w-28 rounded-full hover:cursor-pointer bg-black duration-300 hover:scale-95 md:-top-16 md:right-20 md:h-28 md:w-28">
+            <div className="mt-8 flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
