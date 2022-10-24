@@ -1,17 +1,17 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { useTranslation } from 'next-i18next';
 
-import Language from './Language';
-import Totop from './Totop';
-import MobileNavbar from './MobileNavbar';
+import { Language, MobileNavbar, DarkMode, ToTop } from '../';
 
 const Navbar = () => {
-  const [mounted, setMounted] = useState(false);
-  const [scroll, setScroll] = React.useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  const router = useRouter();
+  const { locale } = router;
+  const { t } = useTranslation();
 
   useEffect(() => {
     let lastScroll = window.scrollY;
@@ -26,66 +26,27 @@ const Navbar = () => {
     });
   }, []);
 
-  // Language support
-  const { t } = useTranslation();
-  const router = useRouter();
-  const { locale } = router;
-
-  // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), []);
-
-  if (!mounted) return null;
-
-  // Dark mode support
-  const { theme, setTheme } = useTheme();
-
-  const renderChangeTheme = () => {
-    const currentTheme = theme === 'system' ? systemTheme : theme;
-
-    if (currentTheme === 'dark') {
-      return (
-        <button
-          onClick={() => setTheme('light')}
-          className="mx-auto mt-4 cursor-pointer rounded-lg bg-white py-3 px-8
-        text-xs md:text-sm font-medium text-black shadow-md
-        duration-300 ease-in-out active:scale-95 active:bg-opacity-80"
-        >
-          {t('home:ligth_navbar')}
-        </button>
-      );
-    } else {
-      return (
-        <button
-          onClick={() => setTheme('dark')}
-          className="mx-auto mt-4 cursor-pointer rounded-lg bg-black py-3 px-8
-        text-xs md:text-sm font-medium text-white shadow-md
-        duration-300 ease-in-out active:scale-95 active:bg-opacity-80"
-        >
-          {t('home:dark_navbar')}
-        </button>
-      );
-    }
-  };
-
   return (
     <div>
       <div
         className={`${
           scroll ? 'transform -translate-y-36' : 'transform translate-y-0'
-        } fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between duration-300`}
+        } fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between duration-500`}
       >
-        <div>
+        <Link href="/">
           <img
             className="ml-0 md:-ml-3 mt-4 w-20 md:w-28 cursor-pointer block dark:hidden"
             src="/images/dotsoft-light.png"
             alt=""
           />
+        </Link>
+        <Link href="/">
           <img
-            className="-ml-3 w-24 md:w-28 cursor-pointer hidden dark:block"
+            className="ml-0 md:-ml-3 mt-4 w-20 md:w-28 cursor-pointer hidden dark:block"
             src="/images/dotsoft-dark.png"
             alt=""
           />
-        </div>
+        </Link>
         <ul className="mt-4 hidden items-center space-x-2 md:inline-flex md:space-x-5">
           <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
             {t('home:about_navbar')}
@@ -107,10 +68,10 @@ const Navbar = () => {
               {locale}
             </h1>
           </div>
-          <div className="ml-4 md:ml-6">{renderChangeTheme()}</div>
+          <DarkMode />
         </div>
       </div>
-      <Totop />
+      <ToTop />
       <MobileNavbar />
     </div>
   );

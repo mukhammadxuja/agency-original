@@ -1,11 +1,8 @@
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next';
 
-import Header from '../components/header';
-import About from '../components/about';
+import { Header, About } from '../components';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -17,7 +14,6 @@ export async function getStaticProps({ locale }) {
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
-
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
