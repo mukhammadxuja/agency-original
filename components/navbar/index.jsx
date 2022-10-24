@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 import { useTranslation } from 'next-i18next';
 
-import { Language, MobileNavbar, DarkMode, ToTop } from '../';
+import { Language, MobileNavbar, DarkMode, Totop } from '../';
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
@@ -71,7 +71,7 @@ const Navbar = () => {
           <DarkMode />
         </div>
       </div>
-      <ToTop />
+      <Totop />
       <MobileNavbar />
     </div>
   );

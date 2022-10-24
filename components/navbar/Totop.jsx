@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const ToTop = () => {
+const Totop = () => {
   const [show, setShow] = useState(true);
   // scroll animation
   const controlNavbar = () => {
@@ -50,4 +50,4 @@ const ToTop = () => {
   );
 };
 
-export default ToTop;
+export default Totop;

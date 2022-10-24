@@ -11,4 +11,4 @@ export { default as Contact } from './contact/index';
 export { default as Language } from './navbar/Language';
 export { default as DarkMode } from './navbar/DarkMode';
 export { default as MobileNavbar } from './navbar/MobileNavbar';
-export { default as ToTop } from './navbar/ToTop';
+export { default as Totop } from './navbar/Totop';
