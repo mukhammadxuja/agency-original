@@ -6,13 +6,13 @@ const Contact = () => {
       <div className="mx-auto space-x-4">
         <div className="flex items-center justify-center space-x-2 py-8">
           <h3 className="text-2xl md:text-4xl xl:text-5xl text-center text-black dark:text-white">
-            Let's connect
+            Let&apos;s connect
           </h3>
         </div>
         <div className="flex items-center space-x-4 py-2 px-4 lg:py-6 xl:pt-10">
           <div className="w-56 sm:w-64 md:w-96 bg-white rounded-lg border-2">
             <input
-              className="bg-transparent rounded-lg focus:outline focus:outline-[#3393bc] focus:outline-2 placeholder:text-main w-full p-3 truncate"
+              className="bg-transparent rounded-lg focus:outline focus:outline-[#3393bc] focus:outline-2 w-full p-3 truncate"
               type="email"
               placeholder="Type your email address"
             />
