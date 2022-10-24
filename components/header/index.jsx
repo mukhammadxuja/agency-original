@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Header = () => {
   return (
     <div className="relative mt-10 md:mt-20">
-      <div className="mt-20 h-screen">
+      <div className="mt-20 ">
         <div className="h-auto">
           <p className="text-lg font-semibold md:text-xl">©2022</p>
           <div className="mt-5 mb-10">

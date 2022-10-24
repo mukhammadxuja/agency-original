@@ -5,7 +5,7 @@ import img2 from './material1.jpg';
 
 const About = () => {
   return (
-    <section className="sm:mt-24 xl:mt-60 2xl:mt-28   ">
+    <section className="mt-10  ">
      
         <div className="md:flex">
           <div className="md:w-[50%] flex flex-col items-center">
@@ -110,20 +110,20 @@ const About = () => {
               className="rounded-3xl w-full"
             />
           </div>
-          <div className="flex justify-evenly md:px-10 py-5 text-center text-[#222426FF]">
+          <div className="md:flex mx-auto justify-evenly  md:px-10 py-5 text-center text-[#222426FF]">
             <div>
-              <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
+              <h2 className="font-semibold flex text-6xl justify-center    ml-6 dark:text-white">
                 168{' '}
                 <span>
                   <img className="ml-0 w-7" src="/svg/star.svg" alt="" />
                 </span>
               </h2>
-              <span className="md:text-sm text-[12px] dark:text-gray-200">
+              <span className="md:text-sm text-[12px]  dark:text-gray-200">
                 Full Complete Projcets
               </span>
             </div>
             <div>
-              <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
+              <h2 className="font-semibold flex text-6xl justify-center  ml-6 dark:text-white">
                 92{' '}
                 <span>
                   <img className="ml-0 w-7" src="/svg/star.svg" alt="" />
@@ -134,7 +134,7 @@ const About = () => {
               </span>
             </div>
             <div>
-              <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
+              <h2 className="font-semibold flex text-6xl justify-center ml-6 dark:text-white">
                 15,300{' '}
                 <span>
                   <img className="ml-0 w-7" src="/svg/star.svg" alt="" />
