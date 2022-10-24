@@ -25,8 +25,8 @@ const ToTop = () => {
       <div
         className={
           show
-            ? 'fixed bottom-9 right-8 sm:right-12 text-white hidden'
-            : 'fixed bottom-9 right-8 sm:right-12 text-white group'
+            ? 'fixed bottom-9 right-8 z-50 sm:right-12 text-white hidden'
+            : 'fixed bottom-9 right-8 z-50 sm:right-12 text-white group'
         }
       >
         <a href="#">
@@ -36,7 +36,7 @@ const ToTop = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-14 h-14 stoke-2 p-3 rounded-full bg-black  group-hover:bg-opacity-70 group-hover:text-gray-200 duration-200"
+            className="w-14 h-14 stoke-2 p-3 rounded-xl bg-black  group-hover:bg-opacity-70 group-hover:text-gray-200 duration-200"
           >
             <path
               strokeLinecap="round"
