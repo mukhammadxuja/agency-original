@@ -7,7 +7,6 @@ const MobileNavbar = () => {
   // Language support
   const { t } = useTranslation();
   const router = useRouter();
-  const { locale } = router;
 
   const [openNav, setOpenNav] = React.useState(false);
   const toggleNav = () => {
@@ -49,28 +48,22 @@ const MobileNavbar = () => {
         >
           <div className=" border-dashed border-l pl-4">
             <ul className="my-2items-center space-y-1">
-              <li className="cursor-pointer text-base">
-                <p>{t('home:about_navbar')}</p>
+              <li className="link cursor-pointer text-base">
+                {t('home:about_navbar')}
               </li>
-              <li className="cursor-pointer text-base">
-                <p>{t('home:services_navbar')}</p>
+              <li className="link cursor-pointer text-base">
+                {t('home:services_navbar')}
               </li>
-              <li className="cursor-pointer text-base">
-                <p>{t('home:works_navbar')}</p>
+              <li className="link cursor-pointer text-base">
+                {t('home:works_navbar')}
                 <ul className="ml-3">
-                <p>
-                  <li>- InReport - system</li>
-                </p>
-                <p>
-                  <li>- edTeach - quiz app</li>
-                </p>
-                <p>
-                  <li>- Lazydev - React ui kit</li>
-                </p>
-              </ul>
+                  <li className="link">- InReport - system</li>
+                  <li className="link">- edTeach - quiz app</li>
+                  <li className="link">- Lazydev - React ui kit</li>
+                </ul>
               </li>
-              <li className="cursor-pointer text-base">
-                <p>{t('home:contact_navbar')}</p>
+              <li className="link cursor-pointer text-base">
+                {t('home:contact_navbar')}
               </li>
             </ul>
             <ul className="flex space-x-2 mt-1">

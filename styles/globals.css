@@ -27,7 +27,8 @@ body {
   font-weight: 900 !important;
 }
 
-p {
+p, .link {
   font-family: "My font Regular", sans-serif;
   font-weight: 700 !important; 
 }
+

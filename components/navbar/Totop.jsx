@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { BsChevronUp } from 'react-icons/bs';
 
 const ToTop = () => {
   const [show, setShow] = useState(true);
