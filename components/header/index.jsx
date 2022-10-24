@@ -7,7 +7,7 @@ import { weCanDo } from './headerData';
 const Header = () => {
   return (
     <div className="relative mt-10 md:mt-20">
-      <div className="mt-20 h-screen md:h-auto">
+       <div className="mt-20 h-screen md:h-auto">{/* h-screen nimaga kere halaqit qilebti  */}
         <div className="h-auto">
           <p className="text-lg font-semibold md:text-xl">©2022</p>
           <div className="mt-5 mb-10">

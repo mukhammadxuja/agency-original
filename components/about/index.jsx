@@ -5,12 +5,13 @@ import img2 from './material1.jpg';
 
 const About = () => {
   return (
-    <section className="sm:mt-24 xl:mt-60 2xl:mt-28   ">
+
+    <section className="md:mt-12 -mt-14">
       <div className="md:flex">
         <div className="md:w-[50%] flex flex-col items-center">
           <div>
-            <h3 className="font-bold text-xl">ABOUT US</h3>
-            <h2 className="text-[4rem] font-bold leading-none">
+            <h3 className="font-bold md:text-xl">ABOUT US</h3>
+            <h2 className="md:text-[4rem] text-[2rem] font-bold leading-none">
               Creating <span className="text-[#016C9AFF]">User - Friendly</span>{' '}
               Design
             </h2>
@@ -87,6 +88,7 @@ const About = () => {
                   Ceo Tutordek
                 </p>
               </div>
+
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5 border-gray-400">
