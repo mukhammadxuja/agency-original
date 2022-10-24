@@ -2,6 +2,8 @@ import React from 'react';
 import BannerImg from './hero.jpg';
 import Image from 'next/image';
 
+import { weCanDo } from './headerData';
+
 const Header = () => {
   return (
     <div className="relative mt-10 md:mt-20">
@@ -87,18 +89,15 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-around h-24 bg-black hidden">
-          <img className="mt-1 w-6" src="/svg/star-white.svg" alt="" />
-          <h3 className="text-3xl text-white">Graphic Design</h3>
-          <img className="mt-1 w-6" src="/svg/star-white.svg" alt="" />
-          <h3 className="text-3xl text-white">Web Development</h3>
-          <img className="mt-1 w-6" src="/svg/star-white.svg" alt="" />
-          <h3 className="text-3xl text-white">Mobile Development</h3>
-          <img className="mt-1 w-6" src="/svg/star-white.svg" alt="" />
-          <h3 className="text-3xl text-white">UI/UX Design</h3>
-          <img className="mt-1 w-6" src="/svg/star-white.svg" alt="" />
-          <h3 className="text-3xl text-white">Branding</h3>
-          <img className="mt-1 w-6" src="/svg/star-white.svg" alt="" />
+        <div className="bg-black overflow-hidden">
+          <div className="h-16 md:h-24 flex items-center whitespace-nowrap animate-marquee">
+            {weCanDo.map((canWe) => (
+              <div className='flex items-center'>
+                <img className='w-6 md:w-8 ml-8' src={canWe.img} alt="star img" />
+                <h3 className="text-2xl md:text-3xl text-white mx-5">{canWe.title}</h3>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

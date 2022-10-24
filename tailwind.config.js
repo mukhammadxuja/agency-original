@@ -20,6 +20,7 @@ module.exports = {
       },
       animation: {
         spinWord: 'spinWord 15s infinite',
+        marquee: 'marquee 30s linear infinite',
       },
       keyframes: {
         spinWord: {
@@ -47,6 +48,10 @@ module.exports = {
           '100%': {
             transform: 'translateY(-400%)',
           },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
     },
