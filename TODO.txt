@@ -1,15 +1,15 @@
 Sections
-    biz haqimizda
-    nimalar qila olishimiz
-    ishlarimiz
-    contact
-    (tools)
-    footer
+    biz haqimizda (Muzaffar)
+    nimalar qila olishimiz (Komil)
+    works (Komil)
+    contact (Muhammad)
+    (tools) (Muzaffar)
+    footer (Muhammad)
 
-3ta til 
-dark mode
-animatsiya
-font
+3ta til +
+dark mode +
+animatsiya -
+font +
 
 
 mobilniyga ko'proq etibor qaratish kere
