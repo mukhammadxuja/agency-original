@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="container mx-auto flex flex-row-reverse md:flex-row items-center justify-between py-10 lg:py-16">
       <p className="ml-5 text-lg font-medium text-main dark:text-white">
-        .Soft team. ©2022
+        .Soft Group. ©2022
       </p>
       <ul className="flex items-center space-x-3 md:space-x-4 lg:space-x-6 xl:space-x-8 text-main dark:text-white text-lg font-medium md:font-semibold">
         <li className="cursor-pointer block md:hidden">
