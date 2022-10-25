@@ -17,6 +17,15 @@
     src: url('/fonts/Dystopian-regular.woff2') format('woff2');
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'My font', sans-serif;
+    font-weight: 900 !important;
+  }
+
   .noise::before {
     position: fixed;
     top: 0;
@@ -29,19 +38,10 @@
     pointer-events: none;
     background: url(/images/noise.gif);
   }
-}
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'My font', sans-serif;
-  font-weight: 900 !important;
-}
-
-p,
-.link {
-  font-family: 'My font Regular', sans-serif;
-  font-weight: 700 !important;
+  p,
+  .link {
+    font-family: 'My font Regular', sans-serif;
+    font-weight: 700 !important;
+  }
 }
