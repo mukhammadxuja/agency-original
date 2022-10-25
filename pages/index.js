@@ -21,6 +21,7 @@ export default function Home() {
   if (!mounted) return null;
   return (
     <div className="container mx-auto font-primary">
+      <div className="noise"></div>
       <Header />
       <About />
       <Contact />

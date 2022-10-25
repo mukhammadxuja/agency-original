@@ -4,17 +4,30 @@
 
 @layer base {
   @font-face {
-    font-family: "My font";
+    font-family: 'My font';
     font-weight: 900;
-    src: url("/fonts/Dystopian Bold.woff2") format("woff2");
+    src: url('/fonts/Dystopian Bold.woff2') format('woff2');
   }
 }
 
 @layer base {
   @font-face {
-    font-family: "My font Regular";
+    font-family: 'My font Regular';
     font-weight: 700;
-    src: url("/fonts/Dystopian-regular.woff2") format("woff2");
+    src: url('/fonts/Dystopian-regular.woff2') format('woff2');
+  }
+
+  .noise::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: '';
+    opacity: 0.05;
+    z-index: 1500;
+    pointer-events: none;
+    background: url(/images/noise.gif);
   }
 }
 
@@ -23,12 +36,12 @@ html {
 }
 
 body {
-  font-family: "My font", sans-serif;
+  font-family: 'My font', sans-serif;
   font-weight: 900 !important;
 }
 
-p, .link {
-  font-family: "My font Regular", sans-serif;
-  font-weight: 700 !important; 
+p,
+.link {
+  font-family: 'My font Regular', sans-serif;
+  font-weight: 700 !important;
 }
-
