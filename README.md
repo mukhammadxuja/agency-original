@@ -11,4 +11,4 @@ It was established in **September 2022**:
 - Branding
 - Creative web design
 
-Learn more: [Our website](http://dotsoft.uz/)
+Learn more: [Our website](https://dotsoft.uz/)

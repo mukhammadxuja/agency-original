@@ -7,14 +7,8 @@ Sections
     (tools) (Muzaffar)
     footer (Muhammad)
 
-3ta til +
-dark mode +
-animatsiya -
-font +
 
-
-mobilniyga ko'proq etibor qaratish kere
-
- - mobaylda navbar pastga +
- - refactor header and navbar
- - add gsap to header
+1 Lazy load image
+2 So'zlarini to'g'rilab chiqish
+3 headerdagi aylana yozuvni qilish
+4 Navbarga sectionslarni ulash
