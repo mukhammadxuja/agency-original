@@ -101,7 +101,7 @@
 
 
 .slide-opacity h4 {
-  background: #121212;
+  background: black;
   color: white;
   font-size: 14px;
   border-radius: 20px;
@@ -116,7 +116,7 @@
   width: 100%;
   display: flex;
   gap: 20px;
-  background: #121212;
+  background: black;
   align-items: center;
   position: absolute;
   bottom: 0;
