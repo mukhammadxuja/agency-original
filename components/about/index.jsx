@@ -5,7 +5,7 @@ import img2 from './about.jpg';
 
 const About = () => {
   return (
-    <section className="md:mt-12 mt-8">
+    <section className="md:py-14 lg:py-16 xl:py-20">
       <div className="md:flex">
         <div className="md:w-[50%] flex flex-col items-center">
           <div>
@@ -45,7 +45,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="md:w-[50%] md:px-20 pt-10 space-y-4">
+        <div className="md:w-[50%] md:px-20 pt-5 md:pt-10 space-y-2 md:space-y-4">
           <div className="mini-cards">
             <div className="flex ">
               <div>
@@ -96,8 +96,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10 md:mt-20">
-        <div className="relative h-[29rem]">
+      <div className="mt-5 md:mt-20">
+        <div className="relative h-[23rem] md:h-[29rem]">
           <Image
             src={img2}
             layout="fill"
@@ -111,10 +111,10 @@ const About = () => {
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
               168{' '}
               <span>
-                <img className="ml-0 w-7" src="/svg/star.svg" alt="" />
+                <img className="w-5 md:w-7" src="/svg/star.svg" alt="" />
               </span>
             </h2>
-            <span className="md:text-sm text-[12px] dark:text-gray-200">
+            <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
               Full Complete Projcets
             </span>
           </div>
@@ -122,10 +122,10 @@ const About = () => {
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
               92{' '}
               <span>
-                <img className="ml-0 w-7" src="/svg/star.svg" alt="" />
+                <img className="w-5 md:w-7" src="/svg/star.svg" alt="" />
               </span>
             </h2>
-            <span className="md:text-sm text-[12px] dark:text-gray-200">
+            <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
               our own projects
             </span>
           </div>
@@ -133,10 +133,10 @@ const About = () => {
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
               15,300{' '}
               <span>
-                <img className="ml-0 w-7" src="/svg/star.svg" alt="" />
+                <img className="w-5 md:w-7" src="/svg/star.svg" alt="" />
               </span>
             </h2>
-            <span className="md:text-sm text-[12px] dark:text-gray-200">
+            <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
               Our Staid Field Client
             </span>
           </div>

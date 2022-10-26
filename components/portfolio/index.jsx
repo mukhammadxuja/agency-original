@@ -32,20 +32,23 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="pt-[50px]">
+    <section className="py-10 md:py-14 lg:py-16 xl:py-20">
       <div className="flex flex-wrap justify-between items-center">
-        <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
-          Bizning <span className="text-[#006B98]">Bajargan</span>{' '}
-          <br className="md:block hidden" /> Loyhalarimiz
-        </h1>
         <div>
-          <p className="text-[18px] xl:mt-0 mt-4 mb-[22px]">
+          <h3 className="font-bold md:text-xl">Works</h3>
+          <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
+            Bizning <span className="text-[#006B98]">Bajargan</span>{' '}
+            <br className="md:block hidden" /> Loyhalarimiz
+          </h1>
+        </div>
+        <div>
+          <p className="text-base md:text-lg xl:mt-0 mt-4 mb-[22px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.{' '}
             <br className="md:block hidden" />
             Lorem ipsum dolor sit amet consectetur adipisicing.
           </p>
           <a
-            className="font-bold text-[18px] flex items-center gap-[6px]"
+            className="font-bold text-lg flex items-center gap-[6px]"
             href="#"
           >
             Discover More{' '}
