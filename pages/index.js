@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
+import Script from 'next/script';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import { Header, About, Portfolio,Contact, } from '../components';
+import { Header, About, Portfolio, Contact } from '../components';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -21,13 +22,12 @@ export default function Home() {
   if (!mounted) return null;
   return (
     <div className="container mx-auto font-primary">
+      <Script src="https://third-party-script.js"></Script>
       <div className="noise"></div>
       <Header />
       <About />
       <Portfolio />
       <Contact />
-      
-
     </div>
   );
 }
