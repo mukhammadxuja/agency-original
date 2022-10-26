@@ -6,7 +6,7 @@ import img2 from './material1.jpg';
 const About = () => {
   return (
 
-    <section className="md:mt-12 -mt-14">
+    <section className="md:mt-12 mt-8">
       <div className="md:flex">
         <div className="md:w-[50%] flex flex-col items-center">
           <div>

@@ -7,7 +7,7 @@ import { weCanDo } from './headerData';
 const Header = () => {
   return (
     <div className="relative mt-10 md:mt-20">
-       <div className="mt-20 h-screen md:h-auto">{/* h-screen nimaga kere halaqit qilebti  */}
+      <div className="mt-20 h-screen md:h-auto">{/* h-screen nimaga kere halaqit qilebti  */}
         <div className="h-auto">
           <p className="text-lg font-semibold md:text-xl">©2022</p>
           <div className="mt-5 mb-10">
@@ -92,10 +92,19 @@ const Header = () => {
         <div className="bg-black overflow-hidden">
           <div className="h-16 md:h-24 flex items-center whitespace-nowrap animate-marquee">
             {weCanDo.map((canWe) => (
+<<<<<<< HEAD
+              <>
+                <div className='flex items-center'>
+                  <img className='w-6 md:w-8 ml-8' src={canWe.img} alt="star img" />
+                  <h3 className="text-2xl md:text-3xl text-white mx-5">{canWe.title}</h3>
+                </div>
+              </>
+=======
               <div key={canWe.id} className='flex items-center'>
                 <img className='w-6 md:w-8 ml-8' src={canWe.img} alt="star img" />
                 <h3 className="text-2xl md:text-3xl text-white mx-5">{canWe.title}</h3>
               </div>
+>>>>>>> e3cbfc82795c7f377253aa3880d68ac7d0f885a0
             ))}
           </div>
         </div>
