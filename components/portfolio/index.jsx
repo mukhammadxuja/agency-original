@@ -45,8 +45,8 @@ const Portfolio = () => {
           </svg></a>
         </div>
       </div>
-      <div class="swiper mySwiper pt-[50px]">
-        <div class="swiper-wrapper">
+      <div className="swiper mySwiper pt-[50px]">
+        <div className="swiper-wrapper">
           <Slide
             title="Development"
             description="Glassy Sky"
