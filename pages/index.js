@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import { Header, About, Contact } from '../components';
+import { Header, About, Portfolio,Contact, } from '../components';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -24,7 +24,10 @@ export default function Home() {
       <div className="noise"></div>
       <Header />
       <About />
+      <Portfolio />
       <Contact />
+      
+
     </div>
   );
 }

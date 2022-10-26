@@ -2,7 +2,7 @@ Sections
     biz haqimizda (Muzaffar)
     nimalar qila olishimiz (Komil)
     works (Komil)
-    contact (Muhammad)
+    contact (Muhammad) 
     contactdan ma'lumot emailga ketish  (Muzaffar)
     (tools) (Muzaffar)
     footer (Muhammad)
