@@ -39,7 +39,7 @@ const MobileNavbar = () => {
       <div
         className={`${
           openNav ? 'w-[92vw]' : 'w-38'
-        }  bg-[#222] bg-opacity-80 p-2 rounded-xl`}
+        }  bg-[#222] bg-opacity-80 p-1.5 rounded-xl`}
       >
         <div
           className={`${

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import { Header, About } from '../components';
+import { Header, About, Contact } from '../components';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -21,8 +21,10 @@ export default function Home() {
   if (!mounted) return null;
   return (
     <div className="container mx-auto font-primary">
+      <div className="noise"></div>
       <Header />
       <About />
+      <Contact />
     </div>
   );
 }
