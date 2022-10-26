@@ -3,20 +3,12 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import img1 from './location.png';
 import img2 from './call.png';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
-  // const [telephone, setTelephone] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [areaText, setAreaText] = useState("");
-
   const [inputs, setInputs] = useState({});
-
   const form = useRef();
-
-  console.log(inputs);
 
   const handleChange = (e) =>
     setInputs((prevState) => ({
@@ -36,12 +28,12 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          toast.success("Habar Jo'natildi");
+          toast.success('Habaringiz muvaffaqiyatli jo`natildi.');
           setInputs(() => ({}));
         },
         (error) => {
           console.log(error.text);
-          toast.error("Serverda hato bo'ldi");
+          toast.error('Serverda xato yuz berdi.');
         }
       );
   };
@@ -50,7 +42,7 @@ const Contact = () => {
     <>
       <div className="py-10">
         <div className="text-center">
-          <h2 className="text-3xl my-5">Contact US</h2>
+          <h2 className="text-3xl my-5">Contact Us</h2>
           <p className="text-xl font-sans mb-10 !font-normal text-[#4b5563]">
             We use an agile approach to test assumptions and connect <br /> with
             the needs of your audience early and often.
@@ -59,7 +51,7 @@ const Contact = () => {
 
         <div className="lg:flex  ">
           <form className="lg:w-[60%] lg:my-32" ref={form} onSubmit={sendEmail}>
-            <ToastContainer />
+            <Toaster />
             <div className="grid gap-6 mb-6 lg:grid-cols-2">
               <div>
                 <label
