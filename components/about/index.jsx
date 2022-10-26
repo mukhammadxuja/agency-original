@@ -1,11 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
 import img1 from './hero1.jpg';
-import img2 from './material1.jpg';
+import img2 from './about.jpg';
 
 const About = () => {
   return (
-
     <section className="md:mt-12 mt-8">
       <div className="md:flex">
         <div className="md:w-[50%] flex flex-col items-center">
@@ -22,7 +21,7 @@ const About = () => {
             </p>
           </div>
           <div className="mini-cards pt-4 mt-5">
-            <div className="flex ">
+            <div className="flex">
               <div>
                 <Image
                   className="rounded-full"
@@ -88,7 +87,6 @@ const About = () => {
                   Ceo Tutordek
                 </p>
               </div>
-
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5 border-gray-400">

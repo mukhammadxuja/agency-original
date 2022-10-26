@@ -1,4 +1,5 @@
 import React from "react";
+import Slide from "./Slide";
 
 const Portfolio = () => {
 
@@ -21,7 +22,7 @@ const Portfolio = () => {
       },
       resistanceRatio: 0,
       autoplay: {
-        delay: 2000,
+        delay: 5000,
         disableOnInteraction: false
       },
       pagination: {
@@ -32,11 +33,6 @@ const Portfolio = () => {
 
   }
 
-  const [language, setLanguage] = React.useState(false);
-
-  const toggleLanguage = () => {
-    setLanguage(!language);
-  };
 
   return (
     <section className="pt-[50px]">
@@ -49,144 +45,38 @@ const Portfolio = () => {
           </svg></a>
         </div>
       </div>
-      {/* <!-- Swiper --> */}
       <div class="swiper mySwiper pt-[50px]">
         <div class="swiper-wrapper">
-          {/* swiper slide 1 */}
-          <div className="swiper-slide"> <img src="/images/port1.jpg" alt="" />
-            <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star" src="/images/star.png" alt="" />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          {/* swiper slide 2 */}
-          <div className="swiper-slide"> <img src="/images/port2.jpg" alt="" />
-            <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star" src="/images/star.png" alt="" />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-           {/* swiper slide 3 */}
-          <div className="swiper-slide"> <img src="/images/port3.jpg" alt="" />
-            <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star" src="/images/star.png" alt="" />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-           {/* swiper slide 4 */}
-          <div className="swiper-slide"> <img src="/images/port1.jpg" alt="" />
-            <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star" src="/images/star.png" alt="" />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-           {/* swiper slide 5 */}
-          <div className="swiper-slide"> <img src="/images/port2.jpg" alt="" />
-            <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star" src="/images/star.png" alt="" />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-           {/* swiper slide 6 */}
-          <div className="swiper-slide"> <img src="/images/port3.jpg" alt="" />
-            <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star" src="/images/star.png" alt="" />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-           {/* swiper slide 7 */}
-          <div className="swiper-slide"> <img src="/images/port1.jpg" alt="" />
-            <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star" src="/images/star.png" alt="" />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-           {/* swiper slide 8 */}
-          <div className="swiper-slide"> <img src="/images/port2.jpg" alt="" />
-            <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star" src="/images/star.png" alt="" />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-             {/* swiper slide 9 */}
-          <div className="swiper-slide"> <img src="/images/port3.jpg" alt="" />
-            <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star" src="/images/star.png" alt="" />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
+          <Slide
+            title="Development"
+            description="Glassy Sky"
+            img="https://images.wallpaperscraft.ru/image/single/kraska_relef_tekstura_135781_3840x2400.jpg"
+            link="#!"
+          />
+            <Slide
+              title="Development"
+              description="Glassy Sky"
+              img="https://catherineasquithgallery.com/uploads/posts/2021-02/1613256331_70-p-sinyaya-kraska-fon-103.jpg"
+              link="#!"
+            />
+          <Slide
+            title="Development"
+            description="Glassy Sky"
+            img="https://i.pinimg.com/originals/f2/d6/e2/f2d6e2ed1722fd986b862973532b6bc0.jpg"
+            link="#!"
+          />
+            <Slide
+            title="Development"
+            description="Glassy Sky"
+            img="https://images.pexels.com/photos/3276032/pexels-photo-3276032.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            link="#!"
+          />
+           <Slide
+            title="Development"
+            description="Glassy Sky"
+            img="https://images.wallpaperscraft.ru/image/single/kraska_relef_tekstura_135781_3840x2400.jpg"
+            link="#!"
+          />
         </div>
         <div className="swiper-pagination"></div>
       </div>
