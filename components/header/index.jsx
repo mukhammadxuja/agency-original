@@ -92,19 +92,10 @@ const Header = () => {
         <div className="bg-black overflow-hidden">
           <div className="h-16 md:h-24 flex items-center whitespace-nowrap animate-marquee">
             {weCanDo.map((canWe) => (
-<<<<<<< HEAD
-              <>
-                <div className='flex items-center'>
-                  <img className='w-6 md:w-8 ml-8' src={canWe.img} alt="star img" />
-                  <h3 className="text-2xl md:text-3xl text-white mx-5">{canWe.title}</h3>
-                </div>
-              </>
-=======
               <div key={canWe.id} className='flex items-center'>
                 <img className='w-6 md:w-8 ml-8' src={canWe.img} alt="star img" />
                 <h3 className="text-2xl md:text-3xl text-white mx-5">{canWe.title}</h3>
               </div>
->>>>>>> e3cbfc82795c7f377253aa3880d68ac7d0f885a0
             ))}
           </div>
         </div>
