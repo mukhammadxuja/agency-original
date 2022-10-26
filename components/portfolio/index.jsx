@@ -53,7 +53,7 @@ const Portfolio = () => {
       <div class="swiper mySwiper pt-[50px]">
         <div class="swiper-wrapper">
           {/* swiper slide 1 */}
-          <div class="swiper-slide"> <img src="/images/port1.jpg" alt="" />
+          <div className="swiper-slide"> <img src="/images/port1.jpg" alt="" />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
@@ -68,7 +68,7 @@ const Portfolio = () => {
             </div>
           </div>
           {/* swiper slide 2 */}
-          <div class="swiper-slide"> <img src="/images/port2.jpg" alt="" />
+          <div className="swiper-slide"> <img src="/images/port2.jpg" alt="" />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
@@ -83,7 +83,7 @@ const Portfolio = () => {
             </div>
           </div>
            {/* swiper slide 3 */}
-          <div class="swiper-slide"> <img src="/images/port3.jpg" alt="" />
+          <div className="swiper-slide"> <img src="/images/port3.jpg" alt="" />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
@@ -98,7 +98,7 @@ const Portfolio = () => {
             </div>
           </div>
            {/* swiper slide 4 */}
-          <div class="swiper-slide"> <img src="/images/port1.jpg" alt="" />
+          <div className="swiper-slide"> <img src="/images/port1.jpg" alt="" />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
@@ -113,7 +113,7 @@ const Portfolio = () => {
             </div>
           </div>
            {/* swiper slide 5 */}
-          <div class="swiper-slide"> <img src="/images/port2.jpg" alt="" />
+          <div className="swiper-slide"> <img src="/images/port2.jpg" alt="" />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
@@ -128,7 +128,7 @@ const Portfolio = () => {
             </div>
           </div>
            {/* swiper slide 6 */}
-          <div class="swiper-slide"> <img src="/images/port3.jpg" alt="" />
+          <div className="swiper-slide"> <img src="/images/port3.jpg" alt="" />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
@@ -143,7 +143,7 @@ const Portfolio = () => {
             </div>
           </div>
            {/* swiper slide 7 */}
-          <div class="swiper-slide"> <img src="/images/port1.jpg" alt="" />
+          <div className="swiper-slide"> <img src="/images/port1.jpg" alt="" />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
@@ -158,7 +158,7 @@ const Portfolio = () => {
             </div>
           </div>
            {/* swiper slide 8 */}
-          <div class="swiper-slide"> <img src="/images/port2.jpg" alt="" />
+          <div className="swiper-slide"> <img src="/images/port2.jpg" alt="" />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
@@ -173,7 +173,7 @@ const Portfolio = () => {
             </div>
           </div>
              {/* swiper slide 9 */}
-          <div class="swiper-slide"> <img src="/images/port3.jpg" alt="" />
+          <div className="swiper-slide"> <img src="/images/port3.jpg" alt="" />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
@@ -188,7 +188,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div className="swiper-pagination"></div>
       </div>
     </section>
   );
