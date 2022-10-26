@@ -55,12 +55,12 @@ const Portfolio = () => {
           {/* swiper slide 1 */}
           <div class="swiper-slide"> <img src="/images/port1.jpg" alt="" />
             <div className="slide-opacity">
-              <h4>Development</h4>
-              <div className="slide-opacity-box">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
                 <img className="star" src="/images/star.png" alt="" />
-                <p>Glassy Sky</p>
-                <a href="" className="p-[15px] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2 text-[black]">
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                 </a>
@@ -70,12 +70,12 @@ const Portfolio = () => {
           {/* swiper slide 2 */}
           <div class="swiper-slide"> <img src="/images/port2.jpg" alt="" />
             <div className="slide-opacity">
-              <h4>Development</h4>
-              <div className="slide-opacity-box">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
                 <img className="star" src="/images/star.png" alt="" />
-                <p>Glassy Sky</p>
-                <a href="" className="p-[15px] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2 text-[black]">
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                 </a>
@@ -85,12 +85,12 @@ const Portfolio = () => {
            {/* swiper slide 3 */}
           <div class="swiper-slide"> <img src="/images/port3.jpg" alt="" />
             <div className="slide-opacity">
-              <h4>Development</h4>
-              <div className="slide-opacity-box">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
                 <img className="star" src="/images/star.png" alt="" />
-                <p>Glassy Sky</p>
-                <a href="" className="p-[15px] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2 text-[black]">
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                 </a>
@@ -100,12 +100,12 @@ const Portfolio = () => {
            {/* swiper slide 4 */}
           <div class="swiper-slide"> <img src="/images/port1.jpg" alt="" />
             <div className="slide-opacity">
-              <h4>Development</h4>
-              <div className="slide-opacity-box">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
                 <img className="star" src="/images/star.png" alt="" />
-                <p>Glassy Sky</p>
-                <a href="" className="p-[15px] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2 text-[black]">
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                 </a>
@@ -115,12 +115,12 @@ const Portfolio = () => {
            {/* swiper slide 5 */}
           <div class="swiper-slide"> <img src="/images/port2.jpg" alt="" />
             <div className="slide-opacity">
-              <h4>Development</h4>
-              <div className="slide-opacity-box">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
                 <img className="star" src="/images/star.png" alt="" />
-                <p>Glassy Sky</p>
-                <a href="" className="p-[15px] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2 text-[black]">
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                 </a>
@@ -130,12 +130,12 @@ const Portfolio = () => {
            {/* swiper slide 6 */}
           <div class="swiper-slide"> <img src="/images/port3.jpg" alt="" />
             <div className="slide-opacity">
-              <h4>Development</h4>
-              <div className="slide-opacity-box">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
                 <img className="star" src="/images/star.png" alt="" />
-                <p>Glassy Sky</p>
-                <a href="" className="p-[15px] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2 text-[black]">
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                 </a>
@@ -145,12 +145,12 @@ const Portfolio = () => {
            {/* swiper slide 7 */}
           <div class="swiper-slide"> <img src="/images/port1.jpg" alt="" />
             <div className="slide-opacity">
-              <h4>Development</h4>
-              <div className="slide-opacity-box">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
                 <img className="star" src="/images/star.png" alt="" />
-                <p>Glassy Sky</p>
-                <a href="" className="p-[15px] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2 text-[black]">
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                 </a>
@@ -160,12 +160,12 @@ const Portfolio = () => {
            {/* swiper slide 8 */}
           <div class="swiper-slide"> <img src="/images/port2.jpg" alt="" />
             <div className="slide-opacity">
-              <h4>Development</h4>
-              <div className="slide-opacity-box">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
                 <img className="star" src="/images/star.png" alt="" />
-                <p>Glassy Sky</p>
-                <a href="" className="p-[15px] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2 text-[black]">
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                 </a>
@@ -175,12 +175,12 @@ const Portfolio = () => {
              {/* swiper slide 9 */}
           <div class="swiper-slide"> <img src="/images/port3.jpg" alt="" />
             <div className="slide-opacity">
-              <h4>Development</h4>
-              <div className="slide-opacity-box">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
                 <img className="star" src="/images/star.png" alt="" />
-                <p>Glassy Sky</p>
-                <a href="" className="p-[15px] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2 text-[black]">
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <a href="" className="p-[15px] dark:bg-[black] scale-1 hover:scale-[0.9] hover:duration-200 bg-[white] rounded-full absolute right-[15px] top-[0] translate-y-[-50%]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 stroke-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                 </a>
