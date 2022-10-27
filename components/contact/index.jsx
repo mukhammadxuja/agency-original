@@ -1,8 +1,8 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import img1 from './location.png';
-import img2 from './call.png';
+// import img1 from './location.png';
+// import img2 from './call.png';
 
 import toast, { Toaster } from 'react-hot-toast';
 
