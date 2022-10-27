@@ -1,35 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slide from './Slide';
 
 const Portfolio = () => {
-  window.onload = function () {
-    var swiper = new Swiper('.mySwiper', {
-      spaceBetween: 20,
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        600: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-        1279: {
-          slidesPerView: 4,
-        },
+
+useEffect(() => {
+  var swiper = new Swiper('.mySwiper', {
+    spaceBetween: 20,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
       },
-      resistanceRatio: 0,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
+      600: {
+        slidesPerView: 2,
       },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+      1024: {
+        slidesPerView: 3,
       },
-    });
-  };
+      1279: {
+        slidesPerView: 4,
+      },
+    },
+    resistanceRatio: 0,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+}, [])
 
   return (
     <section className="py-10 md:py-14 lg:py-16 xl:py-20">
