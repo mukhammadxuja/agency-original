@@ -3,7 +3,7 @@ import Script from 'next/script';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import { Header, About, Portfolio, Contact } from '../components';
+import { Header, About, Works, Portfolio, Contact } from '../components';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -26,6 +26,7 @@ export default function Home() {
       <div className="noise"></div>
       <Header />
       <About />
+      < Works/>
       <Portfolio />
       <Contact />
     </div>
