@@ -3,10 +3,24 @@ import React from 'react';
 import img1 from './hero1.jpg';
 import img2 from './about.jpg';
 
+import { weCanDo } from './headerData';
+
 const About = () => {
   return (
-    <section className="md:py-14 lg:py-16 xl:py-20">
-      <div className="md:flex">
+    <section className="md:pb-14 lg:pb-16 xl:pb-20">
+      <div className="bg-black overflow-hidden">
+        <div className="h-16 md:h-24 flex items-center whitespace-nowrap animate-marquee">
+          {weCanDo.map((canWe) => (
+            <div key={canWe.id} className="flex items-center">
+              <img className="w-6 md:w-8 ml-8" src={canWe.img} alt="star img" />
+              <h3 className="text-2xl md:text-3xl text-white mx-5">
+                {canWe.title}
+              </h3>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="container mx-auto md:flex mt-5 md:mt-20">
         <div className="md:w-[50%] flex flex-col items-center">
           <div>
             <h3 className="font-bold md:text-xl">ABOUT US</h3>
@@ -96,7 +110,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="mt-5 md:mt-20">
+      <div className="container mx-auto mt-5 md:mt-20">
         <div className="relative h-[23rem] md:h-[29rem]">
           <Image
             src={img2}

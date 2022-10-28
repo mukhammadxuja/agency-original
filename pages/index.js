@@ -21,7 +21,7 @@ export default function Home() {
 
   if (!mounted) return null;
   return (
-    <div className="container mx-auto">
+    <div className="">
       <Script src="https://third-party-script.js"></Script>
       <div className="noise"></div>
       <Header />
