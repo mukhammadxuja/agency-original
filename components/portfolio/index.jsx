@@ -1,37 +1,12 @@
-import React, { useEffect } from 'react';
-import Slide from './Slide';
+import React, { useEffect, useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import Link from 'next/link';
+import "swiper/css";
+import "swiper/css/pagination";
+// import required modules
+import { Pagination, Autoplay } from "swiper";
 
 const Portfolio = () => {
-
-useEffect(() => {
-  var swiper = new Swiper('.mySwiper', {
-    spaceBetween: 20,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      600: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-      1279: {
-        slidesPerView: 4,
-      },
-    },
-    resistanceRatio: 0,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-}, [])
-
   return (
     <section className="container mx-auto py-10 md:py-14 lg:py-16 xl:py-20">
       <div className="flex flex-wrap justify-between items-center">
@@ -70,43 +45,200 @@ useEffect(() => {
           </a>
         </div>
       </div>
-      <div className="swiper mySwiper pt-[50px]">
-        <div className="swiper-wrapper">
-          <Slide
-            title="Development"
-            description="Glassy Sky"
-            img="https://images.wallpaperscraft.ru/image/single/kraska_relef_tekstura_135781_3840x2400.jpg"
-            link="#!"
-          />
-          <Slide
-            title="Development"
-            description="Glassy Sky"
-            img="https://catherineasquithgallery.com/uploads/posts/2021-02/1613256331_70-p-sinyaya-kraska-fon-103.jpg"
-            link="#!"
-          />
-          <Slide
-            title="Development"
-            description="Glassy Sky"
-            img="https://i.pinimg.com/originals/f2/d6/e2/f2d6e2ed1722fd986b862973532b6bc0.jpg"
-            link="#!"
-          />
-          <Slide
-            title="Development"
-            description="Glassy Sky"
-            img="https://images.pexels.com/photos/3276032/pexels-photo-3276032.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-            link="#!"
-          />
-          <Slide
-            title="Development"
-            description="Glassy Sky"
-            img="https://images.wallpaperscraft.ru/image/single/kraska_relef_tekstura_135781_3840x2400.jpg"
-            link="#!"
-          />
-        </div>
-        <div className="swiper-pagination"></div>
-      </div>
+      <>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={20}
+          loop={true}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            600: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          }}
+          resistanceRatio={0}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false
+          }}
+
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper !pt-[3rem]"
+        >
+
+          <SwiperSlide className='swiper-slide'>
+            <img src="https://images.wallpaperscraft.ru/image/single/kraska_relef_tekstura_135781_3840x2400.jpg" alt="Slide image" />
+            <div className="slide-opacity">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
+                <img className="star filter dark:!brightness-0" src="/svg/star-white.svg" alt="" />
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <Link href="/">
+                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-300 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 stroke-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className='swiper-slide'>
+            {' '}
+            <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1613256331_70-p-sinyaya-kraska-fon-103.jpg" alt="Slide image" />
+            <div className="slide-opacity">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
+                <img className="star filter dark:!brightness-0" src="/svg/star-white.svg" alt="" />
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <Link href="/">
+                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-300 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 stroke-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className='swiper-slide'>
+            {' '}
+            <img src="https://i.pinimg.com/originals/f2/d6/e2/f2d6e2ed1722fd986b862973532b6bc0.jpg" alt="Slide image" />
+            <div className="slide-opacity">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
+                <img className="star filter dark:!brightness-0" src="/svg/star-white.svg" alt="" />
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <Link href="/">
+                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-300 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 stroke-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className='swiper-slide'>
+            {' '}
+            <img src="https://images.pexels.com/photos/3276032/pexels-photo-3276032.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Slide image" />
+            <div className="slide-opacity">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
+                <img className="star filter dark:!brightness-0" src="/svg/star-white.svg" alt="" />
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <Link href="/">
+                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-300 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 stroke-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className='swiper-slide'>
+            {' '}
+            <img src="https://images.wallpaperscraft.ru/image/single/kraska_relef_tekstura_135781_3840x2400.jpg" alt="Slide image" />
+            <div className="slide-opacity">
+              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
+              <div className="slide-opacity-box  dark:bg-[white]">
+                <img className="star filter dark:!brightness-0" src="/svg/star-white.svg" alt="" />
+                <p className="dark:!text-[black]">Glassy Sky</p>
+                <Link href="/">
+                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-300 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 stroke-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+
+
+        </Swiper>
+      </>
     </section>
   );
 };
 
 export default Portfolio;
+
+
+
+
+
+
+
+

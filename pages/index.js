@@ -27,8 +27,8 @@ export default function Home() {
       <Header />
       <About />
       <Works />
-      {/* <Portfolio /> */}
       <Tools />
+      <Portfolio />
       <Contact />
     </div>
   );
