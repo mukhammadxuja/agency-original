@@ -26,8 +26,8 @@ export default function Home() {
       <div className="noise"></div>
       <Header />
       <About />
-      < Works/>
-      <Portfolio />
+      <Works />
+      {/* <Portfolio /> */}
       <Contact />
     </div>
   );
