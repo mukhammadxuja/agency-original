@@ -129,7 +129,7 @@ const Tools = () => {
       <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-8 gap-4 justify-items-center w-fit mx-auto">
         {filter.map((tools) => {
           return (
-            <div key={tools} className="items-center justify-center space-y-1 h-20 w-20 md:h-28 md:w-28 p-2 md:p-4 rounded-lg bg-gray-100 dark:bg-neutral-700">
+            <div key={tools} className="items-center justify-center space-y-1 h-24 w-24 md:h-28 md:w-28 p-2 md:p-4 rounded-lg bg-gray-100 dark:bg-neutral-700">
               <LazyLoadImage
                 className="w-12 h-12 ml-4 mx-auto"
                 src={tools.image}

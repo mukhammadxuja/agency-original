@@ -27,5 +27,5 @@
     }
   ],
   "resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"],
-  "cSpell.words": ["swiper"]
+  "cSpell.words": ["jizzax", "swiper"]
 }

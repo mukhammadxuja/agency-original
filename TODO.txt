@@ -1,14 +1,11 @@
-Sections
-    biz haqimizda (Muzaffar)
-    nimalar qila olishimiz (Komil)
-    works (Komil)
-    contact (Muhammad) 
-    contactdan ma'lumot emailga ketish  (Muzaffar)
-    (tools) (Muzaffar)
-    footer (Muhammad)
+1 Headerga aylana rasm tayyorlash
+2 Portfolio rasmalrini tayyorlash
+3 So'zlarni to'g'irlab chiqish
+4 Toolsga yana texnalogiyalar qoshish
+5 Tilni qoshib chiqish
+6 About usga yana bir jamoadosh qoshish
 
 
-1 Lazy load image
-2 So'zlarini to'g'rilab chiqish
-3 headerdagi aylana yozuvni qilish
-4 Navbarga sectionslarni ulash
+Muhammad
+ - worksga hover buganda shunga oid rasm cursorga
+ - 

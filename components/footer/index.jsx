@@ -3,8 +3,62 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className="pt-5 md:pt-10 bg-neutral-50 dark:bg-black">
-      <div className="container mx-auto flex items-center justify-between pb-5 md:pb-10">
+    <div className="pt-5 md:pt-10  bg-neutral-50 dark:bg-black">
+      <div className="container mx-auto flex flex-col md:flex-row items-start md:items-center justify-between pb-5 md:pb-10">
+        <div className="mt-4 md:mt-0">
+          <h3 className="text-xl pb-3">About Us</h3>
+          <div className="space-y-1">
+            <div>
+              <h4 className="text-lg">Company information:</h4>
+              <p className="text-sm">DotSoft LLC A Software Company</p>
+            </div>
+            <div>
+              <h4 className="text-lg">Address:</h4>
+              <p className="text-sm">Uzbekistan, Jizzakh</p>
+            </div>
+            <div>
+              <h4 className="text-lg">Call us:</h4>
+              <p className="text-sm">
+                <a
+                  href="tel:+998992666545"
+                  className="text-xl hover:text-[#086E99FF] transition-all"
+                >
+                  +998992666545
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-4 md:mt-0">
+          <h3 className="text-xl pb-3">Services</h3>
+          <div className="space-y-1">
+            <h4 className="text-lg">Website Development</h4>
+            <h4 className="text-lg">Web Apps</h4>
+            <h4 className="text-lg">Mobile Development</h4>
+            <h4 className="text-lg">Branding</h4>
+            <h4 className="text-lg">UI/UX Design</h4>
+          </div>
+        </div>
+        <div className="mt-4 md:mt-0">
+          <h3 className="text-xl pb-3">Portfolio</h3>
+          <div className="flex flex-col space-y-1">
+            <Link href="/portfolio/in-report-system">
+              <a className="text-lg hover:underline">Inreport System</a>
+            </Link>
+            <Link href="/portfolio/ed-teach">
+              <a className="text-lg hover:underline">edTeach</a>
+            </Link>
+            <Link href="/portfolio/lazy-dev">
+              <a className="text-lg hover:underline">Lazydev - Ui Components</a>
+            </Link>
+            <Link href="/portfolio/ideal-cleaning">
+              <a className="text-lg hover:underline">Ideal Cleaning</a>
+            </Link>
+            <Link href="/portfolio/jizzax-city">
+              <a className="text-lg hover:underline">Jizzax City</a>
+            </Link>
+          </div>
+        </div>
         <div className="hidden md:block">
           <Link href="/">
             <img
@@ -21,30 +75,9 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <div className="space-y-2 text-start md:text-right">
-          <div>
-            <h4 className="text-lg md:text-xl">Company information:</h4>
-            <p className="text-sm">DotSoft LLC A Software Company</p>
-          </div>
-          <div>
-            <h4 className="text-lg md:text-xl">Address:</h4>
-            <p className="text-sm">Uzbekistan, Jizzakh</p>
-          </div>
-          <div>
-            <h4 className="text-lg md:text-xl">Call us:</h4>
-            <p className="text-sm">
-              <a
-                href="tel:+998992666545"
-                className="text-xl hover:text-[#086E99FF] transition-all"
-              >
-                +998992666545
-              </a>
-            </p>
-          </div>
-        </div>
       </div>
       <div className="container mx-auto flex flex-row-reverse md:flex-row items-center justify-between py-10 border-t">
-        <p className="text-lg font-medium text-main dark:text-white">
+        <p className="flex text-lg font-medium text-main dark:text-white">
           <span className="text-[#006B98] md:mr-2">.Soft Group</span>
           <span className="hidden md:block">All rights reserved. </span> ©2022
         </p>
