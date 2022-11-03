@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className="pt-5 md:pt-10 bg-gray-50 dark:bg-black">
+    <div className="pt-5 md:pt-10 bg-neutral-50 dark:bg-black">
       <div className="container mx-auto flex items-center justify-between pb-5 md:pb-10">
         <div className="hidden md:block">
           <Link href="/">
