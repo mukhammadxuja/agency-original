@@ -1,8 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { Pagination, Autoplay } from 'swiper';
+import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -67,9 +66,9 @@ const Portfolio = () => {
             disableOnInteraction: false,
           }}
           pagination={{
-            clickable: true,
+            clickable: false,
           }}
-          modules={[Pagination, Autoplay]}
+          modules={[Autoplay]}
           className="mySwiper !pt-[3rem]"
         >
           <SwiperSlide className="swiper-slide">
