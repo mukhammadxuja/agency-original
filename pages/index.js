@@ -3,7 +3,7 @@ import Script from 'next/script';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import { Header, About, Works, Portfolio, Contact } from '../components';
+import { Header, About, Works, Portfolio, Tools, Contact } from '../components';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -28,6 +28,7 @@ export default function Home() {
       <About />
       <Works />
       {/* <Portfolio /> */}
+      <Tools />
       <Contact />
     </div>
   );
