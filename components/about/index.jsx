@@ -8,7 +8,7 @@ import { weCanDo } from './headerData';
 const About = () => {
   return (
     <section className="md:pb-14 lg:pb-16 xl:pb-20">
-      <div className="bg-black overflow-hidden">
+      <div className="bg-black overflow-hidden -mt-1">
         <div className="h-16 md:h-24 flex items-center whitespace-nowrap animate-marquee">
           {weCanDo.map((canWe) => (
             <div key={canWe.id} className="flex items-center">

@@ -1,12 +1,11 @@
 import React from 'react';
-import BannerImg from './hero.jpg';
-import Image from 'next/image';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Header = () => {
   return (
-    <div className="container mx-auto relative mt-10 md:mt-20">
+    <div className="relative mt-10 md:mt-20">
       <div className="mt-20">
-        <div className="h-auto">
+        <div className="container mx-auto h-auto">
           <p className="text-lg font-semibold md:text-xl">©2022</p>
           <div className="mt-5 mb-10">
             <div className="flex items-center">
@@ -60,15 +59,14 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="relative mt-16 h-[50vh] sm:h-[50vh] md:h-[25rem] lg:h-[25rem] xl:h-[30rem] ">
-          <Image
-            className="w-full rounded-t-3xl"
-            src={BannerImg}
-            layout="fill"
-            objectFit="cover"
+        <div className="relative mt-16 px-[1rem] sm:px-[2rem] lg:px-[4rem] xl:px-[5rem]">
+          <LazyLoadImage
+            className="w-screen object-cover h-[50vh] sm:h-[50vh] md:h-[25rem] lg:h-[25rem] xl:h-[30rem] rounded-t-3xl"
+            src="/images/hero.jpg"
+            effect="blur"
             alt="Banner image"
           />
-          <div className="absolute -top-10 right-5 h-20 w-20 rounded-full bg-black duration-300 hover:scale-95 md:-top-16 md:right-20 md:h-32 md:w-32">
+          {/* <div className="absolute -top-10 right-5 h-20 w-20 rounded-full bg-black duration-300 hover:scale-95 md:-top-16 md:right-20 md:h-32 md:w-32">
             <div className="mt-6 md:mt-10 flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +83,7 @@ const Header = () => {
                 />
               </svg>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

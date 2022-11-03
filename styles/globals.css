@@ -24,6 +24,7 @@
   body {
     font-family: 'My font', sans-serif;
     font-weight: 900 !important;
+    overflow-x: hidden;
   }
 
   /* width */

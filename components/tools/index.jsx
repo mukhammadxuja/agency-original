@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const images = [
   {
@@ -128,10 +129,11 @@ const Tools = () => {
       <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-8 gap-4 justify-items-center w-fit mx-auto">
         {filter.map((tools) => {
           return (
-            <div key={tools} className="items-center justify-center space-y-1 h-20 w-20 md:h-28 md:w-28 p-2 md:p-4 rounded-lg bg-gray-100">
-              <img
-                className="w-12 h-12 mx-auto"
+            <div key={tools} className="items-center justify-center space-y-1 h-20 w-20 md:h-28 md:w-28 p-2 md:p-4 rounded-lg bg-gray-100 dark:bg-neutral-700">
+              <LazyLoadImage
+                className="w-12 h-12 ml-4 mx-auto"
                 src={tools.image}
+                effect="blur"
                 alt="image"
               />
               <h4 className="text-main text-center font-medium text-sm">

@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from 'react';
 import Link from 'next/link';
-import "swiper/css";
-import "swiper/css/pagination";
-// import required modules
-import { Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const Portfolio = () => {
   return (
@@ -23,10 +23,7 @@ const Portfolio = () => {
             <br className="md:block hidden" />
             Lorem ipsum dolor sit amet consectetur adipisicing.
           </p>
-          <a
-            className="font-bold text-lg flex items-center gap-[6px]"
-            href="#"
-          >
+          <a className="font-bold text-lg flex items-center gap-[6px]" href="#">
             Discover More{' '}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -67,22 +64,27 @@ const Portfolio = () => {
           resistanceRatio={0}
           autoplay={{
             delay: 5000,
-            disableOnInteraction: false
+            disableOnInteraction: false,
           }}
-
           pagination={{
             clickable: true,
           }}
           modules={[Pagination, Autoplay]}
           className="mySwiper !pt-[3rem]"
         >
-
-          <SwiperSlide className='swiper-slide'>
-            <img src="https://images.wallpaperscraft.ru/image/single/kraska_relef_tekstura_135781_3840x2400.jpg" alt="Slide image" />
+          <SwiperSlide className="swiper-slide">
+            <img
+              src="https://images.wallpaperscraft.ru/image/single/kraska_relef_tekstura_135781_3840x2400.jpg"
+              alt="Slide image"
+            />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star filter dark:!brightness-0" src="/svg/star-white.svg" alt="" />
+                <img
+                  className="star filter dark:!brightness-0"
+                  src="/svg/star-white.svg"
+                  alt=""
+                />
                 <p className="dark:!text-[black]">Glassy Sky</p>
                 <Link href="/">
                   <a className="p-5 dark:bg-[black] hover:scale-95 duration-300 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
@@ -106,13 +108,20 @@ const Portfolio = () => {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className='swiper-slide'>
+          <SwiperSlide className="swiper-slide">
             {' '}
-            <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1613256331_70-p-sinyaya-kraska-fon-103.jpg" alt="Slide image" />
+            <img
+              src="https://catherineasquithgallery.com/uploads/posts/2021-02/1613256331_70-p-sinyaya-kraska-fon-103.jpg"
+              alt="Slide image"
+            />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star filter dark:!brightness-0" src="/svg/star-white.svg" alt="" />
+                <img
+                  className="star filter dark:!brightness-0"
+                  src="/svg/star-white.svg"
+                  alt=""
+                />
                 <p className="dark:!text-[black]">Glassy Sky</p>
                 <Link href="/">
                   <a className="p-5 dark:bg-[black] hover:scale-95 duration-300 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
@@ -136,13 +145,20 @@ const Portfolio = () => {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className='swiper-slide'>
+          <SwiperSlide className="swiper-slide">
             {' '}
-            <img src="https://i.pinimg.com/originals/f2/d6/e2/f2d6e2ed1722fd986b862973532b6bc0.jpg" alt="Slide image" />
+            <img
+              src="https://i.pinimg.com/originals/f2/d6/e2/f2d6e2ed1722fd986b862973532b6bc0.jpg"
+              alt="Slide image"
+            />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star filter dark:!brightness-0" src="/svg/star-white.svg" alt="" />
+                <img
+                  className="star filter dark:!brightness-0"
+                  src="/svg/star-white.svg"
+                  alt=""
+                />
                 <p className="dark:!text-[black]">Glassy Sky</p>
                 <Link href="/">
                   <a className="p-5 dark:bg-[black] hover:scale-95 duration-300 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
@@ -166,13 +182,20 @@ const Portfolio = () => {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className='swiper-slide'>
+          <SwiperSlide className="swiper-slide">
             {' '}
-            <img src="https://images.pexels.com/photos/3276032/pexels-photo-3276032.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Slide image" />
+            <img
+              src="https://images.pexels.com/photos/3276032/pexels-photo-3276032.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="Slide image"
+            />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star filter dark:!brightness-0" src="/svg/star-white.svg" alt="" />
+                <img
+                  className="star filter dark:!brightness-0"
+                  src="/svg/star-white.svg"
+                  alt=""
+                />
                 <p className="dark:!text-[black]">Glassy Sky</p>
                 <Link href="/">
                   <a className="p-5 dark:bg-[black] hover:scale-95 duration-300 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
@@ -196,13 +219,20 @@ const Portfolio = () => {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className='swiper-slide'>
+          <SwiperSlide className="swiper-slide">
             {' '}
-            <img src="https://images.wallpaperscraft.ru/image/single/kraska_relef_tekstura_135781_3840x2400.jpg" alt="Slide image" />
+            <img
+              src="https://images.wallpaperscraft.ru/image/single/kraska_relef_tekstura_135781_3840x2400.jpg"
+              alt="Slide image"
+            />
             <div className="slide-opacity">
               <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
               <div className="slide-opacity-box  dark:bg-[white]">
-                <img className="star filter dark:!brightness-0" src="/svg/star-white.svg" alt="" />
+                <img
+                  className="star filter dark:!brightness-0"
+                  src="/svg/star-white.svg"
+                  alt=""
+                />
                 <p className="dark:!text-[black]">Glassy Sky</p>
                 <Link href="/">
                   <a className="p-5 dark:bg-[black] hover:scale-95 duration-300 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
@@ -225,8 +255,6 @@ const Portfolio = () => {
               </div>
             </div>
           </SwiperSlide>
-
-
         </Swiper>
       </>
     </section>
@@ -234,11 +262,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-
-
-
-
-
-
-
