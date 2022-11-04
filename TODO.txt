@@ -4,8 +4,8 @@
 4 Toolsga yana texnalogiyalar qoshish
 5 Tilni qoshib chiqish
 6 About usga yana bir jamoadosh qoshish
+7 Price page
 
 
 Muhammad
  - worksga hover buganda shunga oid rasm cursorga
- - 

@@ -5,7 +5,7 @@ const images = [
   {
     id: '1',
     name: 'React.js',
-    image: '/images/tools/react.png',
+    image: '/images/tools/react.svg',
     tag: 'frontend',
   },
   {
@@ -22,8 +22,8 @@ const images = [
   },
   {
     id: '6',
-    name: 'Material ui',
-    image: '/images/tools/material-ui.png',
+    name: 'Ant Design',
+    image: '/images/tools/antd.svg',
     tag: 'frontend',
   },
   {
@@ -39,6 +39,24 @@ const images = [
     tag: 'frontend',
   },
   {
+    id: '4134',
+    name: 'Three.js',
+    image: '/images/tools/three-js.svg',
+    tag: '3D',
+  },
+  {
+    id: '5234',
+    name: 'Greensock',
+    image: '/images/tools/gsap.svg',
+    tag: '3D',
+  },
+  {
+    id: '923423',
+    name: 'Spline',
+    image: '/images/tools/spline.png',
+    tag: '3D',
+  },
+  {
     id: '8',
     name: 'Node.js',
     image: '/images/tools/node.png',
@@ -48,6 +66,12 @@ const images = [
     id: '2',
     name: 'Firebase',
     image: '/images/tools/firebase.png',
+    tag: 'backend',
+  },
+  {
+    id: '934',
+    name: 'Supabase',
+    image: '/images/tools/Supabase.svg',
     tag: 'backend',
   },
   {
@@ -61,6 +85,18 @@ const images = [
     name: 'MongoDB',
     image: '/images/tools/mongodb.png',
     tag: 'backend',
+  },
+  {
+    id: '39',
+    name: 'R Native',
+    image: '/images/tools/react-native.svg',
+    tag: 'mobile',
+  },
+  {
+    id: '7',
+    name: 'Solito.js',
+    image: 'https://solito.dev/img/solito.svg',
+    tag: 'mobile',
   },
   {
     id: '4',
@@ -111,17 +147,19 @@ const Tools = () => {
   }, [tag]);
 
   return (
-    <div className="container mx-auto w-full md:max-w-6xl py-10 lg:py-16 xl:py-32">
+    <div className="container mx-auto w-full md:max-w-6xl xl:max-w-7xl py-10 lg:py-16 xl:py-32">
       <div className="text-center">
         <div className="flex items-center justify-center space-x-2">
-        <h3 className="pb-10 text-2xl lg:text-4xl xl:text-5xl text-center text-black dark:text-white">
+          <h3 className="pb-10 text-2xl lg:text-4xl xl:text-5xl text-center text-black dark:text-white">
             Tools
           </h3>
         </div>
         <div className="py-8 space-x-4">
           <TagBtn className="" name="all" handleSetTag={setTag} />
           <TagBtn className="" name="frontend" handleSetTag={setTag} />
+          <TagBtn className="" name="3D" handleSetTag={setTag} />
           <TagBtn className="" name="backend" handleSetTag={setTag} />
+          <TagBtn className="" name="mobile" handleSetTag={setTag} />
           <TagBtn className="" name="testing" handleSetTag={setTag} />
           <TagBtn className="" name="ui/ux" handleSetTag={setTag} />
         </div>
@@ -129,9 +167,12 @@ const Tools = () => {
       <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-8 gap-4 justify-items-center w-fit mx-auto">
         {filter.map((tools) => {
           return (
-            <div key={tools} className="items-center justify-center space-y-1 h-24 w-24 md:h-28 md:w-28 p-2 md:p-4 rounded-lg bg-gray-100 dark:bg-neutral-700">
+            <div
+              key={tools}
+              className="items-center justify-center space-y-1 h-24 w-24 md:h-28 md:w-28 p-2 md:p-4 rounded-lg bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600"
+            >
               <LazyLoadImage
-                className="w-12 h-12 ml-4 mx-auto"
+                className="w-10 h-10 ml-5 mx-auto"
                 src={tools.image}
                 effect="blur"
                 alt="image"

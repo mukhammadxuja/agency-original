@@ -1,7 +1,7 @@
 {
   "name": "soft-development-team",
   "version": "0.1.0",
-  "description": ".Soft - Development group",
+  "description": ".Soft - Development Group",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -15,8 +15,9 @@
     "npm": "please-use-yarn"
   },
   "dependencies": {
+    "framer-motion": "^7.6.4",
     "next": "12.1.6",
-    "react": "18.1.0",
+    "react": "^18.2.0",
     "react-dom": "18.1.0"
   },
   "devDependencies": {

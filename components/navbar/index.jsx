@@ -29,8 +29,9 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className={`${scroll ? 'transform -translate-y-36' : 'transform translate-y-0'
-          } fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between w-full backdrop-blur flex-none transition-all pb-5 duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white supports-backdrop-blur:bg-white/95 dark:bg-neutral-900/75`}
+        className={`${
+          scroll ? 'transform -translate-y-36' : 'transform translate-y-0'
+        } fixed z-50 top-0 left-0 right-0 container mx-auto flex items-center justify-between w-full backdrop-blur flex-none transition-all pb-5 duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white supports-backdrop-blur:bg-white/95 dark:bg-neutral-900/75`}
       >
         <Link href="/">
           <img
@@ -56,6 +57,11 @@ const Navbar = () => {
           <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
             {t('home:works_navbar')}
           </li>
+          <Link href="/price">
+            <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
+              Narxlar
+            </li>
+          </Link>
           <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
             {t('home:contact_navbar')}
           </li>
