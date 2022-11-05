@@ -16,7 +16,9 @@ const price = () => {
   return (
     <div className="container mx-auto h-screen">
       <Breadcrumb page="Price" link="/price" />
-      <Link href="/price/calculate">Calculate Ga O'tish</Link>
+      <Link href="/price/calculate">
+        <a className="text-blue-500">Calculate Ga O'tish</a>
+      </Link>
     </div>
   );
 };
