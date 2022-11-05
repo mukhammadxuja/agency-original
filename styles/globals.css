@@ -149,3 +149,12 @@
     font-weight: 400;
   }
 }
+
+
+@media(max-width: 575px){
+  .slide-opacity {
+    top: 0;
+  }
+
+
+}
