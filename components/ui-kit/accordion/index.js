@@ -41,7 +41,7 @@ const Accordion = (props) => {
   return (
     <>
       <div className="rounded-md pb-1">
-        <div className="py-2 px-4 md:py-3 border-2 border-black rounded-md group">
+        <div className="py-2 px-4 md:py-3 border-2 border-black rounded-md hover:bg-neutral-50 group">
           <div
             onClick={toggleAccordion}
             className="flex items-center cursor-pointer"
