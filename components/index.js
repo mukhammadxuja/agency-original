@@ -25,4 +25,3 @@ export { default as ArrowBottom } from './ui-kit/icons/ArrowBottom';
 export { default as Toggle } from './ui-kit/toggle/index';
 export { default as Tooltip } from './ui-kit/tooltip/index';
 export { default as Accordion } from './ui-kit/accordion/index';
-export { default as CheckBox } from './ui-kit/checkbox/index';

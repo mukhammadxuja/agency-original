@@ -123,7 +123,7 @@ const calculated = () => {
                 required=""
               />
               <label
-                for="Price-one"
+                htmlFor="Price-one"
                 className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
               >
                 <div className="block">
@@ -147,7 +147,7 @@ const calculated = () => {
                 required=""
               />
               <label
-                for="Price-two"
+                htmlFor="Price-two"
                 className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
               >
                 <div className="block">
@@ -171,7 +171,7 @@ const calculated = () => {
                 required=""
               />
               <label
-                for="Price-three"
+                htmlFor="Price-three"
                 className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
               >
                 <div className="block">
@@ -195,7 +195,7 @@ const calculated = () => {
                 required=""
               />
               <label
-                for="Price-four"
+                htmlFor="Price-four"
                 className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
               >
                 <div className="block">
@@ -219,7 +219,7 @@ const calculated = () => {
                 required=""
               />
               <label
-                for="Price-five"
+                htmlFor="Price-five"
                 className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
               >
                 <div className="block">
@@ -243,7 +243,7 @@ const calculated = () => {
                 required=""
               />
               <label
-                for="Price-six"
+                htmlFor="Price-six"
                 className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
               >
                 <div className="block">
