@@ -13,7 +13,7 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-const calculated = () => {
+const AboutSites = () => {
   return (
     <div className="container mx-auto">
       <Breadcrumb page="About Websites" link="/about-sites" />
@@ -89,4 +89,4 @@ const calculated = () => {
   );
 };
 
-export default calculated;
+export default AboutSites;

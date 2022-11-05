@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -19,8 +19,8 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-const calculate = () => {
-  const [activeDialog, setActiveDialog] = useState(false);
+const Calculate = () => {
+  const [activeDialog, setActiveDialog] = React.useState(false);
 
   const dialog = () => {
     setActiveDialog(true);
@@ -717,4 +717,4 @@ const calculate = () => {
   );
 };
 
-export default calculate;
+export default Calculate;
