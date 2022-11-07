@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { motion } from 'framer-motion';
 
-import { Breadcrumb } from '../../components';
+import { Breadcrumb, LoadingCard } from '../../components';
 import Link from 'next/link';
 
 export async function getStaticProps({ locale }) {
@@ -14,6 +14,18 @@ export async function getStaticProps({ locale }) {
 }
 
 const Blog = () => {
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(false);
+
+  useEffect(() => {
+    setInterval(() => {
+      setLoading(false);
+    }, 3000);
+    setInterval(() => {
+      setData(true);
+    }, 3000);
+  }, []);
+
   return (
     <motion.div
       initial={{ y: 25, opacity: 0 }}
@@ -70,7 +82,7 @@ const Blog = () => {
               </svg>
             </div>
             <ul className="flex items-center space-x-2 md:space-x-4 mx-auto md:mr-0">
-              <li className="hover:text-opacity-80 cursor-pointer underline">
+              <li className="text-white dark:text-black cursor-pointer px-4 py-1 rounded-full bg-black dark:bg-white">
                 All
               </li>
               <li className="hover:text-opacity-80 cursor-pointer">IT News</li>
@@ -80,37 +92,44 @@ const Blog = () => {
               <li className="hover:text-opacity-80 cursor-pointer">Tutorial</li>
             </ul>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 h-screen my-10">
-            <div className="w-[100%] md:w-[23rem] h-[25rem] relative mx-auto md:ml-0">
-              <img
-                className="w-full h-full rounded-xl"
-                src="https://images.pexels.com/photos/6757564/pexels-photo-6757564.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt=""
-              />
-              <span className="absolute top-2 right-2 w-12 h-12 flex items-center justify-center text-lg p-2 rounded-full bg-orange-100">
-                🔥
-              </span>
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-[60%] h-12 flex items-center space-x-3 text-lg p-2 rounded-full bg-white">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-4 gap-5 h-auto md:h-screen my-10">
+            {data && (
+              <div className="w-[100%] md:w-[23rem] h-[25rem] relative mx-auto md:ml-0">
                 <img
-                  className="w-10 h-10 rounded-full object-cover"
-                  src="https://images.pexels.com/photos/1288182/pexels-photo-1288182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  className="w-full h-full rounded-xl"
+                  src="https://images.pexels.com/photos/6757564/pexels-photo-6757564.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt=""
                 />
-                <p className="text-xs md:text-sm text-gray-400">
-                  Josef Alfa Kroner
-                </p>
+                <span className="absolute top-2 right-2 w-12 h-12 flex items-center justify-center text-lg p-2 rounded-full bg-orange-100 dark:bg-gray-500">
+                  🔥
+                </span>
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-[60%] h-12 flex items-center space-x-3 text-lg p-2 rounded-full bg-white dark:bg-gray-500">
+                  <img
+                    className="w-10 h-10 rounded-full object-cover"
+                    src="https://images.pexels.com/photos/1288182/pexels-photo-1288182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                  />
+                  <p className="text-xs md:text-sm text-gray-400 dark:text-white">
+                    Josef Alfa Kroner
+                  </p>
+                </div>
+                <div className="space-y-2 mt-2">
+                  <h2 className="text-lg md:text-xl">
+                    Websitelar haqida to&lsquo;liq ma&lsquo;limot!
+                  </h2>
+                  <Link href="/blog/websites">
+                    <button className="px-3 py-2 border w-full border-gray-300 hover:border-black dark:border-gray-500 rounded-full transition duration-300">
+                      Sahifaga o&lsquo;tish
+                    </button>
+                  </Link>
+                </div>
               </div>
-              <div className="space-y-2 mt-2">
-                <h2 className="text-lg md:text-xl">
-                  Websitelar haqida to&lsquo;liq ma&lsquo;limot!
-                </h2>
-                <Link href="/blog/websites">
-                  <button className="px-3 py-2 border w-full border-gray-300 hover:border-black rounded-full transition duration-300">
-                    Sahifaga o&lsquo;tish
-                  </button>
-                </Link>
+            )}
+            {loading && (
+              <div>
+                <LoadingCard />
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>
