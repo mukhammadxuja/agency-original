@@ -81,7 +81,7 @@ const Blog = () => {
             </ul>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 h-screen my-10">
-            <div className="w-[100%] md:w-[23rem] h-[25rem] relative mx-auto">
+            <div className="w-[100%] md:w-[23rem] h-[25rem] relative mx-auto md:ml-0">
               <img
                 className="w-full h-full rounded-xl"
                 src="https://images.pexels.com/photos/6757564/pexels-photo-6757564.jpeg?auto=compress&cs=tinysrgb&w=600"
