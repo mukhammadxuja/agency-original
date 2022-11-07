@@ -102,11 +102,11 @@ const Blog = () => {
               </div>
               <div className="space-y-2 mt-2">
                 <h2 className="text-lg md:text-xl">
-                  Websitelar haqida to'liq ma'limot!
+                  Websitelar haqida to&lsquo;liq ma&lsquo;limot!
                 </h2>
                 <Link href="/blog/websites">
                   <button className="px-3 py-2 border w-full border-gray-300 hover:border-black rounded-full transition duration-300">
-                    Sahifaga o'tish
+                    Sahifaga o&lsquo;tish
                   </button>
                 </Link>
               </div>
