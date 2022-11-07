@@ -3,12 +3,20 @@ import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import {
+  AddFeatures,
   Breadcrumb,
   CheckIcon,
   ErrorIcon,
-  Toggle,
-  Tooltip,
-  ArrowBottom,
+  PriceContact,
+  // Features
+  Express,
+  Landing,
+  SmallBusiness,
+  Vizitka,
+  Catalog,
+  Commerce,
+  Corporative,
+  Unique,
 } from '../../components';
 
 export async function getStaticProps({ locale }) {
@@ -21,6 +29,7 @@ export async function getStaticProps({ locale }) {
 
 const Calculate = () => {
   const [activeDialog, setActiveDialog] = React.useState(false);
+  const [openTab, setOpenTab] = React.useState(1);
 
   const dialog = () => {
     setActiveDialog(true);
@@ -169,550 +178,144 @@ const Calculate = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
         <div>
           <ul className="space-y-2">
-            <li onClick={dialog}>
-              <input
-                type="radio"
-                id="Price-one"
-                name="hosting"
-                value="Price-one"
-                className="hidden peer"
-                required=""
-              />
-              <label
-                htmlFor="Price-one"
-                className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
+            <li onClick={() => setOpenTab(1)}>
+              <div
+                className={`${
+                  openTab === 1 ? 'border-black' : 'border-neutral-400'
+                } inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2  cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700`}
               >
-                <div className="block">
-                  <div className="w-full text-lg md:text-xl">
-                    Express Website
-                    <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
-                      -2%
-                    </span>
-                  </div>
+                <div className="w-full text-lg md:text-xl">
+                  Express Website
+                  <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
+                    -2%
+                  </span>
                 </div>
                 <h3 className="text-lg md:text-2xl">$145</h3>
-              </label>
+              </div>
             </li>
-            <li>
-              <input
-                type="radio"
-                id="Price-two"
-                name="hosting"
-                value="Price-two"
-                className="hidden peer"
-                required=""
-              />
-              <label
-                htmlFor="Price-two"
-                className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
+            <li onClick={() => setOpenTab(2)}>
+              <div
+                className={`${
+                  openTab === 2 ? 'border-black' : 'border-neutral-400'
+                } inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700`}
               >
-                <div className="block">
-                  <div className="w-full text-lg md:text-xl">
-                    Sayt vizitka
-                    <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
-                      -2%
-                    </span>
-                  </div>
+                <div className="w-full text-lg md:text-xl">
+                  Vizitka Website
+                  <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
+                    -2%
+                  </span>
                 </div>
                 <h3 className="text-lg md:text-2xl">$200</h3>
-              </label>
+              </div>
             </li>
-            <li>
-              <input
-                type="radio"
-                id="Price-three"
-                name="hosting"
-                value="Price-three"
-                className="hidden peer"
-                required=""
-              />
-              <label
-                htmlFor="Price-three"
-                className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
+            <li onClick={() => setOpenTab(3)}>
+              <div
+                className={`${
+                  openTab === 3 ? 'border-black' : 'border-neutral-400'
+                } inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2  cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700`}
               >
-                <div className="block">
-                  <div className="w-full text-lg md:text-xl">
-                    Landing sahifa
-                    <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
-                      -2%
-                    </span>
-                  </div>
+                <div className="w-full text-lg md:text-xl">
+                  Landing Website
+                  <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
+                    -2%
+                  </span>
                 </div>
-                <h3 className="text-lg md:text-2xl">$250</h3>
-              </label>
+                <h3 className="text-lg md:text-2xl">$145</h3>
+              </div>
             </li>
-            <li>
-              <input
-                type="radio"
-                id="Price-four"
-                name="hosting"
-                value="Price-four"
-                className="hidden peer"
-                required=""
-              />
-              <label
-                htmlFor="Price-four"
-                className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
+            <li onClick={() => setOpenTab(4)}>
+              <div
+                className={`${
+                  openTab === 4 ? 'border-black' : 'border-neutral-400'
+                } inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700`}
               >
-                <div className="block">
-                  <div className="w-full text-lg md:text-xl">
-                    Kichik biznes
-                    <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
-                      -2%
-                    </span>
-                  </div>
+                <div className="w-full text-lg md:text-xl">
+                  Small Business Website
+                  <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
+                    -2%
+                  </span>
                 </div>
-                <h3 className="text-lg md:text-2xl">$412</h3>
-              </label>
+                <h3 className="text-lg md:text-2xl">$200</h3>
+              </div>
             </li>
-            <li>
-              <input
-                type="radio"
-                id="Price-five"
-                name="hosting"
-                value="Price-five"
-                className="hidden peer"
-                required=""
-              />
-              <label
-                htmlFor="Price-five"
-                className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
+            <li onClick={() => setOpenTab(5)}>
+              <div
+                className={`${
+                  openTab === 5 ? 'border-black' : 'border-neutral-400'
+                } inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2  cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700`}
               >
-                <div className="block">
-                  <div className="w-full text-lg md:text-xl">
-                    Sayt katalog
-                    <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
-                      -2%
-                    </span>
-                  </div>
+                <div className="w-full text-lg md:text-xl">
+                  Katalog Website
+                  <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
+                    -2%
+                  </span>
                 </div>
-                <h3 className="text-lg md:text-2xl">$445</h3>
-              </label>
+                <h3 className="text-lg md:text-2xl">$145</h3>
+              </div>
             </li>
-            <li>
-              <input
-                type="radio"
-                id="Price-six"
-                name="hosting"
-                value="Price-six"
-                className="hidden peer"
-                required=""
-              />
-              <label
-                htmlFor="Price-six"
-                className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
+            <li onClick={() => setOpenTab(6)}>
+              <div
+                className={`${
+                  openTab === 6 ? 'border-black' : 'border-neutral-400'
+                } inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700`}
               >
-                <div className="block">
-                  <div className="w-full text-lg md:text-xl">
-                    Online do`kon va Korporativ sayt
-                    <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
-                      -2%
-                    </span>
-                  </div>
+                <div className="w-full text-lg md:text-xl">
+                  Online Do`kon` Website
+                  <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
+                    -2%
+                  </span>
                 </div>
-                <h3 className="text-lg md:text-2xl">$999</h3>
-              </label>
+                <h3 className="text-lg md:text-2xl">$200</h3>
+              </div>
             </li>
-            <li>
-              <input
-                type="radio"
-                id="Price-seven"
-                name="hosting"
-                value="Price-seven"
-                className="hidden peer"
-                required=""
-              />
-              <label
-                htmlFor="Price-seven"
-                className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
+            <li onClick={() => setOpenTab(7)}>
+              <div
+                className={`${
+                  openTab === 7 ? 'border-black' : 'border-neutral-400'
+                } inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2  cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700`}
               >
-                <div className="block">
-                  <div className="w-full text-lg md:text-xl">
-                    Korporativ sayt
-                    <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
-                      -2%
-                    </span>
-                  </div>
+                <div className="w-full text-lg md:text-xl">
+                  Korporativ Website
+                  <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
+                    -2%
+                  </span>
                 </div>
-                <h3 className="text-lg md:text-2xl">$999</h3>
-              </label>
+                <h3 className="text-lg md:text-2xl">$145</h3>
+              </div>
             </li>
-            <li>
-              <input
-                type="radio"
-                id="Price-eight"
-                name="hosting"
-                value="Price-eight"
-                className="hidden peer"
-                required=""
-              />
-              <label
-                htmlFor="Price-eight"
-                className="inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 border-neutral-400 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700"
+            <li onClick={() => setOpenTab(8)}>
+              <div
+                className={`${
+                  openTab === 8 ? 'border-black' : 'border-neutral-400'
+                } inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2 cursor-pointer dark:hover:text-neutral-300 dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700`}
               >
-                <div className="block">
-                  <div className="w-full text-lg md:text-xl">
-                    3D noyob sayt
-                    <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
-                      -2%
-                    </span>
-                  </div>
+                <div className="w-full text-lg md:text-xl">
+                  3D Noyob website
+                  <span className="w-fit ml-1 text-xs md:text-sm px-2 py-0 rounded-full bg-green-200 text-green-500">
+                    -2%
+                  </span>
                 </div>
-                <h3 className="text-lg md:text-2xl">$2.500</h3>
-              </label>
+                <h3 className="text-lg md:text-2xl">$200</h3>
+              </div>
             </li>
           </ul>
         </div>
-        <div
-          className={
-            activeDialog
-              ? 'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 right-0 bottom-0 w-[90%] h-[80%] bg-white shadow-2xl rounded-xl p-3'
-              : 'hidden md:block rounded-xl shadow-md'
-          }
-        >
-          <div
-            onClick={CloseDialog}
-            className="absolute -top-1 -right-1 hover:top-0 hover:right-0 p-1.5 rounded-lg bg-white shadow-lg cursor-pointer duration-200"
-          >
-            <ErrorIcon />
-          </div>
-          <div className="p-2 md:p-6 lg:p-8 space-y-2">
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">- Sayt Turi:</h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Express sayt</h6>
-                <CheckIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - Sahifalr soni
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">1-5</h6>
-                <CheckIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - Sayt dizayni:
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Shablon</h6>
-                <CheckIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - Saytning Mobil Shakli:
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Bor</h6>
-                <CheckIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - Tungi rejim:
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Yo&lsquo;q</h6>
-                <ErrorIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - Online obuna tizimi:
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Yo&lsquo;q</h6>
-                <ErrorIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - Reklama joylari:
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Yo&lsquo;q</h6>
-                <ErrorIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - Pullik obuna:
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Yo&lsquo;q</h6>
-                <ErrorIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - Ro‘yxatdan o‘tish qismi:
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Yo&lsquo;q</h6>
-                <ErrorIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - Matlarni Kiritish:
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Yo&lsquo;q</h6>
-                <ErrorIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - Tashqi API integratsiyasi :
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Yo&lsquo;q</h6>
-                <ErrorIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - SEO Hizmati:
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Yo&lsquo;q</h6>
-                <ErrorIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - Tillar soni:
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">O&lsquo;zbek</h6>
-                <CheckIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - Bepul Domain:
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Bor</h6>
-                <CheckIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">- Brending:</h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Yo‘q</h6>
-                <ErrorIcon />
-              </div>
-            </div>
-            <div className="flex items-center justify-between border-b">
-              <h5 className="text-lg md:text-base lg:text-lg">
-                - 3D va animatsiya:
-              </h5>
-              <div className="flex items-center space-x-1 md:space-x-2">
-                <h6 className="text-base">Yo‘q</h6>
-                <ErrorIcon />
-              </div>
-            </div>
-          </div>
+        <div className="rounded-xl shadow-md">
+          {openTab === 1 && <Express index={1} />}
+          {openTab === 2 && <Vizitka index={2} />}
+          {openTab === 3 && <Landing index={3} />}
+          {openTab === 4 && <SmallBusiness index={4} />}
+          {openTab === 5 && <Catalog index={5} />}
+          {openTab === 6 && <Commerce index={6} />}
+          {openTab === 7 && <Corporative index={7} />}
+          {openTab === 8 && <Unique index={8} />}
+          <Express />
         </div>
       </div>
-      <div className="py-3 px-4 md:py-3 md:px-6 rounded-md shadow-md my-3 md:my-5">
-        <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-          <div className="flex items-center space-x-1">
-            <h1 className="text-base md:text-lg">Sayt Turi:</h1>
-            <Tooltip desc="Saytlar haqida bilmoqchi bo`lsangiz, pastda saytlar haqida bo`limiga o`ting!" />
-          </div>
-          <div className="relative w-36 md:w-40 lg:w-44">
-            <ArrowBottom />
-            <select className="w-full p-2 text-black bg-white border text-sm md:text-base border-black rounded-md shadow-sm outline-none appearance-none focus:border-black">
-              <option>Express Sayt</option>
-              <option>Sayt Vizitka</option>
-              <option>Landing Sahifa</option>
-              <option>Kichik Biznes</option>
-              <option>Sayt Katalog</option>
-              <option>Onlayn Do`kon</option>
-              <option>Korparativ Sayt</option>
-              <option>Noyob Web Loyiha</option>
-            </select>
-          </div>
-        </div>
-        <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-          <h1 className="text-base md:text-lg">Sahifalr Soni:</h1>
-          <div className="relative w-36 md:w-40 lg:w-44">
-            <ArrowBottom />
-            <select className="w-full p-2 text-black bg-white text-sm md:text-base border border-black rounded-md shadow-sm outline-none appearance-none focus:border-black">
-              <option className="py-1 hover:bg-neutral-200">1-5</option>
-              <option className="py-1 hover:bg-neutral-200">5-15</option>
-              <option className="py-1 hover:bg-neutral-200">15-35</option>
-              <option className="py-1 hover:bg-neutral-200">35+</option>
-            </select>
-          </div>
-        </div>
-        <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-          <h1 className="text-base md:text-lg">Sayt Dizayni:</h1>
-          <div className="relative w-36 md:w-40 lg:w-44">
-            <ArrowBottom />
-            <select className="w-full p-2 text-black bg-white text-sm md:text-base border border-black rounded-md shadow-sm outline-none appearance-none focus:border-black">
-              <option className="py-1 hover:bg-neutral-200">Shablon</option>
-              <option className="py-1 hover:bg-neutral-200">Maxsus</option>
-            </select>
-          </div>
-        </div>
-        <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-          <h1 className="text-base md:text-lg">Saytning Mobil Shakli:</h1>
-          <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
-            <Toggle trueOrFalse={true} no="Yo'q" yes="Bor" />
-          </div>
-        </div>
-        <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-          <h1 className="text-base md:text-lg">Tungi rejim:</h1>
-          <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
-            <Toggle trueOrFalse={false} no="Yo'q" yes="Bor" />
-          </div>
-        </div>
-        <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-          <h1 className="text-base md:text-lg">
-            Ro&lsquo;yxatdan o&lsquo;tish qismi:
-          </h1>
-          <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
-            <Toggle trueOrFalse={false} no="Yo'q" yes="Bor" />
-          </div>
-        </div>
-        <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-          <div className="flex items-center space-x-1">
-            <h1 className="text-base md:text-lg">
-              Tashqi API integratsiyasi :
-            </h1>
-            <Tooltip desc="" />
-          </div>
-          <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
-            <Toggle trueOrFalse={false} no="Yo'q" yes="Bor" />
-          </div>
-        </div>
-        <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-          <div className="flex items-center space-x-1">
-            <h1 className="text-base md:text-lg">Tillar soni:</h1>
-            <Tooltip desc="Saytingizga bir necha til qo`shiladi." />
-          </div>
-          <div className="flex flex-col space-y-2 space-x-0 md:flex-row md:space-y-0 md:space-x-2">
-            <button className="flex items-center space-x-2 px-3 py-1 border border-black rounded-full">
-              <span className="text-black"> O`zbekcha</span>
-              <CheckIcon />
-            </button>
-            <button className="flex items-center space-x-2 px-3 py-1 border border-gray-400 rounded-full">
-              <span className="text-gray-400">Ruscha</span>
-              <ErrorIcon />
-            </button>
-            <button className="flex items-center space-x-2 px-3 py-1 border border-gray-400 rounded-full">
-              <span className="text-gray-400">Inglizcha</span>
-              <ErrorIcon />
-            </button>
-          </div>
-        </div>
-        <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-          <div className="flex items-center space-x-1">
-            <h1 className="text-base md:text-lg">Matlarni Kiritish:</h1>
-            <Tooltip desc="Sayt ichidagi matnlarni (copywriter) to`ldrib beradi." />
-          </div>
-          <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
-            <Toggle trueOrFalse={false} no="Yo'q" yes="Bor" />
-          </div>
-        </div>
-        <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-          <div className="flex items-center space-x-1">
-            <h1 className="text-base md:text-lg">SEO Hizmati:</h1>
-            <Tooltip desc="SEO bilan saytingiz Google qidiruv natijalarida ko`proq chiqadigan bo`ladi." />
-          </div>
-          <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
-            <Toggle trueOrFalse={false} no="Yo'q" yes="Bor" />
-          </div>
-        </div>
-        <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-          <h1 className="text-base md:text-lg">Bepul Domain:</h1>
-          <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
-            <Toggle trueOrFalse={true} no="Yo'q" yes="Bor" />
-          </div>
-        </div>
-        <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-          <h1 className="text-base md:text-lg">Brending:</h1>
-          <div className="flex flex-col space-y-2 space-x-0 md:flex-row md:space-y-0 md:space-x-2">
-            <button className="flex items-center space-x-2 px-3 py-1 border border-gray-400 rounded-full">
-              <span className="text-gray-400">Brendga Nom</span>
-              <ErrorIcon />
-            </button>
-            <button className="flex items-center space-x-2 px-3 py-1 border border-gray-400 rounded-full">
-              <span className="text-gray-400">Logo Yaratish</span>
-              <ErrorIcon />
-            </button>
-            <button className="flex items-center space-x-2 px-3 py-1 border border-gray-400 rounded-full">
-              <span className="text-gray-400">Brend Rang</span>
-              <ErrorIcon />
-            </button>
-          </div>
-        </div>
-        <div className="flex items-center justify-between my-5">
-          <div className="flex items-center space-x-1">
-            <h5>Chegirma</h5>
-            <Toggle trueOrFalse={false} no="Yo'q" yes="Bor" />
-          </div>
-          <button
-            type="submit"
-            className="rounded-lg bg-black py-3 px-8
-        text-xs md:text-sm font-medium text-white shadow-md
-        duration-300 ease-in-out active:scale-95 active:bg-opacity-80"
-          >
-            Submit
-          </button>
-        </div>
-        <hr />
-        <div className="flex items-center justify-between my-2 md:mb-4 mt-10">
-          <h3 className="text-base md:text-lg">Tayyorlash muddati:</h3>
-          <h3 className="text-base md:text-xl">17-30 kun</h3>
-        </div>
-        <div className="flex items-center justify-between my-2 md:mb-4">
-          <h3 className="text-base md:text-lg">Umumiy Chegirma:</h3>
-          <h3 className="text-base md:text-xl">
-            2.7 <span>$</span>{' '}
-            <span className="bg-green-100 px-2 py-0.5 rounded-full text-xs md:text-sm text-green-500">
-              -12%
-            </span>
-          </h3>
-        </div>
-        <div className="flex items-center justify-between my-2 md:mb-4">
-          <h3 className="text-base md:text-lg">Umumiy Summa:</h3>
-          <h3 className="text-base md:text-xl">
-            145 <span>$</span>
-          </h3>
-        </div>
-      </div>
-      <div className="my-10 md:my-16 lg:my-20">
-        <h2 className="text-lg md:text-2xl lg:text-3xl text-center my-5 md:my-10">
-          Biz Bilan Bog`lanish
-        </h2>
-        <div className="flex items-center justify-center space-x-4">
-          <input
-            name="first_name"
-            type="text"
-            id="first_name"
-            className="w-56 md:w-72 lg:w-96 bg-neutral-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-neutral-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="
-            Telefon raqamingizni kiriting!"
-            required
-          />
-          <button
-            type="submit"
-            className="rounded-lg bg-black py-3 px-8
-        text-xs md:text-sm font-medium text-white shadow-md
-        duration-300 ease-in-out active:scale-95 active:bg-opacity-80"
-          >
-            Submit
-          </button>
-        </div>
-      </div>
+
+      <AddFeatures />
+
+      <PriceContact />
     </div>
   );
 };

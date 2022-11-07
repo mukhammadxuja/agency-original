@@ -15,6 +15,7 @@ export const aboutWebsiteData = [
       ],
       price: '120',
       date: '1-3',
+      dicount: '',
     },
   },
   {
@@ -37,6 +38,7 @@ export const aboutWebsiteData = [
       ],
       price: '200',
       date: '2-5',
+      dicount: '',
     },
   },
   {
@@ -57,6 +59,7 @@ export const aboutWebsiteData = [
       ],
       price: '250',
       date: '4-6',
+      dicount: '',
     },
   },
   {
@@ -82,6 +85,7 @@ export const aboutWebsiteData = [
       ],
       price: '400',
       date: '5-7',
+      dicount: '',
     },
   },
 ];

@@ -25,3 +25,16 @@ export { default as ArrowBottom } from './ui-kit/icons/ArrowBottom';
 export { default as Toggle } from './ui-kit/toggle/index';
 export { default as Tooltip } from './ui-kit/tooltip/index';
 export { default as Accordion } from './ui-kit/accordion/index';
+
+// pages components
+export { default as WebsiteType } from './pages/price/WebsiteType';
+export { default as PriceContact } from './pages/price/PriceContact';
+export { default as AddFeatures } from './pages/price/AddFeatures';
+export { default as Express } from './pages/price/website-feature/Express';
+export { default as Vizitka } from './pages/price/website-feature/Vizitka';
+export { default as Landing } from './pages/price/website-feature/Landing';
+export { default as SmallBusiness } from './pages/price/website-feature/SmallBusiness';
+export { default as Catalog } from './pages/price/website-feature/Catalog';
+export { default as Commerce } from './pages/price/website-feature/Commerce';
+export { default as Corporative } from './pages/price/website-feature/Corporative';
+export { default as Unique } from './pages/price/website-feature/Unique';
