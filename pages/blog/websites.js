@@ -71,10 +71,10 @@ const Websites = () => {
               1. eCommerce - website.
             </h1>
             <a className="text-sm">
-              Veb -sayt ko'plab veb-sahifalar to'plamidir va veb-sahifalar HTML
+              Veb -sayt ko`plab veb-sahifalar to`plamidir va veb-sahifalar HTML
               (HyperText Markup Language) yordamida yozilgan raqamli fayllardir.
               Sizning veb-saytingiz dunyodagi har bir inson uchun mavjud
-              bo'lishi uchun u kun bo'yi Internetga ulangan kompyuterda
+              bo`lishi uchun u kun bo`yi Internetga ulangan kompyuterda
               saqlanishi yoki joylashtirilishi kerak. Bunday kompyuterlar
               veb-server deb nomlanadi.
             </a>
