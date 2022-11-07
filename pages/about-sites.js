@@ -3,7 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 
 import { Breadcrumb, Accordion, CheckIcon } from '../components';
-import { aboutWebsiteData } from '../components/data/about-website-data';
+import { websitesData } from '../components/data/website';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -42,7 +42,7 @@ const AboutSites = () => {
         </Link>
       </div>
       <div className="my-3 md:my-5">
-        {aboutWebsiteData.map((data) => (
+        {websitesData.map((data) => (
           <div key={data.id}>
             <Accordion
               title={data.name}
@@ -51,18 +51,16 @@ const AboutSites = () => {
               <div>
                 <div className="space-y-2">
                   <div>
-                    <h4 className="text-lg">
-                      &quot;{data.features.about}&quot;
-                    </h4>
+                    <h4 className="text-lg">&quot;{data.about.title}&quot;</h4>
                   </div>
                   <div className="py-3">
-                    {data.features.suite.map((suite, index) => (
+                    {data.about.features.map((feature, index) => (
                       <span
                         key={index + 1212}
                         className="flex items-center space-x-2"
                       >
                         <h5>
-                          {index + 1}. {suite}
+                          {index + 1}. {feature}
                         </h5>
                         <CheckIcon />
                       </span>
@@ -73,11 +71,11 @@ const AboutSites = () => {
                   <h3 className="text-base md:text-lg">
                     Boshlang&lsquot;ich narx:{' '}
                     <span className="text-[#006B98] text-lg md:text-xl">
-                      ${data.features.price}
+                      ${data.price}
                     </span>
                   </h3>
                   <div className="px-2 rounded-full bg-green-200 text-green-500 w-fit">
-                    {data.features.date} kun
+                    {data.date} kun
                   </div>
                 </div>
               </div>

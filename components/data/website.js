@@ -2,8 +2,20 @@ export const websitesData = [
   {
     id: 1,
     index: 1,
-    href: '/price/calculate/express',
     name: 'Express Website',
+    href: '/price/calculate/express',
+    about: {
+      title:
+        'Agar siz boshlang’ich tadbirkor bo’lsangiz, o’z biznesingizni oching, keyin siz albatta o’z veb-saytingizni yaratish haqida o’ylang. Qancha to’lashga tayyorsiz? Ehtimol, ushbu bosqichda xizmatning haqiqiy narxidan ancha past to’lashni xohlaysiz. Biz buni tuzatamiz, va sizga ekspress sayt taklif qilamiz!',
+      features: [
+        'Texnik topshiriqlarni tayyorlash shart emas',
+        'Qulay va tezkor mobil versiya',
+        'Zamonaviy va chiroyli dizayn',
+        'Sahifalar soni: 1',
+        'Maxsus bilimlarni talab qilmaydi',
+        'Bir yil davomida bepul texnik yordam',
+      ],
+    },
     features: {
       responsive: true,
       pages: '1-5',
@@ -18,8 +30,20 @@ export const websitesData = [
   {
     id: 2,
     index: 2,
-    href: '/price/calculate/express',
     name: 'Vizitka Sayt',
+    href: '/price/calculate/express',
+    about: {
+      title:
+        'Agar siz boshlang’ich tadbirkor bo’lsangiz, o’z biznesingizni oching, keyin siz albatta o’z veb-saytingizni yaratish haqida o’ylang. Qancha to’lashga tayyorsiz? Ehtimol, ushbu bosqichda xizmatning haqiqiy narxidan ancha past to’lashni xohlaysiz. Biz buni tuzatamiz, va sizga ekspress sayt taklif qilamiz!',
+      features: [
+        'Texnik topshiriqlarni tayyorlash shart emas',
+        'Qulay va tezkor mobil versiya',
+        'Zamonaviy va chiroyli dizayn',
+        'Sahifalar soni: 1',
+        'Maxsus bilimlarni talab qilmaydi',
+        'Bir yil davomida bepul texnik yordam',
+      ],
+    },
     features: {
       responsive: true,
       pages: '1-5',
@@ -34,8 +58,20 @@ export const websitesData = [
   {
     id: 3,
     index: 3,
-    href: '/price/calculate/express',
     name: 'Landing Page',
+    href: '/price/calculate/express',
+    about: {
+      title:
+        'Agar siz boshlang’ich tadbirkor bo’lsangiz, o’z biznesingizni oching, keyin siz albatta o’z veb-saytingizni yaratish haqida o’ylang. Qancha to’lashga tayyorsiz? Ehtimol, ushbu bosqichda xizmatning haqiqiy narxidan ancha past to’lashni xohlaysiz. Biz buni tuzatamiz, va sizga ekspress sayt taklif qilamiz!',
+      features: [
+        'Texnik topshiriqlarni tayyorlash shart emas',
+        'Qulay va tezkor mobil versiya',
+        'Zamonaviy va chiroyli dizayn',
+        'Sahifalar soni: 1',
+        'Maxsus bilimlarni talab qilmaydi',
+        'Bir yil davomida bepul texnik yordam',
+      ],
+    },
     features: {
       responsive: true,
       pages: '1-5',
@@ -50,8 +86,20 @@ export const websitesData = [
   {
     id: 4,
     index: 4,
-    href: '/price/calculate/express',
     name: 'Small Business',
+    href: '/price/calculate/express',
+    about: {
+      title:
+        'Agar siz boshlang’ich tadbirkor bo’lsangiz, o’z biznesingizni oching, keyin siz albatta o’z veb-saytingizni yaratish haqida o’ylang. Qancha to’lashga tayyorsiz? Ehtimol, ushbu bosqichda xizmatning haqiqiy narxidan ancha past to’lashni xohlaysiz. Biz buni tuzatamiz, va sizga ekspress sayt taklif qilamiz!',
+      features: [
+        'Texnik topshiriqlarni tayyorlash shart emas',
+        'Qulay va tezkor mobil versiya',
+        'Zamonaviy va chiroyli dizayn',
+        'Sahifalar soni: 1',
+        'Maxsus bilimlarni talab qilmaydi',
+        'Bir yil davomida bepul texnik yordam',
+      ],
+    },
     features: {
       responsive: true,
       pages: '1-5',
@@ -66,8 +114,20 @@ export const websitesData = [
   {
     id: 5,
     index: 5,
-    href: '/price/calculate/express',
     name: 'Sayt Katalog',
+    href: '/price/calculate/express',
+    about: {
+      title:
+        'Agar siz boshlang’ich tadbirkor bo’lsangiz, o’z biznesingizni oching, keyin siz albatta o’z veb-saytingizni yaratish haqida o’ylang. Qancha to’lashga tayyorsiz? Ehtimol, ushbu bosqichda xizmatning haqiqiy narxidan ancha past to’lashni xohlaysiz. Biz buni tuzatamiz, va sizga ekspress sayt taklif qilamiz!',
+      features: [
+        'Texnik topshiriqlarni tayyorlash shart emas',
+        'Qulay va tezkor mobil versiya',
+        'Zamonaviy va chiroyli dizayn',
+        'Sahifalar soni: 1',
+        'Maxsus bilimlarni talab qilmaydi',
+        'Bir yil davomida bepul texnik yordam',
+      ],
+    },
     features: {
       responsive: true,
       pages: '1-5',
@@ -82,8 +142,20 @@ export const websitesData = [
   {
     id: 6,
     index: 6,
-    href: '/price/calculate/express',
     name: 'Online Do`kon',
+    href: '/price/calculate/express',
+    about: {
+      title:
+        'Agar siz boshlang’ich tadbirkor bo’lsangiz, o’z biznesingizni oching, keyin siz albatta o’z veb-saytingizni yaratish haqida o’ylang. Qancha to’lashga tayyorsiz? Ehtimol, ushbu bosqichda xizmatning haqiqiy narxidan ancha past to’lashni xohlaysiz. Biz buni tuzatamiz, va sizga ekspress sayt taklif qilamiz!',
+      features: [
+        'Texnik topshiriqlarni tayyorlash shart emas',
+        'Qulay va tezkor mobil versiya',
+        'Zamonaviy va chiroyli dizayn',
+        'Sahifalar soni: 1',
+        'Maxsus bilimlarni talab qilmaydi',
+        'Bir yil davomida bepul texnik yordam',
+      ],
+    },
     features: {
       responsive: true,
       pages: '1-5',
@@ -98,8 +170,20 @@ export const websitesData = [
   {
     id: 7,
     index: 7,
-    href: '/price/calculate/express',
     name: 'Korporativ Website',
+    href: '/price/calculate/express',
+    about: {
+      title:
+        'Agar siz boshlang’ich tadbirkor bo’lsangiz, o’z biznesingizni oching, keyin siz albatta o’z veb-saytingizni yaratish haqida o’ylang. Qancha to’lashga tayyorsiz? Ehtimol, ushbu bosqichda xizmatning haqiqiy narxidan ancha past to’lashni xohlaysiz. Biz buni tuzatamiz, va sizga ekspress sayt taklif qilamiz!',
+      features: [
+        'Texnik topshiriqlarni tayyorlash shart emas',
+        'Qulay va tezkor mobil versiya',
+        'Zamonaviy va chiroyli dizayn',
+        'Sahifalar soni: 1',
+        'Maxsus bilimlarni talab qilmaydi',
+        'Bir yil davomida bepul texnik yordam',
+      ],
+    },
     features: {
       responsive: true,
       pages: '1-5',
@@ -114,8 +198,20 @@ export const websitesData = [
   {
     id: 8,
     index: 8,
-    href: '/price/calculate/express',
     name: '3D Noyob Websayt',
+    href: '/price/calculate/express',
+    about: {
+      title:
+        'Agar siz boshlang’ich tadbirkor bo’lsangiz, o’z biznesingizni oching, keyin siz albatta o’z veb-saytingizni yaratish haqida o’ylang. Qancha to’lashga tayyorsiz? Ehtimol, ushbu bosqichda xizmatning haqiqiy narxidan ancha past to’lashni xohlaysiz. Biz buni tuzatamiz, va sizga ekspress sayt taklif qilamiz!',
+      features: [
+        'Texnik topshiriqlarni tayyorlash shart emas',
+        'Qulay va tezkor mobil versiya',
+        'Zamonaviy va chiroyli dizayn',
+        'Sahifalar soni: 1',
+        'Maxsus bilimlarni talab qilmaydi',
+        'Bir yil davomida bepul texnik yordam',
+      ],
+    },
     features: {
       responsive: true,
       pages: '1-5',
