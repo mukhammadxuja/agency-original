@@ -5,26 +5,14 @@ import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 
 import { Language, MobileNavbar, DarkMode, Totop } from '../';
+import { useScroll } from '../../hooks/useScroll';
 
 const Navbar = () => {
-  const [scroll, setScroll] = useState(false);
+  const { scroll } = useScroll();
 
   const router = useRouter();
   const { locale } = router;
   const { t } = useTranslation();
-
-  useEffect(() => {
-    let lastScroll = window.scrollY;
-    window.addEventListener('scroll', () => {
-      if (lastScroll < window.scrollY) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
-
-      lastScroll = window.scrollY;
-    });
-  }, []);
 
   return (
     <div>

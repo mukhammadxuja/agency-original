@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CheckIcon, ErrorIcon, Toggle, Tooltip, ArrowBottom } from '../../';
+import { CheckIcon, ErrorIcon, Toggle, Tooltip, ArrowBottom } from '../../..';
 
 const AddFeatures = () => {
   return (

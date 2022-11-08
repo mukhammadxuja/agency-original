@@ -2,8 +2,10 @@ import React from 'react';
 
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
+import { useScroll } from '../../hooks/useScroll';
 
 const MobileNavbar = () => {
+  const { scroll } = useScroll();
   // Language support
   const { t } = useTranslation();
   const router = useRouter();
@@ -12,21 +14,6 @@ const MobileNavbar = () => {
   const toggleNav = () => {
     setOpenNav(!openNav);
   };
-
-  const [scroll, setScroll] = React.useState(false);
-
-  React.useEffect(() => {
-    let lastScroll = window.scrollY;
-    window.addEventListener('scroll', () => {
-      if (lastScroll < window.scrollY) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
-
-      lastScroll = window.scrollY;
-    });
-  }, []);
 
   return (
     <div

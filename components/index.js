@@ -27,10 +27,12 @@ export { default as Tooltip } from './ui-kit/tooltip/index';
 export { default as Accordion } from './ui-kit/accordion/index';
 export { default as LoadingCard } from './ui-kit/loading/LoadingCard.jsx';
 
-// pages components
-export { default as WebsiteType } from './pages/price/WebsiteType';
-export { default as PriceContact } from './pages/price/PriceContact';
-export { default as AddFeatures } from './pages/price/AddFeatures';
+// price components
+export { default as PriceLayout } from './pages/price/PriceLayout';
+export { default as WebsiteType } from './pages/price/calculate/WebsiteType';
+export { default as PriceNavbar } from './pages/price/calculate/PriceNavbar';
+export { default as PriceContact } from './pages/price/calculate/PriceContact';
+export { default as AddFeatures } from './pages/price/calculate/AddFeatures';
 export { default as Express } from './pages/price/website-feature/Express';
 export { default as Vizitka } from './pages/price/website-feature/Vizitka';
 export { default as Landing } from './pages/price/website-feature/Landing';
