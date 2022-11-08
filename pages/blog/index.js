@@ -118,7 +118,7 @@ const Blog = () => {
                     Websitelar haqida to&lsquo;liq ma&lsquo;limot!
                   </h2>
                   <Link href="/blog/websites">
-                    <button className="px-3 py-2 border w-full border-gray-300 hover:border-black dark:border-gray-500 rounded-full transition duration-400">
+                    <button className="px-3 py-2 border w-full border-gray-300 hover:border-black dark:border-gray-500 rounded-full transition duration-500">
                       Sahifaga o&lsquo;tish
                     </button>
                   </Link>

@@ -13,7 +13,7 @@ const Header = () => {
                 More Than Just
               </h1>
               <img
-                className="ml-2 w-10 xl:w-20 duration-400 hover:rotate-180 md:ml-10"
+                className="ml-2 w-10 xl:w-20 duration-500 hover:rotate-180 md:ml-10"
                 src="/svg/star.svg"
                 alt=""
               />
@@ -66,7 +66,7 @@ const Header = () => {
             effect="blur"
             alt="Banner image"
           />
-          {/* <div className="absolute -top-10 right-5 h-20 w-20 rounded-full bg-black duration-400 hover:scale-95 md:-top-16 md:right-20 md:h-32 md:w-32">
+          {/* <div className="absolute -top-10 right-5 h-20 w-20 rounded-full bg-black duration-500 hover:scale-95 md:-top-16 md:right-20 md:h-32 md:w-32">
             <div className="mt-6 md:mt-10 flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

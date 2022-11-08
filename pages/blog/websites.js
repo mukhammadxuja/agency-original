@@ -29,7 +29,7 @@ const Websites = () => {
   }, []);
 
   const link =
-    'text-xs text-right cursor-pointer hover:opacity-80 md:hover:mr-1 md:duration-400';
+    'text-xs text-right cursor-pointer hover:opacity-80 md:hover:mr-1 md:duration-500';
   return (
     <motion.div
       initial={{ y: 25, opacity: 0 }}

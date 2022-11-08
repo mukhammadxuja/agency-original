@@ -20,7 +20,7 @@ const PriceContact = () => {
           type="submit"
           className="rounded-lg bg-black py-3 px-8
         text-xs md:text-sm font-medium text-white shadow-md
-        duration-400 ease-in-out active:scale-95 active:bg-opacity-80"
+        duration-500 ease-in-out active:scale-95 active:bg-opacity-80"
         >
           Submit
         </button>

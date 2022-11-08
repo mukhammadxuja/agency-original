@@ -86,7 +86,7 @@ const Portfolio = () => {
                 />
                 <p className="dark:!text-[black]">Glassy Sky</p>
                 <Link href="/">
-                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-400 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -123,7 +123,7 @@ const Portfolio = () => {
                 />
                 <p className="dark:!text-[black]">Glassy Sky</p>
                 <Link href="/">
-                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-400 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -160,7 +160,7 @@ const Portfolio = () => {
                 />
                 <p className="dark:!text-[black]">Glassy Sky</p>
                 <Link href="/">
-                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-400 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -197,7 +197,7 @@ const Portfolio = () => {
                 />
                 <p className="dark:!text-[black]">Glassy Sky</p>
                 <Link href="/">
-                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-400 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -234,7 +234,7 @@ const Portfolio = () => {
                 />
                 <p className="dark:!text-[black]">Glassy Sky</p>
                 <Link href="/">
-                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-400 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"

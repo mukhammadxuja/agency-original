@@ -68,7 +68,7 @@ const Accordion = (props) => {
           <div
             ref={contentSpace}
             style={{ maxHeight: `${height}` }}
-            className="overflow-auto duration-400 ease-in-out px-4"
+            className="overflow-auto duration-500 ease-in-out px-4"
           >
             {children}
           </div>
@@ -168,10 +168,10 @@ export default Accordion;
 //             fuga maiores voluptatum.
 //           </p>
 //           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center my-2">
-//             <a className="w-full md:w-fit text-center mx-auto rounded-xl py-2 px-8 bg-white cursor-pointer active:scale-95 shadow-md text-sm duration-400 ease-in-out hover:bg-blue-500 hover:bg-opacity-30 md:text-sm text-[#1a5cff]">
+//             <a className="w-full md:w-fit text-center mx-auto rounded-xl py-2 px-8 bg-white cursor-pointer active:scale-95 shadow-md text-sm duration-500 ease-in-out hover:bg-blue-500 hover:bg-opacity-30 md:text-sm text-[#1a5cff]">
 //               Purchase Me
 //             </a>
-//             <a className="w-full md:w-fit text-center mx-auto rounded-lg py-2 px-8 font-medium overflow-hidden relative shadow-md text-sm duration-400 active:bg-opacity-80 cursor-pointer ease-in-out active:scale-95 bg-[#1a5cff] dark:bg-[#1a5cff] md:text-sm text-white hover:shadow-md">
+//             <a className="w-full md:w-fit text-center mx-auto rounded-lg py-2 px-8 font-medium overflow-hidden relative shadow-md text-sm duration-500 active:bg-opacity-80 cursor-pointer ease-in-out active:scale-95 bg-[#1a5cff] dark:bg-[#1a5cff] md:text-sm text-white hover:shadow-md">
 //               I Want this kit
 //             </a>
 //           </div>

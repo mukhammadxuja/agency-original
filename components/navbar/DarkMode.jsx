@@ -21,7 +21,7 @@ const DarkMode = () => {
           onClick={() => setTheme('light')}
           className="mx-auto mt-4 cursor-pointer rounded-lg bg-white py-3 px-8
         text-xs md:text-sm font-medium text-black shadow-md
-        duration-400 ease-in-out active:scale-95 active:bg-opacity-80"
+        duration-500 ease-in-out active:scale-95 active:bg-opacity-80"
         >
           {t('home:ligth_navbar')}
         </button>
@@ -32,7 +32,7 @@ const DarkMode = () => {
           onClick={() => setTheme('dark')}
           className="mx-auto mt-4 cursor-pointer rounded-lg bg-black py-3 px-8
         text-xs md:text-sm font-medium text-white shadow-md
-        duration-400 ease-in-out active:scale-95 active:bg-opacity-80"
+        duration-500 ease-in-out active:scale-95 active:bg-opacity-80"
         >
           {t('home:dark_navbar')}
         </button>
