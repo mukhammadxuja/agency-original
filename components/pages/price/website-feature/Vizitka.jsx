@@ -2,7 +2,7 @@ import React from 'react';
 
 import { websitesData } from '../../../data/website';
 
-import { CheckIcon, ErrorIcon } from '../../../';
+import { CheckIcon, ErrorIcon, PriceNavbar } from '../../../';
 
 const Vizitka = (props) => {
   const { index } = props;
@@ -168,6 +168,7 @@ const Vizitka = (props) => {
                   </div>
                 </div>
               )}
+              <PriceNavbar website={website} index={index} />
             </div>
           );
         })}

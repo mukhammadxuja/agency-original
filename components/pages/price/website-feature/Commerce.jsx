@@ -1,7 +1,7 @@
 import React from 'react';
 import { websitesData } from '../../../data/website';
 
-import { CheckIcon, ErrorIcon, Tooltip } from '../../..';
+import { CheckIcon, ErrorIcon, Tooltip, PriceNavbar } from '../../..';
 
 const Commerce = (props) => {
   const { index } = props;
@@ -168,6 +168,7 @@ const Commerce = (props) => {
                 </div>
               </div>
             )}
+            <PriceNavbar website={website} index={index} />
           </div>
         );
       })}

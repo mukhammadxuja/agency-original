@@ -9,7 +9,6 @@ import {
   CheckIcon,
   ErrorIcon,
   PriceContact,
-  PriceNavbar,
   // Features
   Express,
   Landing,
@@ -26,17 +25,16 @@ const PriceLayout = (props) => {
   const { scroll } = useScroll();
   return (
     <div className="container mx-auto">
-      <PriceNavbar />
       <div
         className={`${
-          scroll ? 'mt-36 md:mt-28' : 'mt-44 md:mt-36'
+          scroll ? 'mt-24 md:mt-28' : 'mt-36 md:mt-36'
         } transition duration-500`}
       >
-        <Breadcrumb page="Price" link="/price" page2="Calculated" active />
+        <Breadcrumb page="Price" link="/price" />
       </div>
       <div className="flex items-center justify-between my-5">
         <h3 className="text-lg md:text-2xl">Narxlarni Hisoblash</h3>
-        <Link href="/about-sites">
+        <Link href="/blog/websites">
           <div className="flex items-center space-x-1 cursor-pointer group">
             <p>Saytlar haqida</p>
             <svg
