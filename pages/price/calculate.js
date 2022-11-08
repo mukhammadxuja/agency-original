@@ -31,6 +31,20 @@ export async function getStaticProps({ locale }) {
 const Calculate = () => {
   const [activeDialog, setActiveDialog] = React.useState(false);
   const [openTab, setOpenTab] = React.useState(1);
+  const [scroll, setScroll] = React.useState(false);
+
+  React.useEffect(() => {
+    let lastScroll = window.scrollY;
+    window.addEventListener('scroll', () => {
+      if (lastScroll < window.scrollY) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+
+      lastScroll = window.scrollY;
+    });
+  }, []);
 
   const dialog = () => {
     setActiveDialog(true);
@@ -49,118 +63,98 @@ const Calculate = () => {
       className="nav-bar"
     >
       <div className="container mx-auto">
-        <Breadcrumb page="Price" link="/price" page2="Calculated" active />
-        <div className="relative flex flex-nowrap items-center overflow-x-scroll scrollbar-default justify-between py-3 px-4 md:py-3 md:px-6 rounded-xl shadow-md my-3 md:my-5">
-          <div className="pr-10 lg:pr-20 whitespace-nowrap">
-            <p className="text-xs md:text-sm text-gray-500 whitespace-nowrap">
-              Sayt Turi
-            </p>
-            <div className="flex items-center space-x-1">
-              <h3 className="text-base md:text-xl">Landing Page</h3>
-              <CheckIcon />
+        <div
+          className={`${
+            scroll ? 'top-0 -mt-1' : 'top-20 -mt-0'
+          } fixed left-1/2 transform -translate-x-1/2 z-50 backdrop-blur bg-white supports-backdrop-blur:bg-white/95 dark:bg-neutral-900/75 transition-all duration-500 overflow-x-scroll w-full md:scrollbar-hide`}
+        >
+          <div className="container mx-auto flex flex-nowrap items-center justify-between py-4 md:py-3">
+            <div className="pr-10 lg:pr-20 whitespace-nowrap">
+              <p className="text-xs md:text-sm text-gray-500 whitespace-nowrap">
+                Sayt Turi
+              </p>
+              <div className="flex items-center space-x-1">
+                <h3 className="text-base md:text-xl">Landing Page</h3>
+                <CheckIcon />
+              </div>
+            </div>
+            <div className="pr-10 lg:pr-20 whitespace-nowrap">
+              <p className="text-xs md:text-sm text-gray-500">Sahifalar Soni</p>
+              <div className="flex items-center space-x-1">
+                <h3 className="text-base md:text-xl">1-5 Tagacha</h3>
+                <CheckIcon />
+              </div>
+            </div>
+            <div className="pr-10 lg:pr-20 whitespace-nowrap">
+              <p className="text-xs md:text-sm text-gray-500">Sayt Dizayni</p>
+              <div className="flex items-center space-x-1">
+                <h3 className="text-base md:text-xl">Shablon</h3>
+                <CheckIcon />
+              </div>
+            </div>
+            <div className="pr-10 lg:pr-20 whitespace-nowrap">
+              <p className="text-xs md:text-sm text-gray-500 whitespace-nowrap">
+                Qo&apos;cha Imkoniyatlar
+              </p>
+              <div className="flex items-center space-x-2">
+                <span className="flex items-center space-x-1 text-base md:text-xl whitespace-nowrap">
+                  <h3>Responsive</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-4 h-4 text-green-500"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div className="pr-10 lg:pr-20 whitespace-nowrap">
+              <p className="text-xs md:text-sm text-gray-500">Matn yozish</p>
+              <div className="flex items-center space-x-1">
+                <h3 className="text-base md:text-xl">Yo&apos;q</h3>
+                <ErrorIcon />
+              </div>
+            </div>
+            <div className="pr-10 lg:pr-20 whitespace-nowrap">
+              <p className="text-xs md:text-sm text-gray-500">SEO Xizmat</p>
+              <div className="flex items-center space-x-1">
+                <h3 className="text-base md:text-xl">Bor</h3>
+                <CheckIcon />
+              </div>
+            </div>
+            <div className="pr-10 lg:pr-20 whitespace-nowrap">
+              <p className="text-xs md:text-sm text-gray-500">
+                Umumiy Chegirma
+              </p>
+              <h3 className="text-base md:text-xl">
+                2.7<span>$</span>
+                <span className="bg-green-100 px-2 py-0.5 rounded-full text-xs md:text-sm text-green-500">
+                  -12%
+                </span>
+              </h3>
+            </div>
+            <div className="pr-10 lg:pr-20 whitespace-nowrap">
+              <p className="text-xs md:text-sm text-gray-500">Umumiy summa</p>
+              <h3 className="text-base md:text-xl">
+                145<span>$</span> 😀
+              </h3>
             </div>
           </div>
-          <div className="pr-10 lg:pr-20 whitespace-nowrap">
-            <p className="text-xs md:text-sm text-gray-500">Sahifalar Soni</p>
-            <div className="flex items-center space-x-1">
-              <h3 className="text-base md:text-xl">1-5 Tagacha</h3>
-              <CheckIcon />
-            </div>
-          </div>
-          <div className="pr-10 lg:pr-20 whitespace-nowrap">
-            <p className="text-xs md:text-sm text-gray-500">Sayt Dizayni</p>
-            <div className="flex items-center space-x-1">
-              <h3 className="text-base md:text-xl">Shablon</h3>
-              <CheckIcon />
-            </div>
-          </div>
-          <div className="pr-10 lg:pr-20 whitespace-nowrap">
-            <p className="text-xs md:text-sm text-gray-500 whitespace-nowrap">
-              Qo&apos;cha Imkoniyatlar
-            </p>
-            <div className="flex items-center space-x-2">
-              <span className="flex items-center space-x-1 text-base md:text-xl whitespace-nowrap">
-                <h3>Responsive</h3>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-4 h-4 text-green-500"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4.5 12.75l6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              {/* <span className="flex items-center space-x-1 text-base md:text-xl whitespace-nowrap">
-                <h3>Dark Mode</h3>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-4 h-4 text-green-500"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4.5 12.75l6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              <span className="flex items-center space-x-1 text-base md:text-xl whitespace-nowrap">
-                <h3>Language</h3>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-4 h-4 text-green-500"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4.5 12.75l6 6 9-13.5"
-                  />
-                </svg>
-              </span> */}
-            </div>
-          </div>
-          <div className="pr-10 lg:pr-20 whitespace-nowrap">
-            <p className="text-xs md:text-sm text-gray-500">Matn yozish</p>
-            <div className="flex items-center space-x-1">
-              <h3 className="text-base md:text-xl">Yo&apos;q</h3>
-              <ErrorIcon />
-            </div>
-          </div>
-          <div className="pr-10 lg:pr-20 whitespace-nowrap">
-            <p className="text-xs md:text-sm text-gray-500">SEO Xizmat</p>
-            <div className="flex items-center space-x-1">
-              <h3 className="text-base md:text-xl">Bor</h3>
-              <CheckIcon />
-            </div>
-          </div>
-          <div className="pr-10 lg:pr-20 whitespace-nowrap">
-            <p className="text-xs md:text-sm text-gray-500">Umumiy Chegirma</p>
-            <h3 className="text-base md:text-xl">
-              2.7<span>$</span>
-              <span className="bg-green-100 px-2 py-0.5 rounded-full text-xs md:text-sm text-green-500">
-                -12%
-              </span>
-            </h3>
-          </div>
-          <div className="pr-10 lg:pr-20 whitespace-nowrap">
-            <p className="text-xs md:text-sm text-gray-500">Umumiy summa</p>
-            <h3 className="text-base md:text-xl">
-              145<span>$</span> 😀
-            </h3>
-          </div>
+        </div>
+        <div
+          className={`${
+            scroll ? 'mt-36 md:mt-28' : 'mt-44 md:mt-36'
+          } transition duration-300`}
+        >
+          <Breadcrumb page="Price" link="/price" page2="Calculated" active />
         </div>
         <div className="flex items-center justify-between my-5">
           <h3 className="text-lg md:text-2xl">Narxlarni Hisoblash</h3>

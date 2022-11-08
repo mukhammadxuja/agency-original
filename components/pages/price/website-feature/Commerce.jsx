@@ -1,7 +1,7 @@
 import React from 'react';
 import { websitesData } from '../../../data/website';
 
-import { CheckIcon, ErrorIcon } from '../../..';
+import { CheckIcon, ErrorIcon, Tooltip } from '../../..';
 
 const Commerce = (props) => {
   const { index } = props;
@@ -13,9 +13,10 @@ const Commerce = (props) => {
             {website.id === index && (
               <div className="p-8 space-y-2">
                 <div className="flex items-center justify-between border-b">
-                  <h5 className="text-lg md:text-base lg:text-lg">
-                    - Sayt Turi:
-                  </h5>
+                  <div className="flex items-center space-x-1">
+                    <h1 className="text-base md:text-lg">- Sayt Turi:</h1>
+                    <Tooltip desc="Saytlar haqida bilmoqchi bo`lsangiz, biroz yuqoridagi saytlar haqida bo`limiga o`ting!" />
+                  </div>
                   <div className="flex items-center space-x-1 md:space-x-2">
                     <h6 className="text-base">{website.name}</h6>
                     <CheckIcon />
@@ -26,7 +27,7 @@ const Commerce = (props) => {
                     - Sahifalar soni
                   </h5>
                   <div className="flex items-center space-x-1 md:space-x-2">
-                    <h6 className="text-base">1</h6>
+                    <h6 className="text-base">{website.features.pages}</h6>
                     <CheckIcon />
                   </div>
                 </div>

@@ -6,37 +6,6 @@ const AddFeatures = () => {
   return (
     <div className="py-3 px-4 md:py-3 md:px-6 rounded-md shadow-md my-3 md:my-5">
       <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-        <div className="flex items-center space-x-1">
-          <h1 className="text-base md:text-lg">Sayt Turi:</h1>
-          <Tooltip desc="Saytlar haqida bilmoqchi bo`lsangiz, pastda saytlar haqida bo`limiga o`ting!" />
-        </div>
-        <div className="relative w-36 md:w-40 lg:w-44">
-          <ArrowBottom />
-          <select className="w-full p-2 text-black bg-white border text-sm md:text-base border-black rounded-md shadow-sm outline-none appearance-none focus:border-black">
-            <option>Express Sayt</option>
-            <option>Sayt Vizitka</option>
-            <option>Landing Sahifa</option>
-            <option>Kichik Biznes</option>
-            <option>Sayt Katalog</option>
-            <option>Onlayn Do`kon</option>
-            <option>Korparativ Sayt</option>
-            <option>Noyob Web Loyiha</option>
-          </select>
-        </div>
-      </div>
-      <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-        <h1 className="text-base md:text-lg">Sahifalr Soni:</h1>
-        <div className="relative w-36 md:w-40 lg:w-44">
-          <ArrowBottom />
-          <select className="w-full p-2 text-black bg-white text-sm md:text-base border border-black rounded-md shadow-sm outline-none appearance-none focus:border-black">
-            <option className="py-1 hover:bg-neutral-200">1-5</option>
-            <option className="py-1 hover:bg-neutral-200">5-15</option>
-            <option className="py-1 hover:bg-neutral-200">15-35</option>
-            <option className="py-1 hover:bg-neutral-200">35+</option>
-          </select>
-        </div>
-      </div>
-      <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
         <h1 className="text-base md:text-lg">Sayt Dizayni:</h1>
         <div className="relative w-36 md:w-40 lg:w-44">
           <ArrowBottom />
@@ -47,21 +16,7 @@ const AddFeatures = () => {
         </div>
       </div>
       <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-        <h1 className="text-base md:text-lg">Saytning Mobil Shakli:</h1>
-        <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
-          <Toggle trueOrFalse={true} no="Yo'q" yes="Bor" />
-        </div>
-      </div>
-      <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
         <h1 className="text-base md:text-lg">Tungi rejim:</h1>
-        <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
-          <Toggle trueOrFalse={false} no="Yo'q" yes="Bor" />
-        </div>
-      </div>
-      <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-        <h1 className="text-base md:text-lg">
-          Ro&lsquo;yxatdan o&lsquo;tish qismi:
-        </h1>
         <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
           <Toggle trueOrFalse={false} no="Yo'q" yes="Bor" />
         </div>
@@ -114,7 +69,10 @@ const AddFeatures = () => {
         </div>
       </div>
       <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-        <h1 className="text-base md:text-lg">Bepul Domain:</h1>
+        <div className="flex items-center space-x-1">
+          <h1 className="text-base md:text-lg">Bepul Domain:</h1>
+          <Tooltip desc="Agar o`zingizni domainingiz bo`lsa, buni o`chirsangiz umimiy narxdan domain narx olib tashlanadi." />
+        </div>
         <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
           <Toggle trueOrFalse={true} no="Yo'q" yes="Bor" />
         </div>
@@ -138,7 +96,10 @@ const AddFeatures = () => {
       </div>
       <div className="flex items-center justify-between my-5">
         <div className="flex items-center space-x-1">
-          <h5>Chegirma</h5>
+          <div className="flex items-center space-x-1">
+            <h1 className="text-sm">Chegirma:</h1>
+            <Tooltip desc="Maxsus topshiriqni yechish orqali chegirmaga ega bo`ling." />
+          </div>
           <Toggle trueOrFalse={false} no="Yo'q" yes="Bor" />
         </div>
         <button
@@ -147,7 +108,7 @@ const AddFeatures = () => {
         text-xs md:text-sm font-medium text-white shadow-md
         duration-300 ease-in-out active:scale-95 active:bg-opacity-80"
         >
-          Submit
+          Hisoblash
         </button>
       </div>
       <hr />
