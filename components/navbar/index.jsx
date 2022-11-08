@@ -51,6 +51,11 @@ const Navbar = () => {
                 Narxlar
               </li>
             </Link>
+            <Link href="/blog">
+              <li className="cursor-pointer text-xl font-medium duration-500 hover:text-gray-600">
+                Blog
+              </li>
+            </Link>
             <li className="cursor-pointer text-xl font-medium duration-500 hover:text-gray-600">
               {t('home:contact_navbar')}
             </li>
