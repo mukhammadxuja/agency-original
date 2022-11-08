@@ -65,8 +65,8 @@ const Calculate = () => {
       <div className="container mx-auto">
         <div
           className={`${
-            scroll ? 'top-0 -mt-1' : 'top-20 -mt-0'
-          } fixed left-1/2 transform -translate-x-1/2 z-50 backdrop-blur bg-white supports-backdrop-blur:bg-white/95 dark:bg-neutral-900/75 transition-all duration-500 overflow-x-scroll w-full md:scrollbar-hide`}
+            scroll ? 'top-0 -mt-1' : 'top-20 -mt-1 md:-mt-0'
+          } fixed left-1/2 transform -translate-x-1/2 z-50 backdrop-blur bg-white supports-backdrop-blur:bg-white/95 dark:bg-neutral-900/75 transition-all duration-400 overflow-x-scroll w-full md:scrollbar-hide`}
         >
           <div className="container mx-auto flex flex-nowrap items-center justify-between py-4 md:py-3">
             <div className="pr-10 lg:pr-20 whitespace-nowrap">
@@ -152,7 +152,7 @@ const Calculate = () => {
         <div
           className={`${
             scroll ? 'mt-36 md:mt-28' : 'mt-44 md:mt-36'
-          } transition duration-300`}
+          } transition duration-400`}
         >
           <Breadcrumb page="Price" link="/price" page2="Calculated" active />
         </div>

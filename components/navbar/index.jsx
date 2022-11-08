@@ -31,7 +31,7 @@ const Navbar = () => {
       <div
         className={`${
           scroll ? 'transform -translate-y-36' : 'transform translate-y-0'
-        } fixed z-50 top-0 left-0 right-0 w-screen backdrop-blur flex-none transition-all duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white supports-backdrop-blur:bg-white/95 dark:bg-neutral-900/75`}
+        } fixed z-50 top-0 left-0 right-0 w-screen backdrop-blur flex-none transition-all duration-400 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white supports-backdrop-blur:bg-white/95 dark:bg-neutral-900/75`}
       >
         <div className="container mx-auto flex items-center justify-between pb-5">
           <Link href="/">
@@ -49,21 +49,21 @@ const Navbar = () => {
             />
           </Link>
           <ul className="mt-4 hidden items-center space-x-2 md:inline-flex md:space-x-5">
-            <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
+            <li className="cursor-pointer text-xl font-medium duration-400 hover:text-gray-600">
               {t('home:about_navbar')}
             </li>
-            <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
+            <li className="cursor-pointer text-xl font-medium duration-400 hover:text-gray-600">
               {t('home:services_navbar')}
             </li>
-            <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
+            <li className="cursor-pointer text-xl font-medium duration-400 hover:text-gray-600">
               {t('home:works_navbar')}
             </li>
             <Link href="/price">
-              <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
+              <li className="cursor-pointer text-xl font-medium duration-400 hover:text-gray-600">
                 Narxlar
               </li>
             </Link>
-            <li className="cursor-pointer text-xl font-medium duration-300 hover:text-gray-600">
+            <li className="cursor-pointer text-xl font-medium duration-400 hover:text-gray-600">
               {t('home:contact_navbar')}
             </li>
           </ul>

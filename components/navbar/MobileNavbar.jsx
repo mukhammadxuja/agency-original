@@ -32,8 +32,8 @@ const MobileNavbar = () => {
     <div
       className={`${
         scroll
-          ? 'transform translate-y-80 duration-500'
-          : 'transform translate-y-0 duration-500'
+          ? 'transform translate-y-80 duration-400'
+          : 'transform translate-y-0 duration-400'
       } fixed bottom-8 z-50 left-1/2 md:hidden transform -translate-x-1/2`}
     >
       <div

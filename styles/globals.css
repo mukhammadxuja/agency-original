@@ -2,15 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
 @layer base {
   @font-face {
     font-family: 'My font';
     font-weight: 900;
     src: url('/fonts/Dystopian Bold.woff2') format('woff2');
   }
-}
 
-@layer base {
   @font-face {
     font-family: 'My font Regular';
     font-weight: 700;
@@ -148,13 +152,10 @@
     letter-spacing: 0.5px;
     font-weight: 400;
   }
-}
 
-
-@media(max-width: 575px){
-  .slide-opacity {
-    top: 0;
+  @media (max-width: 575px) {
+    .slide-opacity {
+      top: 0;
+    }
   }
-
-
 }
