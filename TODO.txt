@@ -7,6 +7,12 @@
 7 Price page
     - Mablag' dollarda
 
+Komil 
+ - Portolio rasmlari qoshildi ushalari qushib chqish (public/images/projects/)
+ - portfolio cardlarni darkmodini ko'rib chiqish
+ - Biz qila oladigan ishlar ro'yxatini sal kichikroq qilib chiqish
+ - Qigan ishlarini Realniy so'zlarga o'grtirib chiq va Til qosh usha so'zlarga
+
 
 Muhammad
  - worksga hover buganda shunga oid rasm cursorga
