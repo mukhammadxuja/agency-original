@@ -10,7 +10,7 @@ const Header = () => {
           <div className="mt-5 mb-10">
             <div className="flex items-center">
               <h1 className="text-4xl sm:text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl">
-                More Than Just
+                Full 
               </h1>
               <img
                 className="ml-2 w-10 xl:w-20 duration-500 hover:rotate-180 md:ml-10"
