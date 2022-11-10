@@ -1,18 +1,12 @@
-import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-
-import { useTranslation } from 'next-i18next';
 
 import { Language, MobileNavbar, DarkMode, Totop } from '../';
 import { useScroll } from '../../hooks/useScroll';
+import { useLanguage } from '../../hooks/useLanguage';
 
 const Navbar = () => {
   const { scroll } = useScroll();
-
-  const router = useRouter();
-  const { locale } = router;
-  const { t } = useTranslation();
+  const { t, locale } = useLanguage();
 
   return (
     <div>
@@ -48,7 +42,12 @@ const Navbar = () => {
             </li>
             <Link href="/price">
               <li className="cursor-pointer text-xl font-medium duration-500 hover:text-gray-600">
-                Narxlar
+                {t('home:price_navbar')}
+              </li>
+            </Link>
+            <Link href="/blog">
+              <li className="cursor-pointer text-xl font-medium duration-500 hover:text-gray-600">
+                {t('home:blog_navbr')}
               </li>
             </Link>
             <li className="cursor-pointer text-xl font-medium duration-500 hover:text-gray-600">

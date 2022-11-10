@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import Script from 'next/script';
+import { description } from '../package.json';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import { Header, About, Works, Portfolio, Tools, Contact } from '../components';
+import Head from 'next/head';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -22,6 +24,10 @@ export default function Home() {
   if (!mounted) return null;
   return (
     <div className="">
+      <Head>
+        <title>{description}</title>
+      </Head>
+      
       <Script src="https://third-party-script.js"></Script>
       <div className="noise"></div>
       <Header />

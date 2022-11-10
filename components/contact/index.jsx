@@ -1,13 +1,13 @@
 // import Image from 'next/image';
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-// import img1 from './location.png';
-// import img2 from './call.png';
-
 import toast, { Toaster } from 'react-hot-toast';
+
+import { useLanguage } from '../../hooks/useLanguage';
 
 const Contact = () => {
   const [inputs, setInputs] = useState({});
+  const { t } = useLanguage();
   const form = useRef();
 
   const handleChange = (e) =>
@@ -43,7 +43,7 @@ const Contact = () => {
       <section className="container mx-auto py-10 md:py-14 lg:py-16 xl:py-20">
         <div className="flex items-center justify-center space-x-2">
           <h3 className="pb-10 text-2xl lg:text-4xl xl:text-5xl text-center text-black dark:text-white">
-            Let&apos;s connect
+            {t('home:contact_lets_connect')}
           </h3>
         </div>
 
@@ -60,14 +60,14 @@ const Contact = () => {
                   htmlFor="first_name"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
-                  First name
+                  {t('home:contact_first_name')}
                 </label>
                 <input
                   name="first_name"
                   type="text"
                   id="first_name"
                   className="bg-neutral-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-neutral-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Ism"
+                  placeholder={t('home:contact_first_name')}
                   value={inputs.first_name || ''}
                   onChange={handleChange}
                   required
@@ -78,14 +78,14 @@ const Contact = () => {
                   htmlFor="last_name"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
-                  Last name
+                  {t('home:contact_second_name')}
                 </label>
                 <input
                   name="last_name"
                   type="text"
                   id="last_name"
                   className="bg-neutral-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-neutral-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Familiya"
+                  placeholder={t('home:contact_second_name')}
                   value={inputs.last_name || ''}
                   onChange={handleChange}
                   required
@@ -96,14 +96,14 @@ const Contact = () => {
                   htmlFor="company"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
-                  Email
+                  {t('home:contact_email')}
                 </label>
                 <input
                   name="email"
                   type="email"
                   id="email"
                   className="bg-neutral-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-neutral-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="yourname@mail.com"
+                  placeholder="email@mail.com"
                   value={inputs.email || ''}
                   onChange={handleChange}
                   required
@@ -114,7 +114,7 @@ const Contact = () => {
                   htmlFor="phone"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
-                  Phone number
+                  {t('home:contact_phone_number')}
                 </label>
                 <input
                   name="phone_number"
@@ -133,14 +133,14 @@ const Contact = () => {
                 htmlFor="message"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
               >
-                Your message
+                {t('home:contact_your_message')}
               </label>
               <textarea
                 name="message"
                 id="message"
                 rows={4}
                 className="block p-2.5 w-full text-sm text-gray-900 bg-neutral-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-neutral-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Your message..."
+                placeholder={t('home:contact_phone_number')}
                 value={inputs.message || ''}
                 onChange={handleChange}
                 required
@@ -153,7 +153,7 @@ const Contact = () => {
         text-xs md:text-sm font-medium text-white shadow-md
         duration-500 ease-in-out active:scale-95 active:bg-opacity-80"
             >
-              Submit
+              {t('home:contact_submit')}
             </button>
           </form>
         </div>
