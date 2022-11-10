@@ -1,13 +1,14 @@
+import Image from 'next/image';
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
+import header from './header.jpg'
 const Header = () => {
   return (
     <div className="relative mt-10 md:mt-20">
       <div className="mt-20">
         <div className="container mx-auto h-auto">
           <p className="text-lg font-semibold md:text-xl">©2022</p>
-          <div className="mt-5 mb-10">
+          <div className="mt-5 mb-10 ">
             <div className="flex items-center">
               <h1 className="text-4xl sm:text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl">
                 More Than Just
@@ -59,14 +60,33 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="relative mt-16 px-[1rem] sm:px-[2rem] lg:px-[4rem] xl:px-[5rem]">
+
+
+        <div className='container mx-auto'>
+
+          <div className="relative mt-16 !bg-[center_bottom_-1rem] object-cover h-[50vh] sm:h-[50vh] md:h-[25rem] lg:h-[25rem] xl:h-[30rem] ">
+
+            <Image
+              src={header}
+              layout="fill"
+              objectFit="cover"
+              alt="Banner image"
+              className="rounded-t-3xl w-full"
+            />
+          </div>
+        </div>
+
+
+        {/* <div className="relative mt-16 px-[1rem] sm:px-[2rem] lg:px-[4rem] xl:px-[5rem]">
           <LazyLoadImage
             className="w-screen object-cover h-[50vh] sm:h-[50vh] md:h-[25rem] lg:h-[25rem] xl:h-[30rem] rounded-t-3xl"
             src="/images/hero.jpg"
             effect="blur"
             alt="Banner image"
           />
-          {/* <div className="absolute -top-10 right-5 h-20 w-20 rounded-full bg-black duration-500 hover:scale-95 md:-top-16 md:right-20 md:h-32 md:w-32">
+        </div> */}
+
+        {/* <div className="absolute -top-10 right-5 h-20 w-20 rounded-full bg-black duration-500 hover:scale-95 md:-top-16 md:right-20 md:h-32 md:w-32">
             <div className="mt-6 md:mt-10 flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +104,7 @@ const Header = () => {
               </svg>
             </div>
           </div> */}
-        </div>
+
       </div>
 
       {/* https://youtu.be/l89_urbsTtk */}
