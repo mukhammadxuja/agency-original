@@ -86,8 +86,8 @@ const Portfolio = () => {
                   alt=""
                 />
                 <p className="">Jizzax City</p>
-                <Link href="/">
-                  <a className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+
+                  <a href='https://jizzaxcity-uz.vercel.app/' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -103,7 +103,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
@@ -123,8 +123,8 @@ const Portfolio = () => {
                   alt=""
                 />
                 <p className="">Video Montage</p>
-                <Link href="/">
-                  <a className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+
+                  <a href='https://imbastudio.uz' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -140,7 +140,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
@@ -160,8 +160,8 @@ const Portfolio = () => {
                   alt=""
                 />
                 <p className="">Fayz Baraka</p>
-                <Link href="/">
-                  <a className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+
+                  <a href='https://fayzbaraka.uz' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -177,7 +177,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
@@ -197,8 +197,8 @@ const Portfolio = () => {
                   alt=""
                 />
                 <p className="">Mamirov Group</p>
-                <Link href="/">
-                  <a className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+
+                  <a href='https://mamirovgroup.uz' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -214,7 +214,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
@@ -234,8 +234,8 @@ const Portfolio = () => {
                   alt=""
                 />
                 <p className="">InReport</p>
-                <Link href="/">
-                  <a className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+
+                  <a href='https://inreport.uz/' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -251,7 +251,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
@@ -271,8 +271,8 @@ const Portfolio = () => {
                   alt=""
                 />
                 <p className="">Lazydev</p>
-                <Link href="/">
-                  <a className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+
+                  <a href='https://lazydev.vercel.app/' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -288,7 +288,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
@@ -308,8 +308,8 @@ const Portfolio = () => {
                   alt=""
                 />
                 <p className="">JS Taminot</p>
-                <Link href="/">
-                  <a className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+
+                  <a href='https://jizzaxsuvtaminoti.uz' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -325,7 +325,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
@@ -345,8 +345,8 @@ const Portfolio = () => {
                   alt=""
                 />
                 <p className="">Ideal Cleaning</p>
-                <Link href="/">
-                  <a className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+
+                  <a href='https://ideal-cleaning.vercel.app/' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -362,7 +362,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
@@ -382,8 +382,8 @@ const Portfolio = () => {
                   alt=""
                 />
                 <p className="">Indebt...</p>
-                <Link href="/">
-                  <a className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+
+                  <a href='https://indebt.uz' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -399,7 +399,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>

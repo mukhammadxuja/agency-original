@@ -20,7 +20,7 @@ const Works = () => {
           </p>
         </div>
       </div>
-      {/* forks table */}
+      {/* forks table */} 
       
       <div className="lg:flex justify-between border-t  py-5 md:py-7 lg:py-7 items-center">
         <div className="flex items-center justify-between">
