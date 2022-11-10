@@ -20,10 +20,11 @@ const Works = () => {
           </p>
         </div>
       </div>
-
-      <div className="lg:flex justify-between border-t  py-5 md:py-7 lg:py-8 items-center">
+      {/* forks table */}
+      
+      <div className="lg:flex justify-between border-t  py-5 md:py-7 lg:py-7 items-center">
         <div className="flex items-center justify-between">
-          <div className="rounded-full sm:w-[80px] sm:h-[80px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] p-[15px] block">
+          <div className="rounded-full sm:w-[70px] sm:h-[70px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] sm:p-[18px] p-[16px] block">
             <img
               className="w-full h-full dark:brightness-0"
               height
@@ -37,23 +38,24 @@ const Works = () => {
           </h3>
         </div>
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
-          <p className="">
+          <p className="text-[15px]">
             {' '}
             Lorem ipsum dolor sit amet asim kahon{' '}
             <br className="sm:block" hidden /> Corrupti omnis magnam, at
             explicabo{' '}
           </p>
           <img
-            className="w-[40px] h-[40px] sm:block hidden brightness-0 dark:brightness-100"
+            className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100"
             height
             src="/svg/star-white.svg"
             alt=""
           />
         </div>
       </div>
-      <div className="lg:flex justify-between border-t  py-5 md:py-7 lg:py-8 items-center">
+
+      <div className="lg:flex justify-between border-t  py-5 md:py-7 lg:py-7 items-center">
         <div className="flex items-center justify-between">
-          <div className="rounded-full sm:w-[80px] sm:h-[80px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] p-[15px] block">
+          <div className="rounded-full sm:w-[70px] sm:h-[70px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] sm:p-[18px] p-[16px] block">
             <img
               className="w-full h-full dark:brightness-0"
               height
@@ -68,23 +70,24 @@ const Works = () => {
         </div>
 
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
-          <p className="">
+          <p className="text-[15px]">
             {' '}
             Lorem ipsum dolor sit amet asim kahon{' '}
             <br className="sm:block" hidden /> Corrupti omnis magnam, at
             explicabo{' '}
           </p>
           <img
-            className="w-[40px] h-[40px] sm:block hidden brightness-0 dark:brightness-100"
+            className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100"
             height
             src="/svg/star-white.svg"
             alt=""
           />
         </div>
       </div>
-      <div className="lg:flex justify-between border-t  py-5 md:py-7 lg:py-8 items-center">
+
+      <div className="lg:flex justify-between border-t  py-5 md:py-7 lg:py-7 items-center">
         <div className="flex items-center justify-between">
-          <div className="rounded-full sm:w-[80px] sm:h-[80px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] p-[15px] block">
+          <div className="rounded-full sm:w-[70px] sm:h-[70px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] sm:p-[18px] p-[16px] block">
             <img
               className="w-full h-full dark:brightness-0"
               height
@@ -99,23 +102,24 @@ const Works = () => {
         </div>
 
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
-          <p className="">
+          <p className="text-[15px]">
             {' '}
             Lorem ipsum dolor sit amet asim kahon{' '}
             <br className="sm:block" hidden /> Corrupti omnis magnam, at
             explicabo{' '}
           </p>
           <img
-            className="w-[40px] h-[40px] sm:block hidden brightness-0 dark:brightness-100"
+            className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100"
             height
             src="/svg/star-white.svg"
             alt=""
           />
         </div>
       </div>
-      <div className="lg:flex justify-between border-t  py-5 md:py-7 lg:py-8 items-center">
+
+      <div className="lg:flex justify-between border-t  py-5 md:py-7 lg:py-7 items-center">
         <div className="flex items-center justify-between">
-          <div className="rounded-full sm:w-[80px] sm:h-[80px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] p-[15px] block">
+          <div className="rounded-full sm:w-[70px] sm:h-[70px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] sm:p-[18px] p-[16px] block">
             <img
               className="w-full h-full dark:brightness-0"
               height
@@ -130,23 +134,24 @@ const Works = () => {
         </div>
 
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
-          <p className="">
+          <p className="text-[15px]">
             {' '}
             Lorem ipsum dolor sit amet asim kahon{' '}
             <br className="sm:block" hidden /> Corrupti omnis magnam, at
             explicabo{' '}
           </p>
           <img
-            className="w-[40px] h-[40px] sm:block hidden brightness-0 dark:brightness-100"
+            className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100"
             height
             src="/svg/star-white.svg"
             alt=""
           />
         </div>
       </div>
-      <div className="lg:flex justify-between border-t  py-5 md:py-7 lg:py-8 items-center">
+
+      <div className="lg:flex justify-between border-t  py-5 md:py-7 lg:py-7 items-center">
         <div className="flex items-center justify-between">
-          <div className="rounded-full sm:w-[80px] sm:h-[80px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] p-[15px] block">
+          <div className="rounded-full sm:w-[70px] sm:h-[70px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] sm:p-[18px] p-[16px] block">
             <img
               className="w-full h-full dark:brightness-0"
               height
@@ -161,14 +166,14 @@ const Works = () => {
         </div>
 
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
-          <p className="">
+          <p className="text-[15px]">
             {' '}
             Lorem ipsum dolor sit amet asim kahon{' '}
             <br className="sm:block" hidden /> Corrupti omnis magnam, at
             explicabo{' '}
           </p>
           <img
-            className="w-[40px] h-[40px] sm:block hidden brightness-0 dark:brightness-100"
+            className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100"
             height
             src="/svg/star-white.svg"
             alt=""
