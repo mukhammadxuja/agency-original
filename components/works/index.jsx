@@ -39,16 +39,8 @@ const Works = () => {
           </h3>
         </div>
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
-<<<<<<< HEAD
           <p className="">
             Zamonaviy, xavfsiz, qulay, funksional web dasturlar qilamiz.
-=======
-          <p className="text-[15px]">
-            {' '}
-            Lorem ipsum dolor sit amet asim kahon{' '}
-            <br className="sm:block" hidden /> Corrupti omnis magnam, at
-            explicabo{' '}
->>>>>>> 0c0d56d088b085c79a8290e95c63220a14ac1812
           </p>
           <img
             className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100"
@@ -76,16 +68,8 @@ const Works = () => {
         </div>
 
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
-<<<<<<< HEAD
           <p className="">
             Zamonaviy, kreativ didingizga mos websaytlar qilamiz.
-=======
-          <p className="text-[15px]">
-            {' '}
-            Lorem ipsum dolor sit amet asim kahon{' '}
-            <br className="sm:block" hidden /> Corrupti omnis magnam, at
-            explicabo{' '}
->>>>>>> 0c0d56d088b085c79a8290e95c63220a14ac1812
           </p>
           <img
             className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100"
@@ -113,17 +97,9 @@ const Works = () => {
         </div>
 
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
-<<<<<<< HEAD
           <p className="">
             Android va IOS operatsion sistemalari uchun mukammal mobil dasturlar
             yaratamiz.
-=======
-          <p className="text-[15px]">
-            {' '}
-            Lorem ipsum dolor sit amet asim kahon{' '}
-            <br className="sm:block" hidden /> Corrupti omnis magnam, at
-            explicabo{' '}
->>>>>>> 0c0d56d088b085c79a8290e95c63220a14ac1812
           </p>
           <img
             className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100"
@@ -151,17 +127,9 @@ const Works = () => {
         </div>
 
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
-<<<<<<< HEAD
           <p className="">
             Shablon yoki sizning istagingizga ko`ra, web dizayn, mobayl dizayn
             va ui/ux qilamiz.
-=======
-          <p className="text-[15px]">
-            {' '}
-            Lorem ipsum dolor sit amet asim kahon{' '}
-            <br className="sm:block" hidden /> Corrupti omnis magnam, at
-            explicabo{' '}
->>>>>>> 0c0d56d088b085c79a8290e95c63220a14ac1812
           </p>
           <img
             className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100"
@@ -189,17 +157,9 @@ const Works = () => {
         </div>
 
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
-<<<<<<< HEAD
           <p className="">
             Biznesingizni brend darajasiga olib chiqishga, sizga yaqindan yordam
             beramiz.
-=======
-          <p className="text-[15px]">
-            {' '}
-            Lorem ipsum dolor sit amet asim kahon{' '}
-            <br className="sm:block" hidden /> Corrupti omnis magnam, at
-            explicabo{' '}
->>>>>>> 0c0d56d088b085c79a8290e95c63220a14ac1812
           </p>
           <img
             className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100"
