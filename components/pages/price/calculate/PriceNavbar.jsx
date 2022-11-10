@@ -43,7 +43,9 @@ const PriceNavbar = (props) => {
                     Sayt Dizayni
                   </p>
                   <div className="flex items-center space-x-1">
-                    <h3 className="text-base md:text-xl">{website.features.design}</h3>
+                    <h3 className="text-base md:text-xl">
+                      {website.features.design}
+                    </h3>
                     <CheckIcon />
                   </div>
                 </div>
