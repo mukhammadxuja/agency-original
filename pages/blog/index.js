@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 import { Breadcrumb, LoadingCard } from '../../components';
 import Link from 'next/link';
+import Head from 'next/head';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -35,6 +36,9 @@ const Blog = () => {
       }}
       className="nav-bar"
     >
+      <Head>
+        <title>.Soft - Blog page</title>
+      </Head>
       <div className="container mx-auto">
         <Breadcrumb page="Blog" link="/blog" />
         <div>
