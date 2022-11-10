@@ -6,17 +6,18 @@ const Works = () => {
       <div className="flex flex-wrap justify-between  pb-10 md:pb-14 lg:pb-16 xl:pb-20 items-center">
         <div>
           <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
-            Biz<span className="text-[#006B98]"> Nimalar</span>{' '}
-            <br className="md:block hidden" /> Qila Olamiz
+            DotSoft -<span className="text-[#006B98]"> nimalar qila</span>{' '}
+            <br className="md:block hidden" /> oladi.
           </h1>
         </div>
         <div>
-          <p className="text-base md:text-lg xl:mt-0 mt-4 mb-[22px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.{' '}
+          <p className="text-sm md:text-base xl:mt-0 mt-4">
+            - Jamiyatga kerakli platformalar ishlab chiqamiz;
             <br className="md:block hidden" />
-            Lorem ipsum dolor sit amet consectetur adipisicing{' '}
-            <br className="md:block hidden" /> Autem dolorem commodi iusto est
-            rerum maxime quos
+            - Har qanday biznesni avtomatlashtiramiz;
+            <br className="md:block hidden" />- Buyurtma asosida web dastur, web
+            sayt, mobil ilovalar, <br className="md:block hidden" /> telegram
+            bot, logo dizayn va h.k tayyorlaymiz.
           </p>
         </div>
       </div>
@@ -33,15 +34,12 @@ const Works = () => {
           </div>
 
           <h3 className="sm:text-3xl text-2xl xl:ml-[100px] lg:ml-[50px] text-[#202020] dark:text-[white]">
-            UI/UX Desing
+            Web apps
           </h3>
         </div>
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
           <p className="">
-            {' '}
-            Lorem ipsum dolor sit amet asim kahon{' '}
-            <br className="sm:block" hidden /> Corrupti omnis magnam, at
-            explicabo{' '}
+            Zamonaviy, xavfsiz, qulay, funksional web dasturlar qilamiz.
           </p>
           <img
             className="w-[40px] h-[40px] sm:block hidden brightness-0 dark:brightness-100"
@@ -63,16 +61,13 @@ const Works = () => {
           </div>
 
           <h3 className="sm:text-3xl text-2xl xl:ml-[100px] lg:ml-[50px] text-[#202020] dark:text-[white]">
-            Logo Desing
+            Website development
           </h3>
         </div>
 
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
           <p className="">
-            {' '}
-            Lorem ipsum dolor sit amet asim kahon{' '}
-            <br className="sm:block" hidden /> Corrupti omnis magnam, at
-            explicabo{' '}
+            Zamonaviy, kreativ didingizga mos websaytlar qilamiz.
           </p>
           <img
             className="w-[40px] h-[40px] sm:block hidden brightness-0 dark:brightness-100"
@@ -94,16 +89,14 @@ const Works = () => {
           </div>
 
           <h3 className="sm:text-3xl text-2xl xl:ml-[100px] lg:ml-[50px] text-[#202020] dark:text-[white]">
-            Devolopment
+            Mobile development
           </h3>
         </div>
 
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
           <p className="">
-            {' '}
-            Lorem ipsum dolor sit amet asim kahon{' '}
-            <br className="sm:block" hidden /> Corrupti omnis magnam, at
-            explicabo{' '}
+            Android va IOS operatsion sistemalari uchun mukammal mobil dasturlar
+            yaratamiz.
           </p>
           <img
             className="w-[40px] h-[40px] sm:block hidden brightness-0 dark:brightness-100"
@@ -125,16 +118,14 @@ const Works = () => {
           </div>
 
           <h3 className="sm:text-3xl text-2xl xl:ml-[100px] lg:ml-[50px] text-[#202020] dark:text-[white]">
-            Logo Desing
+            Design
           </h3>
         </div>
 
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
           <p className="">
-            {' '}
-            Lorem ipsum dolor sit amet asim kahon{' '}
-            <br className="sm:block" hidden /> Corrupti omnis magnam, at
-            explicabo{' '}
+            Shablon yoki sizning istagingizga ko`ra, web dizayn, mobayl dizayn
+            va ui/ux qilamiz.
           </p>
           <img
             className="w-[40px] h-[40px] sm:block hidden brightness-0 dark:brightness-100"
@@ -156,16 +147,14 @@ const Works = () => {
           </div>
 
           <h3 className="sm:text-3xl text-2xl xl:ml-[100px] lg:ml-[50px] text-[#202020] dark:text-[white]">
-            Devolopment
+            Branding
           </h3>
         </div>
 
         <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
           <p className="">
-            {' '}
-            Lorem ipsum dolor sit amet asim kahon{' '}
-            <br className="sm:block" hidden /> Corrupti omnis magnam, at
-            explicabo{' '}
+            Biznesingizni brend darajasiga olib chiqishga, sizga yaqindan yordam
+            beramiz.
           </p>
           <img
             className="w-[40px] h-[40px] sm:block hidden brightness-0 dark:brightness-100"

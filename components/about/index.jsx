@@ -25,14 +25,21 @@ const About = () => {
           <div>
             <h3 className="font-bold md:text-xl">ABOUT US</h3>
             <h2 className="md:text-[4rem] text-[2rem] font-bold leading-none">
-              Creating <span className="text-[#016C9AFF]">User - Friendly</span>{' '}
-              Design
+              DotSoft -{' '}
+              <span className="text-[#016C9AFF] mr-1 md:mr-2">
+                barchasiga NUQTA
+              </span>
+              qo`yadi. <span className="text-2xl md:text-4xl">😉</span>
             </h2>
-            <p className="text-lg text-gray-600 dark:text-white pt-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
-              illo delectus voluptates vero assumenda porro maxime at laborum,
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
+            <h5 className="md:text-base text-gray-600 dark:text-white pt-4">
+              DotSoft — bu 2021 yildan boshlab IT bozorida mijozlar uchun xizmat
+              qiluvchi professional mutaxasislar jamoasidir. DotSoft
+              asoschilarining oliy maqsadi kompaniyani dunyo IT bozorida
+              yetakchilaridan qilish va dunyo IT sohasidagi xalqaro
+              standartlariga javob bera oladigan dasturchilar jamoasini
+              shakllantirish. Shu òrinda ularga rasman ishga joylash va oliy
+              maqsad sari birga harakat qilish.
+            </h5>
           </div>
           <div className="mini-cards pt-4 mt-5">
             <div className="flex">

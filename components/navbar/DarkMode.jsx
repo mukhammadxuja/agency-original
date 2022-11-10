@@ -19,11 +19,11 @@ const DarkMode = () => {
       return (
         <button
           onClick={() => setTheme('light')}
-          className="mt-4 cursor-pointer rounded-lg bg-white py-3 md:py-2 px-6
+          className="mt-4 cursor-pointer rounded-lg bg-white py-3 px-6
         text-xs md:text-sm font-medium text-black shadow-md
         duration-500 ease-in-out active:scale-95 active:bg-opacity-80 flex items-center space-x-1"
         >
-          <h2 className="capitalize">{t('home:light')}</h2> 
+          <h2 className="capitalize">{t('home:ligth_navbar')}</h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -44,11 +44,11 @@ const DarkMode = () => {
       return (
         <button
           onClick={() => setTheme('dark')}
-          className="mt-4 cursor-pointer rounded-lg bg-black py-3 md:py-2 px-6
+          className="mt-4 cursor-pointer rounded-lg bg-black py-3 px-6
           text-xs md:text-sm font-medium text-white shadow-md
           duration-500 ease-in-out active:scale-95 active:bg-opacity-80 flex items-center space-x-1"
         >
-          <h2 className="capitalize">{t('home:light')}</h2>
+          <h2 className="capitalize">{t('home:dark_navbar')}</h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -12,33 +12,12 @@ const Portfolio = () => {
         <div>
           <h3 className="font-bold md:text-xl">Works</h3>
           <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
-            Bizning <span className="text-[#006B98]">Bajargan</span>{' '}
-            <br className="md:block hidden" /> Loyhalarimiz
-          </h1>
-        </div>
-        <div>
-          <p className="text-base md:text-lg xl:mt-0 mt-4 mb-[22px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.{' '}
+            DotSoft -{' '}
+            <span className="text-[#006B98]">
+              bajargan <br /> loyihalar.
+            </span>{' '}
             <br className="md:block hidden" />
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </p>
-          <a className="font-bold text-lg flex items-center gap-[6px]" href="#">
-            Discover More{' '}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-3.5  h-3.5 stroke-2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-              />
-            </svg>
-          </a>
+          </h1>
         </div>
       </div>
       <>

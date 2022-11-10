@@ -1,12 +1,12 @@
 export const weCanDo = [
   {
     id: '12432342432',
-    title: 'Graphic Design',
+    title: 'Web apps',
     img: '/svg/star-white.svg',
   },
   {
     id: '24092102498',
-    title: 'Web Development',
+    title: 'Web site development',
     img: '/svg/star-white.svg',
   },
   {
@@ -16,7 +16,7 @@ export const weCanDo = [
   },
   {
     id: '4123098200533',
-    title: 'UI/UX Design',
+    title: 'Design',
     img: '/svg/star-white.svg',
   },
   {
@@ -26,12 +26,12 @@ export const weCanDo = [
   },
   {
     id: '1242342342432',
-    title: 'Graphic Design',
+    title: 'Web apps',
     img: '/svg/star-white.svg',
   },
   {
     id: '2402398102498',
-    title: 'Web Development',
+    title: 'Web site development',
     img: '/svg/star-white.svg',
   },
   {
@@ -41,7 +41,7 @@ export const weCanDo = [
   },
   {
     id: '415342309812533',
-    title: 'UI/UX Design',
+    title: 'Design',
     img: '/svg/star-white.svg',
   },
   {
@@ -51,12 +51,12 @@ export const weCanDo = [
   },
   {
     id: '1223342432',
-    title: 'Graphic Design',
+    title: 'Web apps',
     img: '/svg/star-white.svg',
   },
   {
     id: '2442102498',
-    title: 'Web Development',
+    title: 'Web site development',
     img: '/svg/star-white.svg',
   },
   {
@@ -66,7 +66,7 @@ export const weCanDo = [
   },
   {
     id: '412323200533',
-    title: 'UI/UX Design',
+    title: 'Design',
     img: '/svg/star-white.svg',
   },
   {
@@ -76,12 +76,12 @@ export const weCanDo = [
   },
   {
     id: '1242342309042432',
-    title: 'Graphic Design',
+    title: 'Web apps',
     img: '/svg/star-white.svg',
   },
   {
     id: '2423423498102498',
-    title: 'Web Development',
+    title: 'Web site development',
     img: '/svg/star-white.svg',
   },
   {
@@ -91,7 +91,7 @@ export const weCanDo = [
   },
   {
     id: '415245209812533',
-    title: 'UI/UX Design',
+    title: 'Design',
     img: '/svg/star-white.svg',
   },
   {
