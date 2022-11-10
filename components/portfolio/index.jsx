@@ -50,29 +50,30 @@ const Portfolio = () => {
           modules={[Autoplay]}
           className="mySwiper !pt-[3rem]"
         >
+
           <SwiperSlide className="swiper-slide">
             <img
-              src="https://images.wallpaperscraft.ru/image/single/kraska_relef_tekstura_135781_3840x2400.jpg"
+              src="/images/propjects/indebt.jpg"
               alt="Slide image"
             />
             <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
+              <h4 className=" ">Development</h4>
+              <div className="slide-opacity-box">
                 <img
-                  className="star filter dark:!brightness-0"
+                  className="star"
                   src="/svg/star-white.svg"
                   alt=""
                 />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <Link href="/">
-                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                <p className="">Jizzax City</p>
+
+                  <a href='https://jizzaxcity-uz.vercel.app/' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-4 h-4 stroke-2"
+                      className="w-4 h-4 stroke-2 dark:text-[black]"
                     >
                       <path
                         strokeLinecap="round"
@@ -81,7 +82,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
@@ -89,27 +90,27 @@ const Portfolio = () => {
           <SwiperSlide className="swiper-slide">
             {' '}
             <img
-              src="https://catherineasquithgallery.com/uploads/posts/2021-02/1613256331_70-p-sinyaya-kraska-fon-103.jpg"
+              src="/images/propjects/imbastudio.jpg"
               alt="Slide image"
             />
             <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
+              <h4 className=" ">Development</h4>
+              <div className="slide-opacity-box">
                 <img
-                  className="star filter dark:!brightness-0"
+                  className="star"
                   src="/svg/star-white.svg"
                   alt=""
                 />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <Link href="/">
-                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                <p className="">Video Montage</p>
+
+                  <a href='https://imbastudio.uz' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-4 h-4 stroke-2"
+                      className="w-4 h-4 stroke-2 dark:text-[black]"
                     >
                       <path
                         strokeLinecap="round"
@@ -118,7 +119,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
@@ -126,27 +127,27 @@ const Portfolio = () => {
           <SwiperSlide className="swiper-slide">
             {' '}
             <img
-              src="https://i.pinimg.com/originals/f2/d6/e2/f2d6e2ed1722fd986b862973532b6bc0.jpg"
+              src="/images/propjects/fayzbaraka.jpg"
               alt="Slide image"
             />
             <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
+              <h4 className=" ">Development</h4>
+              <div className="slide-opacity-box">
                 <img
-                  className="star filter dark:!brightness-0"
+                  className="star"
                   src="/svg/star-white.svg"
                   alt=""
                 />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <Link href="/">
-                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                <p className="">Fayz Baraka</p>
+
+                  <a href='https://fayzbaraka.uz' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-4 h-4 stroke-2"
+                      className="w-4 h-4 stroke-2 dark:text-[black]"
                     >
                       <path
                         strokeLinecap="round"
@@ -155,7 +156,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
@@ -163,27 +164,27 @@ const Portfolio = () => {
           <SwiperSlide className="swiper-slide">
             {' '}
             <img
-              src="https://images.pexels.com/photos/3276032/pexels-photo-3276032.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              src="/images/propjects/mamirovgroup.jpg"
               alt="Slide image"
             />
             <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
+              <h4 className=" ">Development</h4>
+              <div className="slide-opacity-box">
                 <img
-                  className="star filter dark:!brightness-0"
+                  className="star"
                   src="/svg/star-white.svg"
                   alt=""
                 />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <Link href="/">
-                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                <p className="">Mamirov Group</p>
+
+                  <a href='https://mamirovgroup.uz' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-4 h-4 stroke-2"
+                      className="w-4 h-4 stroke-2 dark:text-[black]"
                     >
                       <path
                         strokeLinecap="round"
@@ -192,7 +193,7 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
@@ -200,27 +201,64 @@ const Portfolio = () => {
           <SwiperSlide className="swiper-slide">
             {' '}
             <img
-              src="https://images.wallpaperscraft.ru/image/single/kraska_relef_tekstura_135781_3840x2400.jpg"
+              src="/images/propjects/inreport.jpg"
               alt="Slide image"
             />
             <div className="slide-opacity">
-              <h4 className="dark:bg-[white] dark:text-[black]">Development</h4>
-              <div className="slide-opacity-box  dark:bg-[white]">
+              <h4 className=" ">Development</h4>
+              <div className="slide-opacity-box">
                 <img
-                  className="star filter dark:!brightness-0"
+                  className="star"
                   src="/svg/star-white.svg"
                   alt=""
                 />
-                <p className="dark:!text-[black]">Glassy Sky</p>
-                <Link href="/">
-                  <a className="p-5 dark:bg-[black] hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                <p className="">InReport</p>
+
+                  <a href='https://inreport.uz/' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-4 h-4 stroke-2"
+                      className="w-4 h-4 stroke-2 dark:text-[black]"
+                    >
+                      <path
+                        strokebordLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </a>
+
+              </div>
+            </div>
+          </SwiperSlide>
+                 
+          <SwiperSlide className="swiper-slide">
+            {' '}
+            <img
+              src="/images/propjects/lazydev.jpg"
+              alt="Slide image"
+            />
+            <div className="slide-opacity">
+              <h4 className=" ">Development</h4>
+              <div className="slide-opacity-box">
+                <img
+                  className="star"
+                  src="/svg/star-white.svg"
+                  alt=""
+                />
+                <p className="">Lazydev</p>
+
+                  <a href='https://lazydev.vercel.app/' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 stroke-2 dark:text-[black]"
                     >
                       <path
                         strokeLinecap="round"
@@ -229,10 +267,122 @@ const Portfolio = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+
               </div>
             </div>
           </SwiperSlide>
+
+          <SwiperSlide className="swiper-slide">
+            {' '}
+            <img
+              src="/images/propjects/suvtaminoti.jpg"
+              alt="Slide image"
+            />
+            <div className="slide-opacity">
+              <h4 className=" ">Development</h4>
+              <div className="slide-opacity-box">
+                <img
+                  className="star"
+                  src="/svg/star-white.svg"
+                  alt=""
+                />
+                <p className="">JS Taminot</p>
+
+                  <a href='https://jizzaxsuvtaminoti.uz' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 stroke-2 dark:text-[black]"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </a>
+
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="swiper-slide">
+            {' '}
+            <img
+              src="/images/propjects/idealcleaning.jpg"
+              alt="Slide image"
+            />
+            <div className="slide-opacity">
+              <h4 className=" ">Development</h4>
+              <div className="slide-opacity-box">
+                <img
+                  className="star"
+                  src="/svg/star-white.svg"
+                  alt=""
+                />
+                <p className="">Ideal Cleaning</p>
+
+                  <a href='https://ideal-cleaning.vercel.app/' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 stroke-2 dark:text-[black]"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </a>
+
+              </div>
+            </div>
+          </SwiperSlide>
+          
+          <SwiperSlide className="swiper-slide">
+            {' '}
+            <img
+              src="/images/propjects/indebt-1.jpg"
+              alt="Slide image"
+            />
+            <div className="slide-opacity">
+              <h4 className=" ">Development</h4>
+              <div className="slide-opacity-box">
+                <img
+                  className="star"
+                  src="/svg/star-white.svg"
+                  alt=""
+                />
+                <p className="">Indebt...</p>
+
+                  <a href='https://indebt.uz' target="blank"  className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 stroke-2 dark:text-[black]"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </a>
+
+              </div>
+            </div>
+          </SwiperSlide>
+
         </Swiper>
       </>
     </section>
