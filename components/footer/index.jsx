@@ -1,23 +1,25 @@
 import React from 'react';
 import Link from 'next/link';
+import { useLanguage } from '../../hooks/useLanguage';
 
 const Footer = () => {
+  const { t } = useLanguage();
   return (
     <div className="pt-5 md:pt-10  bg-neutral-50 dark:bg-black">
       <div className="container mx-auto flex flex-col md:flex-row items-start md:items-center justify-between pb-5 md:pb-10">
         <div className="mt-4 md:mt-0">
-          <h3 className="text-xl pb-3">About Us</h3>
+          <h3 className="text-xl pb-3">{t("home:about_navbar")}</h3>
           <div className="space-y-1">
             <div>
-              <h4 className="text-lg">Company information:</h4>
+              <h4 className="text-lg">{t("home:footer_company_info")}:</h4>
               <p className="text-sm">DotSoft LLC A Software Company</p>
             </div>
             <div>
-              <h4 className="text-lg">Address:</h4>
+              <h4 className="text-lg">{t('home:footer_adress')}:</h4>
               <p className="text-sm">Uzbekistan, Jizzakh</p>
             </div>
             <div>
-              <h4 className="text-lg">Call us:</h4>
+              <h4 className="text-lg">{t('home:footer_callus')}:</h4>
               <p className="text-sm">
                 <a
                   href="tel:+998992666545"
@@ -30,13 +32,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-4 md:mt-0">
-          <h3 className="text-xl pb-3">Services</h3>
+          <h3 className="text-xl pb-3">{t('home:footer_services')}</h3>
           <div className="space-y-1">
-            <h4 className="text-lg">Website Development</h4>
-            <h4 className="text-lg">Web Apps</h4>
-            <h4 className="text-lg">Mobile Development</h4>
-            <h4 className="text-lg">Branding</h4>
-            <h4 className="text-lg">UI/UX Design</h4>
+            <h4 className="text-lg">{t('home:footer_services_1')}</h4>
+            <h4 className="text-lg">{t('home:footer_services_2')}</h4>
+            <h4 className="text-lg">{t('home:footer_services_3')}</h4>
+            <h4 className="text-lg">{t('home:footer_services_4')}</h4>
+            <h4 className="text-lg">{t('home:footer_services_5')}</h4>
           </div>
         </div>
         <div className="mt-4 md:mt-0">
@@ -79,7 +81,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-row-reverse md:flex-row items-center justify-between py-10 border-t">
         <p className="flex text-lg font-medium text-main dark:text-white">
           <span className="text-[#006B98] md:mr-2">.Soft Group</span>
-          <span className="hidden md:block">All rights reserved. </span> ©2022
+          <span className="hidden md:block">{t('home:all_rights_reserved')}. </span> ©2022
         </p>
         <ul className="flex items-center space-x-3 md:space-x-4 lg:space-x-6 xl:space-x-8 text-black dark:text-white text-lg font-medium md:font-semibold">
           <li className="cursor-pointer block md:hidden">

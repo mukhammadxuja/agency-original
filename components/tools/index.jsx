@@ -9,11 +9,11 @@ const Tools = () => {
     <div className="container mx-auto w-full md:max-w-6xl xl:max-w-7xl py-10 lg:py-16 xl:py-32">
       <div className="text-center">
         <div className="flex items-center justify-center space-x-2">
-          <h3 className="pb-10 text-2xl lg:text-4xl xl:text-5xl text-center text-black dark:text-white">
+          <h3 className="md:pb-10 text-2xl lg:text-4xl xl:text-5xl text-center text-black dark:text-white">
             Tools
           </h3>
         </div>
-        <div className="py-8 space-x-4">
+        <div className="my-8 space-x-4 px-4 md:px-0 flex items-center justify-start sm:justify-center flex-nowrap overflow-x-scroll scrollbar-hide">
           <TagBtn name="frontend" handleSetTag={setTag} />
           <TagBtn name="3D" handleSetTag={setTag} />
           <TagBtn name="backend" handleSetTag={setTag} />
@@ -22,7 +22,7 @@ const Tools = () => {
           <TagBtn name="testing" handleSetTag={setTag} />
         </div>
       </div>
-      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-8 gap-4 justify-items-center w-fit mx-auto">
+      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-8 gap-4 md:gap-8 justify-items-center w-fit mx-auto">
         {tools.map((tools) => {
           console.log(tools.tag);
           return (
