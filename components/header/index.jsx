@@ -64,24 +64,6 @@ const Header = () => {
             effect="blur"
             alt="Banner image"
           />
-          {/* <div className="absolute -top-10 right-5 h-20 w-20 rounded-full bg-black duration-500 hover:scale-95 md:-top-16 md:right-20 md:h-32 md:w-32">
-            <div className="mt-6 md:mt-10 flex justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="h-8 w-8 md:h-12 md:w-12 text-white"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
-                />
-              </svg>
-            </div>
-          </div> */}
         </div>
       </div>
 
