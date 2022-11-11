@@ -16,17 +16,41 @@ const Navbar = () => {
         } fixed z-50 top-0 left-0 right-0 w-screen backdrop-blur flex-none transition-all duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white supports-backdrop-blur:bg-white/95 dark:bg-neutral-900/75`}
       >
         <div className="container mx-auto flex items-center justify-between pb-5">
+          {/* <div className="ml-0 md:-ml-3 mt-2 cursor-pointer">
+            <Link href="/">
+              <div className="block dark:hidden">
+                <Image
+                  width={70}
+                  height={60}
+                  objectFit="contain"
+                  src="/images/dotsoft/dotsoft-light.png"
+                  alt="Footer logo"
+                />
+              </div>
+            </Link>
+            <Link href="/">
+              <div className="hidden dark:block">
+                <Image
+                  width={70}
+                  height={60}
+                  objectFit="contain"
+                  src="/images/dotsoft/dotsoft-dark.png"
+                  alt="Footer logo"
+                />
+              </div>
+            </Link>
+          </div> */}
           <Link href="/">
             <img
               className="ml-0 md:-ml-3 mt-4 w-20 md:w-28 cursor-pointer block dark:hidden"
-              src="/images/dotsoft-light.png"
+              src="/images/dotsoft/dotsoft-light.png"
               alt=""
             />
           </Link>
           <Link href="/">
             <img
               className="ml-0 md:-ml-3 mt-4 w-20 md:w-28 cursor-pointer hidden dark:block"
-              src="/images/dotsoft-dark.png"
+              src="/images/dotsoft/dotsoft-dark.png"
               alt=""
             />
           </Link>

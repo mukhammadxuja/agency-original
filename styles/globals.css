@@ -60,7 +60,7 @@
     opacity: 0.04;
     z-index: 1500;
     pointer-events: none;
-    background: url(/images/noise.gif);
+    background: url(/gif/noise.gif);
   }
 
   p,
@@ -106,7 +106,6 @@
     padding: 15px;
     overflow-x: hidden;
     transition: 500ms;
-    
   }
   .swiper-slide , .cardSwiper:hover .slide-opacity {
     transition: 500ms ;
@@ -125,7 +124,6 @@
     left: 15px;
     padding: 2px 10px;
     border: 1px solid rgba(89, 84, 84, 0.7);
-
   }
   .cardSwiper .slide-opacity .slide-opacity-box {
     width: 100%;

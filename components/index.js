@@ -12,10 +12,10 @@ export { default as Tools } from './tools/index';
 export { default as Contact } from './contact/index';
 
 // Navbar's components
-export { default as Language } from './navbar/Language';
-export { default as DarkMode } from './navbar/DarkMode';
-export { default as MobileNavbar } from './navbar/MobileNavbar';
-export { default as Totop } from './navbar/Totop';
+export { default as Language } from './navbar/language';
+export { default as DarkMode } from './navbar/dark';
+export { default as MobileNavbar } from './navbar/mobile-nav';
+export { default as Totop } from './navbar/top';
 
 // UI kits
 export { default as Breadcrumb } from './ui-kit/breadcrumb/index';

@@ -6,5 +6,5 @@ export const useLanguage = () => {
   const { locale } = router;
   const { t } = useTranslation();
 
-  return { t, locale };
+  return { t, locale, router };
 };

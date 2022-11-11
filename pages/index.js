@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Script from 'next/script';
-import { description } from '../package.json';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -25,7 +24,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>{description}</title>
+        <title>.Soft - Development Group</title>
       </Head>
       
       <Script src="https://third-party-script.js"></Script>

@@ -1,16 +1,14 @@
 import React from 'react';
-
 import { useRouter } from 'next/router';
-import { useTranslation } from 'next-i18next';
-import { useScroll } from '../../hooks/useScroll';
+
+import { useScroll } from '../../../hooks/useScroll';
+import { useLanguage } from '../../../hooks/useLanguage';
 
 const MobileNavbar = () => {
-  const { scroll } = useScroll();
-  // Language support
-  const { t } = useTranslation();
-  const router = useRouter();
-
   const [openNav, setOpenNav] = React.useState(false);
+  const { scroll } = useScroll();
+  const { t, router } = useLanguage();
+
   const toggleNav = () => {
     setOpenNav(!openNav);
   };

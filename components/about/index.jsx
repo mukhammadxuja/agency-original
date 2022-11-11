@@ -1,12 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
 import img1 from './about.jpeg';
-// import img2 from 'https://miro.medium.com/max/4096/1*rg15Zbos-3RZ_TCKe4bdhg.jpeg';
 
-import { weCanDo } from './headerData';
+import { weCanDo } from '../data/weCanDoData';
 
 const About = () => {
-
   return (
     <section className="md:pb-14 lg:pb-16 xl:pb-20">
       <div className="bg-black overflow-hidden ">
@@ -25,12 +23,18 @@ const About = () => {
         <div className="md:w-[50%] flex flex-col items-center">
           <div>
             <h3 className="font-bold md:text-xl">ABOUT US</h3>
-            <h2 className="md:text-[4rem] text-[2rem] font-bold leading-none">
-              DotSoft -{' '}
+            <h2 className="md:text-[4rem] text-[2rem] leading-none">
+              DotSoft -
               <span className="text-[#016C9AFF] mr-1 md:mr-2">
-                barchasiga NUQTA
+                barchasiga nuqta
               </span>
-              qo`yadi. <span className="text-2xl md:text-4xl">😉</span>
+              qo`yadi.
+              <Image
+                src="/images/emojes/winking-face.png"
+                className="rounded-full"
+                width={35}
+                height={35}
+              />
             </h2>
             <h5 className="md:text-base text-gray-600 dark:text-white pt-4">
               DotSoft — bu 2021 yildan boshlab IT bozorida mijozlar uchun xizmat
@@ -55,7 +59,6 @@ const About = () => {
               </div>
               <div className="pl-2">
                 <a target="blank" href="https://t.me/your_frontendDev">
-
                   <h3 className="font-bold text-lg">Safarov Muzaffar</h3>
                 </a>
                 <p className="text-[#3F3F3FFF] dark:text-gray-400">
@@ -75,16 +78,16 @@ const About = () => {
             <div className="flex ">
               <div>
                 <Image
+                  src="/images/team/dark.jpg"
                   className="rounded-full"
                   width={50}
                   height={50}
-                  src={img1}
-                  alt=""
+                  loading="lazy"
+                  alt="Anvarov Muhammad"
                 />
               </div>
               <div className="pl-2">
-                <a target="blank" href="https://t.me/komilmaxmudov">
-
+                <a target="blank" href="https://t.me/akzmsh">
                   <h3 className="font-bold text-lg">Anvarov Muhammad</h3>
                 </a>
                 <p className="text-[#3F3F3FFF] dark:text-gray-400">
@@ -111,7 +114,6 @@ const About = () => {
               </div>
               <div className="pl-2">
                 <a target="blank" href="https://t.me/AzizjonAbdullayev">
-
                   <h3 className="font-bold text-lg">Abdullayev Aziz</h3>
                 </a>
                 <p className="text-[#3F3F3FFF] dark:text-gray-400">
@@ -155,7 +157,7 @@ const About = () => {
       <div className="container mx-auto mt-5 md:mt-20">
         <div className="relative h-[23rem] md:h-[29rem] bg-center rounded-xl w-full bg-cover ">
           {/* <div className='h-[23rem] md:h-[29rem] bg-center rounded-xl w-full bg-cover' style={ sectionStyle } ></div> */}
-          
+
           {/* <img className='h-[23rem] md:h-[29rem] bg-center rounded-xl w-full bg-cover' src={img1} alt="fdgdf" style={{backgroundPosition: "center", backgroundSize: "cover"}}/> */}
 
           <Image
