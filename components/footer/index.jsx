@@ -36,11 +36,11 @@ const Footer = () => {
         <div className="mt-4 md:mt-0">
           <h3 className="text-xl pb-3">{t('home:footer_services')}</h3>
           <div className="space-y-1">
-            <h4 className="text-lg">{t('home:footer_services_1')}</h4>
-            <h4 className="text-lg">{t('home:footer_services_2')}</h4>
-            <h4 className="text-lg">{t('home:footer_services_3')}</h4>
-            <h4 className="text-lg">{t('home:footer_services_4')}</h4>
-            <h4 className="text-lg">{t('home:footer_services_5')}</h4>
+            <h4 className="text-lg">{t('home:service_1')}</h4>
+            <h4 className="text-lg">{t('home:service_2')}</h4>
+            <h4 className="text-lg">{t('home:service_3')}</h4>
+            <h4 className="text-lg">{t('home:service_4')}</h4>
+            <h4 className="text-lg">{t('home:service_5')}</h4>
           </div>
         </div>
         <div className="mt-4 md:mt-0">

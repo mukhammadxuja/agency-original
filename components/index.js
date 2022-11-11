@@ -5,6 +5,7 @@ export { default as Cookie } from './cookie/index';
 
 // Sections
 export { default as Header } from './header/index';
+export { default as MarqueeServices } from './marquee-service/index';
 export { default as About } from './about/index';
 export { default as Works } from './works/index';
 export { default as Portfolio } from './portfolio/index';

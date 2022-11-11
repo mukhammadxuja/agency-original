@@ -2,33 +2,26 @@ import Image from 'next/image';
 import React from 'react';
 import img1 from './about.jpeg';
 
-import { weCanDo } from '../data/weCanDoData';
+import { useLanguage } from '../../hooks/useLanguage';
+import { MarqueeServices } from '../';
 
 const About = () => {
+  const { t } = useLanguage();
   return (
     <section className="md:pb-14 lg:pb-16 xl:pb-20">
-      <div className="bg-black overflow-hidden ">
-        <div className="h-16 md:h-24 flex items-center whitespace-nowrap animate-marquee">
-          {weCanDo.map((canWe) => (
-            <div key={canWe.id} className="flex items-center">
-              <img className="w-6 md:w-8 ml-8" src={canWe.img} alt="star img" />
-              <h3 className="text-2xl md:text-3xl text-white mx-5">
-                {canWe.title}
-              </h3>
-            </div>
-          ))}
-        </div>
-      </div>
+      <MarqueeServices />
       <div className="container mx-auto md:flex mt-5 md:mt-20">
         <div className="md:w-[50%] flex flex-col items-center">
           <div>
-            <h3 className="font-bold md:text-xl">ABOUT US</h3>
+            <h3 className="font-bold md:text-xl">
+              {t('home:about_us_section')}
+            </h3>
             <h2 className="md:text-[4rem] text-[2rem] leading-none">
               DotSoft -
               <span className="text-[#016C9AFF] mr-1 md:mr-2">
-                barchasiga nuqta
+                {t('home:about_title_highlight')}
               </span>
-              qo`yadi.
+              {t('home:about_title_without_highlight')}.
               <Image
                 src="/images/emojes/winking-face.png"
                 className="rounded-full"
@@ -37,13 +30,7 @@ const About = () => {
               />
             </h2>
             <h5 className="md:text-base text-gray-600 dark:text-white pt-4">
-              DotSoft — bu 2021 yildan boshlab IT bozorida mijozlar uchun xizmat
-              qiluvchi professional mutaxasislar jamoasidir. DotSoft
-              asoschilarining oliy maqsadi kompaniyani dunyo IT bozorida
-              yetakchilaridan qilish va dunyo IT sohasidagi xalqaro
-              standartlariga javob bera oladigan dasturchilar jamoasini
-              shakllantirish. Shu òrinda ularga rasman ishga joylash va oliy
-              maqsad sari birga harakat qilish.
+              DotSoft — {t('home:about_paragraph')}
             </h5>
           </div>
           <div className="mini-cards pt-4 mt-5">
@@ -156,10 +143,6 @@ const About = () => {
       </div>
       <div className="container mx-auto mt-5 md:mt-20">
         <div className="relative h-[23rem] md:h-[29rem] bg-center rounded-xl w-full bg-cover ">
-          {/* <div className='h-[23rem] md:h-[29rem] bg-center rounded-xl w-full bg-cover' style={ sectionStyle } ></div> */}
-
-          {/* <img className='h-[23rem] md:h-[29rem] bg-center rounded-xl w-full bg-cover' src={img1} alt="fdgdf" style={{backgroundPosition: "center", backgroundSize: "cover"}}/> */}
-
           <Image
             src={img1}
             layout="fill"
@@ -171,35 +154,35 @@ const About = () => {
         <div className="flex justify-evenly md:px-10 py-5 text-center text-[#222426FF]">
           <div>
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
-              168{' '}
+              37
               <span>
                 <img className="w-5 md:w-7" src="/svg/star.svg" alt="" />
               </span>
             </h2>
             <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
-              Full Complete Projcets
+              {t('home:about_complete_projects')}
             </span>
           </div>
           <div>
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
-              92{' '}
+              17
               <span>
                 <img className="w-5 md:w-7" src="/svg/star.svg" alt="" />
               </span>
             </h2>
             <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
-              our own projects
+              {t('home:about_own_projects')}
             </span>
           </div>
           <div>
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
-              15,300{' '}
+              46
               <span>
                 <img className="w-5 md:w-7" src="/svg/star.svg" alt="" />
               </span>
             </h2>
             <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
-              Our Staid Field Client
+              {t('home:about_customers')}
             </span>
           </div>
         </div>
