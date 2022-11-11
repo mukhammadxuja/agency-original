@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import PortfolioCard from './Card';
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -20,6 +20,7 @@ const Portfolio = () => {
           </h1>
         </div>
       </div>
+      {/* Swiper js */}
       <>
         <Swiper
           slidesPerView={4}
@@ -29,7 +30,7 @@ const Portfolio = () => {
             0: {
               slidesPerView: 1,
             },
-            600: {
+            570: {
               slidesPerView: 2,
             },
             1024: {
@@ -50,6 +51,7 @@ const Portfolio = () => {
           modules={[Autoplay]}
           className="mySwiper !pt-[3rem]"
         >
+<<<<<<< HEAD
           <SwiperSlide className="swiper-slide">
             <img src="/images/propjects/indebt.jpg" alt="Slide image" />
             <div className="slide-opacity">
@@ -345,6 +347,92 @@ const Portfolio = () => {
               </div>
             </div>
           </SwiperSlide>
+=======
+
+
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Jizzax City"
+              imgSrg="/images/propjects/indebt.jpg"
+              link="https://jizzaxcity-uz.vercel.app/"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Imba"
+              imgSrg="/images/propjects/imbastudio.jpg"
+              link="https://imbastudio.uz"
+            />
+          </SwiperSlide>
+
+          
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Fayz Baraka"
+              imgSrg="/images/propjects/fayzbaraka.jpg"
+              link="https://fayzbaraka.uz"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Mamirov Group"
+              imgSrg="/images/propjects/mamirovgroup.jpg"
+              link="https://mamirovgroup.uz"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="InReport"
+              imgSrg="/images/propjects/inreport.jpg"
+              link="https://inreport.uz/"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Lazydev"
+              imgSrg="/images/propjects/lazydev.jpg"
+              link="https://lazydev.vercel.app/"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="JS Taminot"
+              imgSrg="/images/propjects/suvtaminoti.jpg"
+              link="https://jizzaxsuvtaminoti.uz"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Ideal Cleaning"
+              imgSrg="/images/propjects/idealcleaning.jpg"
+              link="https://ideal-cleaning.vercel.app/"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Indebt..."
+              imgSrg="/images/propjects/indebt-1.jpg"
+              link="https://indebt.uz"
+            />
+          </SwiperSlide>
+     
+>>>>>>> 185c5eb9587ff5e575b721e9538ae7b8e8a18b9f
         </Swiper>
       </>
     </section>
