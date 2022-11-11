@@ -38,10 +38,11 @@ const Works = () => {
             Web apps
           </h3>
         </div>
-        <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
+        <div className="flex xl:mt-0 mt-5 md:mt-10 lg:mt-0  justify-between lg:w-[45%] xl:ml-auto">
 
           <p className="">
-            Zamonaviy, xavfsiz, qulay, funksional web dasturlar qilamiz.
+            Zamonaviy, xavfsiz, qulay, funksional
+             <br className='lg:hidden sm:block hidden ' /> web dasturlar qilamiz.
 
           </p>
           <img
@@ -69,10 +70,10 @@ const Works = () => {
           </h3>
         </div>
 
-        <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
+        <div className="flex xl:mt-0 mt-5 md:mt-10 lg:mt-0 justify-between lg:w-[45%] xl:ml-auto">
 
           <p className="">
-            Zamonaviy, kreativ didingizga mos websaytlar qilamiz.
+            Zamonaviy, kreativ didingizga  <br className='lg:hidden sm:block hidden ' /> mos websaytlar qilamiz.
 
           </p>
           <img
@@ -100,10 +101,10 @@ const Works = () => {
           </h3>
         </div>
 
-        <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
+        <div className="flex xl:mt-0 mt-5 md:mt-10 lg:mt-0 justify-between lg:w-[45%] xl:ml-auto">
 
           <p className="">
-            Android va IOS operatsion sistemalari uchun mukammal mobil dasturlar
+            Android va IOS operatsion sistemalari  <br className='lg:hidden sm:block hidden ' /> uchun mukammal mobil dasturlar
             yaratamiz.
 
           </p>
@@ -132,10 +133,10 @@ const Works = () => {
           </h3>
         </div>
 
-        <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
+        <div className="flex xl:mt-0 mt-5 md:mt-10 lg:mt-0 justify-between lg:w-[45%] xl:ml-auto">
 
           <p className="">
-            Shablon yoki sizning istagingizga ko`ra, web dizayn, mobayl dizayn
+            Shablon yoki sizning istagingizga ko`ra,  <br className='lg:hidden sm:block hidden ' /> web dizayn, mobayl dizayn
             va ui/ux qilamiz.
 
           </p>
@@ -164,10 +165,10 @@ const Works = () => {
           </h3>
         </div>
 
-        <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
+        <div className="flex xl:mt-0 mt-5 md:mt-10 lg:mt-0 justify-between lg:w-[45%] xl:ml-auto">
 
           <p className="">
-            Biznesingizni brend darajasiga olib chiqishga, sizga yaqindan yordam
+            Biznesingizni brend darajasiga olib  <br className='lg:hidden sm:block hidden ' /> chiqishga, sizga yaqindan yordam
 
           </p>
           <img
