@@ -1,14 +1,15 @@
 import Image from 'next/image';
 import React from 'react';
-import img1 from './hero1.jpg';
-import img2 from './about.jpg';
+import img1 from './about.jpeg';
+// import img2 from 'https://miro.medium.com/max/4096/1*rg15Zbos-3RZ_TCKe4bdhg.jpeg';
 
 import { weCanDo } from './headerData';
 
 const About = () => {
+
   return (
     <section className="md:pb-14 lg:pb-16 xl:pb-20">
-      <div className="bg-black overflow-hidden -mt-1">
+      <div className="bg-black overflow-hidden ">
         <div className="h-16 md:h-24 flex items-center whitespace-nowrap animate-marquee">
           {weCanDo.map((canWe) => (
             <div key={canWe.id} className="flex items-center">
@@ -53,9 +54,12 @@ const About = () => {
                 />
               </div>
               <div className="pl-2">
-                <h3 className="font-bold text-lg">Muhammad Sulton</h3>
+                <a target="blank" href="https://t.me/your_frontendDev">
+
+                  <h3 className="font-bold text-lg">Safarov Muzaffar</h3>
+                </a>
                 <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Ceo Tutordek
+                  Front End - problem solving dev
                 </p>
               </div>
             </div>
@@ -66,7 +70,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="md:w-[50%] md:px-20 pt-5 md:pt-10 space-y-2 md:space-y-4">
+        <div className="md:w-[50%] md:px-20 space-y-2 md:space-y-4  ">
           <div className="mini-cards">
             <div className="flex ">
               <div>
@@ -79,9 +83,12 @@ const About = () => {
                 />
               </div>
               <div className="pl-2">
-                <h3 className="font-bold text-lg">Muhammad Sulton</h3>
+                <a target="blank" href="https://t.me/komilmaxmudov">
+
+                  <h3 className="font-bold text-lg">Anvarov Muhammad</h3>
+                </a>
                 <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Ceo Tutordek
+                  Front End - Creative dev
                 </p>
               </div>
             </div>
@@ -103,9 +110,37 @@ const About = () => {
                 />
               </div>
               <div className="pl-2">
-                <h3 className="font-bold text-lg">Muhammad Sulton</h3>
+                <a target="blank" href="https://t.me/AzizjonAbdullayev">
+
+                  <h3 className="font-bold text-lg">Abdullayev Aziz</h3>
+                </a>
                 <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Ceo Tutordek
+                  Full Stack dev
+                </p>
+              </div>
+            </div>
+
+            <p className="text-gray-600 dark:text-white pt-3 pb-5 border-gray-400">
+              a person who provides general review and support for web sites
+            </p>
+          </div>
+          <div className="mini-cards">
+            <div className="flex ">
+              <div>
+                <Image
+                  className="rounded-full"
+                  width={50}
+                  height={50}
+                  src={img1}
+                  alt=""
+                />
+              </div>
+              <div className="pl-2">
+                <a target="blank" href="https://t.me/komilmaxmudov">
+                  <h3 className="font-bold text-lg">Mahmudov Komil</h3>
+                </a>
+                <p className="text-[#3F3F3FFF] dark:text-gray-400">
+                  Backend dev
                 </p>
               </div>
             </div>
@@ -118,9 +153,13 @@ const About = () => {
         </div>
       </div>
       <div className="container mx-auto mt-5 md:mt-20">
-        <div className="relative h-[23rem] md:h-[29rem]">
+        <div className="relative h-[23rem] md:h-[29rem] bg-center rounded-xl w-full bg-cover ">
+          {/* <div className='h-[23rem] md:h-[29rem] bg-center rounded-xl w-full bg-cover' style={ sectionStyle } ></div> */}
+          
+          {/* <img className='h-[23rem] md:h-[29rem] bg-center rounded-xl w-full bg-cover' src={img1} alt="fdgdf" style={{backgroundPosition: "center", backgroundSize: "cover"}}/> */}
+
           <Image
-            src={img2}
+            src={img1}
             layout="fill"
             objectFit="cover"
             alt="Banner image"

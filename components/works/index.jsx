@@ -21,8 +21,8 @@ const Works = () => {
           </p>
         </div>
       </div>
-      {/* forks table */} 
-      
+      {/* forks table */}
+
       <div className="lg:flex justify-between border-t  py-5 md:py-7 lg:py-7 items-center">
         <div className="flex items-center justify-between">
           <div className="rounded-full sm:w-[70px] sm:h-[70px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] sm:p-[18px] p-[16px] block">
