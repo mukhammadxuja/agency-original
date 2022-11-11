@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLanguage } from '../../hooks/useLanguage';
+import { useLanguage } from '../../../hooks/useLanguage';
 import { useTheme } from 'next-themes';
 
 const DarkMode = () => {

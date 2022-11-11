@@ -28,6 +28,8 @@
   ],
   "resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"],
   "cSpell.words": [
+    "dotsof",
+    "dotsoft",
     "Greensock",
     "jizzax",
     "Katalog",
