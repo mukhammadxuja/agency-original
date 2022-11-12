@@ -77,7 +77,7 @@ const Footer = () => {
                 height={60}
                 objectFit="contain"
                 src="/images/dotsoft/dotsoft-light.png"
-                alt="Footer logo"
+                alt="dotSoft web programming group Footer logo"
               />
             </div>
           </Link>
@@ -88,7 +88,7 @@ const Footer = () => {
                 height={70}
                 objectFit="contain"
                 src="/images/dotsoft/dotsoft-dark.png"
-                alt="Footer logo"
+                alt="dotSoft web programming group Footer logo"
               />
             </div>
           </Link>

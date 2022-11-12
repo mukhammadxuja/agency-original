@@ -5,6 +5,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { useLanguage } from '../../hooks/useLanguage';
+import indebt from "../../public/images/propjects/indebt.jpg";
+import imbastudio from "../../public/images/propjects/imbastudio.jpg";
+import fayzbaraka from "../../public/images/propjects/fayzbaraka.jpg";
+import mamirovgroup from "../../public/images/propjects/mamirovgroup.jpg";
+import inreport from "../../public/images/propjects/inreport.jpg";
+import lazydev from "../../public/images/propjects/lazydev.jpg";
+import suvtaminoti from "../../public/images/propjects/suvtaminoti.jpg";
+import idealcleaning from "../../public/images/propjects/idealcleaning.jpg";
+import indebt_1 from "../../public/images/propjects/indebt-1.jpg";
 
 const Portfolio = () => {
   const { t } = useLanguage();
@@ -58,7 +67,7 @@ const Portfolio = () => {
             <PortfolioCard
               title="Development"
               description="Jizzax City"
-              imgSrg="/images/propjects/indebt.jpg"
+              imgSrg={indebt}
               link="https://jizzaxcity-uz.vercel.app/"
             />
           </SwiperSlide>
@@ -66,7 +75,7 @@ const Portfolio = () => {
             <PortfolioCard
               title="Development"
               description="Imba"
-              imgSrg="/images/propjects/imbastudio.jpg"
+              imgSrg={imbastudio}
               link="https://imbastudio.uz"
             />
           </SwiperSlide>
@@ -74,7 +83,7 @@ const Portfolio = () => {
             <PortfolioCard
               title="Development"
               description="Fayz Baraka"
-              imgSrg="/images/propjects/fayzbaraka.jpg"
+              imgSrg={fayzbaraka}
               link="https://fayzbaraka.uz"
             />
           </SwiperSlide>
@@ -82,7 +91,7 @@ const Portfolio = () => {
             <PortfolioCard
               title="Development"
               description="Mamirov Group"
-              imgSrg="/images/propjects/mamirovgroup.jpg"
+              imgSrg={mamirovgroup}
               link="https://mamirovgroup.uz"
             />
           </SwiperSlide>
@@ -90,7 +99,7 @@ const Portfolio = () => {
             <PortfolioCard
               title="Development"
               description="InReport"
-              imgSrg="/images/propjects/inreport.jpg"
+              imgSrg={inreport}
               link="https://inreport.uz/"
             />
           </SwiperSlide>
@@ -98,7 +107,7 @@ const Portfolio = () => {
             <PortfolioCard
               title="Development"
               description="Lazydev"
-              imgSrg="/images/propjects/lazydev.jpg"
+              imgSrg={lazydev}
               link="https://lazydev.vercel.app/"
             />
           </SwiperSlide>
@@ -106,7 +115,7 @@ const Portfolio = () => {
             <PortfolioCard
               title="Development"
               description="JS Taminot"
-              imgSrg="/images/propjects/suvtaminoti.jpg"
+              imgSrg={suvtaminoti}
               link="https://jizzaxsuvtaminoti.uz"
             />
           </SwiperSlide>
@@ -114,7 +123,7 @@ const Portfolio = () => {
             <PortfolioCard
               title="Development"
               description="Ideal Cleaning"
-              imgSrg="/images/propjects/idealcleaning.jpg"
+              imgSrg={idealcleaning}
               link="https://ideal-cleaning.vercel.app/"
             />
           </SwiperSlide>
@@ -122,7 +131,7 @@ const Portfolio = () => {
             <PortfolioCard
               title="Development"
               description="Indebt..."
-              imgSrg="/images/propjects/indebt-1.jpg"
+              imgSrg={indebt_1}
               link="https://indebt.uz"
             />
           </SwiperSlide>

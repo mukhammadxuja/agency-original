@@ -1,4 +1,7 @@
+import Image from 'next/image';
 import React from 'react';
+import white from "../../public/svg/star-white.svg"
+
 
 const PortfolioCard = props => {
   let { imgSrg, title, description, link } = props
@@ -8,27 +11,31 @@ const PortfolioCard = props => {
   return (
 
     <div className="cardSwiper">
-      <img
+      <Image
         src={imgSrg}
-        alt="Slide image"
+        alt="dotSoft web programming group Slide image"
       />
       <div className="slide-opacity">
         <h4 className=" ">{title}</h4>
         <div className="slide-opacity-box">
-          <img
+          <div className='w-8 h-8'>
+
+          <Image
             className="star"
-            src="/svg/star-white.svg"
-            alt=""
+            src={white}
+            alt="dotSoft web programming group"
           />
+          </div>
           <p className="">{description}</p>
           <a href={link} target="blank" className="p-5  hover:scale-95 duration-500 bg-[white] rounded-full absolute right-[15px] top-0 transform translate-y-[-50%]">
+            
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-4 h-4 stroke-2 dark:text-[black]"
+              className="!w-4 !h-4 stroke-2 dark:text-[black]"
             >
               <path
                 strokeLinecap="round"

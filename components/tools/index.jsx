@@ -45,7 +45,7 @@ const Tools = () => {
                 className="w-10 h-10 ml-5 mx-auto opacity-60"
                 src={tools.image}
                 effect="blur"
-                alt="image"
+                alt="dotSoft web programming group"
               />
               <h4 className="text-main text-center font-medium text-sm">
                 {tools.name}

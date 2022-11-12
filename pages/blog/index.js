@@ -102,7 +102,7 @@ const Blog = () => {
                 <img
                   className="w-full h-full rounded-xl"
                   src="https://images.pexels.com/photos/6757564/pexels-photo-6757564.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt=""
+                  alt="dotSoft web programming group"
                 />
                 <span className="absolute top-2 right-2 w-12 h-12 flex items-center justify-center text-lg p-2 rounded-full bg-orange-100 dark:bg-gray-500">
                   🔥
@@ -111,7 +111,7 @@ const Blog = () => {
                   <img
                     className="w-10 h-10 rounded-full object-cover"
                     src="https://images.pexels.com/photos/1288182/pexels-photo-1288182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt=""
+                    alt="dotSoft web programming group"
                   />
                   <p className="text-xs md:text-sm text-gray-400 dark:text-white">
                     Josef Alfa Kroner

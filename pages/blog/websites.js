@@ -111,7 +111,7 @@ const Websites = () => {
               <img
                 className="rounded-xl"
                 src="https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg"
-                alt=""
+                alt="dotSoft web programming group"
               />
             </div>
           </div>

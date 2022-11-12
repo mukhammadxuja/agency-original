@@ -4,6 +4,7 @@ import img1 from './about.jpeg';
 
 import { useLanguage } from '../../hooks/useLanguage';
 import { MarqueeServices } from '../';
+import star from "../../public/svg/star.svg"
 
 const About = () => {
   const { t } = useLanguage();
@@ -41,7 +42,7 @@ const About = () => {
                   width={50}
                   height={50}
                   src={img1}
-                  alt=""
+                  alt="dotSoft web programming group: Safarov Muzaffar"
                 />
               </div>
               <div className="pl-2">
@@ -70,7 +71,7 @@ const About = () => {
                   width={50}
                   height={50}
                   loading="lazy"
-                  alt="Anvarov Muhammad"
+                  alt="dotSoft web programming group: Anvarov Muhammad"
                 />
               </div>
               <div className="pl-2">
@@ -96,8 +97,13 @@ const About = () => {
                   className="rounded-full"
                   width={50}
                   height={50}
+<<<<<<< HEAD
                   loading="lazy"
                   alt="Abdullayev Aziz"
+=======
+                  src={img1}
+                  alt="dotSoft web programming group: Abdullayev Aziz"
+>>>>>>> 1082aa90372d0090038243f0da6cec052be949c6
                 />
               </div>
               <div className="pl-2">
@@ -123,7 +129,7 @@ const About = () => {
                   width={50}
                   height={50}
                   src={img1}
-                  alt=""
+                  alt="dotSoft web programming group: Mahmudov Komil"
                 />
               </div>
               <div className="pl-2">
@@ -149,7 +155,7 @@ const About = () => {
             src={img1}
             layout="fill"
             objectFit="cover"
-            alt="Banner image"
+            alt="dotSoft web programming group Banner image"
             className="rounded-3xl w-full"
           />
         </div>
@@ -157,8 +163,8 @@ const About = () => {
           <div>
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
               37
-              <span>
-                <img className="w-5 md:w-7" src="/svg/star.svg" alt="" />
+              <span className="w-5 md:w-7">
+                <Image  src={star} alt="dotSoft web programming group" />
               </span>
             </h2>
             <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
@@ -168,8 +174,8 @@ const About = () => {
           <div>
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
               17
-              <span>
-                <img className="w-5 md:w-7" src="/svg/star.svg" alt="" />
+              <span className="w-5 md:w-7">
+                <Image  src={star} alt="dotSoft web programming group" />
               </span>
             </h2>
             <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
@@ -179,8 +185,8 @@ const About = () => {
           <div>
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
               46
-              <span>
-                <img className="w-5 md:w-7" src="/svg/star.svg" alt="" />
+              <span className="w-5 md:w-7">
+                <Image  src={star} alt="dotSoft web programming group" />
               </span>
             </h2>
             <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
