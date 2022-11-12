@@ -10,11 +10,11 @@ const Footer = () => {
     <div className="pt-5 md:pt-10  bg-neutral-50 dark:bg-black">
       <div className="container mx-auto flex flex-col md:flex-row items-start md:items-center justify-between pb-5 md:pb-10">
         <div className="mt-4 md:mt-0">
-          <h3 className="text-xl pb-3">{t('home:about_navbar')}</h3>
+          <h3 className="text-xl pb-3">Contact</h3>
           <div className="space-y-1">
             <div>
-              <h4 className="text-lg">{t('home:footer_company_info')}:</h4>
-              <p className="text-sm">DotSoft LLC A Software Company</p>
+              <h4 className="text-lg">Email:</h4>
+              <p className="text-sm">dotsoftuz@gmail.com</p>
             </div>
             <div>
               <h4 className="text-lg">{t('home:footer_adress')}:</h4>
@@ -22,14 +22,20 @@ const Footer = () => {
             </div>
             <div>
               <h4 className="text-lg">{t('home:footer_callus')}:</h4>
-              <p className="text-sm">
+              <span className="text-sm flex flex-col">
                 <a
                   href="tel:+998992666545"
-                  className="text-xl hover:text-[#086E99FF] transition-all"
+                  className="text-sm md:text-base hover:text-[#086E99FF] transition-all"
                 >
-                  +998992666545
+                  +99899 557-52-30
                 </a>
-              </p>
+                <a
+                  href="tel:+998992666545"
+                  className="text-sm md:text-base hover:text-[#086E99FF] transition-all"
+                >
+                  +99891 944-94-91
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -90,7 +96,7 @@ const Footer = () => {
       </div>
       <div className="container mx-auto flex flex-row-reverse md:flex-row items-center justify-between py-10 border-t">
         <p className="flex text-lg font-medium text-main dark:text-white">
-          <span className="text-[#006B98] md:mr-2">.Soft Group</span>
+          <span className="text-[#006B98] md:mr-2">DotSoft team</span>
           <span className="hidden md:block">
             {t('home:all_rights_reserved')}.{' '}
           </span>{' '}

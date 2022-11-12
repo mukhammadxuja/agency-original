@@ -38,7 +38,7 @@ const Works = () => {
   ];
 
   return (
-    <section className="container mx-auto">
+    <section id="services" className="container mx-auto">
       <div className="flex flex-wrap justify-between pb-10 md:pb-14 lg:pb-16 xl:pb-20 items-center">
         <div>
           <h3 className="font-bold md:text-xl">

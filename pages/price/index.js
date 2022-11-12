@@ -93,7 +93,7 @@ const Calculate = () => {
       </div>
       <div className="flex items-center justify-between my-5">
         <h3 className="text-lg md:text-2xl">Narxlarni Hisoblash</h3>
-        <Link href="/about-sites">
+        <Link href="/blog/websites">
           <div className="flex items-center space-x-1 cursor-pointer group">
             <p>Saytlar haqida</p>
             <svg

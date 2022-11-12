@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section className="md:pb-14 lg:pb-16 xl:pb-20">
       <MarqueeServices />
-      <div className="container mx-auto md:flex mt-5 md:mt-20">
+      <div id="about" className="container mx-auto md:flex mt-5 md:mt-20">
         <div className="md:w-[50%] flex flex-col items-center">
           <div>
             <h3 className="font-bold md:text-xl">
