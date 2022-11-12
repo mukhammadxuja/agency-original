@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import header from './header.jpg'
+import star from "../../public/svg/star.svg"
+
 const Header = () => {
   return (
     <div className="relative mt-10 md:mt-20">
@@ -13,11 +15,15 @@ const Header = () => {
               <h1 className="text-4xl sm:text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl">
                 More Than Just
               </h1>
-              <img
-                className="ml-2 w-10 xl:w-20 duration-500 hover:rotate-180 md:ml-10"
-                src="/svg/star.svg"
-                alt=""
+              <div className=" ml-2 w-10 xl:w-20 duration-500 hover:rotate-180 md:ml-10">
+              <Image
+              
+                src={star}
+                alt="dotSoft web programming group spinner"
+       
+                loading="lazy"
               />
+              </div>
             </div>
             <div className="text-4xl sm:text-5xl flex font-bold md:text-6xl lg:text-7xl xl:text-8xl">
               A
@@ -68,7 +74,7 @@ const Header = () => {
               src={header}
               layout="fill"
               objectFit="cover"
-              alt="Banner image"
+              alt="dotSoft web programming group Banner image"
               className="rounded-t-3xl w-full"
             />
           </div>
