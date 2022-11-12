@@ -65,7 +65,7 @@ const About = () => {
             <div className="flex ">
               <div>
                 <Image
-                  src="/images/team/dark.jpg"
+                  src="/images/team/Anvarov.jpg"
                   className="rounded-full"
                   width={50}
                   height={50}
@@ -89,14 +89,15 @@ const About = () => {
             </p>
           </div>
           <div className="mini-cards">
-            <div className="flex ">
+            <div className="flex">
               <div>
                 <Image
+                  src="/images/team/Aziz.jpg"
                   className="rounded-full"
                   width={50}
                   height={50}
-                  src={img1}
-                  alt=""
+                  loading="lazy"
+                  alt="Abdullayev Aziz"
                 />
               </div>
               <div className="pl-2">
@@ -110,7 +111,8 @@ const About = () => {
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5 border-gray-400">
-              a person who provides general review and support for web sites
+              Web sayt va web dasturlarni xavfsiz, kamchiliklarsiz, yengil
+              ishlashini taminlash va yuklashga javob beruvchi
             </p>
           </div>
           <div className="mini-cards">

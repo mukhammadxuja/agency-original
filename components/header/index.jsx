@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 // import { LazyLoadImage } from 'react-lazy-load-image-component';
-import header from './header.jpg'
+import header from './header.jpg';
 const Header = () => {
   return (
     <div className="relative mt-10 md:mt-20">
@@ -10,36 +10,31 @@ const Header = () => {
           <p className="text-lg font-semibold md:text-xl">©2022</p>
           <div className="mt-5 mb-10 ">
             <div className="flex items-center">
-              <h1 className="text-4xl sm:text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl">
-                More Than Just
+              <h1 className="flex items-center text-4xl sm:text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl">
+                DotSoft
+                <div className="text-[#006B98] text-3xl ml-2 md:ml-4 mt-1 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl md:mt-3 flex flex-col h-11 sm:h-13 md:h-14 lg:h-[4.5rem] xl:h-28 overflow-hidden">
+                  <span className="px-2 animate-spinWord">Web Sites</span>
+                  <span className="px-2 animate-spinWord">Web Apps</span>
+                  <span className="px-2 animate-spinWord">Web Design</span>
+                  <span className="px-2 animate-spinWord">Web Sites</span>
+                  <span className="px-2 animate-spinWord">Web Apps</span>
+                  <span className="px-2 animate-spinWord">Web Design</span>
+                  <span className="px-2 animate-spinWord">Web Sites</span>
+                  <span className="px-2 animate-spinWord">Web Apps</span>
+                  <span className="px-2 animate-spinWord">Web Design</span>
+                  <span className="px-2 animate-spinWord">Web Sites</span>
+                  <span className="px-2 animate-spinWord">Web Apps</span>
+                  <span className="px-2 animate-spinWord">Web Design</span>
+                </div>
               </h1>
               <img
-                className="ml-2 w-10 xl:w-20 duration-500 hover:rotate-180 md:ml-10"
+                className="ml-2 w-10 xl:w-20 duration-500 hover:rotate-180"
                 src="/svg/star.svg"
                 alt=""
               />
             </div>
             <div className="text-4xl sm:text-5xl flex font-bold md:text-6xl lg:text-7xl xl:text-8xl">
-              A
-              <div className="text-[#006B98] text-3xl mt-1 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl md:mt-0 flex flex-col h-11 sm:h-13 md:h-14 lg:h-[4.5rem] xl:h-24 overflow-hidden">
-                <span className="px-2 animate-spinWord">Creative</span>
-                <span className="px-2 animate-spinWord">Awesome</span>
-                <span className="px-2 animate-spinWord">Fantastic</span>
-                <span className="px-2 animate-spinWord">Incredible</span>
-                <span className="px-2 animate-spinWord">Creative</span>
-                <span className="px-2 animate-spinWord">Awesome</span>
-                <span className="px-2 animate-spinWord">Fantastic</span>
-                <span className="px-2 animate-spinWord">Incredible</span>
-                <span className="px-2 animate-spinWord">Creative</span>
-                <span className="px-2 animate-spinWord">Awesome</span>
-                <span className="px-2 animate-spinWord">Fantastic</span>
-                <span className="px-2 animate-spinWord">Incredible</span>
-                <span className="px-2 animate-spinWord">Creative</span>
-                <span className="px-2 animate-spinWord">Awesome</span>
-                <span className="px-2 animate-spinWord">Fantastic</span>
-                <span className="px-2 animate-spinWord">Incredible</span>
-              </div>
-              Agency
+              Development Team
             </div>
           </div>
           <div className="mb-5 md:mt-5 flex items-center space-x-2 md:space-x-4">
@@ -59,11 +54,8 @@ const Header = () => {
           </div>
         </div>
 
-
-        <div className='container mx-auto'>
-
+        <div className="container mx-auto">
           <div className="relative mt-16 !bg-[center_bottom_-1rem] object-cover h-[50vh] sm:h-[50vh] md:h-[25rem] lg:h-[25rem] xl:h-[30rem] ">
-
             <Image
               src={header}
               layout="fill"
@@ -73,7 +65,6 @@ const Header = () => {
             />
           </div>
         </div>
-
       </div>
     </div>
   );
