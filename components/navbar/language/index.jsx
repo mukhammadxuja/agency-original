@@ -29,7 +29,7 @@ const Language = () => {
       <ul
         className={
           languages
-            ? 'absolute left-1/2 transform -translate-x-1/2 top-10 px-4 py-2 md:px-6 bg-black dark:bg-white rounded-md'
+            ? 'absolute left-1/2 transform -translate-x-1/2 top-10 z-50 px-4 py-2 md:px-6 bg-black dark:bg-white rounded-md'
             : 'hidden'
         }
       >
