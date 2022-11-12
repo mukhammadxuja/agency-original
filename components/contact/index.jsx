@@ -41,7 +41,10 @@ const Contact = () => {
   return (
     <>
       <section className="container mx-auto py-10 md:py-14 lg:py-16 xl:py-20">
-        <div className="flex items-center justify-center space-x-2">
+        <div
+          id="contact"
+          className="flex items-center justify-center space-x-2"
+        >
           <h3 className="pb-10 text-2xl lg:text-4xl xl:text-5xl text-center text-black dark:text-white">
             {t('home:contact_lets_connect')}
           </h3>

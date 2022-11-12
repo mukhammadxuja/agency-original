@@ -19,7 +19,10 @@ const Portfolio = () => {
   const { t } = useLanguage();
   return (
     <section className="container mx-auto py-10 md:py-14 lg:py-16 xl:py-20">
-      <div className="flex flex-wrap justify-between items-center">
+      <div
+        id="portfolio"
+        className="flex flex-wrap justify-between items-center"
+      >
         <div>
           <h3 className="font-bold md:text-xl">{t('home:works_section')}</h3>
           <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">

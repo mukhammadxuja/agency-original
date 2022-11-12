@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 
-import header from './header.jpg'
-import star from "../../public/svg/star.svg"
+import header from './header.jpg';
+import star from '../../public/svg/star.svg';
 
 const Header = () => {
   return (
@@ -12,40 +12,35 @@ const Header = () => {
           <p className="text-lg font-semibold md:text-xl">©2022</p>
           <div className="mt-5 mb-10 ">
             <div className="flex items-center">
-              <h1 className="text-4xl sm:text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl">
-                More Than Just
-              </h1>
-              <div className=" ml-2 w-10 xl:w-20 duration-500 hover:rotate-180 md:ml-10">
-              <Image
-              
-                src={star}
-                alt="dotSoft web programming group spinner"
-       
-                loading="lazy"
-              />
+              <div className="flex items-center flex-nowrap">
+                <h1 className="text-4xl sm:text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl whitespace-nowrap">
+                  DotSoft - Web
+                </h1>
+                <div className="text-[#006B98] text-4xl ml-2 md:ml-4 mt-4 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col h-11 sm:h-13 md:h-14 lg:h-[4.5rem] xl:h-24 overflow-hidden">
+                  <span className="px-2 animate-spinWord">Sites</span>
+                  <span className="px-2 animate-spinWord">Apps</span>
+                  <span className="px-2 animate-spinWord">Design</span>
+                  <span className="px-2 animate-spinWord">Sites</span>
+                  <span className="px-2 animate-spinWord">Apps</span>
+                  <span className="px-2 animate-spinWord">Design</span>
+                  <span className="px-2 animate-spinWord">Sites</span>
+                  <span className="px-2 animate-spinWord">Apps</span>
+                  <span className="px-2 animate-spinWord">Design</span>
+                  <span className="px-2 animate-spinWord">Sites</span>
+                  <span className="px-2 animate-spinWord">Apps</span>
+                  <span className="px-2 animate-spinWord">Design</span>
+                </div>
+              </div>
+              <div className="ml-2 w-10 xl:w-20 duration-500 hover:rotate-180">
+                <Image
+                  src={star}
+                  alt="dotSoft web programming group spinner"
+                  loading="lazy"
+                />
               </div>
             </div>
             <div className="text-4xl sm:text-5xl flex font-bold md:text-6xl lg:text-7xl xl:text-8xl">
-              A
-              <div className="text-[#006B98] text-3xl mt-1 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl md:mt-0 flex flex-col h-11 sm:h-13 md:h-14 lg:h-[4.5rem] xl:h-24 overflow-hidden">
-                <span className="px-2 animate-spinWord">Creative</span>
-                <span className="px-2 animate-spinWord">Awesome</span>
-                <span className="px-2 animate-spinWord">Fantastic</span>
-                <span className="px-2 animate-spinWord">Incredible</span>
-                <span className="px-2 animate-spinWord">Creative</span>
-                <span className="px-2 animate-spinWord">Awesome</span>
-                <span className="px-2 animate-spinWord">Fantastic</span>
-                <span className="px-2 animate-spinWord">Incredible</span>
-                <span className="px-2 animate-spinWord">Creative</span>
-                <span className="px-2 animate-spinWord">Awesome</span>
-                <span className="px-2 animate-spinWord">Fantastic</span>
-                <span className="px-2 animate-spinWord">Incredible</span>
-                <span className="px-2 animate-spinWord">Creative</span>
-                <span className="px-2 animate-spinWord">Awesome</span>
-                <span className="px-2 animate-spinWord">Fantastic</span>
-                <span className="px-2 animate-spinWord">Incredible</span>
-              </div>
-              Agency
+              Development Team
             </div>
           </div>
           <div className="mb-5 md:mt-5 flex items-center space-x-2 md:space-x-4">
@@ -65,11 +60,8 @@ const Header = () => {
           </div>
         </div>
 
-
-        <div className='container mx-auto'>
-
+        <div className="container mx-auto">
           <div className="relative mt-16 !bg-[center_bottom_-1rem] object-cover h-[50vh] sm:h-[50vh] md:h-[25rem] lg:h-[25rem] xl:h-[30rem] ">
-
             <Image
               src={header}
               layout="fill"
@@ -79,7 +71,6 @@ const Header = () => {
             />
           </div>
         </div>
-
       </div>
     </div>
   );

@@ -25,7 +25,7 @@
   {
     "id": 2,
     "Sayt turi": "Business",
-    "price": 400,
+    "price": 300,
     "xususiyatlar": [
       "Mijozning Profile Sahifasi",
       "5 - 10 ta sahifa",
@@ -47,7 +47,7 @@
   },
   {
     "id": 3,
-    "Sayt turi": "Portolio",
+    "Sayt turi": "Portfolio",
     "price": 200,
     "xususiyatlar": [
       "Tungi rejim",
@@ -88,7 +88,7 @@
   {
     "id": 5,
     "Sayt turi": "Event",
-    "price": 1090,
+    "price": 250,
     "xususiyatlar": [
       "CMS kontentni boshqarish tizimi",
       "Moslashuvchan dizayn",
@@ -97,6 +97,7 @@
       "SPA texnalogiyasi asosida"
     ],
     "about": "Tadbir veb-sayti siz tashkil qilayotgan tadbir uchun deyarli bepul raqamli reklama hisoblanadi. Biroq, sahifa yaratish nisbatan oson bo'lsa-da, siz ishtirokchilarning tafsilotlarga tayyorligiga ishonch hosil qilishni xohlaysiz.",
+
     "complete": "15-30 kun",
     "discount": 2.9,
     "real_example": ["Mediapark.uz", "Olcha.uz"],
@@ -126,6 +127,7 @@
   },
   {
     "id": 7,
+
     "Sayt turi": "Blog",
     "price": 400,
     "xususiyatlar": [
@@ -141,6 +143,7 @@
       "SPA texnalogiyasi asosida"
     ],
     "about": "Blog ('veblog' so'zining qisqartmasi) - bu jismoniy shaxs, guruh yoki korporatsiya tomonidan boshqariladigan onlayn jurnal yoki axborot veb-sayti bo'lib, u mavzu bo'yicha muntazam ravishda yangilanib turuvchi tarkibni (blog posti) taqdim etadi . U ma'lumotni teskari xronologik tartibda taqdim etadi va u norasmiy yoki suhbat uslubida yozilgan.",
+
     "complete": "10-30 kun",
     "discount": false,
     "real_example": ["Mediapark.uz", "Olcha.uz"],

@@ -4,14 +4,14 @@ import img1 from './about.jpeg';
 
 import { useLanguage } from '../../hooks/useLanguage';
 import { MarqueeServices } from '../';
-import star from "../../public/svg/star.svg"
+import star from '../../public/svg/star.svg';
 
 const About = () => {
   const { t } = useLanguage();
   return (
     <section className="md:pb-14 lg:pb-16 xl:pb-20">
       <MarqueeServices />
-      <div className="container mx-auto md:flex mt-5 md:mt-20">
+      <div id="about" className="container mx-auto md:flex mt-5 md:mt-20">
         <div className="md:w-[50%] flex flex-col items-center">
           <div>
             <h3 className="font-bold md:text-xl">
@@ -118,7 +118,7 @@ const About = () => {
             <div className="flex ">
               <div>
                 <Image
-                  src="/images/team/dark.jpg"
+                  src="/images/team/Anvarov.jpg"
                   className="rounded-full"
                   width={50}
                   height={50}
@@ -142,13 +142,14 @@ const About = () => {
             </p>
           </div>
           <div className="mini-cards">
-            <div className="flex ">
+            <div className="flex">
               <div>
                 <Image
+                  src="/images/team/Aziz.jpg"
                   className="rounded-full"
                   width={50}
                   height={50}
-                  src={img1}
+                  objectFit="cover"
                   alt="dotSoft web programming group: Abdullayev Aziz"
                 />
               </div>
@@ -163,7 +164,8 @@ const About = () => {
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5 border-gray-400">
-              a person who provides general review and support for web sites
+              Web sayt va web dasturlarni xavfsiz, kamchiliklarsiz, yengil
+              ishlashini taminlash va yuklashga javob beruvchi
             </p>
           </div>
           <div className="mini-cards">

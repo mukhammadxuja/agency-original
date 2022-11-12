@@ -73,8 +73,8 @@ export const tools = [
   },
   {
     id: '934',
-    name: 'Supabase',
-    image: '/images/tools/Supabase.svg',
+    name: 'Vercel',
+    image: '/images/tools/vercel.svg',
     tag: 'backend',
   },
   {
