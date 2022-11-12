@@ -40,7 +40,7 @@ const Calculate = () => {
       <div
         className={`${
           scroll ? 'top-0 -mt-1' : 'top-20 -mt-1 md:-mt-0'
-        } fixed left-1/2 transform -translate-x-1/2 z-50 backdrop-blur bg-white supports-backdrop-blur:bg-white/95 dark:bg-neutral-900/75 transition-all duration-500 overflow-x-scroll w-full scrollbar-hide`}
+        } fixed left-1/2 transform -translate-x-1/2 z-10 backdrop-blur bg-white supports-backdrop-blur:bg-white/95 dark:bg-neutral-900/75 transition-all duration-500 overflow-x-scroll w-full scrollbar-hide`}
       >
         <div>
           <div className="container mx-auto flex flex-nowrap items-center justify-between py-4 md:py-3">
