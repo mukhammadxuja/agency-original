@@ -17,7 +17,10 @@
     ],
     "about": "Onlayn do’kon – bu qisqa qilib aytkanda mahsulot katalogi va xarid qilish savati mavjud sayt. Bunday do’konda xaridor tovarlarni osongina topish, tanlash va buyurtma qilish imkoniyatiga ega bo’ladi va menejer / sotuvchi buyurtma bo’yicha ma’lumotni tezda qabul qiladi va uni amalga oshiradi.",
     "complete": "3 oy",
-    "discount": 2.7
+    "discount": 2.7,
+    "real_example": ["Mediapark.uz", "Olcha.uz"],
+    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg",
+    "title": "elektron tijorat"
   },
   {
     "id": 2,
@@ -37,7 +40,10 @@
     ],
     "about": "Biznes veb-sayti odatda kompaniyangiz haqida umumiy ma'lumot yoki elektron tijorat uchun to'g'ridan-to'g'ri platforma bo'lib xizmat qiladi ",
     "complete": "15-30 kun",
-    "discount": 3.2
+    "discount": 3.2,
+    "real_example": ["Toyotta.com", "Eleven.uz"],
+    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg",
+    "title": "business sayt"
   },
   {
     "id": 3,
@@ -56,7 +62,9 @@
     ],
     "about": "Portfolio veb-sayti nima? Portfel veb-sayti - bu o'z ishingizni namoyish qilish va boshqalarga o'zingiz haqingizda xabar berishning o'ziga xos usuli . Bu sizning loyihalaringiz, amaliy tadqiqotlar va siz haqingizdagi ma'lumotlar uchun doim yashil platformaga o'xshaydi. Bundan tashqari, bu sizning shaxsiyatingiz, tajribangiz va qobiliyatingizni ifodalashning eng yaxshi usullaridan biridir.",
     "complete": "3-7 kun",
-    "discount": false
+    "discount": false,
+    "real_example": ["", ""],
+    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg"
   },
   {
     "id": 4,
@@ -73,7 +81,9 @@
     ],
     "about": "Axborot veb-saytining asosiy maqsadi veb-saytga tashrif buyuruvchi bilan asosiy xabar almashishdir . Ko'pchilik tashkilotning besh WS tafsilotlarini, kim, nima, qanday, qaerda va nima uchun biznes mavjudligini etkazish uchun yaratilgan. Sayt biznes haqida ma'lumot almashishi kerak va odamlar qanday aloqada bo'lishlari mumkin.",
     "complete": "10-30 kun",
-    "discount": 2.5
+    "discount": 2.5,
+    "real_example": ["Mediapark.uz", "Olcha.uz"],
+    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg"
   },
   {
     "id": 5,
@@ -88,7 +98,9 @@
     ],
     "about": "Tadbir veb-sayti siz tashkil qilayotgan tadbir uchun deyarli bepul raqamli reklama hisoblanadi. Biroq, sahifa yaratish nisbatan oson bo'lsa-da, siz ishtirokchilarning tafsilotlarga tayyorligiga ishonch hosil qilishni xohlaysiz.",
     "complete": "15-30 kun",
-    "discount": 2.9
+    "discount": 2.9,
+    "real_example": ["Mediapark.uz", "Olcha.uz"],
+    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg"
   },
   {
     "id": 6,
@@ -108,7 +120,9 @@
     ],
     "about": "Mijozlar bilan munosabatlarni boshqarish (CRM) - bu kompaniyangizning mijozlar va potentsial mijozlar bilan barcha munosabatlari va o'zaro munosabatlarini boshqarish texnologiyasi . Maqsad oddiy: biznesingizni rivojlantirish uchun biznes aloqalarini yaxshilang.",
     "complete": "3-6 oy",
-    "discount": 8.2
+    "discount": 8.2,
+    "real_example": ["Mediapark.uz", "Olcha.uz"],
+    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg"
   },
   {
     "id": 7,
@@ -128,26 +142,8 @@
     ],
     "about": "Blog ('veblog' so'zining qisqartmasi) - bu jismoniy shaxs, guruh yoki korporatsiya tomonidan boshqariladigan onlayn jurnal yoki axborot veb-sayti bo'lib, u mavzu bo'yicha muntazam ravishda yangilanib turuvchi tarkibni (blog posti) taqdim etadi . U ma'lumotni teskari xronologik tartibda taqdim etadi va u norasmiy yoki suhbat uslubida yozilgan.",
     "complete": "10-30 kun",
-    "discount": false
-  },
-  {
-    "id": 8,
-    "Sayt turi": "Online courses",
-    "price": 1500,
-    "xususiyatlar": [
-      "Mijozning Profile Sahifasi",
-      "CMS kontentni boshqarish tizimi",
-      "Mahsulotlarni filterlash",
-      "Moslashuvchan dizayn",
-      "Royxatdan otish tizimi",
-      "Mahsulotlar savatchasi",
-      "To'lov tizimi",
-      "Mahsulotlar turlari",
-      "Cheksiz sahifalar",
-      "SPA texnalogiyasi asosida"
-    ],
-    "about": "Onlayn kurs - bu istalgan vaqtda va istalgan joyda kirish mumkin bo'lgan veb-brauzer yoki mobil qurilmada bir qator darslarni o'tkazishdir . U asinxron tarzda qulay o'rganish uchun onlayn muhit sifatida yaratilgan.",
-    "complete": "40-60 kun",
-    "discount": 3.6
+    "discount": false,
+    "real_example": ["Mediapark.uz", "Olcha.uz"],
+    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg"
   }
 ]

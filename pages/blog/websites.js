@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { motion } from 'framer-motion';
-
+import Data from '../../data.json';
 import { Breadcrumb } from '../../components';
 
 export async function getStaticProps({ locale }) {
@@ -47,74 +47,69 @@ const Websites = () => {
               scroll ? 'top-3' : ''
             } hidden md:block fixed z-50 top-24 right-2 md:right-4 transition-all pb-5 duration-[400ms]`}
           >
-            <li className={link}>eCommerce -</li>
-            <li className={link}>Business -</li>
-            <li className={link}>Blog -</li>
-            <li className={link}>Portfolio -</li>
-            <li className={link}>Event -</li>
-            <li className={link}>Personal -</li>
-            <li className={link}>Membership -</li>
-            <li className={link}>Nonprofit -</li>
-            <li className={link}>Informational -</li>
-            <li className={link}>Online forum -</li>
+            {Data.map((item) => (
+              <>
+                <li className={link}>
+                  <a href={'#' + item.id}> {item['Sayt turi']} </a> -
+                </li>
+              </>
+            ))}
           </ul>
         </div>
         <div className="max-w-4xl">
           <div className="my-5">
-            <a className="text-sm">Jun 13 - 7 min read</a>
+            <a className="text-sm">Nov 12 - 7 min read</a>
             <h3 className="text-3xl md:text-3xl lg:text-5xl md:mt-5 md:mb-16">
               Websayt Turlari
             </h3>
           </div>
-          <div>
-            <div className="space-y-2 md:space-y-4 mb-10">
-              <h1 className="text-xl md:text-2xl lg:text-3xl">
-                1. eCommerce - website.
-              </h1>
-              <a className="text-sm">
-                Veb -sayt ko`plab veb-sahifalar to`plamidir va veb-sahifalar
-                HTML (HyperText Markup Language) yordamida yozilgan raqamli
-                fayllardir. Sizning veb-saytingiz dunyodagi har bir inson uchun
-                mavjud bo`lishi uchun u kun bo`yi Internetga ulangan kompyuterda
-                saqlanishi yoki joylashtirilishi kerak. Bunday kompyuterlar
-                veb-server deb nomlanadi.
-              </a>
-              <div>
-                <h3 className="text-lg md:text-2xl">
-                  Haqiqiy hayotdagi elektron tijorat misollari:
-                </h3>
-                <ul className="ml-5 mt-5">
-                  <li>
-                    1.
-                    <a
-                      href="https://www.mediapark.uz/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#006B98] ml-2"
-                    >
-                      Mediapark - online do`kon
-                    </a>
-                  </li>
-                  <li>
-                    2.
-                    <a
-                      href="https://olcha.uz/ru"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#006B98] ml-2"
-                    >
-                      Olcha.uz - online do`kon
-                    </a>
-                  </li>
-                </ul>
+          {Data.map((item, index) => (
+            <>
+              <div id={item.id}>
+                <div className="space-y-2 md:space-y-4 mb-10">
+                  <h1 className="text-xl md:text-2xl lg:text-3xl">
+                    {index + 1}. {item['Sayt turi']} - website.
+                  </h1>
+                  <a className="text-sm">{item.about}</a>
+                  <div>
+                    <h3 className="text-lg md:text-2xl">
+                      Hayotdagi{' '}
+                      {item['Sayt turi'] === 'eCommerce'
+                        ? 'elektron tijorat'
+                        : item['Sayt turi']}{' '}
+                      misollar:
+                    </h3>
+                    <ul className="ml-5 mt-5">
+                      {item.real_example.map((item1, index) => {
+                        console.log(item1);
+                        return (
+                          <>
+                            <li>
+                              {index + 1}.
+                              <a
+                                href={`https://${item1}/`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[#006B98] ml-2"
+                              >
+                                {item1} - online do`kon
+                              </a>
+                            </li>
+                          </>
+                        );
+                      })}
+                    </ul>
+                  </div>
+
+                  <img
+                    className="rounded-xl"
+                    src={item.picture}
+                    alt="dotSoft web programming group"
+                  />
+                </div>
               </div>
-              <img
-                className="rounded-xl"
-                src="https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg"
-                alt="dotSoft web programming group"
-              />
-            </div>
-          </div>
+            </>
+          ))}
         </div>
       </div>
     </motion.div>

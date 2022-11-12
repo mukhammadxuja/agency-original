@@ -28,11 +28,37 @@ const About = () => {
                 className="rounded-full"
                 width={35}
                 height={35}
+                alt=""
               />
             </h2>
             <h5 className="md:text-base text-gray-600 dark:text-white pt-4">
               DotSoft — {t('home:about_paragraph')}
             </h5>
+          </div>
+          <div className="mini-cards pt-4 mt-5">
+            <div className="flex">
+              <div>
+                <Image
+                  className="rounded-full"
+                  width={50}
+                  height={50}
+                  src={img1}
+                  alt="dotSoft web programming group: Usmonov Behruz"
+                />
+              </div>
+              <div className="pl-2">
+                <a target="blank" href="https://t.me/ubehruz">
+                  <h3 className="font-bold text-lg">Usmonov Behruz</h3>
+                </a>
+                <p className="text-[#3F3F3FFF] dark:text-gray-400">
+                  Software Engineer
+                </p>
+              </div>
+            </div>
+
+            <p className="text-gray-600 dark:text-white pt-3 pb-5">
+              Malumotlar omboriga malumotni jonatish va keladigan malumotlarni togri va sifatli olib kelishga javob beradi.
+            </p>
           </div>
           <div className="mini-cards pt-4 mt-5">
             <div className="flex">
@@ -56,12 +82,38 @@ const About = () => {
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5">
+              Malumotlar omboriga malumotni jonatish va keladigan malumotlarni togri va sifatli olib kelishga javob beradi.
+            </p>
+          </div>
+        </div>
+        <div className="md:w-[50%] md:px-20 md:pt-10 space-y-2 md:space-y-4  ">
+          <div className="mini-cards">
+            <div className="flex ">
+              <div>
+                <Image
+                  src="/images/team/dark.jpg"
+                  className="rounded-full"
+                  width={50}
+                  height={50}
+                  loading="lazy"
+                  alt="dotSoft web programming group: Anvarov Muhammad"
+                />
+              </div>
+              <div className="pl-2">
+                <a target="blank" href="https://t.me/akzmsh">
+                  <h3 className="font-bold text-lg">Anvarov Muhammad</h3>
+                </a>
+                <p className="text-[#3F3F3FFF] dark:text-gray-400">
+                  Front End - Creative dev
+                </p>
+              </div>
+            </div>
+
+            <p className="text-gray-600 dark:text-white pt-3 pb-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium laudantium placeat, ullam quam ipsam facilis.
             </p>
           </div>
-        </div>
-        <div className="md:w-[50%] md:px-20 space-y-2 md:space-y-4  ">
           <div className="mini-cards">
             <div className="flex ">
               <div>
@@ -157,7 +209,7 @@ const About = () => {
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
               37
               <span className="w-5 md:w-7">
-                <Image  src={star} alt="dotSoft web programming group" />
+                <Image src={star} alt="dotSoft web programming group" />
               </span>
             </h2>
             <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
@@ -168,7 +220,7 @@ const About = () => {
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
               17
               <span className="w-5 md:w-7">
-                <Image  src={star} alt="dotSoft web programming group" />
+                <Image src={star} alt="dotSoft web programming group" />
               </span>
             </h2>
             <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
@@ -179,7 +231,7 @@ const About = () => {
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
               46
               <span className="w-5 md:w-7">
-                <Image  src={star} alt="dotSoft web programming group" />
+                <Image src={star} alt="dotSoft web programming group" />
               </span>
             </h2>
             <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
