@@ -21,17 +21,17 @@ export async function getStaticProps({ locale }) {
 }
 
 const Calculate = () => {
-  const [activeDialog, setActiveDialog] = React.useState(false);
+  // const [activeDialog, setActiveDialog] = React.useState(false);
 
   const [webId, setWebId] = useState(0);
 
-  const dialog = () => {
-    setActiveDialog(true);
-  };
+  // const dialog = () => {
+  //   setActiveDialog(true);
+  // };
 
-  const CloseDialog = () => {
-    setActiveDialog(false);
-  };
+  // const CloseDialog = () => {
+  //   setActiveDialog(false);
+  // };
 
   const { scroll } = useScroll();
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useRouter } from 'next/router';
 
 import { useScroll } from '../../../hooks/useScroll';
 import { useLanguage } from '../../../hooks/useLanguage';

@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Cookie = () => {
   const [cookie, setCookie] = React.useState(false);
-  React.useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setCookie(!cookie);
     }, 10000);
-  }, []);
+  }, [cookie]);
 
   const closeCooke = () => {
     setCookie(false);

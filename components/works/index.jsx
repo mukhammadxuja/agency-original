@@ -1,6 +1,7 @@
+import Image from 'next/image';
 import React from 'react';
 import { useLanguage } from '../../hooks/useLanguage';
-
+import white from "../../public/svg/star-white.svg"
 const Works = () => {
   const { t } = useLanguage();
 
@@ -9,31 +10,31 @@ const Works = () => {
       id: '12432342432',
       title: `${t('home:service_1')}`,
       paragraph: `${t('home:services_paragraph_1')}`,
-      img: '/svg/star-white.svg',
+      img: white
     },
     {
       id: '24092102498',
       title: `${t('home:service_2')}`,
       paragraph: `${t('home:services_paragraph_2')}`,
-      img: '/svg/star-white.svg',
+      img: white
     },
     {
       id: '34230498234',
       title: `${t('home:service_3')}`,
       paragraph: `${t('home:services_paragraph_3')}`,
-      img: '/svg/star-white.svg',
+      img: white
     },
     {
       id: '4123098200533',
       title: `${t('home:service_4')}`,
       paragraph: `${t('home:services_paragraph_4')}`,
-      img: '/svg/star-white.svg',
+      img: white
     },
     {
       id: '5239812323097',
       title: `${t('home:service_5')}`,
       paragraph: `${t('home:services_paragraph_5')}`,
-      img: '/svg/star-white.svg',
+      img: white
     },
   ];
 
@@ -54,15 +55,7 @@ const Works = () => {
             {t('home:we_can_without_highlight')}
           </h1>
         </div>
-        {/* <div>
-          <p className="text-sm md:text-base xl:mt-0 mt-4">
-            {t('home:we_can_paragraph_1')}
-            <br className="md:block hidden" />
-            {t('home:we_can_paragraph_2')}
-            <br className="md:block hidden" />
-            {t('home:we_can_paragraph_3')}
-          </p>
-        </div> */}
+
       </div>
 
       <div>
@@ -73,12 +66,15 @@ const Works = () => {
           >
             <div className="flex items-center justify-between">
               <div className="rounded-full sm:w-[70px] sm:h-[70px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] sm:p-[18px] p-[16px] block">
-                <img
-                  className="w-full h-full dark:brightness-0"
-                  height
-                  src={item.img}
-                  alt=""
-                />
+                <div className="w-full h-full dark:brightness-0">
+                  <Image
+
+
+                    src={item.img}
+                    alt="dotSoft web programming group"
+                  />
+
+                </div>
               </div>
 
               <h3 className="sm:text-3xl text-2xl xl:ml-[100px] lg:ml-[50px] text-[#202020] dark:text-[white]">
@@ -87,12 +83,15 @@ const Works = () => {
             </div>
             <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
               <p className="">{item.paragraph}</p>
-              <img
-                className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100"
-                height
-                src={item.img}
-                alt=""
-              />
+              <div className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100">
+
+                <Image
+
+
+                  src={item.img}
+                  alt="dotSoft web programming group"
+                />
+              </div>
             </div>
           </div>
         ))}
