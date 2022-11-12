@@ -1,15 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
 
-import { websitesData } from '../../data/website';
 import { useScroll } from '../../../hooks/useScroll';
 import {
   AddFeatures,
   Breadcrumb,
-  CheckIcon,
-  ErrorIcon,
   PriceContact,
-  // Features
   Express,
   Landing,
   SmallBusiness,
