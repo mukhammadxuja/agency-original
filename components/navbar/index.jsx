@@ -41,13 +41,13 @@ const Navbar = () => {
           </Link>
           <ul className="mt-4 hidden items-center space-x-2 md:inline-flex md:space-x-5">
             <li className="cursor-pointer text-xl font-medium duration-500 hover:text-gray-600">
-              <a href="/#about">{t('home:about_navbar')}</a>
+              <Link href="/#about">{t('home:about_navbar')}</Link>
             </li>
             <li className="cursor-pointer text-xl font-medium duration-500 hover:text-gray-600">
-              <a href="/#services">{t('home:services_navbar')}</a>
+              <Link href="/#services">{t('home:services_navbar')}</Link>
             </li>
             <li className="cursor-pointer text-xl font-medium duration-500 hover:text-gray-600">
-              <a href="/#portfolio">{t('home:works_navbar')}</a>
+              <Link href="/#portfolio">{t('home:works_navbar')}</Link>
             </li>
             <Link href="/price">
               <li className="cursor-pointer text-xl font-medium duration-500 hover:text-gray-600">
@@ -60,7 +60,7 @@ const Navbar = () => {
               </li>
             </Link>
             <li className="cursor-pointer text-xl font-medium duration-500 hover:text-gray-600">
-              <a href="/#contact">{t('home:contact_navbar')}</a>
+              <Link href="/#contact">{t('home:contact_navbar')}</Link>
             </li>
           </ul>
           <div className="relative z-50 flex items-center">

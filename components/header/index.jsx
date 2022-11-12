@@ -1,14 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
-<<<<<<< HEAD
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import header from './header.jpg';
-=======
+import star from '../../public/svg/star.svg';
 
-import header from './header.jpg'
-import star from "../../public/svg/star.svg"
-
->>>>>>> 1082aa90372d0090038243f0da6cec052be949c6
 const Header = () => {
   return (
     <div className="relative mt-10 md:mt-20">
@@ -17,38 +12,31 @@ const Header = () => {
           <p className="text-lg font-semibold md:text-xl">©2022</p>
           <div className="mt-5 mb-10 ">
             <div className="flex items-center">
-              <h1 className="flex items-center text-4xl sm:text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl">
-                DotSoft
-                <div className="text-[#006B98] text-3xl ml-2 md:ml-4 mt-1 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl md:mt-3 flex flex-col h-11 sm:h-13 md:h-14 lg:h-[4.5rem] xl:h-28 overflow-hidden">
-                  <span className="px-2 animate-spinWord">Web Sites</span>
-                  <span className="px-2 animate-spinWord">Web Apps</span>
-                  <span className="px-2 animate-spinWord">Web Design</span>
-                  <span className="px-2 animate-spinWord">Web Sites</span>
-                  <span className="px-2 animate-spinWord">Web Apps</span>
-                  <span className="px-2 animate-spinWord">Web Design</span>
-                  <span className="px-2 animate-spinWord">Web Sites</span>
-                  <span className="px-2 animate-spinWord">Web Apps</span>
-                  <span className="px-2 animate-spinWord">Web Design</span>
-                  <span className="px-2 animate-spinWord">Web Sites</span>
-                  <span className="px-2 animate-spinWord">Web Apps</span>
-                  <span className="px-2 animate-spinWord">Web Design</span>
+              <div className="flex items-center flex-nowrap">
+                <h1 className="text-4xl sm:text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl whitespace-nowrap">
+                  DotSoft - Web
+                </h1>
+                <div className="text-[#006B98] text-4xl ml-2 md:ml-4 mt-4 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col h-11 sm:h-13 md:h-14 lg:h-[4.5rem] xl:h-24 overflow-hidden">
+                  <span className="px-2 animate-spinWord">Sites</span>
+                  <span className="px-2 animate-spinWord">Apps</span>
+                  <span className="px-2 animate-spinWord">Design</span>
+                  <span className="px-2 animate-spinWord">Sites</span>
+                  <span className="px-2 animate-spinWord">Apps</span>
+                  <span className="px-2 animate-spinWord">Design</span>
+                  <span className="px-2 animate-spinWord">Sites</span>
+                  <span className="px-2 animate-spinWord">Apps</span>
+                  <span className="px-2 animate-spinWord">Design</span>
+                  <span className="px-2 animate-spinWord">Sites</span>
+                  <span className="px-2 animate-spinWord">Apps</span>
+                  <span className="px-2 animate-spinWord">Design</span>
                 </div>
-              </h1>
-<<<<<<< HEAD
-              <img
-                className="ml-2 w-10 xl:w-20 duration-500 hover:rotate-180"
-                src="/svg/star.svg"
-                alt=""
-=======
-              <div className=" ml-2 w-10 xl:w-20 duration-500 hover:rotate-180 md:ml-10">
-              <Image
-              
-                src={star}
-                alt="dotSoft web programming group spinner"
-       
-                loading="lazy"
->>>>>>> 1082aa90372d0090038243f0da6cec052be949c6
-              />
+              </div>
+              <div className="ml-2 w-10 xl:w-20 duration-500 hover:rotate-180">
+                <Image
+                  src={star}
+                  alt="dotSoft web programming group spinner"
+                  loading="lazy"
+                />
               </div>
             </div>
             <div className="text-4xl sm:text-5xl flex font-bold md:text-6xl lg:text-7xl xl:text-8xl">

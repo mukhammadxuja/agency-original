@@ -4,7 +4,7 @@ import img1 from './about.jpeg';
 
 import { useLanguage } from '../../hooks/useLanguage';
 import { MarqueeServices } from '../';
-import star from "../../public/svg/star.svg"
+import star from '../../public/svg/star.svg';
 
 const About = () => {
   const { t } = useLanguage();
@@ -97,13 +97,8 @@ const About = () => {
                   className="rounded-full"
                   width={50}
                   height={50}
-<<<<<<< HEAD
-                  loading="lazy"
-                  alt="Abdullayev Aziz"
-=======
-                  src={img1}
+                  objectFit="cover"
                   alt="dotSoft web programming group: Abdullayev Aziz"
->>>>>>> 1082aa90372d0090038243f0da6cec052be949c6
                 />
               </div>
               <div className="pl-2">
@@ -164,7 +159,7 @@ const About = () => {
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
               37
               <span className="w-5 md:w-7">
-                <Image  src={star} alt="dotSoft web programming group" />
+                <Image src={star} alt="dotSoft web programming group" />
               </span>
             </h2>
             <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
@@ -175,7 +170,7 @@ const About = () => {
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
               17
               <span className="w-5 md:w-7">
-                <Image  src={star} alt="dotSoft web programming group" />
+                <Image src={star} alt="dotSoft web programming group" />
               </span>
             </h2>
             <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">
@@ -186,7 +181,7 @@ const About = () => {
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
               46
               <span className="w-5 md:w-7">
-                <Image  src={star} alt="dotSoft web programming group" />
+                <Image src={star} alt="dotSoft web programming group" />
               </span>
             </h2>
             <span className="md:text-sm text-xs md:text-[12px] dark:text-gray-100">

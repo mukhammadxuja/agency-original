@@ -25,28 +25,28 @@ module.exports = {
       keyframes: {
         spinWord: {
           '10%': {
-            transform: 'translateY(-100%)',
+            transform: 'translateY(-110%)',
           },
           '25%': {
-            transform: 'translateY(-100%)',
+            transform: 'translateY(-110%)',
           },
           '35%': {
-            transform: 'translateY(-200%)',
+            transform: 'translateY(-210%)',
           },
           '50%': {
-            transform: 'translateY(-200%)',
+            transform: 'translateY(-210%)',
           },
           '60%': {
-            transform: 'translateY(-300%)',
+            transform: 'translateY(-310%)',
           },
           '75%': {
-            transform: 'translateY(-300%)',
+            transform: 'translateY(-310%)',
           },
           '85%': {
-            transform: 'translateY(-400%)',
+            transform: 'translateY(-410%)',
           },
           '100%': {
-            transform: 'translateY(-400%)',
+            transform: 'translateY(-410%)',
           },
         },
         marquee: {
