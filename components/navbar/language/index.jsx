@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 
 const Language = () => {
-  const [languages, setLanguages] = React.useState(false);
+  const [languages, setLanguages] = useState(false);
   const router = useRouter();
 
   const openLang = () => {

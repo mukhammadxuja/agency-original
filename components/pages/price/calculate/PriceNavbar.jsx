@@ -5,7 +5,7 @@ import { useScroll } from '../../../../hooks/useScroll.js';
 import { websitesData } from '../../../data/website';
 
 const PriceNavbar = (props) => {
-  const { website, index } = props;
+  const { index } = props;
   const { scroll } = useScroll();
   return (
     <div
