@@ -1,11 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import moment from 'moment';
 
 import { useLanguage } from '../../hooks/useLanguage';
 
 const Footer = () => {
   const { t } = useLanguage();
+  const year = moment().format('YYYY');
   return (
     <div className="pt-5 md:pt-10  bg-neutral-50 dark:bg-black">
       <div className="container mx-auto flex flex-col md:flex-row items-start md:items-center justify-between pb-5 md:pb-10">
@@ -97,10 +99,10 @@ const Footer = () => {
       <div className="container mx-auto flex flex-row-reverse md:flex-row items-center justify-between py-10 border-t">
         <p className="flex text-lg font-medium text-main dark:text-white">
           <span className="text-[#006B98] md:mr-2">DotSoft team</span>
-          <span className="hidden md:block">
-            {t('home:all_rights_reserved')}.{' '}
+          <span className="hidden md:block font-normal">
+            {t('home:all_rights_reserved')}.
           </span>{' '}
-          ©2022
+          &copy;{year}
         </p>
         <ul className="flex items-center space-x-3 md:space-x-4 lg:space-x-6 xl:space-x-8 text-black dark:text-white text-lg font-medium md:font-semibold">
           <li className="cursor-pointer block md:hidden">

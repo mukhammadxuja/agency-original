@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import img1 from './about.jpeg';
+import img1 from './about.png';
 
 import { useLanguage } from '../../hooks/useLanguage';
 import { MarqueeServices } from '../';
@@ -14,25 +14,19 @@ const About = () => {
       <div id="about" className="container mx-auto md:flex mt-5 md:mt-20">
         <div className="md:w-[50%] flex flex-col items-center">
           <div>
-            <h3 className="font-bold md:text-xl">
+            <h3 className="font-semibold md:text-xl">
               {t('home:about_us_section')}
             </h3>
-            <h2 className="md:text-[4rem] text-[2rem] leading-none">
-              DotSoft -
+            <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
+              DotSoft - 
               <span className="text-[#016C9AFF] mr-1 md:mr-2">
                 {t('home:about_title_highlight')}
               </span>
+              <br className="md:block hidden" />{' '}
               {t('home:about_title_without_highlight')}.
-              <Image
-                src="/images/emojes/winking-face.png"
-                className="rounded-full"
-                width={35}
-                height={35}
-                alt=""
-              />
-            </h2>
+            </h1>
             <h5 className="md:text-base text-gray-600 dark:text-white pt-4">
-              DotSoft — {t('home:about_paragraph')}
+              DotSoft {t('home:about_paragraph')}
             </h5>
           </div>
           <div className="mini-cards pt-4 mt-5">
@@ -57,7 +51,8 @@ const About = () => {
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5">
-              Malumotlar omboriga malumotni jonatish va keladigan malumotlarni togri va sifatli olib kelishga javob beradi.
+              Malumotlar omboriga malumotni jonatish va keladigan malumotlarni
+              togri va sifatli olib kelishga javob beradi.
             </p>
           </div>
           <div className="mini-cards pt-4 mt-5">
@@ -82,7 +77,8 @@ const About = () => {
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5">
-              Malumotlar omboriga malumotni jonatish va keladigan malumotlarni togri va sifatli olib kelishga javob beradi.
+              Malumotlar omboriga malumotni jonatish va keladigan malumotlarni
+              togri va sifatli olib kelishga javob beradi.
             </p>
           </div>
         </div>
