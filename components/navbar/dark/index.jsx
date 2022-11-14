@@ -19,7 +19,7 @@ const DarkMode = () => {
       return (
         <button
           onClick={() => setTheme('light')}
-          className="mt-4 cursor-pointer rounded-lg bg-white py-3 px-6
+          className="mt-4 cursor-pointer rounded-lg bg-white py-2 px-6
         text-xs md:text-sm font-semibold text-black shadow-md
         duration-500 ease-in-out active:scale-95 active:bg-opacity-80 flex items-center space-x-1"
         >
@@ -30,7 +30,7 @@ const DarkMode = () => {
       return (
         <button
           onClick={() => setTheme('dark')}
-          className="mt-4 cursor-pointer rounded-lg bg-black py-3 px-6
+          className="mt-4 cursor-pointer rounded-lg bg-black py-2 px-6
           text-xs md:text-sm font-semibold text-white shadow-md
           duration-500 ease-in-out active:scale-95 active:bg-opacity-80 flex items-center space-x-1"
         >

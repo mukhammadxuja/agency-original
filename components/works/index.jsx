@@ -60,14 +60,14 @@ const Works = () => {
             key={item.id}
             className="lg:flex justify-between border-t py-5 md:py-7 lg:py-7 items-center"
           >
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-start md:justify-between">
               <div className="rounded-full sm:w-[70px] sm:h-[70px] w-[60px] h-[60px] bg-[#3b3939] dark:bg-[#E1E1E1] sm:p-[18px] p-[16px] block">
                 <div className="w-full h-full dark:brightness-0">
                   <Image src={item.img} alt="dotSoft web programming group" />
                 </div>
               </div>
 
-              <h3 className="sm:text-3xl text-2xl xl:ml-[100px] lg:ml-[50px] font-semibold text-[#202020] dark:text-[white]">
+              <h3 className="sm:text-3xl text-xl ml-5 md:ml-[100px] lg:ml-[50px] font-semibold text-[#202020] dark:text-[white]">
                 {item.title}
               </h3>
             </div>

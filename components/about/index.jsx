@@ -12,13 +12,13 @@ const About = () => {
     <section className="md:pb-14 lg:pb-16 xl:pb-20">
       <MarqueeServices />
       <div id="about" className="container mx-auto md:flex mt-5 md:mt-20">
-        <div className="md:w-[50%] flex flex-col items-center">
+        <div className="md:w-[50%] flex flex-col">
           <div>
             <h3 className="font-semibold md:text-xl">
               {t('home:about_us_section')}
             </h3>
             <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
-              DotSoft - 
+              DotSoft -
               <span className="text-[#016C9AFF] mr-1 md:mr-2">
                 {t('home:about_title_highlight')}
               </span>
@@ -29,15 +29,16 @@ const About = () => {
               DotSoft {t('home:about_paragraph')}
             </h5>
           </div>
-          <div className="mini-cards pt-4 mt-5">
+          <div className=" pt-4 mt-5">
             <div className="flex">
               <div>
                 <Image
+                  src="/images/team/Bexruz.jpeg"
                   className="rounded-full"
                   width={50}
                   height={50}
-                  src={img1}
-                  alt="dotSoft web programming group: Usmonov Behruz"
+                  loading="lazy"
+                  alt="dotSoft web programming group: Usmonov Bexruz"
                 />
               </div>
               <div className="pl-2">
@@ -45,62 +46,66 @@ const About = () => {
                   <h3 className="font-bold text-lg">Usmonov Behruz</h3>
                 </a>
                 <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Software Engineer
+                  Product Manager
                 </p>
               </div>
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5">
-              Malumotlar omboriga malumotni jonatish va keladigan malumotlarni
-              togri va sifatli olib kelishga javob beradi.
+              Prodact menejer mahsulotning ko'rinishini, maqsadlarini va biznes
+              traektoriyasini belgilaydi,
             </p>
           </div>
-          <div className="mini-cards pt-4 mt-5">
+          <div className=" pt-4 mt-5">
             <div className="flex">
               <div>
                 <Image
+                  src="/images/team/G`olib.jpg"
                   className="rounded-full"
                   width={50}
                   height={50}
-                  src={img1}
-                  alt="dotSoft web programming group: Safarov Muzaffar"
+                  objectFit="cover"
+                  loading="lazy"
+                  alt="dotSoft web programming group: Usmonov Bexruz"
                 />
               </div>
               <div className="pl-2">
                 <a target="blank" href="https://t.me/your_frontendDev">
-                  <h3 className="font-bold text-lg">Safarov Muzaffar</h3>
+                  <h3 className="font-bold text-lg">
+                    Maxmudov G&apos;olibxo&apos;ja
+                  </h3>
                 </a>
                 <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Front End - problem solving dev
+                  Sales Manager
                 </p>
               </div>
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5">
-              Malumotlar omboriga malumotni jonatish va keladigan malumotlarni
-              togri va sifatli olib kelishga javob beradi.
+            Savdoni rivojlantirish bo'yicha menejerlar tashkilot ichidagi savdo bo'limini nazorat qilish va takomillashtirish, shuningdek, yangi biznes imkoniyatlarini yaratish va xodimlarni o'qitish va rag'batlantirish strategiyalarini ishlab chiqish uchun javobgardir.
             </p>
           </div>
         </div>
         <div className="md:w-[50%] md:px-20 md:pt-10 space-y-2 md:space-y-4  ">
-          <div className="mini-cards">
+          <div className="">
             <div className="flex ">
               <div>
                 <Image
-                  src="/images/team/dark.jpg"
+                  src={img1}
                   className="rounded-full"
                   width={50}
                   height={50}
+                  objectFit="cover"
                   loading="lazy"
                   alt="dotSoft web programming group: Anvarov Muhammad"
                 />
               </div>
               <div className="pl-2">
                 <a target="blank" href="https://t.me/akzmsh">
-                  <h3 className="font-bold text-lg">Anvarov Muhammad</h3>
+                  <h3 className="font-bold text-lg">Safarov Muzaffar</h3>
                 </a>
                 <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Front End - Creative dev
+                  Front End Dev
                 </p>
               </div>
             </div>
@@ -110,7 +115,7 @@ const About = () => {
               Praesentium laudantium placeat, ullam quam ipsam facilis.
             </p>
           </div>
-          <div className="mini-cards">
+          <div className="">
             <div className="flex ">
               <div>
                 <Image
@@ -118,6 +123,7 @@ const About = () => {
                   className="rounded-full"
                   width={50}
                   height={50}
+                  objectFit="cover"
                   loading="lazy"
                   alt="dotSoft web programming group: Anvarov Muhammad"
                 />
@@ -127,7 +133,7 @@ const About = () => {
                   <h3 className="font-bold text-lg">Anvarov Muhammad</h3>
                 </a>
                 <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Front End - Creative dev
+                  Front End Dev
                 </p>
               </div>
             </div>
@@ -137,7 +143,7 @@ const About = () => {
               Praesentium laudantium placeat, ullam quam ipsam facilis.
             </p>
           </div>
-          <div className="mini-cards">
+          <div className="">
             <div className="flex">
               <div>
                 <Image
@@ -154,7 +160,7 @@ const About = () => {
                   <h3 className="font-bold text-lg">Abdullayev Aziz</h3>
                 </a>
                 <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Full Stack dev
+                  Full Stack Dev
                 </p>
               </div>
             </div>
@@ -164,7 +170,7 @@ const About = () => {
               ishlashini taminlash va yuklashga javob beruvchi
             </p>
           </div>
-          <div className="mini-cards">
+          <div className="">
             <div className="flex ">
               <div>
                 <Image
@@ -172,15 +178,16 @@ const About = () => {
                   width={50}
                   height={50}
                   src={img1}
-                  alt="dotSoft web programming group: Mahmudov Komil"
+                  objectFit="cover"
+                  alt="dotSoft web programming group: Maxmudov Komil"
                 />
               </div>
               <div className="pl-2">
                 <a target="blank" href="https://t.me/komilmaxmudov">
-                  <h3 className="font-bold text-lg">Mahmudov Komil</h3>
+                  <h3 className="font-bold text-lg">Maxmudov Komil</h3>
                 </a>
                 <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Backend dev
+                  Backend Dev
                 </p>
               </div>
             </div>

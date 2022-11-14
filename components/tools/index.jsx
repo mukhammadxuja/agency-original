@@ -26,7 +26,7 @@ const Tools = () => {
           <TagBtn name="testing" handleSetTag={setTag} />
         </div>
       </div>
-      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-8 gap-4 md:gap-8 justify-items-center w-fit mx-auto">
+      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-8 gap-3 md:gap-8 justify-items-center w-fit mx-auto">
         {tools.map((tools) => {
           console.log(tools.tag);
           return (
@@ -34,17 +34,17 @@ const Tools = () => {
               key={tools.id}
               className={
                 tools.tag === tag || tag === ''
-                  ? 'items-center justify-center space-y-1 h-24 w-24 md:h-28 md:w-28 p-2 md:p-4 rounded-lg bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600'
-                  : 'items-center justify-center space-y-1 h-24 w-24 md:h-28 md:w-28 p-2 md:p-4 rounded-lg bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 opacity-40'
+                  ? 'items-center justify-center space-y-1 h-20 w-20 md:h-28 md:w-28 p-2 md:p-4 rounded-lg bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600'
+                  : 'items-center justify-center space-y-1 h-20 w-20 md:h-28 md:w-28 p-2 md:p-4 rounded-lg bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 opacity-40'
               }
             >
               <LazyLoadImage
-                className="w-10 h-10 ml-5 mx-auto opacity-60"
+                className="w-8 h-8 md:w-10 ml-4 md:ml-5 md:h-10 mx-auto opacity-60"
                 src={tools.image}
                 effect="blur"
                 alt="dotSoft web programming group"
               />
-              <h4 className="text-main text-center font-medium text-sm">
+              <h4 className="text-main text-center font-medium text-xs md:text-sm whitespace-nowrap">
                 {tools.name}
               </h4>
             </div>

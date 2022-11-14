@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import { useScroll } from '../../../hooks/useScroll';
 import { useLanguage } from '../../../hooks/useLanguage';
@@ -27,27 +28,25 @@ const MobileNavbar = () => {
       >
         <div
           className={`${
-            openNav ? 'h-56' : 'h-0 hidden'
+            openNav ? 'h-auto' : 'h-0 hidden'
           } py-2 px-4 text-white bg-black bg-opacity-90 rounded-t-xl`}
         >
           <div className=" border-dashed border-l pl-4">
             <ul className="my-2items-center space-y-1">
               <li className="link cursor-pointer text-base">
-                {t('home:about_navbar')}
+                <Link href="/#about">{t('home:about_navbar')}</Link>
               </li>
               <li className="link cursor-pointer text-base">
-                {t('home:services_navbar')}
+                <Link href="/#services">{t('home:services_navbar')}</Link>
               </li>
               <li className="link cursor-pointer text-base">
-                {t('home:works_navbar')}
-                <ul className="ml-3">
-                  <li className="link">- InReport - system</li>
-                  <li className="link">- edTeach - quiz app</li>
-                  <li className="link">- Lazydev - React ui kit</li>
-                </ul>
+                <Link href="/price">{t('home:price_navbar')}</Link>
               </li>
               <li className="link cursor-pointer text-base">
-                {t('home:contact_navbar')}
+                <Link href="/blog">{t('home:blog_navbr')}</Link>
+              </li>
+              <li className="link cursor-pointer text-base">
+                <Link href="/#contact">{t('home:contact_navbar')}</Link>
               </li>
             </ul>
             <ul className="flex space-x-2 mt-1">
@@ -84,7 +83,7 @@ const MobileNavbar = () => {
               openNav ? 'justify-between' : ''
             } container mx-auto w-full flex items-center text-center space-x-2`}
           >
-            <h4 className="text-white">Home.soft</h4>
+            <h4 className="text-white">DotSoft</h4>
             <svg
               onClick={toggleNav}
               xmlns="http://www.w3.org/2000/svg"

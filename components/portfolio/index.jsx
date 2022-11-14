@@ -5,15 +5,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { useLanguage } from '../../hooks/useLanguage';
-import indebt from "../../public/images/propjects/indebt.jpg";
-import imbastudio from "../../public/images/propjects/imbastudio.jpg";
-import fayzbaraka from "../../public/images/propjects/fayzbaraka.jpg";
-import mamirovgroup from "../../public/images/propjects/mamirovgroup.jpg";
-import inreport from "../../public/images/propjects/inreport.jpg";
-import lazydev from "../../public/images/propjects/lazydev.jpg";
-import suvtaminoti from "../../public/images/propjects/suvtaminoti.jpg";
-import idealcleaning from "../../public/images/propjects/idealcleaning.jpg";
-import indebt_1 from "../../public/images/propjects/indebt-1.jpg";
+import indebt from '../../public/images/propjects/indebt.jpg';
+import imbastudio from '../../public/images/propjects/imbastudio.jpg';
+import fayzbaraka from '../../public/images/propjects/fayzbaraka.jpg';
+import mamirovgroup from '../../public/images/propjects/mamirovgroup.jpg';
+import inreport from '../../public/images/propjects/inreport.jpg';
+import lazydev from '../../public/images/propjects/lazydev.jpg';
+import suvtaminoti from '../../public/images/propjects/suvtaminoti.jpg';
+import idealcleaning from '../../public/images/propjects/idealcleaning.jpg';
+import indebt_1 from '../../public/images/propjects/indebt-1.jpg';
 
 const Portfolio = () => {
   const { t } = useLanguage();
@@ -66,9 +66,25 @@ const Portfolio = () => {
           <SwiperSlide>
             <PortfolioCard
               title="Development"
-              description="Jizzax City"
-              imgSrg={indebt}
-              link="https://jizzaxcity-uz.vercel.app/"
+              description="InReport"
+              imgSrg={inreport}
+              link="https://inreport.uz/"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Lazydev"
+              imgSrg={lazydev}
+              link="https://lazydev.vercel.app/"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Indebt..."
+              imgSrg={indebt_1}
+              link="https://indebt.uz"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -98,17 +114,9 @@ const Portfolio = () => {
           <SwiperSlide>
             <PortfolioCard
               title="Development"
-              description="InReport"
-              imgSrg={inreport}
-              link="https://inreport.uz/"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <PortfolioCard
-              title="Development"
-              description="Lazydev"
-              imgSrg={lazydev}
-              link="https://lazydev.vercel.app/"
+              description="Jizzax City"
+              imgSrg={indebt}
+              link="https://jizzaxcity-uz.vercel.app/"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -125,14 +133,6 @@ const Portfolio = () => {
               description="Ideal Cleaning"
               imgSrg={idealcleaning}
               link="https://ideal-cleaning.vercel.app/"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <PortfolioCard
-              title="Development"
-              description="Indebt..."
-              imgSrg={indebt_1}
-              link="https://indebt.uz"
             />
           </SwiperSlide>
         </Swiper>
