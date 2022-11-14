@@ -97,7 +97,7 @@ const About = () => {
                   height={50}
                   objectFit="cover"
                   loading="lazy"
-                  alt="dotSoft web programming group: Anvarov Muhammad"
+                  alt="dotSoft web programming group: Safarov Muzaffar"
                 />
               </div>
               <div className="pl-2">
@@ -111,8 +111,7 @@ const About = () => {
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium laudantium placeat, ullam quam ipsam facilis.
+            Foydalanuvchi uchun yangi xususiyatlarni ishlab chiqish, qayta ishlatiladigan kodlarni yaratish, sahifalarni yuklash vaqtlarini optimallashtirishga javob beruvchi.                      
             </p>
           </div>
           <div className="">
