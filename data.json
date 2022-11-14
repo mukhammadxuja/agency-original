@@ -19,7 +19,7 @@
     "complete": "3 oy",
     "discount": 2.7,
     "real_example": ["Mediapark.uz", "Olcha.uz"],
-    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg",
+    "picture": "/images/blog/e_commerce.webp",
     "title": "elektron tijorat"
   },
   {
@@ -41,8 +41,8 @@
     "about": "Biznes veb-sayti odatda kompaniyangiz haqida umumiy ma'lumot yoki elektron tijorat uchun to'g'ridan-to'g'ri platforma bo'lib xizmat qiladi ",
     "complete": "15-30 kun",
     "discount": 3.2,
-    "real_example": ["Toyotta.com", "Eleven.uz"],
-    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg",
+    "real_example": ["Toyota.com", "Puffinpackaging.co.uk"],
+    "picture": "/images/blog/business.webp",
     "title": "business sayt"
   },
   {
@@ -63,8 +63,8 @@
     "about": "Portfolio veb-sayti nima? Portfel veb-sayti - bu o'z ishingizni namoyish qilish va boshqalarga o'zingiz haqingizda xabar berishning o'ziga xos usuli . Bu sizning loyihalaringiz, amaliy tadqiqotlar va siz haqingizdagi ma'lumotlar uchun doim yashil platformaga o'xshaydi. Bundan tashqari, bu sizning shaxsiyatingiz, tajribangiz va qobiliyatingizni ifodalashning eng yaxshi usullaridan biridir.",
     "complete": "3-7 kun",
     "discount": false,
-    "real_example": ["", ""],
-    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg"
+    "real_example": ["Luxinyaoportfolio.com", "Bruno-simon.com"],
+    "picture": "/images/blog/portfolio.webp"
   },
   {
     "id": 4,
@@ -82,8 +82,8 @@
     "about": "Axborot veb-saytining asosiy maqsadi veb-saytga tashrif buyuruvchi bilan asosiy xabar almashishdir . Ko'pchilik tashkilotning besh WS tafsilotlarini, kim, nima, qanday, qaerda va nima uchun biznes mavjudligini etkazish uchun yaratilgan. Sayt biznes haqida ma'lumot almashishi kerak va odamlar qanday aloqada bo'lishlari mumkin.",
     "complete": "10-30 kun",
     "discount": 2.5,
-    "real_example": ["Mediapark.uz", "Olcha.uz"],
-    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg"
+    "real_example": ["Nytimes.com", "Kun.uz"],
+    "picture": "/images/blog/informational.webp"
   },
   {
     "id": 5,
@@ -100,33 +100,11 @@
 
     "complete": "15-30 kun",
     "discount": 2.9,
-    "real_example": ["Mediapark.uz", "Olcha.uz"],
-    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg"
+    "real_example": ["Mohirfest.uz", "creativeretailawards.com"],
+    "picture": "/images/blog/event.webp"
   },
   {
     "id": 6,
-    "Sayt turi": "Maxsus",
-    "price": 2500,
-    "xususiyatlar": [
-      "Mijozning Profile Sahifasi",
-      "CMS kontentni boshqarish tizimi",
-      "Mahsulotlarni filterlash",
-      "Moslashuvchan dizayn",
-      "Royxatdan otish tizimi",
-      "Mahsulotlar savatchasi",
-      "To'lov tizimi",
-      "Mahsulotlar turlari",
-      "Cheksiz sahifalar",
-      "SPA texnalogiyasi asosida"
-    ],
-    "about": "Mijozlar bilan munosabatlarni boshqarish (CRM) - bu kompaniyangizning mijozlar va potentsial mijozlar bilan barcha munosabatlari va o'zaro munosabatlarini boshqarish texnologiyasi . Maqsad oddiy: biznesingizni rivojlantirish uchun biznes aloqalarini yaxshilang.",
-    "complete": "3-6 oy",
-    "discount": 8.2,
-    "real_example": ["Mediapark.uz", "Olcha.uz"],
-    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg"
-  },
-  {
-    "id": 7,
 
     "Sayt turi": "Blog",
     "price": 400,
@@ -146,7 +124,20 @@
 
     "complete": "10-30 kun",
     "discount": false,
-    "real_example": ["Mediapark.uz", "Olcha.uz"],
-    "picture": "https://static.wixstatic.com/media/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg/v1/fill/w_724,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f9f4e_5b47bbd5deba42c2bbd51d0e30f06806~mv2.jpg"
+    "real_example": ["Lizzyhadfield.com", "Zionadventurephotog.com"],
+    "picture": "/images/blog/blog.webp"
+  },
+  {
+    "id": 7,
+    "Sayt turi": "Maxsus",
+    "price": 2500,
+    "xususiyatlar": [
+      "Mijoz bilan kelishilgan holda"
+    ],
+    "about": "Mijozning xohish va istaklariga asoslangan holda",
+    "complete": "3-6 oy",
+    "discount": 8.2,
+    "real_example": [],
+    "picture": "/images/blog/special.webp"
   }
 ]

@@ -72,16 +72,21 @@ const Websites = () => {
                   </h1>
                   <a className="text-sm">{item.about}</a>
                   <div>
-                    <h3 className="text-lg md:text-2xl">
-                      Hayotdagi{' '}
-                      {item['Sayt turi'] === 'eCommerce'
-                        ? 'elektron tijorat'
-                        : item['Sayt turi']}{' '}
-                      misollar:
-                    </h3>
+                    {item.real_example.length === 0 ? (
+                      ''
+                    ) : (
+                      <>
+                        <h3 className="text-lg md:text-2xl">
+                          Hayotdagi{' '}
+                          {item['Sayt turi'] === 'eCommerce'
+                            ? 'elektron tijorat'
+                            : item['Sayt turi']}{' '}
+                          misollar:
+                        </h3>
+                      </>
+                    )}
                     <ul className="ml-5 mt-5">
                       {item.real_example.map((item1, index) => {
-                        console.log(item1);
                         return (
                           <>
                             <li>
@@ -92,7 +97,7 @@ const Websites = () => {
                                 rel="noopener noreferrer"
                                 className="text-[#006B98] ml-2"
                               >
-                                {item1} - online do`kon
+                                {item1} -
                               </a>
                             </li>
                           </>
