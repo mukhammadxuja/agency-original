@@ -52,7 +52,7 @@ const About = () => {
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5">
-              Prodact menejer mahsulotning ko'rinishini, maqsadlarini va biznes
+              Prodact menejer mahsulotning ko`rinishini, maqsadlarini va biznes
               traektoriyasini belgilaydi,
             </p>
           </div>
@@ -82,7 +82,7 @@ const About = () => {
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5">
-            Savdoni rivojlantirish bo'yicha menejerlar tashkilot ichidagi savdo bo'limini nazorat qilish va takomillashtirish, shuningdek, yangi biznes imkoniyatlarini yaratish va xodimlarni o'qitish va rag'batlantirish strategiyalarini ishlab chiqish uchun javobgardir.
+            Savdoni rivojlantirish bo`yicha menejerlar tashkilot ichidagi savdo bo`limini nazorat qilish va takomillashtirish, shuningdek, yangi biznes imkoniyatlarini yaratish va xodimlarni o`qitish va rag`batlantirish strategiyalarini ishlab chiqish uchun javobgardir.
             </p>
           </div>
         </div>
