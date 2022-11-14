@@ -3,7 +3,7 @@
 3 So'zlarni to'g'irlab chiqish
 4 Toolsga yana texnalogiyalar qoshish
 5 Tilni qoshib chiqish
-6 About usga yana bir jamoadosh qoshish
+6 About usga yana bir jamoadosh qoshish +
 7 Price page
     - Mablag' dollarda
 
