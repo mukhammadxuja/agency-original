@@ -21,10 +21,10 @@ const Blog = () => {
   useEffect(() => {
     setInterval(() => {
       setLoading(false);
-    }, 3000);
+    }, 1000);
     setInterval(() => {
       setData(true);
-    }, 3000);
+    }, 1000);
   }, []);
 
   return (

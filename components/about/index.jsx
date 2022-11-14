@@ -82,7 +82,11 @@ const About = () => {
             </div>
 
             <p className="text-gray-600 dark:text-white pt-3 pb-5">
-            Savdoni rivojlantirish bo`yicha menejerlar tashkilot ichidagi savdo bo`limini nazorat qilish va takomillashtirish, shuningdek, yangi biznes imkoniyatlarini yaratish va xodimlarni o`qitish va rag`batlantirish strategiyalarini ishlab chiqish uchun javobgardir.
+              Savdoni rivojlantirish bo`yicha menejerlar tashkilot ichidagi
+              savdo bo`limini nazorat qilish va takomillashtirish, shuningdek,
+              yangi biznes imkoniyatlarini yaratish va xodimlarni o`qitish va
+              rag`batlantirish strategiyalarini ishlab chiqish uchun
+              javobgardir.
             </p>
           </div>
         </div>
@@ -174,12 +178,12 @@ const About = () => {
             <div className="flex ">
               <div>
                 <Image
+                  src="/images/team/Komil.webp"
                   className="rounded-full"
                   width={50}
                   height={50}
-                  src={img1}
                   objectFit="cover"
-                  alt="dotSoft web programming group: Maxmudov Komil"
+                  alt="dotSoft web programming group: Mahmudov Komil"
                 />
               </div>
               <div className="pl-2">
