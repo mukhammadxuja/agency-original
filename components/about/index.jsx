@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import img1 from './about.png';
+import img2 from "./coder.jpeg"
 
 import { useLanguage } from '../../hooks/useLanguage';
 import { MarqueeServices } from '../';
@@ -178,7 +179,7 @@ const About = () => {
             <div className="flex ">
               <div>
                 <Image
-                  src="/images/team/Komil.webp"
+                  src={img2}
                   className="rounded-full"
                   width={50}
                   height={50}
