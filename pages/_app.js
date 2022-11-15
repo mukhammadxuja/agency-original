@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }) {
           name="description"
           content="dotsoftuz web programming company provides its services in web sites, web applications, mobile applications, design "
         />
+        <meta name="yandex-verification" content="ee4bed122ac42069" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dotsoft.uz/" />
