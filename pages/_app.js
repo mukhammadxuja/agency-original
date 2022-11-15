@@ -9,11 +9,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>DotSoftUz - Development Group</title>
+        <title>DotSoft - Development Group</title>
         <meta name="title" content="DotSoftUz - Development Group" />
         <meta
           name="description"
-          content="dotsoftuz web programming company provides its services in web sites, web applications, mobile applications, design "
+          content="dotsoft web programming company provides its services in web sites, web applications, mobile applications and design"
         />
         <meta name="yandex-verification" content="ee4bed122ac42069" />
 
