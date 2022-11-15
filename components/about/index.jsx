@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import img1 from './about.png';
+import img2 from "./coder.jpeg"
 
 import People from './People';
 import { useLanguage } from '../../hooks/useLanguage';
@@ -54,6 +55,7 @@ const About = () => {
             />
           </div>
         </div>
+<<<<<<< HEAD
         <div className="md:w-[50%] md:px-20 md:pt-10 space-y-2 md:space-y-3">
           <People
             img={img1}
@@ -86,6 +88,118 @@ const About = () => {
             link="https://t.me/komilmaxmudov"
             paragraph=" The back- end of a website consists of a server, an application, and a database. A back-end developer builds and maintains the technology that powers those components which, together, enable the user-facing side of the website to even exist in the first place."
           />
+=======
+        <div className="md:w-[50%] md:px-20 md:pt-10 space-y-2 md:space-y-4  ">
+          <div className="">
+            <div className="flex ">
+              <div>
+                <Image
+                  src={img1}
+                  className="rounded-full"
+                  width={50}
+                  height={50}
+                  objectFit="cover"
+                  loading="lazy"
+                  alt="dotSoft web programming group: Safarov Muzaffar"
+                />
+              </div>
+              <div className="pl-2">
+                <a target="blank" href="https://t.me/akzmsh">
+                  <h3 className="font-bold text-lg">Safarov Muzaffar</h3>
+                </a>
+                <p className="text-[#3F3F3FFF] dark:text-gray-400">
+                  Front End Dev
+                </p>
+              </div>
+            </div>
+
+            <p className="text-gray-600 dark:text-white pt-3 pb-5">
+            Foydalanuvchi uchun yangi xususiyatlarni ishlab chiqish, qayta ishlatiladigan kodlarni yaratish, sahifalarni yuklash vaqtlarini optimallashtirishga javob beruvchi.                      
+            </p>
+          </div>
+          <div className="">
+            <div className="flex ">
+              <div>
+                <Image
+                  src="/images/team/Anvarov.jpg"
+                  className="rounded-full"
+                  width={50}
+                  height={50}
+                  objectFit="cover"
+                  loading="lazy"
+                  alt="dotSoft web programming group: Anvarov Muhammad"
+                />
+              </div>
+              <div className="pl-2">
+                <a target="blank" href="https://t.me/akzmsh">
+                  <h3 className="font-bold text-lg">Anvarov Muhammad</h3>
+                </a>
+                <p className="text-[#3F3F3FFF] dark:text-gray-400">
+                  Front End Dev
+                </p>
+              </div>
+            </div>
+
+            <p className="text-gray-600 dark:text-white pt-3 pb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium laudantium placeat, ullam quam ipsam facilis.
+            </p>
+          </div>
+          <div className="">
+            <div className="flex">
+              <div>
+                <Image
+                  src="/images/team/Aziz.jpg"
+                  className="rounded-full"
+                  width={50}
+                  height={50}
+                  objectFit="cover"
+                  alt="dotSoft web programming group: Abdullayev Aziz"
+                />
+              </div>
+              <div className="pl-2">
+                <a target="blank" href="https://t.me/AzizjonAbdullayev">
+                  <h3 className="font-bold text-lg">Abdullayev Aziz</h3>
+                </a>
+                <p className="text-[#3F3F3FFF] dark:text-gray-400">
+                  Full Stack Dev
+                </p>
+              </div>
+            </div>
+
+            <p className="text-gray-600 dark:text-white pt-3 pb-5 border-gray-400">
+              Web sayt va web dasturlarni xavfsiz, kamchiliklarsiz, yengil
+              ishlashini taminlash va yuklashga javob beruvchi
+            </p>
+          </div>
+          <div className="">
+            <div className="flex ">
+              <div>
+                <Image
+                  src={img2}
+                  className="rounded-full"
+                  width={50}
+                  height={50}
+                  objectFit="cover"
+                  alt="dotSoft web programming group: Mahmudov Komil"
+                />
+              </div>
+              <div className="pl-2">
+                <a target="blank" href="https://t.me/komilmaxmudov">
+                  <h3 className="font-bold text-lg">Maxmudov Komil</h3>
+                </a>
+                <p className="text-[#3F3F3FFF] dark:text-gray-400">
+                  Backend Dev
+                </p>
+              </div>
+            </div>
+
+            <p className="text-gray-600 dark:text-white pt-3 pb-5 border-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium laudantium placeat, ullam quam ipsam facilis.
+            </p>
+          </div>
+>>>>>>> 2f1eb22123e22f09fd08b0a5d1c37e3d276644dc
         </div>
       </div>
       <div className="container mx-auto mt-5 md:mt-20">
