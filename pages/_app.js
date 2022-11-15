@@ -10,18 +10,36 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>DotSoftUz - Development Group</title>
+        <meta name="title" content="DotSoftUz - Development Group" />
         <meta
           name="description"
           content="dotsoftuz web programming company provides its services in web sites, web applications, mobile applications, design "
-          key="desc"
         />
-        {/* <meta property="og:title" content="dotsoft blog page" /> */}
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dotsoft.uz/" />
+        <meta property="og:title" content="DotSoftUz - Development Group" />
         <meta
           property="og:description"
-          content="dotSoft web development group"
+          content="dotsoftuz web programming company provides its services in web sites, web applications, mobile applications, design "
         />
         <meta
           property="og:image"
+          content="https://www.dotsoft.uz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdotsoft-dark.de3a0cde.png&w=1920&q=75"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.dotsoft.uz/" />
+        <meta
+          property="twitter:title"
+          content="DotSoftUz - Development Group"
+        />
+        <meta
+          property="twitter:description"
+          content="dotsoftuz web programming company provides its services in web sites, web applications, mobile applications, design "
+        />
+        <meta
+          property="twitter:image"
           content="https://www.dotsoft.uz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdotsoft-dark.de3a0cde.png&w=1920&q=75"
         />
       </Head>
