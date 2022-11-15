@@ -9,13 +9,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>.Soft - Development Group</title>
+        <title>.Softuz - Development Group</title>
         <meta
           name="description"
-          content="dotsoft web programming company provides its services in web sites, web applications, mobile applications, design "
+          content="dotsoftuz web programming company provides its services in web sites, web applications, mobile applications, design "
           key="desc"
         />
-        <meta property="og:title" content="dotsoft blog page" />
+        {/* <meta property="og:title" content="dotsoft blog page" /> */}
         <meta
           property="og:description"
           content="dotSoft web development group"
