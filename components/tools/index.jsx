@@ -39,7 +39,7 @@ const Tools = () => {
               }
             >
               <LazyLoadImage
-                className="w-8 h-8 md:w-10 ml-4 md:ml-5 md:h-10 mx-auto opacity-60"
+                className="w-8 h-8 md:w-10 ml-4 md:ml-5 md:h-10 mx-auto opacity-60 object-cover"
                 src={tools.image}
                 effect="blur"
                 alt="dotSoft web programming group"

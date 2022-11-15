@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { motion } from 'framer-motion';
 
 import {
   Breadcrumb,
@@ -21,18 +22,7 @@ export async function getStaticProps({ locale }) {
 }
 
 const Calculate = () => {
-  // const [activeDialog, setActiveDialog] = React.useState(false);
-
   const [webId, setWebId] = useState(0);
-
-  // const dialog = () => {
-  //   setActiveDialog(true);
-  // };
-
-  // const CloseDialog = () => {
-  //   setActiveDialog(false);
-  // };
-
   const { scroll } = useScroll();
 
   return (
@@ -113,63 +103,71 @@ const Calculate = () => {
           </div>
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
-        <div>
-          <ul className="space-y-2">
-            {Data.map((item, index) => {
-              return (
-                <li onClick={() => setWebId(index)} key={item.id}>
-                  <div
-                    className={
-                      webId == index
-                        ? 'inline-flex justify-between items-center border-black p-5 w-full text-black bg-white rounded-lg border-2  cursor-pointer dark:hover:text-neutral-300 dark:border-black dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700'
-                        : ` inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2  cursor-pointer dark:hover:text-neutral-300  dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700`
-                    }
-                  >
-                    <div className="w-full text-lg md:text-xl">
-                      {item['Sayt turi']}
-                      <span
-                        className={
-                          item.discount
-                            ? 'w-fit ml-1 text-xs md:text-sm px-2 py-1 rounded-full bg-green-200 text-green-500'
-                            : 'w-fit ml-1 text-xs md:text-sm p-2 rounded-full bg-red-100 text-red-500'
-                        }
-                      >
-                        {!item.discount ? '😔' : item.discount + '%'}
-                      </span>
+      <motion.div
+        initial={{ y: 25, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 0.75,
+        }}
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
+          <div>
+            <ul className="space-y-2">
+              {Data.map((item, index) => {
+                return (
+                  <li onClick={() => setWebId(index)} key={item.id}>
+                    <div
+                      className={
+                        webId == index
+                          ? 'inline-flex justify-between items-center border-black p-5 w-full text-black bg-white rounded-lg border-2  cursor-pointer dark:hover:text-neutral-300 dark:border-black dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700'
+                          : ` inline-flex justify-between items-center p-5 w-full text-black bg-white rounded-lg border-2  cursor-pointer dark:hover:text-neutral-300  dark:border-neutral-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-black hover:bg-neutral-50 dark:text-neutral-400 dark:bg-neutral-800 dark:hover:bg-neutral-700`
+                      }
+                    >
+                      <div className="w-full text-lg md:text-xl">
+                        {item['Sayt turi']}
+                        <span
+                          className={
+                            item.discount
+                              ? 'w-fit ml-1 text-xs md:text-sm px-2 py-1 rounded-full bg-green-200 text-green-500'
+                              : 'w-fit ml-1 text-xs md:text-sm p-2 rounded-full bg-red-100 text-red-500'
+                          }
+                        >
+                          {!item.discount ? '😔' : item.discount + '%'}
+                        </span>
+                      </div>
+                      <h3 className="text-lg md:text-2xl">${item.price}</h3>
                     </div>
-                    <h3 className="text-lg md:text-2xl">${item.price}</h3>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <div className="rounded-xl shadow-md  flex flex-col justify-between ">
-          <div className="p-8 space-y-2">
-            {Data[webId].xususiyatlar.map((item) => {
-              return (
-                <>
-                  <div className=" items-center  border-b">
-                    <h5 className="text-lg md:text-base  lg:text-lg transition-all">
-                      - {item}
-                    </h5>
-                  </div>
-                </>
-              );
-            })}
+                  </li>
+                );
+              })}
+            </ul>
           </div>
-          <div className="flex justify-between items-center p-5 ">
-            <h5 className="text-lg md:text-base lg:text-lg">
-              Tayyorlash muddati: {Data[webId].complete}
-            </h5>
+          <div className="rounded-xl shadow-md  flex flex-col justify-between ">
+            <div className="p-8 space-y-2">
+              {Data[webId].xususiyatlar.map((item) => {
+                return (
+                  <>
+                    <div className=" items-center  border-b">
+                      <h5 className="text-lg md:text-base  lg:text-lg transition-all">
+                        - {item}
+                      </h5>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+            <div className="flex justify-between items-center p-5 ">
+              <h5 className="text-lg md:text-base lg:text-lg">
+                Tayyorlash muddati: {Data[webId].complete}
+              </h5>
 
-            <h5 className="text-lg md:text-base lg:text-lg">
-              Umumiy Summa: ${Data[webId].price}
-            </h5>
+              <h5 className="text-lg md:text-base lg:text-lg">
+                Umumiy Summa: ${Data[webId].price}
+              </h5>
+            </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <PriceContact />
     </div>

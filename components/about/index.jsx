@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import img1 from './about.png';
 
+import People from './People';
 import { useLanguage } from '../../hooks/useLanguage';
 import { MarqueeServices } from '../';
 import star from '../../public/svg/star.svg';
@@ -29,178 +30,62 @@ const About = () => {
               DotSoft {t('home:about_paragraph')}
             </h5>
           </div>
-          <div className=" pt-4 mt-5">
-            <div className="flex">
-              <div>
-                <Image
-                  src="/images/team/Bexruz.jpeg"
-                  className="rounded-full"
-                  width={50}
-                  height={50}
-                  loading="lazy"
-                  alt="dotSoft web programming group: Usmonov Bexruz"
-                />
-              </div>
-              <div className="pl-2">
-                <a target="blank" href="https://t.me/ubehruz">
-                  <h3 className="font-bold text-lg">Usmonov Behruz</h3>
-                </a>
-                <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Product Manager
-                </p>
-              </div>
-            </div>
-
-            <p className="text-gray-600 dark:text-white pt-3 pb-5">
-              Prodact menejer mahsulotning ko`rinishini, maqsadlarini va biznes
-              traektoriyasini belgilaydi,
-            </p>
-          </div>
-          <div className=" pt-4 mt-5">
-            <div className="flex">
-              <div>
-                <Image
-                  src="/images/team/G`olib.jpg"
-                  className="rounded-full"
-                  width={50}
-                  height={50}
-                  objectFit="cover"
-                  loading="lazy"
-                  alt="dotSoft web programming group: Usmonov Bexruz"
-                />
-              </div>
-              <div className="pl-2">
-                <a target="blank" href="https://t.me/your_frontendDev">
-                  <h3 className="font-bold text-lg">
-                    Maxmudov G&apos;olibxo&apos;ja
-                  </h3>
-                </a>
-                <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Sales Manager
-                </p>
-              </div>
-            </div>
-
-            <p className="text-gray-600 dark:text-white pt-3 pb-5">
-              Savdoni rivojlantirish bo`yicha menejerlar tashkilot ichidagi
+          <div className="mt-5 space-y-5">
+            <People
+              img="/images/team/Bexruz.jpeg"
+              alt="dotSoft web programming group: Usmonov Bexruz"
+              name="Usmonov Behruz"
+              job="Product Manager"
+              link="https://t.me/ubehruz"
+              paragraph="Prodact menejer mahsulotning ko`rinishini, maqsadlarini va biznes
+              traektoriyasini belgilaydi"
+            />
+            <People
+              img="/images/team/G`olib.jpg"
+              alt="dotSoft web programming group: Usmonov Bexruz"
+              name="Maxmudov G'olibxo'ja"
+              job="Sales Manager"
+              link="https://t.me/your_frontendDev"
+              paragraph="Savdoni rivojlantirish bo`yicha menejerlar tashkilot ichidagi
               savdo bo`limini nazorat qilish va takomillashtirish, shuningdek,
               yangi biznes imkoniyatlarini yaratish va xodimlarni o`qitish va
               rag`batlantirish strategiyalarini ishlab chiqish uchun
-              javobgardir.
-            </p>
+              javobgardir."
+            />
           </div>
         </div>
-        <div className="md:w-[50%] md:px-20 md:pt-10 space-y-2 md:space-y-4  ">
-          <div className="">
-            <div className="flex ">
-              <div>
-                <Image
-                  src={img1}
-                  className="rounded-full"
-                  width={50}
-                  height={50}
-                  objectFit="cover"
-                  loading="lazy"
-                  alt="dotSoft web programming group: Anvarov Muhammad"
-                />
-              </div>
-              <div className="pl-2">
-                <a target="blank" href="https://t.me/akzmsh">
-                  <h3 className="font-bold text-lg">Safarov Muzaffar</h3>
-                </a>
-                <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Front End Dev
-                </p>
-              </div>
-            </div>
-
-            <p className="text-gray-600 dark:text-white pt-3 pb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium laudantium placeat, ullam quam ipsam facilis.
-            </p>
-          </div>
-          <div className="">
-            <div className="flex ">
-              <div>
-                <Image
-                  src="/images/team/Anvarov.jpg"
-                  className="rounded-full"
-                  width={50}
-                  height={50}
-                  objectFit="cover"
-                  loading="lazy"
-                  alt="dotSoft web programming group: Anvarov Muhammad"
-                />
-              </div>
-              <div className="pl-2">
-                <a target="blank" href="https://t.me/akzmsh">
-                  <h3 className="font-bold text-lg">Anvarov Muhammad</h3>
-                </a>
-                <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Front End Dev
-                </p>
-              </div>
-            </div>
-
-            <p className="text-gray-600 dark:text-white pt-3 pb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium laudantium placeat, ullam quam ipsam facilis.
-            </p>
-          </div>
-          <div className="">
-            <div className="flex">
-              <div>
-                <Image
-                  src="/images/team/Aziz.jpg"
-                  className="rounded-full"
-                  width={50}
-                  height={50}
-                  objectFit="cover"
-                  alt="dotSoft web programming group: Abdullayev Aziz"
-                />
-              </div>
-              <div className="pl-2">
-                <a target="blank" href="https://t.me/AzizjonAbdullayev">
-                  <h3 className="font-bold text-lg">Abdullayev Aziz</h3>
-                </a>
-                <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Full Stack Dev
-                </p>
-              </div>
-            </div>
-
-            <p className="text-gray-600 dark:text-white pt-3 pb-5 border-gray-400">
-              Web sayt va web dasturlarni xavfsiz, kamchiliklarsiz, yengil
-              ishlashini taminlash va yuklashga javob beruvchi
-            </p>
-          </div>
-          <div className="">
-            <div className="flex ">
-              <div>
-                <Image
-                  src="/images/team/Komil.webp"
-                  className="rounded-full"
-                  width={50}
-                  height={50}
-                  objectFit="cover"
-                  alt="dotSoft web programming group: Mahmudov Komil"
-                />
-              </div>
-              <div className="pl-2">
-                <a target="blank" href="https://t.me/komilmaxmudov">
-                  <h3 className="font-bold text-lg">Maxmudov Komil</h3>
-                </a>
-                <p className="text-[#3F3F3FFF] dark:text-gray-400">
-                  Backend Dev
-                </p>
-              </div>
-            </div>
-
-            <p className="text-gray-600 dark:text-white pt-3 pb-5 border-gray-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium laudantium placeat, ullam quam ipsam facilis.
-            </p>
-          </div>
+        <div className="md:w-[50%] md:px-20 md:pt-10 space-y-2 md:space-y-3">
+          <People
+            img={img1}
+            name="Saforv Muzaffar"
+            job="Front End Dev"
+            link="https://t.me/your_frontendDev"
+            paragraph="Front-end website development is the process of developing a website`s graphical user interface using HTML, CSS, and JavaScript so that users can view and interact with that website."
+          />
+          <People
+            img="/images/team/Anvarov.jpg"
+            name="Anvarov Muhammad"
+            job="Front End Dev"
+            link="https://t.me/akzmsh"
+            paragraph="Front-end website development is the process of developing a website`s graphical user interface using HTML, CSS, and JavaScript so that users can view and interact with that website."
+          />
+          <People
+            img="/images/team/Aziz.jpg"
+            alt="dotSoft web programming group: Abdullayev Aziz"
+            name="Abdullayev Aziz"
+            job="Full Stack Dev"
+            link="https://t.me/AzizjonAbdullayev"
+            paragraph="Web sayt va web dasturlarni xavfsiz, kamchiliklarsiz, yengil
+            ishlashini taminlash va yuklashga javob beruvchi"
+          />
+          <People
+            img="/images/team/Komil.webp"
+            alt="dotSoft web programming group: Mahmudov Komil"
+            name="Maxmudov Komil"
+            job="Backend Dev"
+            link="https://t.me/komilmaxmudov"
+            paragraph=" The back- end of a website consists of a server, an application, and a database. A back-end developer builds and maintains the technology that powers those components which, together, enable the user-facing side of the website to even exist in the first place."
+          />
         </div>
       </div>
       <div className="container mx-auto mt-5 md:mt-20">
