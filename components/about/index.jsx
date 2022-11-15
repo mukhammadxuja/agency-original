@@ -23,7 +23,7 @@ const About = () => {
                 {t('home:about_title_highlight')}
               </span>
               <br className="md:block hidden" />{' '}
-              {t('home:about_title_without_highlight')}.
+              {t('home:about_title_without_highlight')}
             </h1>
             <h5 className="md:text-base text-gray-600 dark:text-white pt-4">
               DotSoft {t('home:about_paragraph')}
