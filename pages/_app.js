@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>.Softuz - Development Group</title>
+        <title>DotSoftUz - Development Group</title>
         <meta
           name="description"
           content="dotsoftuz web programming company provides its services in web sites, web applications, mobile applications, design "
