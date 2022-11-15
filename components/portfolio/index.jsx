@@ -76,13 +76,13 @@ const Portfolio = () => {
               title="Development"
               description="Lazydev"
               imgSrg={lazydev}
-              link="https://lazydev.vercel.app/"
+              link="https://lazydev.uz"
             />
           </SwiperSlide>
           <SwiperSlide>
             <PortfolioCard
               title="Development"
-              description="Indebt..."
+              description="Indebt"
               imgSrg={indebt_1}
               link="https://indebt.uz"
             />
@@ -90,7 +90,7 @@ const Portfolio = () => {
           <SwiperSlide>
             <PortfolioCard
               title="Development"
-              description="Imba"
+              description="Imba Studio "
               imgSrg={imbastudio}
               link="https://imbastudio.uz"
             />

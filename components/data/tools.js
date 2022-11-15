@@ -121,13 +121,13 @@ export const tools = [
   },
   {
     id: '923',
-    name: 'Figma',
+    name: 'After Effect',
     image: '/images/tools/after-effect.svg',
     tag: 'design',
   },
   {
     id: '94234',
-    name: 'Figma',
+    name: 'Premier Pro',
     image: '/images/tools/premier-pro.svg',
     tag: 'design',
   },
