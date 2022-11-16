@@ -54,25 +54,25 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-4 md:mt-0">
-          <h3 className="text-xl pb-3">{t('home:links_navbar')}</h3>
+          <h3 className="text-xl pb-3 font-semibold">{t('home:links_navbar')}</h3>
           <div className="flex flex-col space-y-1">
             <Link href="/#about">
-              <a className="text-sm md:text-lg hover:underline">{t('home:about_navbar')}</a>
+              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:about_navbar')}</a>
             </Link>
             <Link href="/#services">
-              <a className="text-sm md:text-lg hover:underline">{t('home:services_navbar')}</a>
+              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:services_navbar')}</a>
             </Link>
             <Link href="/#portfolio">
-              <a className="text-sm md:text-lg hover:underline">{t('home:works_navbar')}</a>
+              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:works_navbar')}</a>
             </Link>
             <Link href="/price">
-              <a className="text-sm md:text-lg hover:underline">{t('home:price_navbar')}</a>
+              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:price_navbar')}</a>
             </Link>
             <Link href="/blog">
-              <a className="text-sm md:text-lg hover:underline">{t('home:blog_navbar')}</a>
+              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:blog_navbar')}</a>
             </Link>
             <Link href="/#contact">
-              <a className="text-sm md:text-lg hover:underline">{t('home:contact_navbar')}</a>
+              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:contact_navbar')}</a>
             </Link>
           </div>
         </div>
