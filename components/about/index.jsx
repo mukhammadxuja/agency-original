@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 import img1 from './about.png';
-import img2 from './coder.jpeg';
 
 import People from './People';
 import { useLanguage } from '../../hooks/useLanguage';
@@ -38,8 +37,7 @@ const About = () => {
               name="Usmonov Behruz"
               job="Product Manager"
               link="https://t.me/ubehruz"
-              paragraph="Prodact menejer mahsulotning ko`rinishini, maqsadlarini va biznes
-              traektoriyasini belgilaydi"
+              paragraph={t('home:about_product_manager')}
             />
             <People
               img="/images/team/G`olib.jpg"
@@ -47,11 +45,7 @@ const About = () => {
               name="Maxmudov G'olibxo'ja"
               job="Sales Manager"
               link="https://t.me/your_frontendDev"
-              paragraph="Savdoni rivojlantirish bo`yicha menejerlar tashkilot ichidagi
-              savdo bo`limini nazorat qilish va takomillashtirish, shuningdek,
-              yangi biznes imkoniyatlarini yaratish va xodimlarni o`qitish va
-              rag`batlantirish strategiyalarini ishlab chiqish uchun
-              javobgardir."
+              paragraph={t('home:about_sales_mangment')}
             />
           </div>
         </div>
@@ -61,14 +55,14 @@ const About = () => {
             name="Saforv Muzaffar"
             job="Front End Dev"
             link="https://t.me/your_frontendDev"
-            paragraph="Front-end website development is the process of developing a website`s graphical user interface using HTML, CSS, and JavaScript so that users can view and interact with that website."
+            paragraph={`${t('home:about_frontend')}`}
           />
           <People
             img="/images/team/Anvarov.jpg"
             name="Anvarov Muhammad"
             job="Front End Dev"
             link="https://t.me/akzmsh"
-            paragraph="Front-end website development is the process of developing a website`s graphical user interface using HTML, CSS, and JavaScript so that users can view and interact with that website."
+            paragraph={`${t('home:about_frontend')}`}
           />
           <People
             img="/images/team/Aziz.jpg"
@@ -76,16 +70,15 @@ const About = () => {
             name="Abdullayev Aziz"
             job="Full Stack Dev"
             link="https://t.me/AzizjonAbdullayev"
-            paragraph="Web sayt va web dasturlarni xavfsiz, kamchiliklarsiz, yengil
-            ishlashini taminlash va yuklashga javob beruvchi"
+            paragraph={`${t('home:about_fullstack')}`}
           />
           <People
-            img="/images/team/Komil.webp"
+            img="/images/team/Komil.jpeg"
             alt="dotSoft web programming group: Mahmudov Komil"
             name="Maxmudov Komil"
             job="Backend Dev"
             link="https://t.me/komilmaxmudov"
-            paragraph=" The back- end of a website consists of a server, an application, and a database. A back-end developer builds and maintains the technology that powers those components which, together, enable the user-facing side of the website to even exist in the first place."
+            paragraph={`${t('home:about_backend')}`}
           />
         </div>
       </div>

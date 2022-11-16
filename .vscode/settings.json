@@ -28,11 +28,15 @@
   ],
   "resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"],
   "cSpell.words": [
+    "Baraka",
     "dotsof",
     "dotsoft",
+    "Fayz",
     "Greensock",
+    "IMBA",
     "jizzax",
     "Katalog",
+    "Lazydev",
     "Supabase",
     "swiper",
     "Vizitka"
