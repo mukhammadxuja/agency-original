@@ -54,22 +54,25 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-4 md:mt-0">
-          <h3 className="text-xl pb-3">Portfolio</h3>
+          <h3 className="text-xl pb-3 font-semibold">{t('home:links_navbar')}</h3>
           <div className="flex flex-col space-y-1">
-            <Link href="/portfolio/in-report-system">
-              <a className="text-sm md:text-lg hover:underline">Inreport System</a>
+            <Link href="/#about">
+              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:about_navbar')}</a>
             </Link>
-            <Link href="/portfolio/ed-teach">
-              <a className="text-sm md:text-lg hover:underline">edTeach</a>
+            <Link href="/#services">
+              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:services_navbar')}</a>
             </Link>
-            <Link href="/portfolio/lazy-dev">
-              <a className="text-sm md:text-lg hover:underline">Lazydev - Ui Components</a>
+            <Link href="/#portfolio">
+              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:works_navbar')}</a>
             </Link>
-            <Link href="/portfolio/ideal-cleaning">
-              <a className="text-sm md:text-lg hover:underline">Ideal Cleaning</a>
+            <Link href="/price">
+              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:price_navbar')}</a>
             </Link>
-            <Link href="/portfolio/jizzax-city">
-              <a className="text-sm md:text-lg hover:underline">Jizzax City</a>
+            <Link href="/blog">
+              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:blog_navbar')}</a>
+            </Link>
+            <Link href="/#contact">
+              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:contact_navbar')}</a>
             </Link>
           </div>
         </div>

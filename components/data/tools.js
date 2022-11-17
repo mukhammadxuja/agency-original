@@ -45,19 +45,19 @@ export const tools = [
     id: '4134',
     name: 'Three.js',
     image: '/images/tools/three-js.svg',
-    tag: '3D',
+    tag: 'creative',
   },
   {
     id: '5234',
     name: 'Greensock',
     image: '/images/tools/gsap.svg',
-    tag: '3D',
+    tag: 'creative',
   },
   {
     id: '923423',
     name: 'Spline',
     image: '/images/tools/spline.png',
-    tag: '3D',
+    tag: 'creative',
   },
   {
     id: '847',
@@ -69,6 +69,12 @@ export const tools = [
     id: '2223424',
     name: 'Firebase',
     image: '/images/tools/firebase.png',
+    tag: 'backend',
+  },
+  {
+    id: '7123124',
+    name: 'Socket.io',
+    image: '/images/tools/socket.io.svg',
     tag: 'backend',
   },
   {
@@ -99,12 +105,6 @@ export const tools = [
     id: '3923415',
     name: 'R Native',
     image: '/images/tools/react-native.svg',
-    tag: 'mobile',
-  },
-  {
-    id: '7123124',
-    name: 'Solito.js',
-    image: 'https://solito.dev/img/solito.svg',
     tag: 'mobile',
   },
   {

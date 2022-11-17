@@ -49,7 +49,7 @@ const Navbar = () => {
             </Link>
             <Link href="/blog">
               <li className="cursor-pointer text-xl font-semibold duration-500 hover:text-gray-600">
-                {t('home:blog_navbr')}
+                {t('home:blog_navbar')}
               </li>
             </Link>
             <li className="cursor-pointer text-xl font-semibold duration-500 hover:text-gray-600">

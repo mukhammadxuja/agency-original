@@ -31,6 +31,11 @@
     overflow-x: hidden;
   }
 
+  ::selection {
+    color: white;
+    background: #006B98;
+  }
+
   /* width */
   ::-webkit-scrollbar {
     width: 10px;

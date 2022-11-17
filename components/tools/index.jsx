@@ -3,6 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useLanguage } from '../../hooks/useLanguage.js';
 
 import { tools } from '../data/tools.js';
+
 const Tools = () => {
   const [tag, setTag] = useState('');
   const { t } = useLanguage();
@@ -18,10 +19,10 @@ const Tools = () => {
 
         <div className="my-8 space-x-4 px-4 md:px-0 flex items-center justify-start sm:justify-center flex-nowrap overflow-x-scroll scrollbar-hide">
           <TagBtn name="frontend" handleSetTag={setTag} />
-          <TagBtn name="3D" handleSetTag={setTag} />
+          <TagBtn name="creative" handleSetTag={setTag} />
           <TagBtn name="backend" handleSetTag={setTag} />
           <TagBtn name="mobile" handleSetTag={setTag} />
-
+          <TagBtn name="infrastructure" handleSetTag={setTag} />
           <TagBtn name="design" handleSetTag={setTag} />
           <TagBtn name="testing" handleSetTag={setTag} />
         </div>
