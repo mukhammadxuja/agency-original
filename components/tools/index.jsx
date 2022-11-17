@@ -29,7 +29,7 @@ const Tools = () => {
       </div>
       <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-8 gap-3 md:gap-8 justify-items-center w-fit mx-auto">
         {tools.map((tools) => {
-          console.log(tools.tag);
+         
           return (
             <div
               key={tools.id}

@@ -22,7 +22,7 @@ export default function Home() {
 
   if (!mounted) return null;
   return (
-    <div className="">
+    <div >
       <Head>
         <title>.Soft - Development Group</title>
       </Head>

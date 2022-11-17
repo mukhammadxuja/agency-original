@@ -9,7 +9,7 @@ const Landing = (props) => {
     <React.Fragment>
       {websitesData.map((website) => {
         return (
-          <div key={website.name} className="">
+          <div key={website.name} >
             {website.id === index && (
               <div className="p-8 space-y-2">
                 <div className="flex items-center justify-between border-b">
