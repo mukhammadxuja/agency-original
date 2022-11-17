@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 const People = (props) => {
-  const { img, name, job, link, paragraph } = props;
+  const { img, name, job, link, paragraph, alt } = props;
 
   return (
     <>
@@ -15,7 +15,7 @@ const People = (props) => {
             height={50}
             objectFit="cover"
             loading="lazy"
-            alt="dotSoft web programming group: Anvarov Muhammad"
+            alt={alt}
           />
         </div>
         <div className="pl-2">

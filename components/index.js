@@ -41,3 +41,5 @@ export { default as Catalog } from './pages/price/website-feature/Catalog';
 export { default as Commerce } from './pages/price/website-feature/Commerce';
 export { default as Corporative } from './pages/price/website-feature/Corporative';
 export { default as Unique } from './pages/price/website-feature/Unique';
+
+export { default as BlogCard } from './pages/blog/card/index';

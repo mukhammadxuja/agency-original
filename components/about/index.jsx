@@ -51,7 +51,7 @@ const About = () => {
         </div>
         <div className="md:w-[50%] md:px-20 md:pt-10 space-y-2 md:space-y-3">
           <People
-            img={img1}
+            img="/images/team/Muzaffar.jpg"
             name="Saforv Muzaffar"
             job="Front End Dev"
             link="https://t.me/your_frontendDev"

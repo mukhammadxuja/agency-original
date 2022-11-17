@@ -26,9 +26,13 @@ export default function Home() {
       <Head>
         <title>.Soft - Development Group</title>
       </Head>
-      
+
       <Script src="https://third-party-script.js"></Script>
-      <div className="noise"></div>
+      <div className="noise">
+        <video autoplay muted loop className="fixed top-0 left-0">
+          <source src="/video/noise.webm" type="video/webp" />
+        </video>
+      </div>
       <Header />
       <About />
       <Works />
