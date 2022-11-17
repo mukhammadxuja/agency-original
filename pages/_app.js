@@ -10,19 +10,18 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Dotsoftuz - Development Group</title>
-        <meta name="title" content="DotSoftUz - Development Group" />
+        <meta name="title" content="Dotsoftuz - Development Group" />
         <meta
           name="description"
-          content="Dotsoftuz web programming company provides its services in web sites, web applications, mobile applications and designs"
+          content="Dotsoftuz web programming company provides its services in web sites, web applications, mobile applications and design "
         />
-        <meta name="yandex-verification" content="ee4bed122ac42069" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dotsoft.uz/" />
-        <meta property="og:title" content="DotSoftUz - Development Group" />
+        <meta property="og:title" content="Dotsoftuz - Development Group" />
         <meta
           property="og:description"
-          content="dotsoftuz web programming company provides its services in web sites, web applications, mobile applications, design "
+          content="Dotsoftuz web programming company provides its services in web sites, web applications, mobile applications and design "
         />
         <meta
           property="og:image"
@@ -33,11 +32,11 @@ function MyApp({ Component, pageProps }) {
         <meta property="twitter:url" content="https://www.dotsoft.uz/" />
         <meta
           property="twitter:title"
-          content="DotSoftUz - Development Group"
+          content="Dotsoftuz - Development Group"
         />
         <meta
           property="twitter:description"
-          content="dotsoftuz web programming company provides its services in web sites, web applications, mobile applications, design "
+          content="Dotsoftuz web programming company provides its services in web sites, web applications, mobile applications and design "
         />
         <meta
           property="twitter:image"
