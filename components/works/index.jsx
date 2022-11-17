@@ -72,7 +72,7 @@ const Works = () => {
               </h3>
             </div>
             <div className="flex xl:mt-0 mt-5 md:mt-10 justify-between lg:w-[43%] xl:ml-auto">
-              <p className="">{item.paragraph}</p>
+              <p>{item.paragraph}</p>
               <div className="w-[37px] h-[37px] sm:block hidden brightness-0 dark:brightness-100">
                 <Image src={item.img} alt="dotSoft web programming group" />
               </div>

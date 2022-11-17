@@ -29,6 +29,10 @@ const Tools = () => {
       </div>
       <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-8 gap-3 md:gap-8 justify-items-center w-fit mx-auto">
         {tools.map((tools) => {
+<<<<<<< HEAD
+=======
+         
+>>>>>>> 2dabb443c834c30f66077d56d3855bf8496efbce
           return (
             <div
               key={tools.id}
