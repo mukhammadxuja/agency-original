@@ -65,7 +65,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div className="hidden sm:block ml-2 md:mt-12 w-10 xl:w-20 duration-500 hover:rotate-180">
+              <div className="hidden sm:block ml-2 md:mt-12 w-10 h-10 xl:w-20 xl:w-20 duration-500 hover:rotate-180">
                 <Image
                   src={star}
                   alt="dotSoft web programming group spinner"
@@ -95,7 +95,7 @@ const Header = () => {
         </div>
 
         <div className="container mx-auto">
-          <div className="relative mt-16 !bg-[center_bottom_-1rem] object-cover h-[50vh] sm:h-[50vh] md:h-[25rem] lg:h-[25rem] xl:h-[30rem] ">
+          <div className="relative mt-16 !bg-[center_bottom_-1rem] w-full object-cover h-[50vh] sm:h-[50vh] md:h-[25rem] lg:h-[25rem] xl:h-[30rem] ">
             <Image
               src={header2}
               layout="fill"

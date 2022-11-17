@@ -37,7 +37,24 @@ const Blog = () => {
       className="nav-bar"
     >
       <Head>
-        <title>.Soft - Blog page</title>
+      <title>Dotsoftuz Blog page</title>
+        <meta name="title" content="Dotsoftuz - Blog page" />
+        <meta
+          name="description"
+          content="Dotsoftuz web programming company - through this page you can find interesting and useful articles from each other "
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dotsoft.uz/" />
+        <meta property="og:title" content="Dotsoftuz - Blog page" />
+        <meta
+          property="og:description"
+          content="Dotsoftuz web programming company - through this page you can find interesting and useful articles from each other "
+        />
+        <meta
+          property="og:image"
+          content="https://www.dotsoft.uz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdotsoft-dark.de3a0cde.png&w=1920&q=75"
+        />
       </Head>
       <div className="container mx-auto">
         <Breadcrumb page="Blog" link="/blog" />
