@@ -22,11 +22,11 @@ export default function Home() {
 
   if (!mounted) return null;
   return (
-    <div >
+    <div>
       <Head>
         <title>.Soft - Development Group</title>
       </Head>
-      
+
       <Script src="https://third-party-script.js"></Script>
       <div className="noise"></div>
       <Header />

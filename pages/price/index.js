@@ -13,10 +13,11 @@ import Data from '../../data.json';
 import { useState } from 'react';
 
 import { useScroll } from '../../hooks/useScroll';
+import { useLanguage } from '../../hooks/useLanguage';
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['home', 'footer'])),
+      ...(await serverSideTranslations(locale, ['home', 'price'])),
     },
   };
 }
@@ -24,6 +25,8 @@ export async function getStaticProps({ locale }) {
 const Calculate = () => {
   const [webId, setWebId] = useState(0);
   const { scroll } = useScroll();
+
+  const { t } = useLanguage();
 
   return (
     <div className="container mx-auto">
@@ -36,7 +39,7 @@ const Calculate = () => {
           <div className="container mx-auto flex flex-nowrap items-center justify-between py-4 md:py-3">
             <div className="pr-10 lg:pr-20 whitespace-nowrap">
               <p className="text-xs md:text-sm text-gray-500 whitespace-nowrap">
-                Sayt Turi
+              {t('price:site_type')}
               </p>
               <div className="flex items-center space-x-1">
                 <h3 className="text-base md:text-xl">
@@ -46,7 +49,7 @@ const Calculate = () => {
               </div>
             </div>
             <div className="pr-10 lg:pr-20 whitespace-nowrap">
-              <p className="text-xs md:text-sm text-gray-500">Muddati</p>
+              <p className="text-xs md:text-sm text-gray-500">{t('price:site_term')}</p>
               <div className="flex items-center space-x-1">
                 <h3 className="text-base md:text-xl">{Data[webId].complete}</h3>
                 <CheckIcon />
@@ -55,7 +58,7 @@ const Calculate = () => {
 
             <div className="pr-10 lg:pr-20 whitespace-nowrap">
               <p className="text-xs md:text-sm text-gray-500">
-                Umumiy chegirma
+              {t('price:general_discount')}
               </p>
               <div className="flex items-center space-x-1">
                 <h3 className="text-base md:text-xl">
@@ -66,7 +69,7 @@ const Calculate = () => {
             </div>
 
             <div className="pr-10 lg:pr-20 whitespace-nowrap">
-              <p className="text-xs md:text-sm text-gray-500">Umumiy summa</p>
+              <p className="text-xs md:text-sm text-gray-500">{t('price:total_amount')}</p>
               <h3 className="text-base md:text-xl">
                 <span>${Data[webId].price}</span> 😀
               </h3>
@@ -79,13 +82,13 @@ const Calculate = () => {
           scroll ? 'mt-24 md:mt-28' : 'mt-36 md:mt-36'
         } transition duration-500`}
       >
-        <Breadcrumb page="Price" link="/price" />
+        <Breadcrumb page={t('home:breadcrumb_price')} link="/price" />
       </div>
       <div className="flex items-center justify-between my-5">
-        <h3 className="text-lg md:text-2xl">Narxlarni Hisoblash</h3>
+        <h3 className="text-lg md:text-2xl">{t('price:price_heading')}</h3>
         <Link href="/blog/websites">
           <div className="flex items-center space-x-1 cursor-pointer group">
-            <p>Saytlar haqida</p>
+            <p>{t('price:price_about_sites')}</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -158,11 +161,11 @@ const Calculate = () => {
             </div>
             <div className="flex justify-between items-center p-5 ">
               <h5 className="text-lg md:text-base lg:text-lg">
-                Tayyorlash muddati: {Data[webId].complete}
+              {t('price:site_term')}: {Data[webId].complete}
               </h5>
 
               <h5 className="text-lg md:text-base lg:text-lg">
-                Umumiy Summa: ${Data[webId].price}
+              {t('price:total_amount')}: ${Data[webId].price}
               </h5>
             </div>
           </div>

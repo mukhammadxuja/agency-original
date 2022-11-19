@@ -3,17 +3,19 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { motion } from 'framer-motion';
 import Data from '../../data.json';
 import { Breadcrumb } from '../../components';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['home', 'footer'])),
+      ...(await serverSideTranslations(locale, ['home', 'blog'])),
     },
   };
 }
 
 const Websites = () => {
   const [scroll, setScroll] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     let lastScroll = window.scrollY;
@@ -42,7 +44,12 @@ const Websites = () => {
       className="nav-bar"
     >
       <div className="container mx-auto">
-        <Breadcrumb page="Blog" link="/blog" page2="Websaytlar Haqida" active />
+        <Breadcrumb
+          page={t('blog:breadcrumb_blog')}
+          link="/blog"
+          page2={t('blog:breadcrumb_blog_websites')}
+          active
+        />
         <div>
           <ul
             className={`${
