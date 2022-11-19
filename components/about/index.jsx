@@ -30,7 +30,7 @@ const About = () => {
               DotSoft {t('home:about_paragraph')}
             </h5>
           </div>
-          <div className="mt-5 space-y-5">
+          <div className="mt-14 space-y-5">
             <People
               img="/images/team/Bexruz.jpeg"
               alt="dotSoft web programming group: Usmonov Bexruz"
@@ -49,7 +49,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="md:w-[50%] md:px-20 md:pt-10 space-y-2 md:space-y-3">
+        <div className="md:w-[50%] md:pl-20 space-y-2 md:space-y-3">
           <People
             img="/images/team/Muzaffar.jpg"
             name="Saforv Muzaffar"
