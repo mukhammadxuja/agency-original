@@ -10,10 +10,13 @@
       "Moslashuvchan dizayn",
       "Royxatdan otish tizimi",
       "Mahsulotlar savatchasi",
+      "Ijtimoiy tugmalar",
       "To'lov tizimi",
       "Mahsulotlar turlari",
       "Cheksiz sahifalar",
-      "SPA texnalogiyasi asosida"
+      "SPA texnalogiyasi asosida",
+      "Qayta aloqa formasi",
+      "Online chat"
     ],
     "about": "Onlayn do’kon – bu qisqa qilib aytkanda mahsulot katalogi va xarid qilish savati mavjud sayt. Bunday do’konda xaridor tovarlarni osongina topish, tanlash va buyurtma qilish imkoniyatiga ega bo’ladi va menejer / sotuvchi buyurtma bo’yicha ma’lumotni tezda qabul qiladi va uni amalga oshiradi.",
     "complete": "3 oy",
@@ -76,6 +79,7 @@
       "Malumotlarni filterlash",
       "Moslashuvchan dizayn",
       "Royxatdan otish tizimi",
+      "Ijtimoiy tugmalar",
       "Cheksiz sahifalar",
       "SPA texnalogiyasi asosida"
     ],
@@ -93,6 +97,7 @@
       "CMS kontentni boshqarish tizimi",
       "Moslashuvchan dizayn",
       "Royxatdan otish tizimi",
+      "Ijtimoiy tugmalar",
       "Sahifalar soni - 5ta",
       "SPA texnalogiyasi asosida"
     ],
@@ -111,12 +116,12 @@
     "xususiyatlar": [
       "Mijozning Profile Sahifasi",
       "CMS kontentni boshqarish tizimi",
-      "Mahsulotlarni filterlash",
+      "Cheksiz sahifalar",
       "Moslashuvchan dizayn",
-      "Royxatdan otish tizimi",
-      "Mahsulotlar savatchasi",
-      "To'lov tizimi",
-      "Mahsulotlar turlari",
+      "Komment yozish tizimi",
+      "Royxatdan o`tish tizimi",
+      "Layk bosish tizimi",
+      "Ijtimoiy tugmalar",
       "Cheksiz sahifalar",
       "SPA texnalogiyasi asosida"
     ],
@@ -131,9 +136,7 @@
     "id": 7,
     "Sayt turi": "Maxsus",
     "price": 2500,
-    "xususiyatlar": [
-      "Mijoz bilan kelishilgan holda"
-    ],
+    "xususiyatlar": ["Mijoz bilan kelishilgan holda"],
     "about": "Mijozning xohish va istaklariga asoslangan holda",
     "complete": "3-6 oy",
     "discount": 8.2,
