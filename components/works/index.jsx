@@ -27,13 +27,13 @@ const Works = () => {
     {
       id: '4123098200533',
       title: `${t('home:service_4')}`,
-      paragraph: `${t('home:services_paragraph_4')}`,
+      paragraph: `${t('home:services_paragraph_5')}`,
       img: white,
     },
     {
       id: '5239812323097',
       title: `${t('home:service_5')}`,
-      paragraph: `${t('home:services_paragraph_5')}`,
+      paragraph: `${t('home:services_paragraph_4')}`,
       img: white,
     },
   ];
