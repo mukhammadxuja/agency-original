@@ -14,6 +14,9 @@ import lazydev from '../../public/images/propjects/lazydev.jpg';
 import suvtaminoti from '../../public/images/propjects/suvtaminoti.jpg';
 import idealcleaning from '../../public/images/propjects/idealcleaning.jpg';
 import indebt_1 from '../../public/images/propjects/indebt-1.jpg';
+import intoday from '../../public/images/propjects/intoday.png';
+import japan from '../../public/images/propjects/japan.png';
+import edteach from '../../public/images/propjects/edteach.png';
 
 const Portfolio = () => {
   const { t } = useLanguage();
@@ -69,6 +72,30 @@ const Portfolio = () => {
               description="InReport"
               imgSrg={inreport}
               link="https://inreport.uz/"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Edteach"
+              imgSrg={edteach}
+              link="https://edteach.uz"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Intoday"
+              imgSrg={intoday}
+              link="https://app.intoday.uz"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Japan univercity"
+              imgSrg={japan}
+              link="https://jiuuni.uz/"
             />
           </SwiperSlide>
           <SwiperSlide>
