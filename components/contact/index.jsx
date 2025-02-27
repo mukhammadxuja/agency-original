@@ -1,6 +1,5 @@
 // import Image from 'next/image';
 import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
 import { useLanguage } from '../../hooks/useLanguage';
@@ -15,27 +14,29 @@ const Contact = () => {
       ...prevState,
       [e.target.name]: e.target.value,
     }));
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_ehwyfsf',
-        'template_4fnw3cw',
-        form.current,
-        'dqmWfjKjx0kj0b5np'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          toast.success('Habaringiz muvaffaqiyatli jo`natildi.');
-          setInputs(() => ({}));
-        },
-        (error) => {
-          console.log(error.text);
-          toast.error('Serverda xato yuz berdi.');
-        }
-      );
+    try {
+      const response = await fetch('/api/sendMessage', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(inputs),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        toast.success('Xabar yuborildi!');
+
+        setInputs({});
+        form.current.reset()
+      } else {
+        toast.error('Xabar yuborilmadi, qayta urinib ko‘ring.');
+      }
+    } catch (error) {
+      console.error('Xatolik:', error);
+      toast.error('Xatolik yuz berdi.');
+    }
   };
 
   return (
