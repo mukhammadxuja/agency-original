@@ -40,37 +40,37 @@ const About = () => {
               paragraph={t('home:about_product_manager')}
             />
             <People
-              img="/images/team/G`olib.jpg"
-              alt="dotSoft web programming group: Usmonov Bexruz"
-              name="Maxmudov G'olibxo'ja"
-              job="Sales Manager"
-              link="https://t.me/your_frontendDev"
-              paragraph={t('home:about_sales_mangment')}
+              img="/images/team/azizjon.jpg"
+              alt="dotSoft web programming group: Abdullayev Aziz"
+              name="Abdullayev Aziz"
+              job="Full Stack Dev"
+              link="https://t.me/AzizjonAbdullayev"
+              paragraph={`${t('home:about_fullstack')}`}
             />
           </div>
         </div>
         <div className="md:w-[50%] md:pl-20 space-y-2 md:space-y-3">
           <People
-            img="/images/team/Muzaffar.jpg"
-            name="Saforv Muzaffar"
-            job="Front End Dev"
-            link="https://t.me/your_frontendDev"
-            paragraph={`${t('home:about_frontend')}`}
-          />
-          <People
-            img="/images/team/Anvarov.jpg"
+            img="/images/team/anvarov.jpg"
             name="Anvarov Muhammad"
             job="Front End Dev"
             link="https://t.me/akzmsh"
             paragraph={`${t('home:about_frontend')}`}
           />
           <People
-            img="/images/team/Aziz.jpg"
-            alt="dotSoft web programming group: Abdullayev Aziz"
-            name="Abdullayev Aziz"
-            job="Full Stack Dev"
-            link="https://t.me/AzizjonAbdullayev"
-            paragraph={`${t('home:about_fullstack')}`}
+            img="/images/team/avatar.jpg"
+            alt="dotSoft web programming group: Anvarov Sarvar"
+            name="Anvarov Sarvar"
+            job="SMM Marketolog"
+            link="https://t.me/@sareanvarov"
+            paragraph={t('home:about_sales_mangment')}
+          />
+          <People
+            img="/images/team/Muzaffar.jpg"
+            name="Saforv Muzaffar"
+            job="Front End Dev"
+            link="https://t.me/your_frontendDev"
+            paragraph={`${t('home:about_frontend')}`}
           />
           <People
             img="/images/team/Komil.jpeg"
