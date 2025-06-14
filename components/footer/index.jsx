@@ -80,10 +80,10 @@ const Footer = () => {
           <Link href="/">
             <div className="block dark:hidden cursor-pointer">
               <Image
-                width={70}
-                height={60}
+                width={80}
+                height={80}
                 objectFit="contain"
-                src="/images/dotsoft/dotsoft-light.png"
+                src="/images/dotsoft/new-logo-dark.svg"
                 alt="dotSoft web programming group Footer logo"
               />
             </div>
@@ -91,10 +91,10 @@ const Footer = () => {
           <Link href="/">
             <div className="hidden dark:block cursor-pointer">
               <Image
-                width={70}
-                height={70}
+                width={80}
+                height={80}
                 objectFit="contain"
-                src="/images/dotsoft/dotsoft-dark.png"
+                src="/images/dotsoft/new-logo-dark.svg"
                 alt="dotSoft web programming group Footer logo"
               />
             </div>
