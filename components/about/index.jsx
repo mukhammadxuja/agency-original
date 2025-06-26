@@ -37,7 +37,7 @@ const About = () => {
               name="Usmonov Behruz"
               job="Product Manager"
               link="https://t.me/ubehruz"
-              paragraph={t('home:about_product_manager')}
+              paragraph={t('home:about_product_management')}
             />
             <People
               img="/images/team/azizjon.jpg"
@@ -58,27 +58,27 @@ const About = () => {
             paragraph={`${t('home:about_frontend')}`}
           />
           <People
-            img="/images/team/avatar.jpg"
+            img="/images/team/sarvar_anvarov.png"
             alt="dotSoft web programming group: Anvarov Sarvar"
             name="Anvarov Sarvar"
             job="SMM Marketolog"
-            link="https://t.me/@sareanvarov"
-            paragraph={t('home:about_sales_mangment')}
+            link="https://t.me/sareanvarov"
+            paragraph={t('home:about_smm_marketing')}
           />
           <People
-            img="/images/team/Muzaffar.jpg"
-            name="Saforv Muzaffar"
-            job="Front End Dev"
-            link="https://t.me/your_frontendDev"
-            paragraph={`${t('home:about_frontend')}`}
-          />
-          <People
-            img="/images/team/Komil.jpeg"
+            img="/images/team/komil.jpg"
             alt="dotSoft web programming group: Mahmudov Komil"
             name="Maxmudov Komil"
             job="Backend Dev"
             link="https://t.me/komilmaxmudov"
             paragraph={`${t('home:about_backend')}`}
+          />
+          <People
+            img="/images/team/norpulatov_aziz.jpg"
+            name="Norpulatov Aziz"
+            job="Sales Manager"
+            link="https://t.me/Only_dear"
+            paragraph={`${t('home:about_sales_management')}`}
           />
         </div>
       </div>
