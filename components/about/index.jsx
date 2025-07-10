@@ -20,7 +20,7 @@ const About = () => {
             </h3>
             <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
               DotSoft -
-              <span className="text-[#016C9AFF] mr-1 md:mr-2">
+              <span className="text-[#008CFF] mr-1 md:mr-2">
                 {t('home:about_title_highlight')}
               </span>
               <br className="md:block hidden" />{' '}

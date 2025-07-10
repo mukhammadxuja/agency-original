@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { motion } from 'framer-motion';
-import Data from '../../data.json';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useEffect, useState } from 'react';
 import { Breadcrumb } from '../../components';
+import Data from '../../data.json';
 import { useLanguage } from '../../hooks/useLanguage';
 
 export async function getStaticProps({ locale }) {
@@ -33,8 +33,6 @@ const Websites = () => {
   const link =
     'text-xs text-right cursor-pointer hover:opacity-80 md:hover:mr-1 md:duration-500';
   return (
-
-
     <motion.div
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -104,7 +102,7 @@ const Websites = () => {
                                 href={`https://${item1}/`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-[#006B98] ml-2"
+                                className="text-[#008CFF] ml-2"
                               >
                                 {item1} -
                               </a>

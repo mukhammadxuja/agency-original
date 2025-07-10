@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer utilities {
   .animation-delay-4000 {
     animation-delay: 400ms;
@@ -35,7 +33,7 @@
 
   ::selection {
     color: white;
-    background: #006B98;
+    background: #008cff;
   }
 
   /* width */
@@ -93,7 +91,7 @@
     cursor: grab;
   }
 
- .swiper-slide .cardSwiper img {
+  .swiper-slide .cardSwiper img {
     width: 100%;
     height: 100%;
     border-radius: 30px;
@@ -115,9 +113,10 @@
     overflow-x: hidden;
     transition: 500ms;
   }
-  .swiper-slide , .cardSwiper:hover .slide-opacity {
-    transition: 500ms ;
-    top: 0 ;
+  .swiper-slide,
+  .cardSwiper:hover .slide-opacity {
+    transition: 500ms;
+    top: 0;
   }
 
   .cardSwiper .slide-opacity h4 {
@@ -162,7 +161,7 @@
     }
 
     .swiper-slide .cardSwiper img {
-      width: 100% ;
+      width: 100%;
       height: 240px;
       object-fit: cover;
     }

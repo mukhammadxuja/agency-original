@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import React from 'react';
 
 import { useLanguage } from '../../hooks/useLanguage';
 
-import header2 from './header.png';
-import star from '../../public/svg/star.svg';
 import moment from 'moment';
+import star from '../../public/svg/star.svg';
+import header2 from './header.png';
 
 const Header = () => {
   const { t } = useLanguage();
@@ -25,7 +24,7 @@ const Header = () => {
                   <h5 className="text-4xl mt-2 md:ml-4 md:mt-4 font-semibold sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
                     {t('home:heading_web')}
                   </h5>
-                  <div className="text-[#006B98] text-4xl md:ml-4 mt-6 md:mt-8 xl:mt-10 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col h-11 sm:h-13 md:h-14 lg:h-[4.5rem] xl:h-24 overflow-hidden">
+                  <div className="text-[#008CFF] text-4xl md:ml-4 mt-6 md:mt-8 xl:mt-10 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col h-11 sm:h-13 md:h-14 lg:h-[4.5rem] xl:h-24 overflow-hidden">
                     <span className="px-2 font-semibold animate-spinWord">
                       {t('home:heading_service_1')}
                     </span>
@@ -79,12 +78,14 @@ const Header = () => {
           </div>
           <div className="mb-5 md:mt-5 flex items-center space-x-2 md:space-x-4">
             <div className="flex items-center -space-x-5 md:-space-x-7">
-              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] rounded-full bg-[#006B98]"></div>
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] rounded-full bg-[#008CFF]"></div>
               <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] rounded-full bg-black dark:bg-white"></div>
             </div>
             <div className="text-sm md:text-base -space-y-1 font-bold text-gray-700 dark:text-white">
-              <p className='font-semibold'>37+</p>
-              <p className="whitespace-nowrap">{t('home:about_complete_projects')}</p>
+              <p className="font-semibold">37+</p>
+              <p className="whitespace-nowrap">
+                {t('home:about_complete_projects')}
+              </p>
             </div>
             <div className="hidden md:block max-w-2xl -space-y-1 text-lg font-semibold text-gray-700 dark:text-white">
               <p className="ml-5 sm:ml-10 md:ml-16 text-xs">

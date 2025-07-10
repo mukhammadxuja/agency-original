@@ -1,15 +1,14 @@
-import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '../../../hooks/useLanguage';
 
 const Breadcrumb = (props) => {
   const { page, page2, link, active = false } = props;
 
-  const { t } = useLanguage()
+  const { t } = useLanguage();
   return (
     <div className="flex items-center space-x-1 md:space-x-2 pt-2 mt-[4.5rem] md:mt-20">
       <Link href="/">
-        <a className='font-semibold'>{t('home:breadcrumb_home')}</a>
+        <a className="font-semibold">{t('home:breadcrumb_home')}</a>
       </Link>
       <span>
         <svg
@@ -30,7 +29,9 @@ const Breadcrumb = (props) => {
       <Link href={link}>
         <a
           className={
-            active ? 'text- cursor-pointer font-semibold' : 'text-[#006B98] cursor-text font-semibold'
+            active
+              ? 'text- cursor-pointer font-semibold'
+              : 'text-[#008CFF] cursor-text font-semibold'
           }
         >
           {page}
@@ -52,7 +53,15 @@ const Breadcrumb = (props) => {
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
           </svg>
-          <h3 className={active ? 'text-[#006B98] font-semibold' : 'text-black font-semibold'}>{page2}</h3>
+          <h3
+            className={
+              active
+                ? 'text-[#008CFF] font-semibold'
+                : 'text-black font-semibold'
+            }
+          >
+            {page2}
+          </h3>
         </span>
       )}
     </div>

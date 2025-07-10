@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React from 'react';
 import { useLanguage } from '../../hooks/useLanguage';
 import white from '../../public/svg/star-white.svg';
 const Works = () => {
@@ -47,7 +46,10 @@ const Works = () => {
           </h3>
           <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
             DotSoft -
-            <span className="text-[#006B98]"> {t('home:we_can_highlight')}</span>{' '}
+            <span className="text-[#008CFF]">
+              {' '}
+              {t('home:we_can_highlight')}
+            </span>{' '}
             <br className="md:block hidden" />{' '}
             {t('home:we_can_without_highlight')}
           </h1>

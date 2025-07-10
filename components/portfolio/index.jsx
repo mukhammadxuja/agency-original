@@ -1,22 +1,24 @@
-import React from 'react';
-import PortfolioCard from './Card';
 import { Autoplay } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { useLanguage } from '../../hooks/useLanguage';
-import indebt from '../../public/images/propjects/indebt.jpg';
-import imbastudio from '../../public/images/propjects/imbastudio.jpg';
+import edteach from '../../public/images/propjects/edteach.png';
 import fayzbaraka from '../../public/images/propjects/fayzbaraka.jpg';
-import mamirovgroup from '../../public/images/propjects/mamirovgroup.jpg';
-import inreport from '../../public/images/propjects/inreport.jpg';
-import lazydev from '../../public/images/propjects/lazydev.jpg';
-import suvtaminoti from '../../public/images/propjects/suvtaminoti.jpg';
+import forward from '../../public/images/propjects/forward.jpg';
 import idealcleaning from '../../public/images/propjects/idealcleaning.jpg';
+import imbastudio from '../../public/images/propjects/imbastudio.jpg';
 import indebt_1 from '../../public/images/propjects/indebt-1.jpg';
+import inmenu from '../../public/images/propjects/inmenu.jpg';
+import inreport from '../../public/images/propjects/inreport.jpg';
 import intoday from '../../public/images/propjects/intoday.png';
 import japan from '../../public/images/propjects/japan.png';
-import edteach from '../../public/images/propjects/edteach.png';
+import jmc from '../../public/images/propjects/jms.jpg';
+import JQuruvchi from '../../public/images/propjects/jquruvchi.jpg';
+import lazydev from '../../public/images/propjects/lazydev.jpg';
+import gilamchi from '../../public/images/propjects/gilamchi.jpg';
+import mamirovgroup from '../../public/images/propjects/mamirovgroup.jpg';
+import PortfolioCard from './Card';
 
 const Portfolio = () => {
   const { t } = useLanguage();
@@ -30,7 +32,7 @@ const Portfolio = () => {
           <h3 className="font-bold md:text-xl">{t('home:works_section')}</h3>
           <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
             DotSoft -{' '}
-            <span className="text-[#006B98]">{t('home:works_highlight')}.</span>{' '}
+            <span className="text-[#008CFF]">{t('home:works_highlight')}.</span>{' '}
             <br className="md:block hidden" />
           </h1>
         </div>
@@ -77,6 +79,14 @@ const Portfolio = () => {
           <SwiperSlide>
             <PortfolioCard
               title="Development"
+              description="Gilamchi"
+              imgSrg={gilamchi}
+              link="https://gilamchi.uz/"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
               description="Edteach"
               imgSrg={edteach}
               link="https://edteach.uz"
@@ -84,7 +94,7 @@ const Portfolio = () => {
           </SwiperSlide>
           <SwiperSlide>
             <PortfolioCard
-              title="Development"
+              title="Development & Design"
               description="Intoday"
               imgSrg={intoday}
               link="https://app.intoday.uz"
@@ -100,18 +110,34 @@ const Portfolio = () => {
           </SwiperSlide>
           <SwiperSlide>
             <PortfolioCard
-              title="Development"
-              description="Lazydev"
-              imgSrg={lazydev}
-              link="https://lazydev.uz"
+              title="Development & Design"
+              description="Inmenu - online Qr kod menu"
+              imgSrg={inmenu}
+              link="https://www.inmenu.uz/"
             />
           </SwiperSlide>
           <SwiperSlide>
             <PortfolioCard
-              title="Development"
-              description="Indebt"
-              imgSrg={indebt_1}
-              link="https://indebt.uz"
+              title="Development & Design"
+              description="JMC - Metal Konstruksiya"
+              imgSrg={jmc}
+              link="https://jasurmc.netlify.app"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development & Design"
+              description="Forward Advertising"
+              imgSrg={forward}
+              link="https://forward-landing-new.vercel.app/uz"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development & Design"
+              description="JQuruvchi"
+              imgSrg={JQuruvchi}
+              link="https://jquruvchi-rouge.vercel.app/"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -127,7 +153,7 @@ const Portfolio = () => {
               title="Development"
               description="Fayz Baraka"
               imgSrg={fayzbaraka}
-              link="https://fayzbaraka.uz"
+              link="https://fayzbaraka.netlify.app/"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -135,31 +161,32 @@ const Portfolio = () => {
               title="Development"
               description="Mamirov Group"
               imgSrg={mamirovgroup}
-              link="https://mamirovgroup.uz"
+              link="https://imbastudio.uz/photoedit"
             />
           </SwiperSlide>
-          <SwiperSlide>
-            <PortfolioCard
-              title="Development"
-              description="Jizzax City"
-              imgSrg={indebt}
-              link="https://jizzaxcity-uz.vercel.app/"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <PortfolioCard
-              title="Development"
-              description="JS Taminot"
-              imgSrg={suvtaminoti}
-              link="https://jizzaxsuvtaminoti.uz"
-            />
-          </SwiperSlide>
+
           <SwiperSlide>
             <PortfolioCard
               title="Development"
               description="Ideal Cleaning"
               imgSrg={idealcleaning}
               link="https://ideal-cleaning.vercel.app/"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Lazydev"
+              imgSrg={lazydev}
+              link="https://lazydev.vercel.app/"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              title="Development"
+              description="Indebt"
+              imgSrg={indebt_1}
+              link="https://indebt.uz"
             />
           </SwiperSlide>
         </Swiper>

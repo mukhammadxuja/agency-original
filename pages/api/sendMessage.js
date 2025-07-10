@@ -5,8 +5,8 @@ export default async function handler(req, res) {
 
   const { first_name, last_name, email, phone_number, message } = req.body;
 
-  const botToken = '7793393691:AAEVfDOAaPGXG8hGmnGMPkv9SoG8RsLeGJE';
-  const chatId = 6157181272;
+  const botToken = '7887053531:AAG_FcUVLNmoxCg06zK6CtARkNhTGUlqbcE';
+  const chatId = 352007711;
 
   // Agar botToken yoki chatId yo'q bo'lsa, xatolik chiqaramiz
   if (!botToken || !chatId) {

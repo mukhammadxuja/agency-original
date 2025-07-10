@@ -1,7 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 import moment from 'moment';
+import Image from 'next/image';
+import Link from 'next/link';
 
 import { useLanguage } from '../../hooks/useLanguage';
 
@@ -19,11 +18,15 @@ const Footer = () => {
               <p className="text-sm">dotsoftuz@gmail.com</p>
             </div>
             <div>
-              <h4 className="text-lg font-semibold">{t('home:footer_adress')}:</h4>
+              <h4 className="text-lg font-semibold">
+                {t('home:footer_adress')}:
+              </h4>
               <p className="text-sm">Uzbekistan, Jizzakh</p>
             </div>
             <div>
-              <h4 className="text-lg font-semibold">{t('home:footer_callus')}:</h4>
+              <h4 className="text-lg font-semibold">
+                {t('home:footer_callus')}:
+              </h4>
               <span className="text-sm flex flex-col">
                 <a
                   href="tel:+998992666545"
@@ -46,33 +49,57 @@ const Footer = () => {
             {t('home:footer_services')}
           </h3>
           <div className="space-y-1">
-            <h4 className="text-sm md:text-lg font-semibold">{t('home:service_1')}</h4>
-            <h4 className="text-sm md:text-lg font-semibold">{t('home:service_2')}</h4>
-            <h4 className="text-sm md:text-lg font-semibold">{t('home:service_3')}</h4>
-            <h4 className="text-sm md:text-lg font-semibold">{t('home:service_4')}</h4>
-            <h4 className="text-sm md:text-lg font-semibold">{t('home:service_5')}</h4>
+            <h4 className="text-sm md:text-lg font-semibold">
+              {t('home:service_1')}
+            </h4>
+            <h4 className="text-sm md:text-lg font-semibold">
+              {t('home:service_2')}
+            </h4>
+            <h4 className="text-sm md:text-lg font-semibold">
+              {t('home:service_3')}
+            </h4>
+            <h4 className="text-sm md:text-lg font-semibold">
+              {t('home:service_4')}
+            </h4>
+            <h4 className="text-sm md:text-lg font-semibold">
+              {t('home:service_5')}
+            </h4>
           </div>
         </div>
         <div className="mt-4 md:mt-0">
-          <h3 className="text-xl pb-3 font-semibold">{t('home:links_navbar')}</h3>
+          <h3 className="text-xl pb-3 font-semibold">
+            {t('home:links_navbar')}
+          </h3>
           <div className="flex flex-col space-y-1">
             <Link href="/#about">
-              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:about_navbar')}</a>
+              <a className="text-sm md:text-lg hover:underline font-semibold">
+                {t('home:about_navbar')}
+              </a>
             </Link>
             <Link href="/#services">
-              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:services_navbar')}</a>
+              <a className="text-sm md:text-lg hover:underline font-semibold">
+                {t('home:services_navbar')}
+              </a>
             </Link>
             <Link href="/#portfolio">
-              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:works_navbar')}</a>
+              <a className="text-sm md:text-lg hover:underline font-semibold">
+                {t('home:works_navbar')}
+              </a>
             </Link>
             <Link href="/price">
-              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:price_navbar')}</a>
+              <a className="text-sm md:text-lg hover:underline font-semibold">
+                {t('home:price_navbar')}
+              </a>
             </Link>
             <Link href="/blog">
-              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:blog_navbar')}</a>
+              <a className="text-sm md:text-lg hover:underline font-semibold">
+                {t('home:blog_navbar')}
+              </a>
             </Link>
             <Link href="/#contact">
-              <a className="text-sm md:text-lg hover:underline font-semibold">{t('home:contact_navbar')}</a>
+              <a className="text-sm md:text-lg hover:underline font-semibold">
+                {t('home:contact_navbar')}
+              </a>
             </Link>
           </div>
         </div>
@@ -103,7 +130,7 @@ const Footer = () => {
       </div>
       <div className="container mx-auto flex flex-row-reverse md:flex-row items-center justify-between py-10 border-t">
         <p className="flex text-lg font-medium text-main dark:text-white">
-          <span className="text-[#006B98] md:mr-2">DotSoft team</span>
+          <span className="text-[#008CFF] md:mr-2">DotSoft team</span>
           <span className="hidden md:block font-normal">
             {t('home:all_rights_reserved')}.
           </span>{' '}
