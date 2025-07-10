@@ -2,7 +2,7 @@
   {
     "id": 1,
     "Sayt turi": "eCommerce",
-    "price": 800,
+    "price": 3000,
     "xususiyatlar": [
       "Mijozning Profile Sahifasi",
       "CMS kontentni boshqarish tizimi",
@@ -28,7 +28,7 @@
   {
     "id": 2,
     "Sayt turi": "Business",
-    "price": 300,
+    "price": 700,
     "xususiyatlar": [
       "Mijozning Profile Sahifasi",
       "5 - 10 ta sahifa",
@@ -51,7 +51,7 @@
   {
     "id": 3,
     "Sayt turi": "Portfolio",
-    "price": 200,
+    "price": 500,
     "xususiyatlar": [
       "Tungi rejim",
       "Moslashuvchan dizayn",
@@ -92,7 +92,7 @@
   {
     "id": 5,
     "Sayt turi": "Event",
-    "price": 250,
+    "price": 1000,
     "xususiyatlar": [
       "CMS kontentni boshqarish tizimi",
       "Moslashuvchan dizayn",
