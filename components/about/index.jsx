@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import React from 'react';
 import img1 from './about.png';
 
-import People from './People';
-import { useLanguage } from '../../hooks/useLanguage';
 import { MarqueeServices } from '../';
+import { useLanguage } from '../../hooks/useLanguage';
 import star from '../../public/svg/star.svg';
+import People from './People';
 
 const About = () => {
   const { t } = useLanguage();
@@ -19,12 +18,10 @@ const About = () => {
               {t('home:about_us_section')}
             </h3>
             <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
-              DotSoft -
-              <span className="text-[#008CFF] mr-1 md:mr-2">
+              DotSoft - {t('home:about_title_without_highlight')}
+              <span className="text-[#008CFF] mx-1 md:mx-2">
                 {t('home:about_title_highlight')}
               </span>
-              <br className="md:block hidden" />{' '}
-              {t('home:about_title_without_highlight')}
             </h1>
             <h5 className="md:text-base text-gray-600 dark:text-white pt-4">
               DotSoft {t('home:about_paragraph')}
@@ -95,7 +92,7 @@ const About = () => {
         <div className="flex justify-evenly md:px-10 py-5 text-center text-[#222426FF]">
           <div>
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
-              37
+              50+
               <span className="w-5 md:w-7">
                 <Image src={star} alt="dotSoft web programming group" />
               </span>
@@ -106,7 +103,7 @@ const About = () => {
           </div>
           <div>
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
-              17
+              8
               <span className="w-5 md:w-7">
                 <Image src={star} alt="dotSoft web programming group" />
               </span>
@@ -117,7 +114,7 @@ const About = () => {
           </div>
           <div>
             <h2 className="font-semibold flex md:text-6xl text-2xl ml-6 dark:text-white">
-              46
+              100+
               <span className="w-5 md:w-7">
                 <Image src={star} alt="dotSoft web programming group" />
               </span>
