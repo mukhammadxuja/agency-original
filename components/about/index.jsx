@@ -48,11 +48,11 @@ const About = () => {
         </div>
         <div className="md:w-[50%] md:pl-20 space-y-2 md:space-y-3">
           <People
-            img="/images/team/anvarov.jpg"
+            img="/images/team/anvarov.jpeg"
             name="Anvarov Muhammad"
-            job="Front End Dev"
+            job="Fullstack Dev"
             link="https://t.me/akzmsh"
-            paragraph={`${t('home:about_frontend')}`}
+            paragraph={`${t('home:about_fullstack')}`}
           />
           <People
             img="/images/team/sarvar_anvarov.png"
@@ -70,13 +70,13 @@ const About = () => {
             link="https://t.me/komilmaxmudov"
             paragraph={`${t('home:about_backend')}`}
           />
-          <People
+          {/* <People
             img="/images/team/norpulatov_aziz.jpg"
             name="Norpulatov Aziz"
             job="Sales Manager"
             link="https://t.me/Only_dear"
             paragraph={`${t('home:about_sales_management')}`}
-          />
+          /> */}
         </div>
       </div>
       <div className="container mx-auto mt-5 md:mt-20">
