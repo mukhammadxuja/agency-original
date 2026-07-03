@@ -3,6 +3,7 @@ import Script from 'next/script';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
+import { useTranslation } from 'next-i18next';
 import { Header, About, Works, Portfolio, Tools, Contact } from '../components';
 import Head from 'next/head';
 
@@ -16,6 +17,7 @@ export async function getStaticProps({ locale }) {
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
+  const { t } = useTranslation('home');
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
@@ -24,7 +26,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>.Soft - Development Group</title>
+        <title>{t('home:seo_title')}</title>
       </Head>
 
       <Script src="https://third-party-script.js"></Script>

@@ -30,11 +30,11 @@ const Portfolio = () => {
       >
         <div>
           <h3 className="font-bold md:text-xl">{t('home:works_section')}</h3>
-          <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
+          <h2 className="md:text-[4rem] text-[2rem] font-bold leading-none">
             DotSoft -{' '}
             <span className="text-[#008CFF]">{t('home:works_highlight')}.</span>{' '}
             <br className="md:block hidden" />
-          </h1>
+          </h2>
         </div>
       </div>
       {/* Swiper js */}

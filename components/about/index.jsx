@@ -17,12 +17,12 @@ const About = () => {
             <h3 className="font-semibold md:text-xl">
               {t('home:about_us_section')}
             </h3>
-            <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
+            <h2 className="md:text-[4rem] text-[2rem] font-bold leading-none">
               DotSoft - {t('home:about_title_without_highlight')}
               <span className="text-[#008CFF] mx-1 md:mx-2">
                 {t('home:about_title_highlight')}
               </span>
-            </h1>
+            </h2>
             <h5 className="md:text-base text-gray-600 dark:text-white pt-4">
               DotSoft {t('home:about_paragraph')}
             </h5>

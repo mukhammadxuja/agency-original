@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.dotsoft.uz/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dotsoft.uz/" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://www.dotsoft.uz/uz/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.dotsoft.uz/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dotsoft.uz/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.dotsoft.uz/uz/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dotsoft.uz/" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://www.dotsoft.uz/uz/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.dotsoft.uz/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dotsoft.uz/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.dotsoft.uz/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dotsoft.uz/" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://www.dotsoft.uz/uz/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.dotsoft.uz/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dotsoft.uz/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Price Calculator -->
+  <url>
+    <loc>https://www.dotsoft.uz/price/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dotsoft.uz/price/" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://www.dotsoft.uz/uz/price/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.dotsoft.uz/ru/price/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dotsoft.uz/price/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dotsoft.uz/uz/price/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dotsoft.uz/price/" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://www.dotsoft.uz/uz/price/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.dotsoft.uz/ru/price/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dotsoft.uz/price/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dotsoft.uz/ru/price/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dotsoft.uz/price/" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://www.dotsoft.uz/uz/price/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.dotsoft.uz/ru/price/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dotsoft.uz/price/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://www.dotsoft.uz/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dotsoft.uz/blog/" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://www.dotsoft.uz/uz/blog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.dotsoft.uz/ru/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dotsoft.uz/blog/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dotsoft.uz/uz/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dotsoft.uz/blog/" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://www.dotsoft.uz/uz/blog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.dotsoft.uz/ru/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dotsoft.uz/blog/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dotsoft.uz/ru/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dotsoft.uz/blog/" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://www.dotsoft.uz/uz/blog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.dotsoft.uz/ru/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dotsoft.uz/blog/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Websites -->
+  <url>
+    <loc>https://www.dotsoft.uz/blog/websites/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dotsoft.uz/blog/websites/" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://www.dotsoft.uz/uz/blog/websites/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.dotsoft.uz/ru/blog/websites/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dotsoft.uz/blog/websites/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dotsoft.uz/uz/blog/websites/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dotsoft.uz/blog/websites/" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://www.dotsoft.uz/uz/blog/websites/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.dotsoft.uz/ru/blog/websites/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dotsoft.uz/blog/websites/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dotsoft.uz/ru/blog/websites/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dotsoft.uz/blog/websites/" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://www.dotsoft.uz/uz/blog/websites/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.dotsoft.uz/ru/blog/websites/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dotsoft.uz/blog/websites/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

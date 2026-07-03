@@ -6,7 +6,7 @@ const AddFeatures = () => {
   return (
     <div className="py-3 px-4 md:py-3 md:px-6 rounded-md shadow-md my-3 md:my-5">
       <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-        <h1 className="text-base md:text-lg">Sayt Dizayni:</h1>
+        <span className="text-base md:text-lg font-medium">Sayt Dizayni:</span>
         <div className="relative w-36 md:w-40 lg:w-44">
           <ArrowBottom />
           <select className="w-full p-2 text-black bg-white text-sm md:text-base border border-black rounded-md shadow-sm outline-none appearance-none focus:border-black">
@@ -16,14 +16,14 @@ const AddFeatures = () => {
         </div>
       </div>
       <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-        <h1 className="text-base md:text-lg">Tungi rejim:</h1>
+        <span className="text-base md:text-lg font-medium">Tungi rejim:</span>
         <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
           <Toggle trueOrFalse={false} no="Yo'q" yes="Bor" />
         </div>
       </div>
       <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
         <div className="flex items-center space-x-1">
-          <h1 className="text-base md:text-lg">Tashqi API integratsiyasi :</h1>
+          <span className="text-base md:text-lg font-medium">Tashqi API integratsiyasi :</span>
           <Tooltip desc="" />
         </div>
         <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
@@ -32,7 +32,7 @@ const AddFeatures = () => {
       </div>
       <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
         <div className="flex items-center space-x-1">
-          <h1 className="text-base md:text-lg">Tillar soni:</h1>
+          <span className="text-base md:text-lg font-medium">Tillar soni:</span>
           <Tooltip desc="Saytingizga bir necha til qo`shiladi." />
         </div>
         <div className="flex flex-col space-y-2 space-x-0 md:flex-row md:space-y-0 md:space-x-2">
@@ -52,7 +52,7 @@ const AddFeatures = () => {
       </div>
       <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
         <div className="flex items-center space-x-1">
-          <h1 className="text-base md:text-lg">Matlarni Kiritish:</h1>
+          <span className="text-base md:text-lg font-medium">Matlarni Kiritish:</span>
           <Tooltip desc="Sayt ichidagi matnlarni (copywriter) to`ldrib beradi." />
         </div>
         <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
@@ -61,7 +61,7 @@ const AddFeatures = () => {
       </div>
       <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
         <div className="flex items-center space-x-1">
-          <h1 className="text-base md:text-lg">SEO Hizmati:</h1>
+          <span className="text-base md:text-lg font-medium">SEO Hizmati:</span>
           <Tooltip desc="SEO bilan saytingiz Google qidiruv natijalarida ko`proq chiqadigan bo`ladi." />
         </div>
         <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
@@ -70,7 +70,7 @@ const AddFeatures = () => {
       </div>
       <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
         <div className="flex items-center space-x-1">
-          <h1 className="text-base md:text-lg">Bepul Domain:</h1>
+          <span className="text-base md:text-lg font-medium">Bepul Domain:</span>
           <Tooltip desc="Agar o`zingizni domainingiz bo`lsa, buni o`chirsangiz umimiy narxdan domain narx olib tashlanadi." />
         </div>
         <div className="flex items-center justify-center space-x-3 w-36 md:w-40 lg:w-44">
@@ -78,7 +78,7 @@ const AddFeatures = () => {
         </div>
       </div>
       <div className="flex items-center justify-between my-2 md:my-4 pb-1 border-b">
-        <h1 className="text-base md:text-lg">Brending:</h1>
+        <span className="text-base md:text-lg font-medium">Brending:</span>
         <div className="flex flex-col space-y-2 space-x-0 md:flex-row md:space-y-0 md:space-x-2">
           <button className="flex items-center space-x-2 px-3 py-1 border border-gray-400 rounded-full">
             <span className="text-gray-400">Brendga Nom</span>
@@ -97,7 +97,7 @@ const AddFeatures = () => {
       <div className="flex items-center justify-between my-5">
         <div className="flex items-center space-x-1">
           <div className="flex items-center space-x-1">
-            <h1 className="text-sm">Chegirma:</h1>
+            <span className="text-sm font-medium">Chegirma:</span>
             <Tooltip desc="Maxsus topshiriqni yechish orqali chegirmaga ega bo`ling." />
           </div>
           <Toggle trueOrFalse={false} no="Yo'q" yes="Bor" />

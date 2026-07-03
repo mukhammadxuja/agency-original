@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { motion } from 'framer-motion';
 
@@ -30,6 +31,13 @@ const Calculate = () => {
 
   return (
     <div className="container mx-auto">
+      <Head>
+        <title>{t('price:price_title')}</title>
+        <meta name="title" content={t('price:price_title')} key="title" />
+        <meta name="description" content={t('price:price_seo_description')} key="description" />
+        <meta property="og:title" content={t('price:price_title')} key="og:title" />
+        <meta property="og:description" content={t('price:price_seo_description')} key="og:description" />
+      </Head>
       <div
         className={`${
           scroll ? 'top-0 -mt-1' : 'top-20 -mt-1 md:-mt-0'

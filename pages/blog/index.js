@@ -38,23 +38,19 @@ const Blog = () => {
       className="nav-bar"
     >
       <Head>
-      <title>Dotsoftuz Blog page</title>
-        <meta name="title" content="Dotsoftuz - Blog page" />
+        <title>{t('blog:blog_title')}</title>
+        <meta name="title" content={t('blog:blog_title')} key="title" />
         <meta
           name="description"
-          content="Dotsoftuz web programming company - through this page you can find interesting and useful articles from each other "
+          content={t('blog:blog_seo_description')}
+          key="description"
         />
 
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dotsoft.uz/" />
-        <meta property="og:title" content="Dotsoftuz - Blog page" />
+        <meta property="og:title" content={t('blog:blog_title')} key="og:title" />
         <meta
           property="og:description"
-          content="Dotsoftuz web programming company - through this page you can find interesting and useful articles from each other "
-        />
-        <meta
-          property="og:image"
-          content="https://www.dotsoft.uz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdotsoft-dark.de3a0cde.png&w=1920&q=75"
+          content={t('blog:blog_seo_description')}
+          key="og:description"
         />
       </Head>
       <div className="container mx-auto">

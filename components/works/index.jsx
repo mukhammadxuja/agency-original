@@ -44,7 +44,7 @@ const Works = () => {
           <h3 className="font-bold md:text-xl">
             {t('home:what_we_can_do_section')}
           </h3>
-          <h1 className="md:text-[4rem] text-[2rem] font-bold leading-none">
+          <h2 className="md:text-[4rem] text-[2rem] font-bold leading-none">
             DotSoft -
             <span className="text-[#008CFF]">
               {' '}
@@ -52,7 +52,7 @@ const Works = () => {
             </span>{' '}
             <br className="md:block hidden" />{' '}
             {t('home:we_can_without_highlight')}
-          </h1>
+          </h2>
         </div>
       </div>
 

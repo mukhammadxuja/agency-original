@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useEffect, useState } from 'react';
+import Head from 'next/head';
 import { Breadcrumb } from '../../components';
 import Data from '../../data.json';
 import { useLanguage } from '../../hooks/useLanguage';
@@ -41,6 +42,13 @@ const Websites = () => {
       }}
       className="nav-bar"
     >
+      <Head>
+        <title>{t('blog:breadcrumb_blog_websites')} - Dotsoftuz</title>
+        <meta name="title" content={`${t('blog:breadcrumb_blog_websites')} - Dotsoftuz`} key="title" />
+        <meta name="description" content={t('blog:blog_websites_seo_description')} key="description" />
+        <meta property="og:title" content={`${t('blog:breadcrumb_blog_websites')} - Dotsoftuz`} key="og:title" />
+        <meta property="og:description" content={t('blog:blog_websites_seo_description')} key="og:description" />
+      </Head>
       <div className="container mx-auto">
         <Breadcrumb
           page={t('blog:breadcrumb_blog')}
@@ -74,9 +82,9 @@ const Websites = () => {
             <>
               <div id={item.id}>
                 <div className="space-y-2 md:space-y-4 mb-10">
-                  <h1 className="text-xl md:text-2xl lg:text-3xl">
+                  <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold">
                     {index + 1}. {item['Sayt turi']} - website.
-                  </h1>
+                  </h2>
                   <a className="text-sm">{item.about}</a>
                   <div>
                     {item.real_example.length === 0 ? (

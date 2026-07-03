@@ -14,7 +14,7 @@ const Commerce = (props) => {
               <div className="p-8 space-y-2">
                 <div className="flex items-center justify-between border-b">
                   <div className="flex items-center space-x-1">
-                    <h1 className="text-base md:text-lg">- Sayt Turi:</h1>
+                    <span className="text-base md:text-lg font-semibold">- Sayt Turi:</span>
                     <Tooltip desc="Saytlar haqida bilmoqchi bo`lsangiz, biroz yuqoridagi saytlar haqida bo`limiga o`ting!" />
                   </div>
                   <div className="flex items-center space-x-1 md:space-x-2">

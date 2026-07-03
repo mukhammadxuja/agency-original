@@ -56,9 +56,9 @@ const Navbar = () => {
           <div className="relative z-50 flex items-center">
             <div className="hidden md:inline-flex">
               <Language />
-              <h1 className="text-xs -ml-0.5 mt-2 text-black dark:text-white">
+              <span className="text-xs -ml-0.5 mt-2 text-black dark:text-white">
                 {locale}
-              </h1>
+              </span>
             </div>
             <DarkMode />
           </div>
